@@ -1,0 +1,4 @@
+
+OPENAI_API_KEY: sk-fGWpFI7JqPO5BhJsE38e0fFeE1D840E3Ae245e9fC048F7A0
+OPENAI_API_BASE: https://api.gptapi.us/v1/
+DATA_LIST: Android,Apache,BGL,Hadoop,HDFS,HealthApp,HPC,Linux,Mac,OpenSSH,OpenStack,Proxifier,Spark,Thunderbird,Windows,Zookeeper
