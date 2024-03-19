@@ -126,3 +126,12 @@ PARSE_SETTING:
           - "([\\w-]+\\.){2,}[\\w-]+"
       st: 0.7
       depth: 6
+  Test:
+      log_file: "Test_2k.log"
+      log_format: "<Date> <Time>  <Pid>  <Tid> <Level> <Component>: <Content>"
+      regex:
+        - "(/[\\w-]+)+"
+        - "([\\w-]+\\.){2,}[\\w-]+"
+        - "\\b(\\-?\\+?\\d+)\\b|\\b0[Xx][a-fA-F\\d]+\\b|\\b[a-fA-F\\d]{4,}\\b"
+      st: 0.2
+      depth: 6

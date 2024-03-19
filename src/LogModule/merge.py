@@ -1,14 +1,17 @@
 import pandas as pd
 import sys
+import os
 
 sys.path.append('/src/QaMaker')
-from src.QaMaker.configLoad import load_config
+from src.QaMaker.configLoad import load_config, find_nearest_dir
 
 
 def mergeLog(filename: str):
+    base = find_nearest_dir('data')
+    path = os.path.join(base, rf'loghub-master\{filename}\{filename}_2k.log_structured.csv')
     # 读取CSV文件
-    df = pd.read_csv(f'../../data/loghub-master/{filename}/{filename}_2k.log_structured.csv')
-    # 通过将相邻重复的eventId属性进行分组，然后对每个组执行合并操作
+    df = pd.read_csv(path)
+    #通过将相邻重复的eventId属性进行分组，然后对每个组执行合并操作
     df['group'] = (df['EventId'] != df['EventId'].shift()).cumsum()
 
     agg_columns = ['LineId', 'Content', 'EventId', 'EventTemplate']
@@ -24,7 +27,10 @@ def mergeLog(filename: str):
     result_df.sort_values(by='LineId', ascending=True, inplace=True)
 
     # 将结果保存到新的CSV文件
-    result_df.to_csv(f'../../data/loghub-master/{filename}/{filename}_2k.merged_file.csv', index=False)
+    outPath = os.path.join(base, rf'loghub-master\{filename}\{filename}_2k.merged_file.csv')
+    result_df.to_csv(outPath, index=False)
+
+    print(f"merge {filename} done")
 
 
 def getFold() -> []:
@@ -39,4 +45,4 @@ def mergeAll():
 
 
 if __name__ == '__main__':
-    mergeAll()
+    mergeLog('Test')

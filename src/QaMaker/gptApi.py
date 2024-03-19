@@ -15,6 +15,8 @@ class gptApi:
     """
 
     def __init__(self):
+        os.environ["OPENAI_API_KEY"] = load_config("OPENAI_API_KEY")
+        os.environ["OPENAI_API_BASE"] = load_config("OPENAI_API_BASE")
         self.llm = ChatOpenAI(temperature=0)
         self.cache = {}
 
@@ -47,8 +49,6 @@ class gptApi:
         return ans
 
 
-os.environ["OPENAI_API_KEY"] = load_config("OPENAI_API_KEY")
-os.environ["OPENAI_API_BASE"] = load_config("OPENAI_API_BASE")
 if __name__ == '__main__':
     gptApi = gptApi()
     print(gptApi.query2llm("一个测试"))

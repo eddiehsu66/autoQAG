@@ -1,20 +1,18 @@
 import os
 
 from logparser.Drain import LogParser
-from src.QaMaker.configLoad import load_config
+from src.QaMaker.configLoad import load_config,find_nearest_dir
 
 
 def logParse(fileName:str):
-    input_dir = f'../../data/loghub-master/{fileName}'
-    output_dir = f'../../data/loghub-master/{fileName}/Test'
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
+    base = find_nearest_dir('data')
+    dirName = os.path.join(base,rf'loghub-master\{fileName}')
     settings = load_config("PARSE_SETTING")
     log_file = settings[fileName]["log_file"]
     parser = LogParser(
         settings[fileName]["log_format"],
-        indir=input_dir,
-        outdir=output_dir,
+        indir=dirName,
+        outdir=dirName,
         depth=settings[fileName]["depth"],
         st=settings[fileName]["st"],
         rex=settings[fileName]["regex"]
@@ -23,4 +21,4 @@ def logParse(fileName:str):
 
 
 if __name__ == '__main__':
-    logParse("Apache")
+    logParse("Test")
