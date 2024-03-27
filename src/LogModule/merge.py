@@ -5,7 +5,6 @@ import os
 sys.path.append('/src/QaMaker')
 from src.QaMaker.configLoad import load_config, find_nearest_dir
 
-
 def mergeLog(filename: str):
     base = find_nearest_dir('data')
     path = os.path.join(base, rf'loghub-master\{filename}\{filename}_2k.log_structured.csv')

@@ -5,7 +5,7 @@ import os
 def load_config(config_name: str):
     src_dir = find_nearest_dir('src')
     file_path = os.path.join(src_dir, r'config/config.yaml')
-    with open(file_path, 'r') as file:
+    with open(file_path, 'r',encoding='utf-8') as file:
         config_data = yaml.safe_load(file)
     return config_data[config_name]
 
