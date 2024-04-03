@@ -4,5 +4,6 @@ numpy==1.24.1
 logparser3==1.0.4
 pm4py==2.7.11.1
 tqdm==4.64.1
-openai==1.14.3
+openai==0.28.1
+textdistance==4.5.0
 
