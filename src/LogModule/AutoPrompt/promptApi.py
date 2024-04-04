@@ -4,7 +4,7 @@ from src.QaMaker.configLoad import load_config
 openai.api_base, openai.api_key = load_config('OPENAI_API_BASE'), load_config('OPENAI_API_KEY')
 
 
-def infer_llm(instruction, exemplars, query,model='gpt-3.5-turbo', temperature=0.0, max_tokens=2048,logger=None):
+def infer_llm(instruction, exemplars, query,model='gpt-3.5-turbo-0125', temperature=0.0, max_tokens=2048,logger=None):
 
     messages = [
         # {"role": "system", "content": roleSystem},

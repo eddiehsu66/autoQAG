@@ -1,0 +1,10 @@
+{"query": "getStreamVolume  treamType: 5", "answer": "getStreamVolume  treamType: <*>"}
+{"query": "Screen frozen for +1s0ms due to Window{ca98d5 u0 com.tencent.qt.qtl/com.tencent.qt.qtl.activity.info.NewsDetailXmlActivity}", "answer": "Screen frozen for <*> due to Window{<*> u0 <*>.<*>}"}
+{"query": "getTasks: caller 10111 does not hold REAL_GET_TASKS; limiting output", "answer": "getTasks: caller <*> does not hold REAL_GET_TASKS; limiting output"}
+{"query": "registerCallback not in UI.", "answer": "registerCallback not in UI."}
+{"query": "ACTION_BATTERY_CHANGED pluggedType: 0", "answer": "ACTION_BATTERY_CHANGED pluggedType: <*>"}
+{"query": "Animating brightness: target=38, rate=200", "answer": "Animating brightness: target=<*>, rate=<*>"}
+{"query": "Skipping AppWindowToken{9f4ef63 token=Token{a64f992 ActivityRecord{de9231d u0 com.tencent.qt.qtl/.activity.info.NewsDetailXmlActivity t761}}} -- going to hide", "answer": "Skipping AppWindowToken{<*> token=Token{<*> ActivityRecord{<*> u0 <*>}}} -- going to hide"}
+{"query": "setLightsOn(true)", "answer": "setLightsOn(true)"}
+{"query": "enqueueNotificationInternal: pkg=com.tencent.mobileqq id=121 notification=Notification(pri=1 contentView=null vibrate=[100] sound=null tick defaults=0x0 flags=0x11 color=0x00000000 vis=PRIVATE)", "answer": "enqueueNotificationInternal: pkg=<*> id=<*> notification=Notification(pri=<*> contentView=null vibrate=[<*>] sound=null tick defaults=<*> flags=<*> color=<*> vis=PRIVATE)"}
+{"query": "interceptKeyTq keycode=4 interactive=true keyguardActive=false policyFlags=2b000002 down true canceled false", "answer": "interceptKeyTq keycode=<*> interactive=true keyguardActive=false policyFlags=<*> down true canceled false"}

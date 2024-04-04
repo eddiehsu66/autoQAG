@@ -1,0 +1,10 @@
+{"query": "isSimPinSecure mSimDatas is null or empty", "answer": "isSimPinSecure mSimDatas is null or empty"}
+{"query": "shouldBlockLocation  ret:true", "answer": "shouldBlockLocation  ret:true"}
+{"query": "applyOptionsLocked: Unknown animationType=0", "answer": "applyOptionsLocked: Unknown animationType=<*>"}
+{"query": "getCellLocation is blocked by permission manager uid:10111 pid:28601", "answer": "getCellLocation is blocked by permission manager uid:<*> pid:<*>"}
+{"query": "visible is system.message.count gt 0", "answer": "visible is <*> gt <*>"}
+{"query": "getAllCellInfo is blocked by permission manager . callingPackage = com.tencent.mobileqq", "answer": "getAllCellInfo is blocked by permission manager . callingPackage = <*>"}
+{"query": "mVisiblity.getValue is false", "answer": "mVisiblity.getValue is false"}
+{"query": "setLightsOn(true)", "answer": "setLightsOn(true)"}
+{"query": "cancelNotification,cancelNotificationLocked,callingUid = 10037,callingPid = 2227", "answer": "cancelNotification,cancelNotificationLocked,callingUid = <*>,callingPid = <*>"}
+{"query": "release:lock=237091223, flg=0x0, tag=\"WiredAccessoryManager\", name=android\", ws=null, uid=1000, pid=1702", "answer": "release:lock=<*>, flg=<*>, tag=\"<*>\", name=<*>, ws=<*>, uid=<*>, pid=<*>"}

@@ -5,6 +5,8 @@ import time
 from src.LogModule.AutoPrompt.promptApi import infer_llm
 from src.LogModule.AutoPrompt.selectLog import select_log
 from src.LogModule.AutoPrompt.draw import draw_plot_with_keys
+from src.LogModule.AutoPrompt.wrongReason import batchProcess
+
 androidPath = r'C:\code\src\python\autoQAG\data\loghub-master\Android'
 
 ThreadNum = 10
@@ -49,6 +51,7 @@ def TaskExtractLog(log_content, prompt, log_template):
                   f"{log_content}" \
                   f"{prompt}" \
                   f"Output according to the above requirement, without any superfluous output"
+    #前5条
     response = infer_llm(prompt_temp, None, None)
     result_item.append(log_content)
     result_item.append(log_template)
@@ -94,10 +97,18 @@ def extract_log_template(log_contents, log_templates, prompts):
 
 # 统计gpt生成的提示词的效果，由一个字典存储，{prompt: accuracy}
 # 输入：gpt生成的提示词, 由gpt生成的提示词生成的结果，一个gpt生成的提示词用log_number个log来检验效果
+
+def judge_function(template: str, degen_template: str) -> bool:
+    if template == degen_template:
+        return True
+    else:
+        return False
+
+
 def prompt_accuracy_count(gpt_prompts, results, log_number):
     Accuracy = {gpt_prompt: 0 for gpt_prompt in gpt_prompts}
     for index, item in enumerate(results):
-        if item[1] == item[3]:
+        if item[2] in gpt_prompts and judge_function(item[1], item[3]):
             Accuracy[item[2]] += 1
             # print(index)
     Accuracy = {key: value / log_number for key, value in Accuracy.items()}
@@ -110,9 +121,10 @@ def select_prompt(accuracy_dict, k):
     return sorted_keys
 
 
-def TaskSamanticPrompts(prompt, m):
+def TaskSamanticPrompts(prompt, m, wrong_reason):
     prompt_temp = f"According to the following prompt, {m} prompts are generated while maintaining the same semantics" \
                   f"The prompt is {prompt}" \
+                  f"This is the reason for the error that occurred during the previous parsing of the log :{wrong_reason}" \
                   f"The generated prompts without any superfluous output" \
                   f"For example:1.Prompt1\n2.Prompt2"
     response = infer_llm(prompt_temp, None, None)
@@ -123,29 +135,14 @@ def TaskSamanticPrompts(prompt, m):
     return list_temp
 
 
-def generate_samantic_prompts(prompts, m):
+def generate_samantic_prompts(prompts, m, result):
     semantic_prompts = prompts[:]
-
-    # for prompt in prompts:
-    #     prompt_temp = f"According to the following prompt, {m} prompts are generated while maintaining the same semantics" \
-    #                   f"The prompt is {prompt}" \
-    #                   f"The generated prompts without any superfluous output" \
-    #                   f"For example:1.Prompt1\n2.Prompt2"
-    #     # pattern = r'^[0-9.]*([\w\s]+)*$'
-    #
-    #     response = infer_llm("", prompt_temp, "", None, "")
-    #     print(prompt, ":", response + '\n')
-    #     list_temp = []
-    #     for item in response.split('\n'):
-    #         # match = re.match(pattern, item)
-    #         # if match:
-    #         list_temp.append(item[2:])
-    #     semantic_prompts += list_temp
     futures = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=ThreadNum) as executor:
         # 对于每个提示，使用submit方法提交处理任务
         for prompt in prompts:
-            future = executor.submit(TaskSamanticPrompts, prompt, m)
+            wrongReason = warp_wrongReason(result,prompt)
+            future = executor.submit(TaskSamanticPrompts, prompt, m, wrongReason)
             futures.append(future)
         concurrent.futures.wait(futures)
         # 等待所有Future对象完成，并收集结果
@@ -155,15 +152,23 @@ def generate_samantic_prompts(prompts, m):
 
 
 def taskMakePrompt():
-    Input, Output,test_input,test_output = select_log(0, shotNum)
+    Input, Output, test_input, test_output = select_log(0, shotNum)
     gerneration_prompt(Input, Output, 0)
 
 
 # 计算精度，主要需要是通过测试集来计算，仅仅对top5的提示词进行计算
 def calculate_accuracy(test_contents, test_templates, selected_k_prompt):
-    results = extract_log_template(test_contents, test_templates, gpt_prompts)
+    results = extract_log_template(test_contents, test_templates, selected_k_prompt)
     accuracy_dict = prompt_accuracy_count(gpt_prompts, results, len(test_contents))
     accuracy_asset.append(accuracy_dict)
+
+
+def warp_wrongReason(results: list, prompt: str):
+    wrong_data = []
+    for item in results:
+        if item[2] == prompt and not judge_function(item[1], item[3]):
+            wrong_data.append(item)
+    return batchProcess(wrong_data)
 
 
 if __name__ == '__main__':
@@ -171,12 +176,12 @@ if __name__ == '__main__':
     accuracy_asset = []
     start_time = time.time()
     gpt_prompts = []  # 装gpt生成的模版
-    gpt_prompts_number = 3  # gpt生成的初始模版条数
-    shotNum = 3  # 一个gpt生成的提示词用log_number个log来检验效果
+    gpt_prompts_number = 6  # gpt生成的初始模版条数
+    shotNum = 5  # 一个gpt生成的提示词用log_number个log来检验效果
     log_prompt_number = 5  # 喂给gpt产生提示词的log数量
     k = 5  # 从gpt生成的提示词中挑选前k个提示词
     m = 2  # 挑选出来的前K个提示词坐同语义处理，每个提示词生成m个同语义的提示词
-    overall_number_of_cycles = 3  # 整体循环次数
+    overall_number_of_cycles = 2  # 整体循环次数
 
     # for i in range(gpt_prompts_number):
     #     Input, Output = random_select_log(log_prompt_number)
@@ -190,20 +195,17 @@ if __name__ == '__main__':
             future = executor.submit(taskMakePrompt)
             futures.append(future)
         concurrent.futures.wait(futures)
+
+    # 第一轮次
+
     train_contents, train_templates, test_contents, test_templates = select_log(0, shotNum)
     # 由gpt生成的提示词来抽取模版
     results = extract_log_template(train_contents, train_templates, gpt_prompts)
 
     # 统计gpt生成的提示词的效果，由一个字典存储，{prompt: accuracy}
-    # zzz
-    # todo:
-    #  bug:64训练，512-64测试 done
-    #  2k->512 done
-    #  梯度更新:设计提示词
-    #  用例添加
 
     accuracy_dict = prompt_accuracy_count(gpt_prompts, results, shotNum)
-    print("第1轮的精度：", accuracy_dict)
+    print("第1轮各个提示词的精度：", accuracy_dict)
     # 从gpt生成的提示词中挑选前k个提示词
     selected_k_prompt = select_prompt(accuracy_dict, k)
     print("第1轮挑选的提示词:", selected_k_prompt)
@@ -211,9 +213,11 @@ if __name__ == '__main__':
     # selected_k_prompt_temp = ['Remove sensitive information from the inputs.', 'Remove sensitive information and limit output.']
 
     # 挑选出来的前K个提示词做同语义处理，每个提示词生成m个同语义的提示词
-    samantic_prompts = generate_samantic_prompts(selected_k_prompt, m)
+    samantic_prompts = generate_samantic_prompts(selected_k_prompt, m,results)
     print("第1轮保留的同语义的提示词:", samantic_prompts)
     print("第1轮保留的同语义的提示词长度:", len(samantic_prompts))
+
+    # 计算精度，主要需要是通过测试集来计算，对本轮次topk的提示词进行计算
     calculate_accuracy(test_contents, test_templates, selected_k_prompt)
 
     # 在n-1论测试集合
@@ -224,10 +228,10 @@ if __name__ == '__main__':
         results = extract_log_template(train_contents, train_templates, samantic_prompts)
         # 统计gpt生成的提示词的效果，由一个字典存储，{prompt: accuracy}
         accuracy_dict = prompt_accuracy_count(samantic_prompts, results, shotNum)
-        print(f"第{i + 2}轮的精度：{accuracy_dict}")
+        print(f"第{i + 2}轮各个提示词的精度：{accuracy_dict}")
         selected_k_prompt = select_prompt(accuracy_dict, k)
         print(f"第{i + 2}轮挑选的提示词：", selected_k_prompt)
-        samantic_prompts = generate_samantic_prompts(selected_k_prompt, m)
+        samantic_prompts = generate_samantic_prompts(selected_k_prompt, m,results)
         print(f"第{i + 2}轮保留的同语义的提示词：", samantic_prompts)
         print(f"第{i + 2}轮保留的同语义的提示词长度：", len(samantic_prompts))
         calculate_accuracy(test_contents, test_templates, selected_k_prompt)

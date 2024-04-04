@@ -1,0 +1,10 @@
+{"query": "Skipping, withExcluded: false, tr.intent:Intent { flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity bnds=[264,444][920,908] }", "answer": "Skipping, withExcluded: false, tr.intent:Intent { flg=<*> cmp=<*> bnds=<*> }"}
+{"query": "release:lock=189667585, flg=0x0, tag=\"*launch*\", name=android\", ws=WorkSource{10057}, uid=1000, pid=1702", "answer": "release:lock=<*>, flg=<*>, tag=\"<*>\", name=<*>, ws=<*>, uid=<*>, pid=<*>"}
+{"query": "visible is system.message.count gt 0", "answer": "visible is <*> gt <*>"}
+{"query": "acquire lock=189667585, flags=0x1, tag=\"*launch*\", name=android, ws=WorkSource{10111}, uid=1000, pid=1702", "answer": "acquire lock=<*>, flags=<*>, tag=\"<*>\", name=<*>, ws=<*>, uid=<*>, pid=<*>"}
+{"query": "getStreamVolume  treamType: 5", "answer": "getStreamVolume  treamType: <*>"}
+{"query": "overlapAmount:5.0, previousNotificationEnd:0.0, newYTranslation:-5.0, location:4, i:0, getTopPadding:333.0, getLocationOnScreen():-338", "answer": "overlapAmount:<*>.<*>, previousNotificationEnd:<*>.<*>, newYTranslation:<*>.<*>, location:<*>, i:<*>, getTopPadding:<*>.<*>, getLocationOnScreen():<*>"}
+{"query": "cancelNotificationLocked called,tell the app,reason = 8", "answer": "cancelNotificationLocked called,tell the app,reason = <*>"}
+{"query": "Skipping AppWindowToken{9f4ef63 token=Token{a64f992 ActivityRecord{de9231d u0 com.tencent.qt.qtl/.activity.info.NewsDetailXmlActivity t761}}} -- going to hide", "answer": "Skipping AppWindowToken{<*> token=Token{<*> ActivityRecord{<*> u0 <*>}}} -- going to hide"}
+{"query": "Start proc 13003:com.tencent.mobileqq:qzone/u0a111 for service com.tencent.mobileqq/cooperation.qzone.remote.logic.QzoneWebPluginProxyService", "answer": "Start proc <*>:<*>:qzone<*> for service <*>.<*>"}
+{"query": "registerCallback not in UI.", "answer": "registerCallback not in UI."}

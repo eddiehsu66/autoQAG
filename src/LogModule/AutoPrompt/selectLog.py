@@ -331,6 +331,10 @@ def candidateSample(shotNum) -> (list, list):
             writer.writerow(s)
 
 
+# 200
+# 2000->512
+# 512随机抽取200当作训练集,512-200当作测试集
+# 200->32作为候选示例，不参与训练,200-32用来训练
 def random_select_log(num, androidPath=r'C:\code\src\python\autoQAG\data\loghub-master\Android'):
     df = pd.read_csv(androidPath + r'\Android_2k.log_sampledFile.csv', encoding='utf-8')
 
@@ -399,6 +403,8 @@ def select_log(order, shotNum) -> (list, list, list, list):
 
 if __name__ == '__main__':
     # 建立候选集
-    a, b = selectLog(0,32)
+    a, b, c, d = select_log(0, 32)
     print(a)
-    print(len(b))
+    print(b)
+    print(c)
+    print(d)
