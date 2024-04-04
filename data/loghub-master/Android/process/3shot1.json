@@ -1,0 +1,3 @@
+{"query": "visible is system.time.showampm", "answer": "visible is <*>"}
+{"query": "addNotification key=0|com.tencent.mobileqq|121|null|10111", "answer": "addNotification key=<*>|<*>|<*>|null|<*>"}
+{"query": "cancelNotificationWithTag pid 28601,uid = 10111,tag = null,pkg =com.tencent.mobileqq,id =140", "answer": "cancelNotificationWithTag pid <*>,uid = <*>,tag = null,pkg =<*>,id =<*>"}

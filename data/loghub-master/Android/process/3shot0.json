@@ -1,0 +1,3 @@
+{"query": "new Process app=ProcessRecord{6eaaf00 0:com.tencent.mobileqq:qzone/u0a111}, name: com.tencent.mobileqq:qzone, euid: 0", "answer": "new Process app=ProcessRecord{<*> <*>:<*>:qzone<*>}, name: <*>:qzone, euid: <*>"}
+{"query": "applyOptionsLocked: Unknown animationType=0", "answer": "applyOptionsLocked: Unknown animationType=<*>"}
+{"query": "onNotificationVisibilityChanged called", "answer": "onNotificationVisibilityChanged called"}

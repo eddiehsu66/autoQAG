@@ -2,12 +2,12 @@ import concurrent.futures
 import csv
 import random
 import time
-from src.LogModule.promptApi import infer_llm
-from src.LogModule.selectLog import selectLog
-
+from src.LogModule.AutoPrompt.promptApi import infer_llm
+from src.LogModule.AutoPrompt.selectLog import select_log
+from src.LogModule.AutoPrompt.draw import draw_plot_with_keys
 androidPath = r'C:\code\src\python\autoQAG\data\loghub-master\Android'
 
-ThreadNum = 6
+ThreadNum = 10
 
 
 # 输入两个列表，第一个是原始log，第二个是标准模版，第三个是循环次数
@@ -35,34 +35,10 @@ def gerneration_prompt(input, output, number):
 
     prompts = [prompt1, prompt2, prompt3]
 
-    response = infer_llm(prompts[0], None, None)
-    gpt_prompts.append(response)
-    print("gpt生成的提示词:", response)
-
-
-# 随机抽取原始日志，创建input和output
-# number：随机抽取的数据条数
-
-# 验证集方式优化，n论m个提示词，取出前k个最好的，然后对这k个提示词做同义处理，每个提示词生成m个同义的提示词，B+1个提示词
-def random_select_log(number):
-    input = []
-    output = []
-    with open(androidPath + r'\Android_2k.log', 'r') as file:
-        lines = file.readlines()
-        line_count = len(lines)
-        # 随机抽取number个数据
-        random_index = random.sample(range(line_count), number)
-        for index in random_index:
-            # input.append(lines[index])
-            with open(androidPath + r'\Android_2k.log_structured.csv', 'r') as csvfile:
-                # 创建 CSV 文件读取器
-                reader = csv.reader(csvfile)
-                template_list = list(reader)
-                for index1, element in enumerate(template_list[index + 1]):
-                    if element.startswith('E') and element[1:].isdigit():
-                        output.append(template_list[index + 1][index1 + 1])
-                        input.append(template_list[index + 1][index1 - 1])
-    return input, output
+    for prompt in prompts:
+        response = infer_llm(prompt, None, None)
+        gpt_prompts.append(response)
+        print("gpt生成的提示词:", response)
 
 
 # 由gpt生成的提示词去抽取日志模版
@@ -120,7 +96,6 @@ def extract_log_template(log_contents, log_templates, prompts):
 # 输入：gpt生成的提示词, 由gpt生成的提示词生成的结果，一个gpt生成的提示词用log_number个log来检验效果
 def prompt_accuracy_count(gpt_prompts, results, log_number):
     Accuracy = {gpt_prompt: 0 for gpt_prompt in gpt_prompts}
-    print("初始精度：", Accuracy)
     for index, item in enumerate(results):
         if item[1] == item[3]:
             Accuracy[item[2]] += 1
@@ -180,20 +155,28 @@ def generate_samantic_prompts(prompts, m):
 
 
 def taskMakePrompt():
-    Input, Output = random_select_log(log_prompt_number)
-    gerneration_prompt(Input, Output, i)
+    Input, Output,test_input,test_output = select_log(0, shotNum)
+    gerneration_prompt(Input, Output, 0)
+
+
+# 计算精度，主要需要是通过测试集来计算，仅仅对top5的提示词进行计算
+def calculate_accuracy(test_contents, test_templates, selected_k_prompt):
+    results = extract_log_template(test_contents, test_templates, gpt_prompts)
+    accuracy_dict = prompt_accuracy_count(gpt_prompts, results, len(test_contents))
+    accuracy_asset.append(accuracy_dict)
 
 
 if __name__ == '__main__':
 
+    accuracy_asset = []
     start_time = time.time()
     gpt_prompts = []  # 装gpt生成的模版
-    gpt_prompts_number = 20  # gpt生成的初始模版条数
-    log_number = 50  # 一个gpt生成的提示词用log_number个log来检验效果
+    gpt_prompts_number = 3  # gpt生成的初始模版条数
+    shotNum = 3  # 一个gpt生成的提示词用log_number个log来检验效果
     log_prompt_number = 5  # 喂给gpt产生提示词的log数量
     k = 5  # 从gpt生成的提示词中挑选前k个提示词
     m = 2  # 挑选出来的前K个提示词坐同语义处理，每个提示词生成m个同语义的提示词
-    overall_number_of_cycles = 20  # 整体循环次数
+    overall_number_of_cycles = 3  # 整体循环次数
 
     # for i in range(gpt_prompts_number):
     #     Input, Output = random_select_log(log_prompt_number)
@@ -205,15 +188,21 @@ if __name__ == '__main__':
         futures = []
         for i in range(gpt_prompts_number):
             future = executor.submit(taskMakePrompt)
+            futures.append(future)
         concurrent.futures.wait(futures)
-
-    # log_contents, log_templates = random_select_log(log_number)
-    log_contents, log_templates = selectLog(0, 32)
+    train_contents, train_templates, test_contents, test_templates = select_log(0, shotNum)
     # 由gpt生成的提示词来抽取模版
-    results = extract_log_template(log_contents, log_templates, gpt_prompts)
+    results = extract_log_template(train_contents, train_templates, gpt_prompts)
 
     # 统计gpt生成的提示词的效果，由一个字典存储，{prompt: accuracy}
-    accuracy_dict = prompt_accuracy_count(gpt_prompts, results, log_number)
+    # zzz
+    # todo:
+    #  bug:64训练，512-64测试 done
+    #  2k->512 done
+    #  梯度更新:设计提示词
+    #  用例添加
+
+    accuracy_dict = prompt_accuracy_count(gpt_prompts, results, shotNum)
     print("第1轮的精度：", accuracy_dict)
     # 从gpt生成的提示词中挑选前k个提示词
     selected_k_prompt = select_prompt(accuracy_dict, k)
@@ -225,21 +214,23 @@ if __name__ == '__main__':
     samantic_prompts = generate_samantic_prompts(selected_k_prompt, m)
     print("第1轮保留的同语义的提示词:", samantic_prompts)
     print("第1轮保留的同语义的提示词长度:", len(samantic_prompts))
+    calculate_accuracy(test_contents, test_templates, selected_k_prompt)
 
     # 在n-1论测试集合
     for i in range(overall_number_of_cycles):
         # 随机抽取原始日志 用于测试-》验证集合
-        log_contents, log_templates = selectLog(i + 1, 32)
+        train_contents, train_templates, test_contents, test_templates = select_log(i + 1, shotNum)
         # 由gpt生成的提示词去抽取日志模版
-        results = extract_log_template(log_contents, log_templates, samantic_prompts)
+        results = extract_log_template(train_contents, train_templates, samantic_prompts)
         # 统计gpt生成的提示词的效果，由一个字典存储，{prompt: accuracy}
-        accuracy_dict = prompt_accuracy_count(samantic_prompts, results, log_number)
+        accuracy_dict = prompt_accuracy_count(samantic_prompts, results, shotNum)
         print(f"第{i + 2}轮的精度：{accuracy_dict}")
         selected_k_prompt = select_prompt(accuracy_dict, k)
         print(f"第{i + 2}轮挑选的提示词：", selected_k_prompt)
         samantic_prompts = generate_samantic_prompts(selected_k_prompt, m)
         print(f"第{i + 2}轮保留的同语义的提示词：", samantic_prompts)
         print(f"第{i + 2}轮保留的同语义的提示词长度：", len(samantic_prompts))
+        calculate_accuracy(test_contents, test_templates, selected_k_prompt)
 
     end_time = time.time()
     elapsed_time = end_time - start_time
@@ -248,3 +239,4 @@ if __name__ == '__main__':
     seconds = int(elapsed_time % 60)
 
     print(f"程序运行时间为: {minutes} 分钟 {seconds} 秒")
+    draw_plot_with_keys(accuracy_asset)

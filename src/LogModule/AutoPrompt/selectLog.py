@@ -1,3 +1,4 @@
+import csv
 import json
 import os
 import shutil
@@ -236,16 +237,62 @@ def hierichical_distribute(hierichical_clusters, shot, labelled_logs=[]):
     return candidate_samples
 
 
-def selectLog(order,shotNum)->(list,list):
+def selectLog(order, shotNum) -> (list, list, list, list):
     data_dir = "C:/code/src/python/autoQAG/data/loghub-master/Android"
     if not os.path.exists(f"{data_dir}/process"):
         os.makedirs(f"{data_dir}/process")
 
     log_file = load_config("PARSE_SETTING")["Android"]["log_file"]
 
+    labelled_logs = pd.read_csv(f'{data_dir}/{log_file}_sampledFile.csv')
+
+    k_rate = 1
+    length = int(k_rate * len(labelled_logs))
+    labelled_logs = labelled_logs[:length]
+
+    contents = {}
+    for i, x in enumerate(labelled_logs['Content'].to_list()):
+        x, fx = clean(x)
+        if len(x.split()) > 1:
+            contents[i] = (x, fx)
+
+    hierichical_clusters = hierichical_clustering(contents)
+
+    shot = shotNum
+
+    sampled_ids = hierichical_distribute(hierichical_clusters, shot, labelled_logs['Content'].to_list())
+    sampled_templates = set([row['EventTemplate'] for _, row in labelled_logs.take(sampled_ids).iterrows()])
+
+    candidate_samples = [(row['Content'], row['EventTemplate']) for _, row in
+                         labelled_logs.take(sampled_ids).iterrows()]
+    candidate_samples = [{"query": x[0], "answer": x[1]} for x in
+                         candidate_samples]
+    with open(f"{data_dir}/process/{shot}shot{order}.json", "w") as f:
+        for s in candidate_samples[:shot]:
+            f.write(json.dumps(s) + "\n")
+
+    queries = [sample["query"] for sample in candidate_samples]
+    answers = [sample["answer"] for sample in candidate_samples]
+
+    # 获取剩余的数据
+    remaining_data = labelled_logs.drop(sampled_ids)
+    remaining_samples = [(row['Content'], row['EventTemplate']) for _, row in remaining_data.iterrows()]
+    remaining_samples = [{"query": x[0], "answer": x[1]} for x in remaining_samples]
+
+    # remaining_queries = [sample["query"] for sample in remaining_samples]
+    # remaining_answers = [sample["answer"] for sample in remaining_samples]
+
+    return queries, answers
+
+
+def candidateSample(shotNum) -> (list, list):
+    data_dir = "C:/code/src/python/autoQAG/data/loghub-master/Android"
+
+    log_file = load_config("PARSE_SETTING")["Android"]["log_file"]
+
     labelled_logs = pd.read_csv(f'{data_dir}/{log_file}_structured.csv')
 
-    k_rate = 0.2
+    k_rate = 1
     length = int(k_rate * len(labelled_logs))
     labelled_logs = labelled_logs[:length]
     # labelled_logs = labelled_logs[:length].drop_duplicates(['Content'], keep='first')
@@ -265,6 +312,68 @@ def selectLog(order,shotNum)->(list,list):
     sampled_ids = hierichical_distribute(hierichical_clusters, shot, labelled_logs['Content'].to_list())
     sampled_templates = set([row['EventTemplate'] for _, row in labelled_logs.take(sampled_ids).iterrows()])
 
+    candidate_samples = [(row['Content'], row['EventTemplate']) for _, row in
+                         labelled_logs.take(sampled_ids).iterrows()]
+    candidate_samples = [{"Content": x[0], "EventTemplate": x[1]} for x in
+                         candidate_samples]
+
+    fieldnames = candidate_samples[0].keys()
+
+    # 打开文件准备写入
+    with open(f"{data_dir}/Android_2k.log_sampledFile.csv", "w", newline='', encoding='utf-8') as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+
+        # 写入列名作为CSV文件的头部
+        writer.writeheader()
+
+        # 遍历样本并写入
+        for s in candidate_samples[:shot]:
+            writer.writerow(s)
+
+
+def random_select_log(num, androidPath=r'C:\code\src\python\autoQAG\data\loghub-master\Android'):
+    df = pd.read_csv(androidPath + r'\Android_2k.log_sampledFile.csv', encoding='utf-8')
+
+    # 随机抽取num个行
+    train_indices = sorted(random.sample(range(len(df)), num))
+    train_df = df.iloc[train_indices]
+
+    # 获取剩余的行
+    test_df = df.drop(train_indices)
+
+    # 分别保存到train_input, train_output, test_input, test_output
+    train_input = train_df.drop(columns=['Content'])
+    train_output = train_df['EventTemplate']
+    test_input = test_df.drop(columns=['Content'])
+    test_output = test_df['EventTemplate']
+
+    return train_input, train_output, test_input, test_output
+
+
+def select_log(order, shotNum) -> (list, list, list, list):
+    data_dir = "C:/code/src/python/autoQAG/data/loghub-master/Android"
+    if not os.path.exists(f"{data_dir}/process"):
+        os.makedirs(f"{data_dir}/process")
+
+    log_file = load_config("PARSE_SETTING")["Android"]["log_file"]
+
+    labelled_logs = pd.read_csv(f'{data_dir}/{log_file}_sampledFile.csv')
+
+    k_rate = 1
+    length = int(k_rate * len(labelled_logs))
+    labelled_logs = labelled_logs[:length]
+
+    contents = {}
+    for i, x in enumerate(labelled_logs['Content'].to_list()):
+        x, fx = clean(x)
+        if len(x.split()) > 1:
+            contents[i] = (x, fx)
+
+    hierichical_clusters = hierichical_clustering(contents)
+
+    shot = shotNum
+
+    sampled_ids = hierichical_distribute(hierichical_clusters, shot, labelled_logs['Content'].to_list())
 
     candidate_samples = [(row['Content'], row['EventTemplate']) for _, row in
                          labelled_logs.take(sampled_ids).iterrows()]
@@ -275,12 +384,21 @@ def selectLog(order,shotNum)->(list,list):
             f.write(json.dumps(s) + "\n")
 
     queries = [sample["query"] for sample in candidate_samples]
-
-    # 提取 answer 的列表
     answers = [sample["answer"] for sample in candidate_samples]
 
-    return queries,answers
+    # 获取剩余的数据
+    remaining_data = labelled_logs.drop(sampled_ids)
+    remaining_samples = [(row['Content'], row['EventTemplate']) for _, row in remaining_data.iterrows()]
+    remaining_samples = [{"query": x[0], "answer": x[1]} for x in remaining_samples]
+
+    remaining_queries = [sample["query"] for sample in remaining_samples]
+    remaining_answers = [sample["answer"] for sample in remaining_samples]
+
+    return queries, answers, remaining_queries, remaining_answers
+
 
 if __name__ == '__main__':
-    for i in range(5):
-        selectLog(i,32)
+    # 建立候选集
+    a, b = selectLog(0,32)
+    print(a)
+    print(len(b))

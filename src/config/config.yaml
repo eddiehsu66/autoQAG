@@ -1,6 +1,6 @@
 
 OPENAI_API_KEY:
-OPENAI_API_BASE: https://api.aikey.one/v1
+OPENAI_API_BASE: https://api.openai-proxy.org/v1
 DATA_LIST: Android,Apache,BGL,Hadoop,HDFS,HealthApp,HPC,Linux,Mac,OpenSSH,OpenStack,Proxifier,Spark,Thunderbird,Windows,Zookeeper
 BASE_PROMPT: 您是一个问答对生成器。我提供了相关的文本片段以及流程内容。您需要生成一个问题和相应的答案，并确保问题和答案都基于上下文。如果无法生成问题，请回复“当前语句段无法生成问题。”在回答中不要包含过于个人化的内容。请记住，您只能根据提供的内容来生成问题与答案。必须使用Chinese进行回应。
 PARSE_SETTING:
