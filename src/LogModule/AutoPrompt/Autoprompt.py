@@ -6,7 +6,7 @@ from src.LogModule.AutoPrompt.promptApi import infer_llm
 from src.LogModule.AutoPrompt.selectLog import select_log
 from src.LogModule.AutoPrompt.draw import draw_plot_with_keys
 from src.LogModule.AutoPrompt.wrongReason import batchProcess
-
+from src.LogModule.CasePrompt.promptSelect import prompt_select
 androidPath = r'C:\code\src\python\autoQAG\data\loghub-master\Android'
 
 ThreadNum = 10
@@ -48,10 +48,17 @@ def gerneration_prompt(input, output, number):
 def TaskExtractLog(log_content, prompt, log_template):
     result_item = []
     prompt_temp = "You will be provided with a log message." \
-                  f"{log_content}" \
+                  f"log message:{log_content}," \
                   f"{prompt}" \
-                  f"Output according to the above requirement, without any superfluous output"
+                  f"Output according to the above requirement, without any superfluous output" \
+                  f"Please follow the example below to extract the log template: \n"  \
     #前5条
+    similiar_log = prompt_select(log_content, 5)
+    for item in similiar_log:
+        prompt_temp += f"Log message: `{item['Content']}`" \
+                       f"Log template: `{item['answer']}` \n"
+
+    # print("目前的提示词："+prompt_temp)
     response = infer_llm(prompt_temp, None, None)
     result_item.append(log_content)
     result_item.append(log_template)

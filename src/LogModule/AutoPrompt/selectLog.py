@@ -285,12 +285,16 @@ def selectLog(order, shotNum) -> (list, list, list, list):
     return queries, answers
 
 
-def candidateSample(shotNum) -> (list, list):
+def candidateSample(shotNum,mode = "others") -> (list, list):
+    # 当为sampled时，从sampledFile中读取数据，否则从structured中读取数据
     data_dir = "C:/code/src/python/autoQAG/data/loghub-master/Android"
 
     log_file = load_config("PARSE_SETTING")["Android"]["log_file"]
 
-    labelled_logs = pd.read_csv(f'{data_dir}/{log_file}_structured.csv')
+    if mode == "sampled":
+        labelled_logs = pd.read_csv(f'{data_dir}/{log_file}_trainData.csv')
+    else:
+        labelled_logs = pd.read_csv(f'{data_dir}/{log_file}_structured.csv')
 
     k_rate = 1
     length = int(k_rate * len(labelled_logs))
@@ -310,31 +314,21 @@ def candidateSample(shotNum) -> (list, list):
     shot = shotNum
 
     sampled_ids = hierichical_distribute(hierichical_clusters, shot, labelled_logs['Content'].to_list())
-    sampled_templates = set([row['EventTemplate'] for _, row in labelled_logs.take(sampled_ids).iterrows()])
 
-    candidate_samples = [(row['Content'], row['EventTemplate']) for _, row in
-                         labelled_logs.take(sampled_ids).iterrows()]
-    candidate_samples = [{"Content": x[0], "EventTemplate": x[1]} for x in
-                         candidate_samples]
-
-    fieldnames = candidate_samples[0].keys()
+    sampled_data = labelled_logs.take(sampled_ids)
+    remaining_data = labelled_logs.drop(sampled_ids)
 
     # 打开文件准备写入
-    with open(f"{data_dir}/Android_2k.log_sampledFile.csv", "w", newline='', encoding='utf-8') as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+    if mode == "sampled":
+        sampled_data_outpath = f"{data_dir}/Android_2k.log_32sampled.csv"
+        remaining_data_outpath = f"{data_dir}/Android_2k.log_remainingSampled.csv"
+        sampled_data.to_csv(sampled_data_outpath, index=False,encoding='utf-8')
+        remaining_data.to_csv(remaining_data_outpath, index=False,encoding='utf-8')
+    else:
+        outpath = f"{data_dir}/Android_2k.log_sampledFile.csv"
+        sampled_data.to_csv(outpath, index=False,encoding='utf-8')
 
-        # 写入列名作为CSV文件的头部
-        writer.writeheader()
 
-        # 遍历样本并写入
-        for s in candidate_samples[:shot]:
-            writer.writerow(s)
-
-
-# 200
-# 2000->512
-# 512随机抽取200当作训练集,512-200当作测试集
-# 200->32作为候选示例，不参与训练,200-32用来训练
 def random_select_log(num, androidPath=r'C:\code\src\python\autoQAG\data\loghub-master\Android'):
     df = pd.read_csv(androidPath + r'\Android_2k.log_sampledFile.csv', encoding='utf-8')
 
@@ -346,12 +340,13 @@ def random_select_log(num, androidPath=r'C:\code\src\python\autoQAG\data\loghub-
     test_df = df.drop(train_indices)
 
     # 分别保存到train_input, train_output, test_input, test_output
-    train_input = train_df.drop(columns=['Content'])
-    train_output = train_df['EventTemplate']
-    test_input = test_df.drop(columns=['Content'])
-    test_output = test_df['EventTemplate']
-
-    return train_input, train_output, test_input, test_output
+    # train_input = train_df.drop(columns=['Content'])
+    # train_output = train_df['EventTemplate']
+    # test_input = test_df.drop(columns=['Content'])
+    # test_output = test_df['EventTemplate']
+    train_df.to_csv(androidPath + r'\Android_2k.log_trainData.csv', index=False, encoding='utf-8')
+    test_df.to_csv(androidPath + r'\Android_2k.log_testData.csv', index=False, encoding='utf-8')
+    # return train_input, train_output, test_input, test_output
 
 
 def select_log(order, shotNum) -> (list, list, list, list):
@@ -402,9 +397,6 @@ def select_log(order, shotNum) -> (list, list, list, list):
 
 
 if __name__ == '__main__':
-    # 建立候选集
-    a, b, c, d = select_log(0, 32)
-    print(a)
-    print(b)
-    print(c)
-    print(d)
+    # candidateSample(512,'others')
+    # random_select_log(200)
+    candidateSample(32,'sampled')
