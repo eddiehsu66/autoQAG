@@ -281,7 +281,7 @@ def selectLog(order, shotNum) -> (list, list, list, list):
     return queries, answers
 
 
-def candidateSample(shotNum,mode = "others") -> (list, list):
+def candidateSample(shotNum, mode="others") -> (list, list):
     # 当为sampled时，从sampledFile中读取数据，否则从structured中读取数据
     data_dir = "C:/code/src/python/autoQAG/data/loghub-master/Android"
 
@@ -318,11 +318,11 @@ def candidateSample(shotNum,mode = "others") -> (list, list):
     if mode == "sampled":
         sampled_data_outpath = f"{data_dir}/Android_2k.log_32sampled.csv"
         remaining_data_outpath = f"{data_dir}/Android_2k.log_remainingSampled.csv"
-        sampled_data.to_csv(sampled_data_outpath, index=False,encoding='utf-8')
-        remaining_data.to_csv(remaining_data_outpath, index=False,encoding='utf-8')
+        sampled_data.to_csv(sampled_data_outpath, index=False, encoding='utf-8')
+        remaining_data.to_csv(remaining_data_outpath, index=False, encoding='utf-8')
     else:
         outpath = f"{data_dir}/Android_2k.log_sampledFile.csv"
-        sampled_data.to_csv(outpath, index=False,encoding='utf-8')
+        sampled_data.to_csv(outpath, index=False, encoding='utf-8')
 
 
 def random_select_log(num, androidPath=r'C:\code\src\python\autoQAG\data\loghub-master\Android'):
@@ -392,7 +392,43 @@ def select_log(order, shotNum) -> (list, list, list, list):
     return queries, answers, remaining_queries, remaining_answers
 
 
+def get_train_log() -> (list, list):
+    data_dir = "C:/code/src/python/autoQAG/data/loghub-master/Android"
+    log_file = load_config("PARSE_SETTING")["Android"]["log_file"]
+    labelled_logs = pd.read_csv(f'{data_dir}/{log_file}_remainingSampled.csv')
+
+    content_list = labelled_logs['Content'].tolist()
+    template_list = labelled_logs['EventTemplate'].tolist()
+
+    # 返回两个列表
+    return content_list, template_list
+
+
+def get_test_log() -> (list, list):
+    data_dir = "C:/code/src/python/autoQAG/data/loghub-master/Android"
+    log_file = load_config("PARSE_SETTING")["Android"]["log_file"]
+    labelled_logs = pd.read_csv(f'{data_dir}/{log_file}_testData.csv')
+
+    content_list = labelled_logs['Content'].tolist()
+    template_list = labelled_logs['EventTemplate'].tolist()
+
+    # 返回两个列表
+    return content_list, template_list
+
+
+def get_random_log(num) -> (list, list):
+    data_dir = "C:/code/src/python/autoQAG/data/loghub-master/Android"
+    df = pd.read_csv(data_dir + r'\Android_2k.log_32sampled.csv', encoding='utf-8')
+    # 随机抽取num个行
+    indices = sorted(random.sample(range(len(df)), num))
+    df = df.iloc[indices]
+
+    content_list = df['Content'].tolist()
+    template_list = df['EventTemplate'].tolist()
+
+    return content_list, template_list
+
 if __name__ == '__main__':
     # candidateSample(512,'others')
     # random_select_log(200)
-    candidateSample(32,'sampled')
+    print(len(get_test_log()[0]))

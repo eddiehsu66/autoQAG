@@ -1,3 +1,0 @@
-{"query": "onReceive, action:android.intent.action.BATTERY_CHANGED", "answer": "onReceive, action:<*>"}
-{"query": "addNotification key=0|com.tencent.mm|4097|null|10112", "answer": "addNotification key=<*>|<*>|<*>|null|<*>"}
-{"query": "updateDimmedActivatedHideSensitive overlap:true", "answer": "updateDimmedActivatedHideSensitive overlap:true"}

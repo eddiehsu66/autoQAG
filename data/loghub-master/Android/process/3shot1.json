@@ -1,3 +1,0 @@
-{"query": "Start dump, calling from : pid=12782, uid=1000", "answer": "Start dump, calling from : pid=<*>, uid=<*>"}
-{"query": "shouldBlockLocation running ...", "answer": "shouldBlockLocation running ..."}
-{"query": "cancelNotification,cancelNotificationLocked,callingUid = 10111,callingPid = 28601", "answer": "cancelNotification,cancelNotificationLocked,callingUid = <*>,callingPid = <*>"}

@@ -1,3 +1,0 @@
-{"query": "rotationForOrientationLw(orient=1, last=0); user=0 USER_ROTATION_LOCKED", "answer": "rotationForOrientationLw(orient=<*>, last=<*>); user=<*> USER_ROTATION_LOCKED"}
-{"query": "setSpeakerphoneOn on:true", "answer": "setSpeakerphoneOn on:true"}
-{"query": "userActivityNoUpdateLocked: eventTime=261870094, event=2, flags=0x0, uid=1000", "answer": "userActivityNoUpdateLocked: eventTime=<*>, event=<*>, flags=<*>, uid=<*>"}

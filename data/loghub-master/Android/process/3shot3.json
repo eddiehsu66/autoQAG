@@ -1,3 +1,0 @@
-{"query": "shouldBlockLocation running ...", "answer": "shouldBlockLocation running ..."}
-{"query": "makeExpandedInvisible: mExpandedVisible=true", "answer": "makeExpandedInvisible: mExpandedVisible=true"}
-{"query": "ActivityManagerService,attachApplication,callingPid = 13094", "answer": "ActivityManagerService,attachApplication,callingPid = <*>"}

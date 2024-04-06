@@ -1,5 +1,0 @@
-{"query": "overlapAmount:5.0, previousNotificationEnd:0.0, newYTranslation:-5.0, location:4, i:0, getTopPadding:333.0, getLocationOnScreen():-338", "answer": "overlapAmount:<*>.<*>, previousNotificationEnd:<*>.<*>, newYTranslation:<*>.<*>, location:<*>, i:<*>, getTopPadding:<*>.<*>, getLocationOnScreen():<*>"}
-{"query": "ActivityManagerService,attachApplication,callingPid = 13094", "answer": "ActivityManagerService,attachApplication,callingPid = <*>"}
-{"query": "enqueueNotificationInternal: n.getKey = 0|com.tencent.mm|4097|null|10112", "answer": "enqueueNotificationInternal: n.getKey = <*>"}
-{"query": "received broadcast android.intent.action.TIME_TICK", "answer": "received broadcast <*>"}
-{"query": "cancelNotification,cancelNotificationLocked,callingUid = 10037,callingPid = 2227", "answer": "cancelNotification,cancelNotificationLocked,callingUid = <*>,callingPid = <*>"}
