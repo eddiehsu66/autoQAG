@@ -1,20 +1,16 @@
-import csv
 import json
 import os
-import shutil
 
 import pandas as pd
 import re
-import string
 from sklearn.utils import shuffle
 import textdistance
 import random
 import heapq
-from collections import Counter, defaultdict, deque, OrderedDict
-from sklearn.feature_extraction._stop_words import ENGLISH_STOP_WORDS
+from collections import Counter
 import time
 import calendar
-from src.QaMaker.configLoad import load_config
+from src.config.configLoad import load_config
 
 
 def generate_logformat_regex(log_format):

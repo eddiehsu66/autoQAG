@@ -1,7 +1,7 @@
 import os
 
 from src.QaMaker.gptApi import gptApi
-from src.QaMaker.configLoad import load_config
+from src.config.configLoad import load_config
 from src.QaMaker.util import extractQA
 
 

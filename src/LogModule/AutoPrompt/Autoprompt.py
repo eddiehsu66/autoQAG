@@ -59,7 +59,7 @@ def TaskExtractLog(log_content, prompt, log_template):
                        f"Log template: `{item['answer']}` \n"
 
     # print("目前的提示词："+prompt_temp)
-    response = infer_llm(prompt_temp, None, None)
+    response = infer_llm(prompt_temp, None, None, cached = True)
     result_item.append(log_content)
     result_item.append(log_template)
     result_item.append(prompt)

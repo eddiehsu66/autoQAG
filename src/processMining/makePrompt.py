@@ -1,4 +1,4 @@
-from src.QaMaker.configLoad import load_config
+from src.config.configLoad import load_config
 from scripts.dataFrame import strList2String
 
 

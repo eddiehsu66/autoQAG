@@ -1,5 +1,5 @@
 import openai
-from src.QaMaker.configLoad import load_config
+from src.config.configLoad import load_config
 openai.api_base, openai.api_key = load_config('OPENAI_API_BASE'), load_config('OPENAI_API_KEY')
 
 

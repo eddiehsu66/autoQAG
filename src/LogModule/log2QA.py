@@ -8,7 +8,7 @@ from tqdm import tqdm
 
 sys.path.append('src/QaMaker')
 from src.QaMaker.qaServer import QaServer
-from src.QaMaker.configLoad import find_nearest_dir
+from src.config.configLoad import find_nearest_dir
 from src.processMining.makePrompt import makePrompt
 
 

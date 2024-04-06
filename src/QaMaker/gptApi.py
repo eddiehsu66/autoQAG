@@ -1,9 +1,9 @@
 import os
-from src.QaMaker.configLoad import load_config
+from src.config.configLoad import load_config
 from langchain.chat_models import ChatOpenAI
 from src.QaMaker.util import tidy
 from langchain.schema import (
-    AIMessage,  # 等价于OpenAI接口中的assistant role
+    # 等价于OpenAI接口中的assistant role
     HumanMessage,  # 等价于OpenAI接口中的user role
     SystemMessage  # 等价于OpenAI接口中的system role
 )

@@ -3,7 +3,7 @@ import sys
 import os
 
 sys.path.append('/src/QaMaker')
-from src.QaMaker.configLoad import load_config, find_nearest_dir
+from src.config.configLoad import load_config, find_nearest_dir
 
 def mergeLog(filename: str):
     base = find_nearest_dir('data')

@@ -1,7 +1,7 @@
 import os
 
 from logparser.Drain import LogParser
-from src.QaMaker.configLoad import load_config,find_nearest_dir
+from src.config.configLoad import load_config,find_nearest_dir
 
 
 def logParse(fileName:str):

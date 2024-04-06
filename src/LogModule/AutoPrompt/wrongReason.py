@@ -20,7 +20,7 @@ def wrongReason(batch_contents: list):
     """
 
     # 思路：
-    return infer_llm(prompt_temp, None, None)
+    return infer_llm(prompt_temp, None, None, cached = True)
 
 
 def process_group(group):
