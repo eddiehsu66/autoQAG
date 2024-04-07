@@ -20,6 +20,9 @@ def strList2String(path: str, strList: str) -> str:
         getByColumnName(path, str(id), 'Content',contentList)
     return '\n'.join(contentList)
 
+def covertListToDataFrame(extracted_data, columnsName):
+    df = pd.DataFrame(extracted_data, columns=[columnsName])
+    return df
 
 if __name__ == '__main__':
     print(strList2String(r'C:\code\TempHub\pythonp\autoQAG\data\loghub-master\Test\Test_2k.log_structured.csv',

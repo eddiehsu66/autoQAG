@@ -1,46 +1,42 @@
 import matplotlib.pyplot as plt
 import matplotlib
+
 # 设置matplotlib的字体为支持中文的字体，例如：微软雅黑
 matplotlib.rcParams['font.family'] = 'Microsoft YaHei'
 matplotlib.rcParams['font.size'] = 10
 # 解决负号'-'显示为方块的问题
 matplotlib.rcParams['axes.unicode_minus'] = False
+
+
 def draw_plot_with_keys(data):
-    max_values = []
-    min_values = []
-    avg_values = []
-    max_keys = []
-    min_keys = []
+    # [ga, fga, pa]
+    max_pa = []
+    max_ga = []
+    max_fga = []
+    for i in data:
+        max_ga_value = 0
+        max_fga_value = 0
+        max_pa_value = 0
+        for j in i.values():
+            max_ga_value = max(max_ga_value, j[0])
+            max_fga_value = max(max_fga_value, j[1])
+            max_pa_value = max(max_pa_value, j[2])
+        max_ga.append(max_ga_value)
+        max_fga.append(max_fga_value)
+        max_pa.append(max_pa_value)
 
-    for item in data:
-        max_key = max(item, key=item.get)
-        min_key = min(item, key=item.get)
-        max_values.append(item[max_key])
-        min_values.append(item[min_key])
-        avg_values.append(sum(item.values()) / len(item))
-        max_keys.append(max_key)
-        min_keys.append(min_key)
-
-    # 绘制图表
-    plt.figure(figsize=(12, 8))
     x_indexes = range(len(data))
-
-    plt.plot(x_indexes, max_values, label='最大值', marker='o')
-    plt.plot(x_indexes, min_values, label='最小值', marker='s')
-    plt.plot(x_indexes, avg_values, label='平均值', marker='^')
-
-    # 添加最大值和最小值的文本标签
-    for i, (max_val, min_val) in enumerate(zip(max_values, min_values)):
-        plt.text(i, max_val, f'{max_keys[i]}: {max_val:.2f}', ha='right', va='bottom')
-        plt.text(i, min_val, f'{min_keys[i]}: {min_val:.2f}', ha='left', va='top')
-
+    plt.figure(figsize=(12, 8))
+    plt.plot(x_indexes, max_pa, color='red',label='pa')
+    plt.plot(x_indexes, max_ga, color='green',label='ga')
+    plt.plot(x_indexes, max_fga, color='blue',label='fga')
     plt.title('autoPrompt')
     plt.xlabel('迭代次数')
     plt.ylabel('准确率')
     plt.legend()
     plt.grid(True)
     path = 'C:/code/src/python/autoQAG/result/result.png'
-    plt.savefig(path,dpi=300)
+    plt.savefig(path, dpi=300)
 
 
 if __name__ == '__main__':
