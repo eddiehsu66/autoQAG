@@ -1,7 +1,7 @@
 import time
 from src.LogModule.AutoPrompt.promptBranch.SamanticPrompts import generate_samantic_prompts
 from src.LogModule.AutoPrompt.selectLog import get_train_log, get_test_log
-from src.LogModule.AutoPrompt.draw import draw_plot_with_keys
+from src.LogModule.AutoPrompt.draw import draw_plot_with_keys, draw_plotBox
 from src.LogModule.AutoPrompt.promptBranch.extract_log import extract_log_template
 from src.LogModule.AutoPrompt.promptBranch.init_prompt import init_prompt
 from src.evaluation.accuracy import get_topK_prompt, calculate_accuracy_test
@@ -17,7 +17,7 @@ if __name__ == '__main__':
     start_time = time.time()
     k = 5  # 从gpt生成的提示词中挑选前k个提示词
     m = 2  # 挑选出来的前K个提示词坐同语义处理，每个提示词生成m个同语义的提示词
-    overall_number_of_cycles = 3  # 整体循环次数
+    overall_number_of_cycles = 5  # 整体循环次数
 
     train_contents, train_templates = get_train_log()
     test_contents, test_templates = get_test_log()
@@ -53,5 +53,6 @@ if __name__ == '__main__':
     seconds = int(elapsed_time % 60)
     print(f"程序运行时间为: {minutes} 分钟 {seconds} 秒")
     draw_plot_with_keys(test_accuracy_asset)
+    draw_plotBox(test_accuracy_asset)
     print("train_accuracy_asset:")
     print(train_accuracy_asset)

@@ -98,16 +98,13 @@ def correct_lstm(groudtruth, parsedresult):
     tokens1 = groudtruth.split(' ')
     tokens2 = parsedresult.split(' ')
     tokens1 = ["<*>" if "<*>" in token else token for token in tokens1]
+    tokens2 = ["<*>" if "<*>" in token else token for token in tokens2]
     return tokens1 == tokens2
 
 
 # 计算ga和fga
 
 def calculate_ga_fga(df_groundtruth, df_parsedlog):
-    # 输入的是两个dataframe
-    # df_groundtruth = pd.read_csv(groundtruth)
-    # df_parsedlog = pd.read_csv(parsedresult)
-    # Remove invalid groundtruth event Ids
     null_logids = df_groundtruth[~df_groundtruth['EventTemplate'].isnull()].index
     df_groundtruth = df_groundtruth.loc[null_logids]
     df_parsedlog = df_parsedlog.loc[null_logids]

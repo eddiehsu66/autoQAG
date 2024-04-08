@@ -1,7 +1,10 @@
+import random
+
 from src.LogModule.AutoPrompt.promptApi import infer_llm
 import concurrent.futures
 from src.config.configLoad import load_config
 from src.LogModule.AutoPrompt.promptBranch.wrongReason import batchProcess
+from src.evaluation.accuracy import correct_lstm
 
 
 def TaskSamanticPrompts(prompt, wrong_reason):
@@ -20,11 +23,11 @@ def TaskSamanticPrompts(prompt, wrong_reason):
                f"These are some possible reasons for poor performance: <START>{wrong_reason}<END>"
                f"Based on the prompt word <START>{prompt}<END>, generate a new prompt word with the same semantics")
     prompts = [prompt1, prompt2, prompt3]
-    list_temp = []
     for prompt in prompts:
+        list_temp = []
         response = infer_llm(prompt, None, None)
         list_temp.append(response)
-    return list_temp
+        return list_temp
 
 
 def generate_samantic_prompts(prompts, result):
@@ -45,13 +48,6 @@ def generate_samantic_prompts(prompts, result):
 def warp_wrongReason(results: list, prompt: str):
     wrong_data = []
     for item in results:
-        if item[2] == prompt and not judge_function(item[1], item[3]):
+        if item[2] == prompt and not correct_lstm(item[1],item[3]):
             wrong_data.append(item)
     return batchProcess(wrong_data)
-
-
-def judge_function(template: str, degen_template: str) -> bool:
-    if template == degen_template:
-        return True
-    else:
-        return False

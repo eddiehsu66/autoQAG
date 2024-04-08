@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import matplotlib
+import numpy as np
 
 # 设置matplotlib的字体为支持中文的字体，例如：微软雅黑
 matplotlib.rcParams['font.family'] = 'Microsoft YaHei'
@@ -8,217 +9,436 @@ matplotlib.rcParams['font.size'] = 10
 matplotlib.rcParams['axes.unicode_minus'] = False
 
 
-def draw_plot_with_keys(data):
-    # [ga, fga, pa]
-    max_pa = []
-    max_ga = []
-    max_fga = []
-    for i in data:
-        max_ga_value = 0
-        max_fga_value = 0
-        max_pa_value = 0
-        for j in i.values():
-            max_ga_value = max(max_ga_value, j[0])
-            max_fga_value = max(max_fga_value, j[1])
-            max_pa_value = max(max_pa_value, j[2])
-        max_ga.append(max_ga_value)
-        max_fga.append(max_fga_value)
-        max_pa.append(max_pa_value)
+def draw_plotBox(data):
+    ga_values = []
+    fga_values = []
+    pa_values = []
 
+    # 从data中提取每个指标的所有值
+    for record in data:
+        for values in record.values():
+            ga_values.append(values[0])
+            fga_values.append(values[1])
+            pa_values.append(values[2])
+
+    # 准备绘制箱体图的数据
+    data_to_plot = [ga_values, fga_values, pa_values]
+
+    # 创建一个图形实例
+    plt.figure(figsize=(10, 6))
+
+    # 自定义颜色，调整为浅绿色、浅黄色和浅蓝色
+    colors = ['#90EE90', '#FFFFE0', '#ADD8E6']
+
+    # 绘制箱体图
+    box = plt.boxplot(data_to_plot, patch_artist=True, labels=['GA', 'FGA', 'PA'], showmeans=False,
+                      showfliers=False,
+                      whiskerprops={'linewidth':0.5,'color': 'black'},  # 将线条变细
+                      capprops={'linewidth':0.5,'color': 'black'},  # 将线条变细
+                      medianprops={'linewidth':0.5,'color': 'black'},  # 将线条变细
+                      boxprops={'linewidth':0.5, 'edgecolor': 'black'})  # 将线条变细且边缘为黑色
+
+    # 设置颜色
+    for patch, color in zip(box['boxes'], colors):
+        patch.set_facecolor(color)
+
+    # 设置图表标题和坐标轴标签
+    plt.title('指标箱体图')
+    plt.xlabel('指标')
+    plt.ylabel('值')
+
+    # 显示网格
+    plt.grid(True, linestyle='--', alpha=0.6)
+    path = 'C:/code/src/python/autoQAG/result/plotBox.png'
+    plt.savefig(path, dpi=300)
+
+
+def draw_plot_with_keys(data):
+    max_pa, min_pa, avg_pa = [], [], []
+    max_ga, min_ga, avg_ga = [], [], []
+    max_fga, min_fga, avg_fga = [], [], []
+
+    for i in data:
+        # 初始化临时列表来存储每个指标的所有值，以便计算平均值
+        temp_ga, temp_fga, temp_pa = [], [], []
+
+        for j in i.values():
+            temp_ga.append(j[0])
+            temp_fga.append(j[1])
+            temp_pa.append(j[2])
+
+        # 计算最大值、最小值和平均值
+        max_ga.append(max(temp_ga))
+        min_ga.append(min(temp_ga))
+        avg_ga.append(sum(temp_ga) / len(temp_ga))
+
+        max_fga.append(max(temp_fga))
+        min_fga.append(min(temp_fga))
+        avg_fga.append(sum(temp_fga) / len(temp_fga))
+
+        max_pa.append(max(temp_pa))
+        min_pa.append(min(temp_pa))
+        avg_pa.append(sum(temp_pa) / len(temp_pa))
+
+    # 绘图
     x_indexes = range(len(data))
     plt.figure(figsize=(12, 8))
-    plt.plot(x_indexes, max_pa, color='red',label='pa')
-    plt.plot(x_indexes, max_ga, color='green',label='ga')
-    plt.plot(x_indexes, max_fga, color='blue',label='fga')
-    plt.title('autoPrompt')
+
+    # 绘制最大值曲线
+    plt.plot(x_indexes, max_pa, color='red', label='Max PA')
+    plt.plot(x_indexes, max_ga, color='green', label='Max GA')
+    plt.plot(x_indexes, max_fga, color='blue', label='Max FGA')
+
+    # 绘制最小值曲线
+    plt.plot(x_indexes, min_pa, color='red', label='Min PA', linestyle=':')
+    plt.plot(x_indexes, min_ga, color='green', label='Min GA', linestyle=':')
+    plt.plot(x_indexes, min_fga, color='blue', label='Min FGA', linestyle=':')
+
+    # 绘制平均值曲线
+    plt.plot(x_indexes, avg_pa, color='red', label='Avg PA', linestyle='--')
+    plt.plot(x_indexes, avg_ga, color='green', label='Avg GA', linestyle='--')
+    plt.plot(x_indexes, avg_fga, color='blue', label='Avg FGA', linestyle='--')
+
+    # 设置图表标题和坐标轴标签
+    plt.title('指标分析')
     plt.xlabel('迭代次数')
-    plt.ylabel('准确率')
+    plt.ylabel('值')
+
+    # 显示图例和网格
     plt.legend()
     plt.grid(True)
-    path = 'C:/code/src/python/autoQAG/result/result.png'
+    path = 'C:/code/src/python/autoQAG/result/plot.png'
     plt.savefig(path, dpi=300)
 
 
 if __name__ == '__main__':
-    data = [
-        {'Replace the placeholders in the given inputs with <*>.': 0.2, '<>': 0.12,
-         'Replace the placeholders in the given outputs with the corresponding values from the inputs.': 0.14,
-         'Anonymize all sensitive information in the given inputs.': 0.14,
-         'Mask any sensitive information before providing output.': 0.08,
-         ' Fill in the blanks in the provided results with the matching values from the inputs.': 0.1,
-         ' Replace the placeholders in the displayed outcomes with the corresponding input values.': 0.12,
-         ' What is the meaning of the prompt?': 0.04, ' Can you explain the prompt in more detail?': 0.02,
-         ' Replace the placeholders in the given inputs with <*>': 0.16,
-         ' Fill in the blanks in the provided inputs with <*>': 0.1,
-         ' Remove all identifying information from the provided inputs.': 0.16,
-         ' Ensure that all sensitive data in the given inputs is anonymized.': 0.14,
-         ' Mask any confidential data before displaying the results.': 0.1,
-         ' Conceal sensitive information before presenting the output.': 0.1},
-        {'Replace the placeholders in the given inputs with <*>.': 0.22,
-         ' Replace the placeholders in the given inputs with <*>': 0.38,
-         ' Remove all identifying information from the provided inputs.': 0.22,
-         'Replace the placeholders in the given outputs with the corresponding values from the inputs.': 0.2,
-         'Anonymize all sensitive information in the given inputs.': 0.2,
-         ' Fill in the blanks in the provided results with the matching data from the inputs.': 0.1,
-         ' Replace the placeholders in the displayed outcomes with the relevant values from the inputs.': 0.22,
-         ' Remove all personal details from the given inputs.': 0.2,
-         ' Erase any identifying information from the provided inputs.': 0.2,
-         ' Fill in the blanks in the provided inputs with <*>': 0.14,
-         ' Remove any identifying information from the provided inputs.': 0.24,
-         ' Ensure that all sensitive data is anonymized in the given inputs.': 0.22,
-         ' Substitute the placeholders in the provided inputs with <*>': 0.18},
-        {' Replace the placeholders in the given inputs with <*>': 0.44,
-         ' Remove any identifying information from the provided inputs.': 0.14,
-         'Replace the placeholders in the given inputs with <*>.': 0.2,
-         ' Remove all identifying information from the provided inputs.': 0.16,
-         ' Replace the placeholders in the displayed outcomes with the relevant values from the inputs.': 0.16,
-         ' Remove any identifying information from the inputs.': 0.18,
-         ' Ensure that all identifying information is removed from the provided inputs.': 0.16,
-         ' Fill in the blanks in the provided inputs with <*>': 0.2,
-         ' Fill in the blanks in the shown results with the appropriate data from the inputs.': 0.1,
-         ' Replace the placeholders in the outcomes with the relevant values provided.': 0.14,
-         ' Remove all personal details from the given inputs.': 0.14,
-         ' Erase any identifying information from the provided inputs.': 0.16},
-        {' Replace the placeholders in the given inputs with <*>': 0.28,
-         'Replace the placeholders in the given inputs with <*>.': 0.12,
-         ' Fill in the blanks in the provided inputs with <*>': 0.34,
-         ' Remove any identifying information from the inputs.': 0.26,
-         ' Remove all identifying information from the provided inputs.': 0.14,
-         ' Remove all personal details from the given inputs.': 0.12,
-         ' Erase any identifying information from the provided inputs.': 0.14,
-         ' Ensure that all identifying information is removed from the inputs.': 0.12,
-         ' Replace the placeholders in the provided inputs with <*>': 0.12},
-        {' Fill in the blanks in the provided inputs with <*>': 0.38,
-         ' Replace the placeholders in the given inputs with <*>': 0.28,
-         ' Remove any identifying information from the inputs.': 0.16,
-         ' Remove all identifying information from the provided inputs.': 0.12,
-         ' Erase any identifying information from the provided inputs.': 0.14,
-         ' Remove any personal details from the given inputs.': 0.28,
-         ' Erase all identifying information from the provided inputs.': 0.12,
-         ' Remove any personal details from the inputs.': 0.16,
-         ' Remove any identifiable information from the inputs.': 0.16,
-         ' Delete all identifying information from the provided inputs.': 0.1},
-        {' Fill in the blanks in the provided inputs with <*>': 0.36,
-         ' Replace the placeholders in the given inputs with <*>': 0.3,
-         ' Remove any personal details from the given inputs.': 0.16,
-         ' Remove any identifying information from the inputs.': 0.54,
-         ' Remove any personal details from the inputs.': 0.12,
-         ' Ensure that all identifying information is removed from the inputs.': 0.16,
-         ' Remove all personal details from the inputs.': 0.18,
-         ' Replace the placeholders in the provided inputs with <*>': 0.18,
-         ' Remove all personal information from the provided inputs.': 0.16,
-         ' Erase any personal details from the given inputs.': 0.16},
-        {' Remove any identifying information from the inputs.': 0.38,
-         ' Fill in the blanks in the provided inputs with <*>': 0.4,
-         ' Replace the placeholders in the given inputs with <*>': 0.5,
-         ' Remove all personal details from the inputs.': 0.12,
-         ' Replace the placeholders in the provided inputs with <*>': 0.32,
-         ' Eliminate all personal details from the inputs.': 0.12,
-         ' Ensure that all identifying information is removed from the inputs.': 0.14},
-        {' Replace the placeholders in the given inputs with <*>': 0.2,
-         ' Fill in the blanks in the provided inputs with <*>': 0.24,
-         ' Remove any identifying information from the inputs.': 0.24,
-         ' Replace the placeholders in the provided inputs with <*>': 0.2,
-         ' Ensure that all identifying information is removed from the inputs.': 0.22,
-         ' Fill in the blanks in the given inputs with <*>': 0.08,
-         ' Remove all identifying information from the inputs.': 0.1,
-         ' Make sure to delete any identifying details from the inputs.': 0.12,
-         ' Complete the missing parts in the given inputs with <*>': 0.06},
-        {' Fill in the blanks in the provided inputs with <*>': 0.3,
-         ' Remove any identifying information from the inputs.': 0.18,
-         ' Ensure that all identifying information is removed from the inputs.': 0.1,
-         ' Replace the placeholders in the given inputs with <*>': 0.42,
-         ' Replace the placeholders in the provided inputs with <*>': 0.48,
-         ' Remove all identifying information from the inputs.': 0.1,
-         ' Make sure to delete any identifying details from the inputs.': 0.1,
-         ' Eliminate all personal details from the inputs.': 0.12},
-        {' Replace the placeholders in the provided inputs with <*>': 0.26,
-         ' Replace the placeholders in the given inputs with <*>': 0.28,
-         ' Fill in the blanks in the provided inputs with <*>': 0.28,
-         ' Remove any identifying information from the inputs.': 0.16,
-         ' Eliminate all personal details from the inputs.': 0.14,
-         ' Remove all personal information from the inputs.': 0.12,
-         ' Erase any personal details from the inputs.': 0.14, ' Remove any personal details from the inputs.': 0.12,
-         ' Remove any identifiable information from the inputs.': 0.16,
-         ' Fill in the blanks in the given inputs with <*>': 0.02},
-        {' Replace the placeholders in the given inputs with <*>': 0.36,
-         ' Fill in the blanks in the provided inputs with <*>': 0.36,
-         ' Replace the placeholders in the provided inputs with <*>': 0.36,
-         ' Remove any identifying information from the inputs.': 0.32,
-         ' Remove any identifiable information from the inputs.': 0.16,
-         ' Fill in the blanks in the given inputs with <*>': 0.22,
-         ' Remove any personal details from the inputs.': 0.12, ' Remove any identifiable data from the inputs.': 0.14,
-         ' Ensure that all identifying information is removed from the inputs.': 0.12},
-        {' Replace the placeholders in the given inputs with <*>': 0.3,
-         ' Fill in the blanks in the provided inputs with <*>': 0.34,
-         ' Replace the placeholders in the provided inputs with <*>': 0.5,
-         ' Remove any identifying information from the inputs.': 0.16,
-         ' Fill in the blanks in the given inputs with <*>': 0.26, ' Remove any personal details from the inputs.': 0.2,
-         ' Remove all identifying information from the inputs.': 0.18,
-         ' Complete the inputs by filling in the blanks with <*>': 0.16},
-        {' Replace the placeholders in the provided inputs with <*>': 0.32,
-         ' Fill in the blanks in the provided inputs with <*>': 0.48,
-         ' Replace the placeholders in the given inputs with <*>': 0.28,
-         ' Fill in the blanks in the given inputs with <*>': 0.26,
-         ' Remove any personal details from the inputs.': 0.16,
-         ' Remove any identifying information from the inputs.': 0.16,
-         ' Remove all personal details from the inputs.': 0.12,
-         ' Complete the inputs by inserting <*> in the blanks.': 0.1},
-        {' Fill in the blanks in the provided inputs with <*>': 0.56,
-         ' Replace the placeholders in the provided inputs with <*>': 0.46,
-         ' Replace the placeholders in the given inputs with <*>': 0.36,
-         ' Fill in the blanks in the given inputs with <*>': 0.32,
-         ' Remove any personal details from the inputs.': 0.16,
-         ' Remove any identifying information from the inputs.': 0.2,
-         ' Ensure that all personal details are removed from the inputs.': 0.16,
-         ' Complete the inputs by inserting <*> in the blanks.': 0.12},
-        {' Fill in the blanks in the provided inputs with <*>': 0.44,
-         ' Replace the placeholders in the provided inputs with <*>': 0.22,
-         ' Replace the placeholders in the given inputs with <*>': 0.24,
-         ' Fill in the blanks in the given inputs with <*>': 0.28,
-         ' Remove any identifying information from the inputs.': 0.14,
-         ' Replace the missing values in the provided inputs with <*>': 0.06,
-         ' Remove any personal details from the inputs.': 0.12,
-         ' Remove all identifying information from the inputs.': 0.16},
-        {' Fill in the blanks in the provided inputs with <*>': 0.7,
-         ' Fill in the blanks in the given inputs with <*>': 0.32,
-         ' Replace the placeholders in the given inputs with <*>': 0.62,
-         ' Replace the placeholders in the provided inputs with <*>': 0.46,
-         ' Remove all identifying information from the inputs.': 0.2,
-         ' Complete the inputs by filling in the blanks with <*>': 0.16,
-         ' Remove all personal details from the inputs.': 0.18,
-         ' Erase any identifying information from the inputs.': 0.2},
-        {' Fill in the blanks in the provided inputs with <*>': 0.4,
-         ' Replace the placeholders in the given inputs with <*>': 0.28,
-         ' Replace the placeholders in the provided inputs with <*>': 0.46,
-         ' Fill in the blanks in the given inputs with <*>': 0.28,
-         ' Remove all identifying information from the inputs.': 0.14,
-         ' Remove all personal details from the inputs.': 0.16,
-         ' Erase any identifying information from the inputs.': 0.12},
-        {' Replace the placeholders in the provided inputs with <*>': 0.4,
-         ' Fill in the blanks in the provided inputs with <*>': 0.62,
-         ' Replace the placeholders in the given inputs with <*>': 0.62,
-         ' Fill in the blanks in the given inputs with <*>': 0.28,
-         ' Remove all personal details from the inputs.': 0.16,
-         ' Complete the inputs by filling in the blanks with <*>': 0.14,
-         ' Remove any identifying information from the inputs.': 0.16,
-         ' Eliminate all personal details from the inputs.': 0.16},
-        {' Fill in the blanks in the provided inputs with <*>': 0.26,
-         ' Replace the placeholders in the given inputs with <*>': 0.38,
-         ' Replace the placeholders in the provided inputs with <*>': 0.42,
-         ' Fill in the blanks in the given inputs with <*>': 0.16,
-         ' Remove all personal details from the inputs.': 0.14,
-         ' Complete the inputs by filling in the blanks with <*>': 0.12,
-         ' Remove all identifying information from the inputs.': 0.16,
-         ' Erase any personal details from the inputs.': 0.14},
-        {' Replace the placeholders in the provided inputs with <*>': 0.2,
-         ' Replace the placeholders in the given inputs with <*>': 0.22,
-         ' Fill in the blanks in the provided inputs with <*>': 0.18,
-         ' Fill in the blanks in the given inputs with <*>': 0.1,
-         ' Remove all identifying information from the inputs.': 0.1,
-         ' Remove all personal details from the inputs.': 0.1,
-         ' Erase any identifying information from the inputs.': 0.08,
-         ' Replace the missing values in the given inputs with <*>': 0.06,
-         ' Complete the inputs by filling in the blanks with <*>': 0.04},
-    ]
-    draw_plot_with_keys(data)
+    data = [{'The process involves identifying key patterns in log messages, such as specific keywords or variables, '
+             'and creating templates with placeholders for these elements. By matching log messages to these '
+             'templates, language model assistants can accurately parse and interpret the information provided in the '
+             'logs.': [0.8869047619047619, 0.883248730964467, 0.22023809523809523], 'The process of parsing log '
+                                                                                    'messages into templates involves '
+                                                                                    'identifying common patterns and '
+                                                                                    'placeholders within the logs. By '
+                                                                                    'analyzing the logs, '
+                                                                                    'language model assistants can '
+                                                                                    'create templates that capture '
+                                                                                    'the essential information while '
+                                                                                    'abstracting out specific values. '
+                                                                                    'This approach helps improve the '
+                                                                                    'accuracy of log template parsing '
+                                                                                    'by generalizing the structure of '
+                                                                                    'similar log messages.': [
+        0.8511904761904762, 0.8762886597938144, 0.20833333333333334], 'The process involves identifying key patterns '
+                                                                      'and placeholders in log messages, '
+                                                                      'creating templates using those patterns and '
+                                                                      'placeholders, and mapping the log message data '
+                                                                      'to the placeholders in the templates for '
+                                                                      'accurate parsing. This helps in extracting '
+                                                                      'structured information from unstructured log '
+                                                                      'data.': [0.8035714285714286, 0.81,
+                                                                                0.20833333333333334], 'The process of '
+                                                                                                      'log template '
+                                                                                                      'parsing '
+                                                                                                      'involves '
+                                                                                                      'analyzing log '
+                                                                                                      'messages to '
+                                                                                                      'identify '
+                                                                                                      'patterns and '
+                                                                                                      'placeholders '
+                                                                                                      'that can be '
+                                                                                                      'generalized '
+                                                                                                      'into a '
+                                                                                                      'template '
+                                                                                                      'format. By '
+                                                                                                      'comparing log '
+                                                                                                      'messages to '
+                                                                                                      'existing '
+                                                                                                      'templates and '
+                                                                                                      'extracting '
+                                                                                                      'common '
+                                                                                                      'elements, '
+                                                                                                      'language model '
+                                                                                                      'assistants can '
+                                                                                                      'improve the '
+                                                                                                      'accuracy of '
+                                                                                                      'parsing log '
+                                                                                                      'messages and '
+                                                                                                      'generating '
+                                                                                                      'templates for '
+                                                                                                      'future data '
+                                                                                                      'processing '
+                                                                                                      'tasks.': [
+        0.8095238095238095, 0.8469387755102041, 0.16071428571428573], 'The process of parsing log templates involves '
+                                                                      'identifying key patterns and placeholders in '
+                                                                      'log messages to create a generalized template '
+                                                                      'for easier parsing and analysis. By comparing '
+                                                                      'log messages to existing templates, '
+                                                                      'language model assistants can improve accuracy '
+                                                                      'in extracting relevant information from logs. '
+                                                                      'For example, in the given logs, patterns like '
+                                                                      '"<START>registerCallback not in UI.<START>" '
+                                                                      'and "<START>visible is system.message.count gt '
+                                                                      '0<START>" can be transformed into templates '
+                                                                      'like "<START>registerCallback not in '
+                                                                      'UI.<START>" and "<START>visible is <*> gt '
+                                                                      '<*><START>" respectively, allowing for '
+                                                                      'consistent and efficient log parsing.': [
+        0.7857142857142857, 0.8140703517587939, 0.21428571428571427]}, {'The process involves identifying key '
+                                                                        'patterns in log messages, such as specific '
+                                                                        'keywords or variables, and creating '
+                                                                        'templates with placeholders for these '
+                                                                        'elements. By matching log messages to these '
+                                                                        'templates, language model assistants can '
+                                                                        'accurately parse and interpret the '
+                                                                        'information provided in the logs.': [
+        0.9166666666666666, 0.9222797927461139, 0.22023809523809523], 'The process of parsing log templates involves '
+                                                                      'identifying key patterns and placeholders in '
+                                                                      'log messages to create a generalized template '
+                                                                      'for easier parsing and analysis. By comparing '
+                                                                      'log messages to existing templates, '
+                                                                      'language model assistants can improve accuracy '
+                                                                      'in extracting relevant information from logs. '
+                                                                      'For example, in the given logs, patterns like '
+                                                                      '"<START>registerCallback not in UI.<START>" '
+                                                                      'and "<START>visible is system.message.count gt '
+                                                                      '0<START>" can be transformed into templates '
+                                                                      'like "<START>registerCallback not in '
+                                                                      'UI.<START>" and "<START>visible is <*> gt '
+                                                                      '<*><START>" respectively, allowing for '
+                                                                      'consistent and efficient log parsing.': [
+        0.8630952380952381, 0.8865979381443299, 0.20833333333333334], 'The process of parsing log messages into '
+                                                                      'templates involves identifying common patterns '
+                                                                      'and placeholders within the logs. By analyzing '
+                                                                      'the logs, language model assistants can create '
+                                                                      'templates that capture the essential '
+                                                                      'information while abstracting out specific '
+                                                                      'values. This approach helps improve the '
+                                                                      'accuracy of log template parsing by '
+                                                                      'generalizing the structure of similar log '
+                                                                      'messages.': [0.8511904761904762,
+                                                                                    0.8762886597938144,
+                                                                                    0.20833333333333334],
+                'The process of log template parsing involves analyzing log messages to identify patterns and placeholders '
+                'that can be generalized into a template format. By comparing log messages to existing templates and '
+                'extracting common elements, language model assistants can improve the accuracy of parsing log messages and '
+                'generating templates for future data processing tasks.': [0.8333333333333334, 0.8762886597938144,
+                                                                           0.16071428571428573], 'The process involves '
+                                                                                                 'identifying key patterns '
+                                                                                                 'and placeholders in log '
+                                                                                                 'messages, '
+                                                                                                 'creating templates using '
+                                                                                                 'those patterns and '
+                                                                                                 'placeholders, and mapping '
+                                                                                                 'the log message data to the '
+                                                                                                 'placeholders in the '
+                                                                                                 'templates for accurate '
+                                                                                                 'parsing. This helps in '
+                                                                                                 'extracting structured '
+                                                                                                 'information from '
+                                                                                                 'unstructured log data.': [
+            0.8035714285714286, 0.81, 0.20833333333333334]}, {'The process involves identifying key patterns in log '
+                                                              'messages, such as specific keywords or variables, '
+                                                              'and creating templates with placeholders for these '
+                                                              'elements. By matching log messages to these templates, '
+                                                              'language model assistants can accurately parse and '
+                                                              'interpret the information provided in the logs.': [
+        0.9166666666666666, 0.9222797927461139, 0.22023809523809523], 'The process of parsing log templates involves '
+                                                                      'identifying key patterns and placeholders in '
+                                                                      'log messages to create a generalized template '
+                                                                      'for easier parsing and analysis. By comparing '
+                                                                      'log messages to existing templates, '
+                                                                      'language model assistants can improve accuracy '
+                                                                      'in extracting relevant information from logs. '
+                                                                      'For example, in the given logs, patterns like '
+                                                                      '"<START>registerCallback not in UI.<START>" '
+                                                                      'and "<START>visible is system.message.count gt '
+                                                                      '0<START>" can be transformed into templates '
+                                                                      'like "<START>registerCallback not in '
+                                                                      'UI.<START>" and "<START>visible is <*> gt '
+                                                                      '<*><START>" respectively, allowing for '
+                                                                      'consistent and efficient log parsing.': [
+        0.8630952380952381, 0.8865979381443299, 0.20833333333333334], 'The process of parsing log messages into '
+                                                                      'templates involves identifying common patterns '
+                                                                      'and placeholders within the logs. By analyzing '
+                                                                      'the logs, language model assistants can create '
+                                                                      'templates that capture the essential '
+                                                                      'information while abstracting out specific '
+                                                                      'values. This approach helps improve the '
+                                                                      'accuracy of log template parsing by '
+                                                                      'generalizing the structure of similar log '
+                                                                      'messages.': [0.8511904761904762,
+                                                                                    0.8762886597938144,
+                                                                                    0.20833333333333334],
+                'The process of log template parsing involves analyzing log messages to identify patterns and placeholders '
+                'that can be generalized into a template format. By comparing log messages to existing templates and '
+                'extracting common elements, language model assistants can improve the accuracy of parsing log messages and '
+                'generating templates for future data processing tasks.': [0.8333333333333334, 0.8762886597938144,
+                                                                           0.16071428571428573], 'The process involves '
+                                                                                                 'identifying key patterns '
+                                                                                                 'and placeholders in log '
+                                                                                                 'messages, '
+                                                                                                 'creating templates using '
+                                                                                                 'those patterns and '
+                                                                                                 'placeholders, and mapping '
+                                                                                                 'the log message data to the '
+                                                                                                 'placeholders in the '
+                                                                                                 'templates for accurate '
+                                                                                                 'parsing. This helps in '
+                                                                                                 'extracting structured '
+                                                                                                 'information from '
+                                                                                                 'unstructured log data.': [
+            0.8035714285714286, 0.81, 0.20833333333333334]}, {'The process involves identifying key patterns in log '
+                                                              'messages, such as specific keywords or variables, '
+                                                              'and creating templates with placeholders for these '
+                                                              'elements. By matching log messages to these templates, '
+                                                              'language model assistants can accurately parse and '
+                                                              'interpret the information provided in the logs.': [
+        0.9166666666666666, 0.9222797927461139, 0.22023809523809523], 'The process of parsing log templates involves '
+                                                                      'identifying key patterns and placeholders in '
+                                                                      'log messages to create a generalized template '
+                                                                      'for easier parsing and analysis. By comparing '
+                                                                      'log messages to existing templates, '
+                                                                      'language model assistants can improve accuracy '
+                                                                      'in extracting relevant information from logs. '
+                                                                      'For example, in the given logs, patterns like '
+                                                                      '"<START>registerCallback not in UI.<START>" '
+                                                                      'and "<START>visible is system.message.count gt '
+                                                                      '0<START>" can be transformed into templates '
+                                                                      'like "<START>registerCallback not in '
+                                                                      'UI.<START>" and "<START>visible is <*> gt '
+                                                                      '<*><START>" respectively, allowing for '
+                                                                      'consistent and efficient log parsing.': [
+        0.8630952380952381, 0.8865979381443299, 0.20833333333333334], 'The process of parsing log messages into '
+                                                                      'templates involves identifying common patterns '
+                                                                      'and placeholders within the logs. By analyzing '
+                                                                      'the logs, language model assistants can create '
+                                                                      'templates that capture the essential '
+                                                                      'information while abstracting out specific '
+                                                                      'values. This approach helps improve the '
+                                                                      'accuracy of log template parsing by '
+                                                                      'generalizing the structure of similar log '
+                                                                      'messages.': [0.8511904761904762,
+                                                                                    0.8762886597938144,
+                                                                                    0.20833333333333334],
+                'The process of log template parsing involves analyzing log messages to identify patterns and placeholders '
+                'that can be generalized into a template format. By comparing log messages to existing templates and '
+                'extracting common elements, language model assistants can improve the accuracy of parsing log messages and '
+                'generating templates for future data processing tasks.': [0.8333333333333334, 0.8762886597938144,
+                                                                           0.16071428571428573], 'The process involves '
+                                                                                                 'identifying key patterns '
+                                                                                                 'and placeholders in log '
+                                                                                                 'messages, '
+                                                                                                 'creating templates using '
+                                                                                                 'those patterns and '
+                                                                                                 'placeholders, and mapping '
+                                                                                                 'the log message data to the '
+                                                                                                 'placeholders in the '
+                                                                                                 'templates for accurate '
+                                                                                                 'parsing. This helps in '
+                                                                                                 'extracting structured '
+                                                                                                 'information from '
+                                                                                                 'unstructured log data.': [
+            0.8035714285714286, 0.81, 0.20833333333333334]}, {'The process involves identifying key patterns in log '
+                                                              'messages, such as specific keywords or variables, '
+                                                              'and creating templates with placeholders for these '
+                                                              'elements. By matching log messages to these templates, '
+                                                              'language model assistants can accurately parse and '
+                                                              'interpret the information provided in the logs.': [
+        0.9166666666666666, 0.9222797927461139, 0.22023809523809523], 'The process of parsing log templates involves '
+                                                                      'identifying key patterns and placeholders in '
+                                                                      'log messages to create a generalized template '
+                                                                      'for easier parsing and analysis. By comparing '
+                                                                      'log messages to existing templates, '
+                                                                      'language model assistants can improve accuracy '
+                                                                      'in extracting relevant information from logs. '
+                                                                      'For example, in the given logs, patterns like '
+                                                                      '"<START>registerCallback not in UI.<START>" '
+                                                                      'and "<START>visible is system.message.count gt '
+                                                                      '0<START>" can be transformed into templates '
+                                                                      'like "<START>registerCallback not in '
+                                                                      'UI.<START>" and "<START>visible is <*> gt '
+                                                                      '<*><START>" respectively, allowing for '
+                                                                      'consistent and efficient log parsing.': [
+        0.8630952380952381, 0.8865979381443299, 0.20833333333333334], 'The process of parsing log messages into '
+                                                                      'templates involves identifying common patterns '
+                                                                      'and placeholders within the logs. By analyzing '
+                                                                      'the logs, language model assistants can create '
+                                                                      'templates that capture the essential '
+                                                                      'information while abstracting out specific '
+                                                                      'values. This approach helps improve the '
+                                                                      'accuracy of log template parsing by '
+                                                                      'generalizing the structure of similar log '
+                                                                      'messages.': [0.8511904761904762,
+                                                                                    0.8762886597938144,
+                                                                                    0.20833333333333334],
+                'The process of log template parsing involves analyzing log messages to identify patterns and placeholders '
+                'that can be generalized into a template format. By comparing log messages to existing templates and '
+                'extracting common elements, language model assistants can improve the accuracy of parsing log messages and '
+                'generating templates for future data processing tasks.': [0.8333333333333334, 0.8762886597938144,
+                                                                           0.16071428571428573],
+                'The process of log template '
+                'parsing involves analyzing '
+                'log messages to identify '
+                'patterns and placeholders '
+                'that can be generalized '
+                'into a template format. By '
+                'comparing log messages to '
+                'existing templates and '
+                'extracting common elements, '
+                'language model assistants '
+                'can enhance the precision '
+                'of parsing log messages and '
+                'creating templates for '
+                'future data processing '
+                'tasks.': [
+                    0.8333333333333334, 0.8585858585858586, 0.16666666666666666]},
+            {'The process involves identifying key '
+             'patterns in log messages, '
+             'such as specific keywords or variables, '
+             'and creating templates with placeholders '
+             'for these elements. By matching log '
+             'messages to these templates, '
+             'language model assistants can accurately '
+             'parse and interpret the information '
+             'provided in the logs.': [
+                0.9166666666666666, 0.9222797927461139, 0.22023809523809523],
+                'The process of parsing log templates involves '
+                'identifying key patterns and placeholders in '
+                'log messages to create a generalized template '
+                'for easier parsing and analysis. By comparing '
+                'log messages to existing templates, '
+                'language model assistants can improve accuracy '
+                'in extracting relevant information from logs. '
+                'For example, in the given logs, patterns like '
+                '"<START>registerCallback not in UI.<START>" '
+                'and "<START>visible is system.message.count gt '
+                '0<START>" can be transformed into templates '
+                'like "<START>registerCallback not in '
+                'UI.<START>" and "<START>visible is <*> gt '
+                '<*><START>" respectively, allowing for '
+                'consistent and efficient log parsing.': [
+                    0.8630952380952381, 0.8865979381443299, 0.20833333333333334],
+                'The process of log template parsing involves '
+                'analyzing log messages to identify patterns '
+                'and placeholders that can be generalized into '
+                'a template format. By comparing log messages '
+                'to existing templates and extracting common '
+                'elements, language model assistants can '
+                'enhance the precision of parsing log messages '
+                'and creating templates for future data '
+                'processing tasks.': [0.8809523809523809,
+                                      0.9072164948453607,
+                                      0.16071428571428573],
+                'The process of parsing log messages into templates involves identifying common patterns and placeholders '
+                'within the logs. By analyzing the logs, language model assistants can create templates that capture the '
+                'essential information while abstracting out specific values. This approach helps improve the accuracy of log '
+                'template parsing by generalizing the structure of similar log messages.': [0.8511904761904762,
+                                                                                            0.8762886597938144,
+                                                                                            0.20833333333333334],
+                'The process of log template parsing involves analyzing log messages to identify patterns and placeholders '
+                'that can be generalized into a template format. By comparing log messages to existing templates and '
+                'extracting common elements, language model assistants can improve the accuracy of parsing log messages and '
+                'generating templates for future data processing tasks.': [0.8333333333333334, 0.8762886597938144,
+                                                                           0.16071428571428573]}]
+
+    draw_plotBox(data)
