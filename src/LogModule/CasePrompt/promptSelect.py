@@ -58,11 +58,11 @@ def clean(s):
     return s
 
 
-def prompt_select(log, k):
+def prompt_select(log, k,fileName):
     if k == 0:
         return []
-    androidPath = r'C:\code\src\python\autoQAG\data\loghub-master\Android'
-    df = pd.read_csv(androidPath + r'\Android_2k.log_32sampled.csv', encoding='utf-8')
+    androidPath = rf'C:\code\src\python\autoQAG\data\loghub-master\{fileName}'
+    df = pd.read_csv(androidPath + rf'\{fileName}_2k.log_32sampled.csv', encoding='utf-8')
     examples = []
     L = df.to_dict('records')
     log = clean(log)
@@ -80,4 +80,4 @@ def prompt_select(log, k):
 if __name__ == '__main__':
     # test
     log = "onTouchEvent::1, x=296.0, y=327.0"
-    print(prompt_select(log, 5))
+    print(prompt_select(log, 5,"Hadoop"))

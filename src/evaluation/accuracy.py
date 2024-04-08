@@ -74,9 +74,6 @@ def calculate_parsing_accuracy_template(groundtruth_df, parsedresult_df, filter_
 
 # 计算PA
 def calculate_pa(groundtruth_df, parsedresult_df):
-    # parsedresult_df = pd.read_csv(parsedresult)
-    # groundtruth_df = pd.read_csv(groundtruth)
-    # correctly_parsed_messages = parsedresult_df[['EventTemplate']].eq(groundtruth_df[['EventTemplate']]).values.sum()
     groundtruth_templates = list(groundtruth_df['EventTemplate'])
     parsedresult_templates = list(parsedresult_df['EventTemplate'])
     correctly_parsed_messages = 0
@@ -160,7 +157,7 @@ def prompt_accuracy_count(prompts, results):
 
 def get_topK_prompt(results, k):
     accuracy_dict = evaluate_test(results)
-    sorted_keys = sorted(accuracy_dict, key=lambda x: sum(accuracy_dict[x]), reverse=True)[:k]
+    sorted_keys = sorted(accuracy_dict, key=lambda x: accuracy_dict[x][2], reverse=True)[:k]
     topK_accuracy_dict = {key: accuracy_dict[key] for key in sorted_keys}
     return topK_accuracy_dict
 

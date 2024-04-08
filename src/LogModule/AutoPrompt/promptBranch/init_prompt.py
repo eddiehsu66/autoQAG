@@ -34,7 +34,7 @@ def makeExample(input, output):
 
 
 def taskMakePrompt(order, gpt_prompts):
-    Input, Output = get_random_log(2)
+    Input, Output = get_random_log(2,"Hadoop")
     generation_prompt(Input, Output, order, gpt_prompts)
 
 
@@ -47,6 +47,14 @@ def init_prompt(promptsNum: int):
             futures.append(future)
         concurrent.futures.wait(futures)
     print("gpt生成的提示词:", gpt_prompts)
+
+    LILAC_PROMPT = ("I want you to act like an expert of log parsing. "
+                    "I will give you a log message delimited by backticks. "
+                    "You must identify and abstract all the dynamic variables in logs with {placeholder} "
+                    "and output a static log template. Print the input log's template delimited by backticks.")
+    DIV_LOG = "Extract one log template, substitute variable tokens in the log as <*> between <START> and <END> tags."
+    gpt_prompts.append(LILAC_PROMPT)
+    gpt_prompts.append(DIV_LOG)
     return gpt_prompts
 
 

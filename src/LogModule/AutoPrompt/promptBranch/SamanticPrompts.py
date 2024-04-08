@@ -45,9 +45,10 @@ def generate_samantic_prompts(prompts, result):
             semantic_prompts += future.result()
     return semantic_prompts
 
+
 def warp_wrongReason(results: list, prompt: str):
     wrong_data = []
     for item in results:
-        if item[2] == prompt and not correct_lstm(item[1],item[3]):
+        if item[2] == prompt and not correct_lstm(item[1], item[3]):
             wrong_data.append(item)
     return batchProcess(wrong_data)

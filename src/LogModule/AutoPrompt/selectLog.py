@@ -234,11 +234,11 @@ def hierichical_distribute(hierichical_clusters, shot, labelled_logs=[]):
 
 
 def selectLog(order, shotNum) -> (list, list, list, list):
-    data_dir = "C:/code/src/python/autoQAG/data/loghub-master/Android"
+    data_dir = "C:/code/src/python/autoQAG/data/loghub-master/Hadoop"
     if not os.path.exists(f"{data_dir}/process"):
         os.makedirs(f"{data_dir}/process")
 
-    log_file = load_config("PARSE_SETTING")["Android"]["log_file"]
+    log_file = load_config("PARSE_SETTING")["Hadoop"]["log_file"]
 
     labelled_logs = pd.read_csv(f'{data_dir}/{log_file}_sampledFile.csv')
 
@@ -283,9 +283,9 @@ def selectLog(order, shotNum) -> (list, list, list, list):
 
 def candidateSample(shotNum, mode="others") -> (list, list):
     # 当为sampled时，从sampledFile中读取数据，否则从structured中读取数据
-    data_dir = "C:/code/src/python/autoQAG/data/loghub-master/Android"
+    data_dir = "C:/code/src/python/autoQAG/data/loghub-master/Hadoop"
 
-    log_file = load_config("PARSE_SETTING")["Android"]["log_file"]
+    log_file = load_config("PARSE_SETTING")["Hadoop"]["log_file"]
 
     if mode == "sampled":
         labelled_logs = pd.read_csv(f'{data_dir}/{log_file}_trainData.csv')
@@ -316,17 +316,17 @@ def candidateSample(shotNum, mode="others") -> (list, list):
 
     # 打开文件准备写入
     if mode == "sampled":
-        sampled_data_outpath = f"{data_dir}/Android_2k.log_32sampled.csv"
-        remaining_data_outpath = f"{data_dir}/Android_2k.log_remainingSampled.csv"
+        sampled_data_outpath = f"{data_dir}/Hadoop_2k.log_32sampled.csv"
+        remaining_data_outpath = f"{data_dir}/Hadoop_2k.log_remainingSampled.csv"
         sampled_data.to_csv(sampled_data_outpath, index=False, encoding='utf-8')
         remaining_data.to_csv(remaining_data_outpath, index=False, encoding='utf-8')
     else:
-        outpath = f"{data_dir}/Android_2k.log_sampledFile.csv"
+        outpath = f"{data_dir}/Hadoop_2k.log_sampledFile.csv"
         sampled_data.to_csv(outpath, index=False, encoding='utf-8')
 
 
-def random_select_log(num, androidPath=r'C:\code\src\python\autoQAG\data\loghub-master\Android'):
-    df = pd.read_csv(androidPath + r'\Android_2k.log_sampledFile.csv', encoding='utf-8')
+def random_select_log(num, androidPath=r'C:\code\src\python\autoQAG\data\loghub-master\Hadoop'):
+    df = pd.read_csv(androidPath + r'\Hadoop_2k.log_sampledFile.csv', encoding='utf-8')
 
     # 随机抽取num个行
     train_indices = sorted(random.sample(range(len(df)), num))
@@ -340,17 +340,17 @@ def random_select_log(num, androidPath=r'C:\code\src\python\autoQAG\data\loghub-
     # train_output = train_df['EventTemplate']
     # test_input = test_df.drop(columns=['Content'])
     # test_output = test_df['EventTemplate']
-    train_df.to_csv(androidPath + r'\Android_2k.log_trainData.csv', index=False, encoding='utf-8')
-    test_df.to_csv(androidPath + r'\Android_2k.log_testData.csv', index=False, encoding='utf-8')
+    train_df.to_csv(androidPath + r'\Hadoop_2k.log_trainData.csv', index=False, encoding='utf-8')
+    test_df.to_csv(androidPath + r'\Hadoop_2k.log_testData.csv', index=False, encoding='utf-8')
     # return train_input, train_output, test_input, test_output
 
 
 def select_log(order, shotNum) -> (list, list, list, list):
-    data_dir = "C:/code/src/python/autoQAG/data/loghub-master/Android"
+    data_dir = "C:/code/src/python/autoQAG/data/loghub-master/Hadoop"
     if not os.path.exists(f"{data_dir}/process"):
         os.makedirs(f"{data_dir}/process")
 
-    log_file = load_config("PARSE_SETTING")["Android"]["log_file"]
+    log_file = load_config("PARSE_SETTING")["Hadoop"]["log_file"]
 
     labelled_logs = pd.read_csv(f'{data_dir}/{log_file}_sampledFile.csv')
 
@@ -392,9 +392,9 @@ def select_log(order, shotNum) -> (list, list, list, list):
     return queries, answers, remaining_queries, remaining_answers
 
 
-def get_train_log() -> (list, list):
-    data_dir = "C:/code/src/python/autoQAG/data/loghub-master/Android"
-    log_file = load_config("PARSE_SETTING")["Android"]["log_file"]
+def get_train_log(fileName:str) -> (list, list):
+    data_dir = f"C:/code/src/python/autoQAG/data/loghub-master/{fileName}"
+    log_file = load_config("PARSE_SETTING")[f"{fileName}"]["log_file"]
     labelled_logs = pd.read_csv(f'{data_dir}/{log_file}_remainingSampled.csv')
 
     content_list = labelled_logs['Content'].tolist()
@@ -404,9 +404,9 @@ def get_train_log() -> (list, list):
     return content_list, template_list
 
 
-def get_test_log() -> (list, list):
-    data_dir = "C:/code/src/python/autoQAG/data/loghub-master/Android"
-    log_file = load_config("PARSE_SETTING")["Android"]["log_file"]
+def get_test_log(fileName:str) -> (list, list):
+    data_dir = f"C:/code/src/python/autoQAG/data/loghub-master/{fileName}"
+    log_file = load_config("PARSE_SETTING")[f"{fileName}"]["log_file"]
     labelled_logs = pd.read_csv(f'{data_dir}/{log_file}_testData.csv')
 
     content_list = labelled_logs['Content'].tolist()
@@ -416,9 +416,9 @@ def get_test_log() -> (list, list):
     return content_list, template_list
 
 
-def get_random_log(num) -> (list, list):
-    data_dir = "C:/code/src/python/autoQAG/data/loghub-master/Android"
-    df = pd.read_csv(data_dir + r'\Android_2k.log_32sampled.csv', encoding='utf-8')
+def get_random_log(num,fileName) -> (list, list):
+    data_dir = f"C:/code/src/python/autoQAG/data/loghub-master/{fileName}"
+    df = pd.read_csv(data_dir + rf'\{fileName}_2k.log_32sampled.csv', encoding='utf-8')
     # 随机抽取num个行
     indices = sorted(random.sample(range(len(df)), num))
     df = df.iloc[indices]
@@ -429,6 +429,7 @@ def get_random_log(num) -> (list, list):
     return content_list, template_list
 
 if __name__ == '__main__':
-    # candidateSample(512,'others')
-    # random_select_log(200)
-    print(len(get_test_log()[0]))
+    candidateSample(1024,'others')
+    random_select_log(300)
+    candidateSample(32,'sampled')
+    # print(len(get_test_log()[0]))
