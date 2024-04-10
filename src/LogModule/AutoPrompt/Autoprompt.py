@@ -11,7 +11,7 @@ from src.evaluation.accuracy import get_topK_prompt, calculate_accuracy_test
 
 
 def save_csv(data):
-    path = "C:/code/src/python/autoQAG/result/accuracy.csv"
+    path = "C:code/src/python/autoQAG/result/accuracy.csv"
     rows = []
     # 遍历data中的每个元素（假设每个元素是一个字典）
     for i, item in enumerate(data):
@@ -27,11 +27,11 @@ def auto_prompt():
     test_accuracy_asset = []
 
     start_time = time.time()
-    overall_number_of_cycles = 10  # 整体循环次数
+    overall_number_of_cycles = 3  # 整体循环次数
 
     train_contents, train_templates = get_train_log("Hadoop")
     test_contents, test_templates = get_test_log("Hadoop")
-    cur_prompts = init_prompt(10)
+    cur_prompts = init_prompt(5)
     # 第一轮次
     # 由gpt生成的提示词来抽取模版
     results = extract_log_template(train_contents, train_templates, cur_prompts)
@@ -66,7 +66,7 @@ def auto_prompt():
     draw_plotBox(test_accuracy_asset)
     save_csv(test_accuracy_asset)
     print("train_accuracy_asset:")
-    print(train_accuracy_asset)
+    print(test_accuracy_asset)
 
 
 if __name__ == '__main__':

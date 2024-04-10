@@ -49,7 +49,7 @@ def draw_plotBox(data):
 
     # 显示网格
     plt.grid(True, linestyle='--', alpha=0.6)
-    path = 'C:/code/src/python/autoQAG/result/plotBox.png'
+    path = r'C:\code\src\python\autoQAG\result\plotBox.png'
     plt.savefig(path, dpi=300)
 
 
@@ -107,7 +107,7 @@ def draw_plot_with_keys(data):
     # 显示图例和网格
     plt.legend()
     plt.grid(True)
-    path = 'C:/code/src/python/autoQAG/result/plot.png'
+    path = r'C:\code\src\python\autoQAG\result\plot.png'
     plt.savefig(path, dpi=300)
 
 
@@ -442,3 +442,4 @@ if __name__ == '__main__':
                                                                            0.16071428571428573]}]
 
     draw_plotBox(data)
+    draw_plot_with_keys(data)

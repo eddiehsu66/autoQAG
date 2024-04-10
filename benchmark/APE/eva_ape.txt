@@ -1,0 +1,23 @@
+from automatic_prompt_engineer import ape
+from src.config.configLoad import load_config
+import openai
+
+openai.api_base, openai.api_key = load_config('OPENAI_API_BASE'), load_config('OPENAI_API_KEY')
+
+if __name__ == "__main__":
+    words = ["sane", "direct", "informally", "unpopular", "subtractive", "nonresidential",
+             "inexact", "uptown", "incomparable", "powerful", "gaseous", "evenly", "formality",
+             "deliberately", "off"]
+    antonyms = ["insane", "indirect", "formally", "popular", "additive", "residential",
+                "exact", "downtown", "comparable", "powerless", "solid", "unevenly", "informality",
+                "accidentally", "on"]
+
+    eval_template = \
+        """Instruction: [PROMPT]
+        Input: [INPUT]
+        Output: [OUTPUT]"""
+
+    result, demo_fn = ape.simple_ape(
+        dataset=(words, antonyms),
+        eval_template=eval_template,
+    )
