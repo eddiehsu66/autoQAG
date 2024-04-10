@@ -7,18 +7,26 @@ from src.LogModule.AutoPrompt.promptBranch.wrongReason import batchProcess
 from src.evaluation.accuracy import correct_lstm
 
 
-def TaskSamanticPrompts(prompt, wrong_reason):
+def TaskSamanticPrompts(prompt, wrong_reason, topK_dict):
+    precise_text = ("Here's some precise of the prompt below,"
+                    "You can refer to them to generate more accurate prompt words.\n")
+    for key, value in topK_dict.items():
+        precise_text += f"Precision:{value[2]} <TEXT>{key}</TEXT>\n"
     prompt1 = f"According to the following prompt, prompts are generated while maintaining the same semantics" \
               f"The prompt is {prompt}" \
+              f"{precise_text}" \
               f"The generated prompts without any superfluous output"
 
     prompt2 = (f"There is currently a prompt word for log parsing, "
                f"The prompt word is <START>{prompt}<END>,"
                f"but the prompt word is currently not effective enough. "
+               f"{precise_text}"
                f"Please update the prompts and modify with out any superfluous output")
 
     prompt3 = (f"This is a log parse Task, and our task is Ineffective"
-               f"Based on the prompt word <START>{prompt}<END>, generate a new prompt word with the same semantics")
+               f"Based on the prompt word <START>{prompt}<END>, "
+               f"{precise_text}"
+               f"generate a new prompt word with the same semantics")
     prompts = [prompt1, prompt2, prompt3]
     for prompt in prompts:
         list_temp = []
@@ -27,14 +35,14 @@ def TaskSamanticPrompts(prompt, wrong_reason):
         return list_temp
 
 
-def generate_samantic_prompts(prompts, result):
+def generate_samantic_prompts(prompts, result, topK_dict):
     semantic_prompts = prompts[:]
     futures = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=load_config("ThreadNum")) as executor:
         # 对于每个提示，使用submit方法提交处理任务
         for prompt in prompts:
             wrongReason = warp_wrongReason(result, prompt)
-            future = executor.submit(TaskSamanticPrompts, prompt, wrongReason)
+            future = executor.submit(TaskSamanticPrompts, prompt, wrongReason, topK_dict)
             futures.append(future)
         concurrent.futures.wait(futures)
         # 等待所有Future对象完成，并收集结果

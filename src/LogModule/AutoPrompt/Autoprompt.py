@@ -31,7 +31,7 @@ def auto_prompt():
 
     train_contents, train_templates = get_train_log("Hadoop")
     test_contents, test_templates = get_test_log("Hadoop")
-    cur_prompts = init_prompt(5)
+    cur_prompts = init_prompt(10)
     # 第一轮次
     # 由gpt生成的提示词来抽取模版
     results = extract_log_template(train_contents, train_templates, cur_prompts)
@@ -41,7 +41,7 @@ def auto_prompt():
     train_accuracy_asset.append(topK_prompt)
     test_accuracy_asset.append(calculate_accuracy_test(test_contents, test_templates, topK_prompt_list))
     print("第1轮挑选的提示词以及其精度:", topK_prompt)
-    samantic_prompts = generate_samantic_prompts(topK_prompt_list, results)
+    samantic_prompts = generate_samantic_prompts(topK_prompt_list, results,topK_prompt)
     print("第1轮生成的同语义的提示词:", samantic_prompts)
 
     # 在n-1论测试集合
@@ -54,7 +54,7 @@ def auto_prompt():
         train_accuracy_asset.append(topK_prompt)
         test_accuracy_asset.append(calculate_accuracy_test(test_contents, test_templates, topK_prompt_list))
         print(f"第{i + 2}轮挑选的提示词以及其精度:", topK_prompt)
-        samantic_prompts = generate_samantic_prompts(topK_prompt_list, results)
+        samantic_prompts = generate_samantic_prompts(topK_prompt_list, results,topK_prompt)
         print(f"第{i + 2}轮生成的同语义的提示词:", samantic_prompts)
 
     end_time = time.time()
