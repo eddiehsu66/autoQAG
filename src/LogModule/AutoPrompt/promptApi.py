@@ -49,15 +49,9 @@ def infer_llm(instruction, exemplars, query, model='gpt-3.5-turbo-0125', tempera
             if "list index out of range" in str(e):
                 break
             retry_times += 1
-    if exemplars is not None and len(exemplars) > 0:
-        if exemplars[0]['query'] != 'Log message: `try to connected to host: 172.16.254.1, finished.`' \
-                or exemplars[0]['answer'] != 'Log template: `try to connected to host: {ip_address}, finished.`':
-            return infer_llm(instruction, exemplars, query,cached=cached)
-        if logger is not None:
-            logger.error(f"Failed to get response from OpenAI after {retry_times} retries.")
-        else:
-            print(f"Failed to get response from OpenAI after {retry_times} retries.")
-    return "Failed to get response from OpenAI after {} retries.".format(retry_times)
+    return "404ERROR"
+
+
 if __name__ == '__main__':
     text = ""
 

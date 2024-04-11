@@ -23,11 +23,12 @@ def TaskSamanticPrompts(prompt, wrong_reason):
                f"These are some possible reasons for poor performance: <START>{wrong_reason}<END>"
                f"Based on the prompt word <START>{prompt}<END>, generate a new prompt word with the same semantics")
     prompts = [prompt1, prompt2, prompt3]
+    list_temp = []
     for prompt in prompts:
-        list_temp = []
         response = infer_llm(prompt, None, None)
-        list_temp.append(response)
-        return list_temp
+        if response != "404ERROR":
+            list_temp.append(response)
+    return list_temp
 
 
 def generate_samantic_prompts(prompts, result):

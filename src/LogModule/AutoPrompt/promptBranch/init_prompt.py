@@ -20,9 +20,8 @@ def generation_prompt(input, output, order, gpt_prompts):
 
     prompts = [prompt1, prompt2]
     response = infer_llm(prompts[order % len(prompts)], None, None, temperature=1.0)
-    gpt_prompts.append(response)
-    # print("gpt生成的提示词:", response)
-    return gpt_prompts
+    if response != "404ERROR":
+        gpt_prompts.append(response)
 
 
 def makeExample(input, output):
@@ -34,7 +33,7 @@ def makeExample(input, output):
 
 
 def taskMakePrompt(order, gpt_prompts):
-    Input, Output = get_random_log(2,"Hadoop")
+    Input, Output = get_random_log(2, load_config("BaseFile"))
     generation_prompt(Input, Output, order, gpt_prompts)
 
 
@@ -53,8 +52,8 @@ def init_prompt(promptsNum: int):
                     "You must identify and abstract all the dynamic variables in logs with {placeholder} "
                     "and output a static log template. Print the input log's template delimited by backticks.")
     DIV_LOG = "Extract one log template, substitute variable tokens in the log as <*> between <START> and <END> tags."
-    gpt_prompts.append(LILAC_PROMPT)
-    gpt_prompts.append(DIV_LOG)
+    # gpt_prompts.append(LILAC_PROMPT)
+    # gpt_prompts.append(DIV_LOG)
     return gpt_prompts
 
 
