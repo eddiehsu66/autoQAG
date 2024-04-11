@@ -20,12 +20,12 @@ def infer_llm(instruction, exemplars, query, model='gpt-3.5-turbo-0125', tempera
     if query is not None:
         messages.append({"role": "user", "content": query})
 
-    # client = redisInit()
+    client = redisInit()
 
-    # if cached:
-    #     response = client.get(instruction)
-    #     if response is not None:
-    #         return response
+    if cached:
+        response = client.get(instruction)
+        if response is not None:
+            return response
 
     retry_times = 0
     while retry_times < 3:
@@ -38,8 +38,8 @@ def infer_llm(instruction, exemplars, query, model='gpt-3.5-turbo-0125', tempera
             )
             res = [response["message"]["content"] for response in answers["choices"] if
                    response['finish_reason'] != 'length'][0]
-            # if cached:
-            #     client.set(instruction, res)
+            if cached:
+                client.set(instruction, res)
             return res
         except Exception as e:
             if logger is not None:
