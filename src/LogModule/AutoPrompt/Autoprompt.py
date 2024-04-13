@@ -28,7 +28,7 @@ def auto_prompt():
     test_accuracy_asset = []
 
     start_time = time.time()
-    overall_number_of_cycles = 10  # 整体循环次数
+    overall_number_of_cycles = 5  # 整体循环次数
 
     train_contents, train_templates = get_train_log(BaseFile)
     test_contents, test_templates = get_test_log(BaseFile)
@@ -58,21 +58,21 @@ def auto_prompt():
         samantic_prompts = generate_samantic_prompts(topK_prompt_list, results)
         print(f"第{i + 2}轮生成的同语义的提示词:", samantic_prompts)
 
+        draw_plot_with_keys(test_accuracy_asset)
+        draw_plotBox(test_accuracy_asset)
+        save_csv(test_accuracy_asset)
+        print(test_accuracy_asset)
+
     end_time = time.time()
     elapsed_time = end_time - start_time
     minutes = int(elapsed_time // 60)
     seconds = int(elapsed_time % 60)
     print(f"程序运行时间为: {minutes} 分钟 {seconds} 秒")
     print("train_accuracy_asset:")
-    print(test_accuracy_asset)
-
-    draw_plot_with_keys(test_accuracy_asset)
-    draw_plotBox(test_accuracy_asset)
-    save_csv(test_accuracy_asset)
 
 
 if __name__ == '__main__':
-    candidateSample(1024, 'others')
-    random_select_log(300)
-    candidateSample(32, 'sampled')
+    # candidateSample(1024, 'others')
+    # random_select_log(300)
+    # candidateSample(32, 'sampled')
     auto_prompt()

@@ -52,8 +52,8 @@ def init_prompt(promptsNum: int):
                     "You must identify and abstract all the dynamic variables in logs with {placeholder} "
                     "and output a static log template. Print the input log's template delimited by backticks.")
     DIV_LOG = "Extract one log template, substitute variable tokens in the log as <*> between <START> and <END> tags."
-    # gpt_prompts.append(LILAC_PROMPT)
-    # gpt_prompts.append(DIV_LOG)
+    gpt_prompts.append(LILAC_PROMPT)
+    gpt_prompts.append(DIV_LOG)
     return gpt_prompts
 
 
