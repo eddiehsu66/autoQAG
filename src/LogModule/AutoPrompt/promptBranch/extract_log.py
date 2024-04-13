@@ -5,6 +5,8 @@ from src.LogModule.AutoPrompt.promptApi import infer_llm
 import concurrent.futures
 from src.config.configLoad import load_config
 
+BaseFile = load_config("BaseFile")
+
 
 def TaskExtractLog(log_content, prompt, log_template):
     result_item = []
@@ -12,17 +14,17 @@ def TaskExtractLog(log_content, prompt, log_template):
                   f"log message:{log_content}," \
                   f"{prompt}" \
                   f"Output according to the above requirement, without any superfluous output" \
-                  f"Please to extract the log template: \n" \
-                  f"output format: Log message: \nLog template: \n"
-    # similiar_log = prompt_select(log_content, 3, "Hadoop")
-    # for item in similiar_log:
-    #     prompt_temp += f"Log message: <START>{item['Content']}<END>" \
-    #                    f"Log template: <START>{item['answer']}<END> \n"
-    response = infer_llm(prompt_temp, None, None, cached=True)
-    result_item.append(log_content)
-    result_item.append(log_template)
-    result_item.append(prompt)
-    result_item.append(parse_log(response))
+                  f"Please follow the example below to extract the log template: \n"
+    similiar_log = prompt_select(log_content, 3, BaseFile)
+    for item in similiar_log:
+        prompt_temp += f"Log message: <START>{item['Content']}<END>" \
+                       f"Log template: <START>{item['answer']}<END> \n"
+    response = infer_llm(prompt_temp, None, None, cached=False)
+    if response != "404ERROR":
+        result_item.append(log_content)
+        result_item.append(log_template)
+        result_item.append(prompt)
+        result_item.append(parse_log(response))
     return result_item
 
 
@@ -35,8 +37,9 @@ def extract_log_template(log_contents, log_templates, prompts):
                 future = executor.submit(TaskExtractLog, log_content, prompt, log_templates[index])
                 futures.append(future)
         for future in concurrent.futures.as_completed(futures):
-            print(future.result())
-            result.append(future.result())
+            if len(future.result()) != 0:
+                print(future.result())
+                result.append(future.result())
     return result
 
 
@@ -46,6 +49,7 @@ def parse_log(log):
         content = match.group(0)
         return content.replace("\n", "").replace("<END>", "").replace("<START>", "")
     return log.replace("\n", "").replace("<END>", "").replace("<START>", "")
+
 
 if __name__ == '__main__':
     print(parse_log("这是一段文本，其中包含Log template: 需要提取的日志模板内容"))

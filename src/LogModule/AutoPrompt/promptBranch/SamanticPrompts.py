@@ -20,11 +20,11 @@ def TaskSamanticPrompts(prompt, wrong_reason):
     prompt3 = (f"This is a log parse Task, and our task is Ineffective"
                f"Based on the prompt word <START>{prompt}<END>, generate a new prompt word with the same semantics")
     prompts = [prompt1, prompt2, prompt3]
-    for prompt in prompts:
-        list_temp = []
-        response = infer_llm(prompt, None, None)
+    list_temp = []
+    response = infer_llm(prompt[0], None, None)
+    if response != "404ERROR":
         list_temp.append(response)
-        return list_temp
+    return list_temp
 
 
 def generate_samantic_prompts(prompts, result):

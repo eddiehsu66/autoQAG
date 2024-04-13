@@ -1,0 +1,33 @@
+LineId,LogId,Node,Component,State,Time,Flag,Content,EventId,EventTemplate
+1517,2615364,Interconnect-1N01,switch_module,error,1074835654,1,Linkerror event interval expired,E26,Linkerror event interval expired
+221,26132,Interconnect-0N00,switch_module,fan,1124831967,1,Fan speeds ( 3552 3534 3375 11637 3515 3479 ),E18,Fan speeds ( <*> <*> <*> <*> <*> <*> )
+179,147494,Interconnect-0N00,switch_module,temphigh,1129813980,1,Temperature (41C) exceeds warning threshold,E44,Temperature (<*>C) exceeds warning threshold
+159,301526,2797,boot_cmd,success,1081993794,1,Command has completed successfully,E12,Command has completed successfully
+306,27385,Interconnect-0N02,switch_module,control,1101771720,1,power/control problem,E34,power/control problem
+341,2572034,node-D0,clusterfilesystem,clusterfilesystem.not_served,1074125608,1,ClusterFileSystem: ServerFileSystem domain root30_domain is no longer served by node node-0,E9,ClusterFileSystem: ServerFileSystem domain <*> is no longer served by node node-<*>
+212,365140,node-69,unix.hw,net.niff.down,1085075228,1,NIFF: node node-69 detected a failed network connection on network 5.5.224.0 via interface alt0,E27,NIFF: node node-<*> detected a failed network connection on network <*> via interface alt0
+176,341834,node-118,node,psu,1140312091,1,psu failure\ ambient=28,E35,psu failure\ ambient=<*>
+1860,90917,Interconnect-1T01,switch_module,error,1128098598,1,link errors remain current,E23,link errors remain current
+587,451647,node-9,node,status,1098825692,1,configured out,E14,configured out
+142,328498,node-218,action,start,1140099980,1,wait  (command 4116),E45,wait  (command <*>)
+1841,72725,3398,boot_cmd,error,1108648264,1,Failed subcommands 3406,E16,Failed subcommands <*>
+150,401417,node-129,action,start,1142537875,1,bootGenvmunix  (command 4185),E6,bootGenvmunix  (command <*>)
+1,134681,node-246,unix.hw,state_change.unavailable,1077804742,1,Component State Change: Component \042SCSI-WWID:01000010:6005-08b4-0001-00c6-0006-3000-003d-0000\042 is in the unavailable state (HWID=1973),E13,Component State Change: Component <*> is in the unavailable state (HWID=<*>)
+196,311726,node-D7,clusterfilesystem,clusterfilesystem.no_server,1082041350,1,ClusterFileSystem: There is no server for ServerFileSystem domain storage1031,E10,ClusterFileSystem: There is no server for ServerFileSystem domain storage<*>
+93,373784,node-147,action,start,1085979758,1,halt  (command 2992),E19,halt  (command <*>)
+315,295965,Interconnect-1T00,switch_module,bcast-error,1081534663,1,Link error,E21,Link error
+14,2570772,node-124,action,start,1074123150,1,clusterAddMember  (command 1900),E8,clusterAddMember  (command <*>)
+166,70088,2206,shutdown_cmd,new,1077059790,1,Targeting domains:node-D7 and nodes:node-[224\ 228\ 232],E43,Targeting domains:node-D<*>and nodes:node-<*>
+167,162883,2414,boot_cmd,new,1077877853,1,Targeting domains:node-D4 and nodes:node-[128-135] child of command 2401,E42,Targeting domains:node-D<*> and nodes:node-[<*>-<*>] child of command <*>
+1459,2570021,node-5,action,error,1074121927,1,risBoot (command 1903) Error: Timed out while waiting for SRM prompt: <ABORT code completed>,E37,risBoot (command <*>) Error: Timed out while waiting for SRM prompt: <ABORT code completed>
+333,218536,node-D1,clusterfilesystem,fdmn.full,1117131308,1,ServerFileSystem: ServerFileSystem domain root26_local is full,E40,ServerFileSystem: ServerFileSystem domain <*> is full
+214,180537,node-D0,clusterfilesystem,fdmn.panic,1131228351,1,ServerFileSystem: An ServerFileSystem domain panic has occurred on storage442,E39,ServerFileSystem: An ServerFileSystem domain panic has occurred on <*>
+15,2571927,node-28,action,start,1074125371,1,risBoot  (command 1903),E36,risBoot  (command <*>)
+1435,2558342,Interconnect-1N01,switch_module,error,1073114649,1,Link ok,E25,Link ok
+322,408221,Interconnect-1T00,switch_module,bcast-error,1142752287,1,Link error on broadcast tree Interconnect-1T00:00:2:0,E22,Link error on broadcast tree Interconnect-<*>:<*>:<*>:<*>
+613,110520,node-73,node,status,1111066002,1,not responding,E32,not responding
+243,43379,Interconnect-0N00,switch_module,fan,1125938946,1,Fan speeds ( 3552 3534 3375 **** 3515 3479 ),E17,Fan speeds ( <*> <*> <*> **** <*> <*> )
+1953,363203,node-152,unix.hw,net.niff.up,1085071937,1,NIFF: node node-152 has detected an available network connection on network 10.128.0.0 via interface ee0,E29,NIFF: node node-<*> has detected an available network connection on network <*> via interface ee0
+1440,2556365,Interconnect-1N01,switch_module,error,1072790564,1,Link in reset,E24,Link in reset
+1542,27373,node-55,action,error,1076176599,1,boot (command 2092) Error: HALT asserted\  cannot continue,E5,boot (command <*>) Error: HALT asserted\  cannot continue
+138,220288,node-194,action,start,1132159257,1,boot  (command 4024),E4,boot  (command <*>)

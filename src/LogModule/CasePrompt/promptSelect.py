@@ -4,6 +4,8 @@ import string
 import random
 import pandas as pd
 
+from src.config.configLoad import load_config
+
 
 def lcs_distance(x, y):
     seq1 = x.split()
@@ -79,5 +81,6 @@ def prompt_select(log, k,fileName):
 
 if __name__ == '__main__':
     # test
+    BaseFile = load_config("BaseFile")
     log = "onTouchEvent::1, x=296.0, y=327.0"
-    print(prompt_select(log, 5,"Hadoop"))
+    print(prompt_select(log, 5,BaseFile))
