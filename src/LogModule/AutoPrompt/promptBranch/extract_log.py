@@ -15,10 +15,10 @@ def TaskExtractLog(log_content, prompt, log_template):
                   f"{prompt}" \
                   f"Output according to the above requirement, without any superfluous output" \
                   f"Please follow the example below to extract the log template: \n"
-    similiar_log = prompt_select(log_content, 3, BaseFile)
-    for item in similiar_log:
-        prompt_temp += f"Log message: <START>{item['Content']}<END>" \
-                       f"Log template: <START>{item['answer']}<END> \n"
+    # similiar_log = prompt_select(log_content, 3, BaseFile)
+    # for item in similiar_log:
+    #     prompt_temp += f"Log message: <START>{item['Content']}<END>" \
+    #                    f"Log template: <START>{item['answer']}<END> \n"
     response = infer_llm(prompt_temp, None, None, cached=False)
     if response != "404ERROR":
         result_item.append(log_content)
