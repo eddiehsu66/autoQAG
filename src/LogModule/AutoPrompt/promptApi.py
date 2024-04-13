@@ -25,7 +25,7 @@ def infer_llm(instruction, exemplars, query, model='gpt-3.5-turbo-0125', tempera
     if cached:
         response = client.get(instruction)
         if response is not None:
-            print("缓存命中!")
+            # print("缓存命中!")
             return response
 
     retry_times = 0

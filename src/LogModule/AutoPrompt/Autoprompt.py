@@ -28,7 +28,7 @@ def auto_prompt():
     test_accuracy_asset = []
 
     start_time = time.time()
-    overall_number_of_cycles = 5  # 整体循环次数
+    overall_number_of_cycles = 3  # 整体循环次数
 
     train_contents, train_templates = get_train_log(BaseFile)
     test_contents, test_templates = get_test_log(BaseFile)
@@ -44,6 +44,10 @@ def auto_prompt():
     print("第1轮挑选的提示词以及其精度:", topK_prompt)
     samantic_prompts = generate_samantic_prompts(topK_prompt_list, results)
     print("第1轮生成的同语义的提示词:", samantic_prompts)
+
+    draw_plot_with_keys(test_accuracy_asset)
+    draw_plotBox(test_accuracy_asset)
+    save_csv(test_accuracy_asset)
 
     # 在n-1论测试集合
     for i in range(overall_number_of_cycles):

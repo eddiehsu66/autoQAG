@@ -19,7 +19,7 @@ def TaskExtractLog(log_content, prompt, log_template):
     # for item in similiar_log:
     #     prompt_temp += f"Log message: <START>{item['Content']}<END>" \
     #                    f"Log template: <START>{item['answer']}<END> \n"
-    response = infer_llm(prompt_temp, None, None, cached=False)
+    response = infer_llm(prompt_temp, None, None, cached=True)
     if response != "404ERROR":
         result_item.append(log_content)
         result_item.append(log_template)
@@ -38,7 +38,7 @@ def extract_log_template(log_contents, log_templates, prompts):
                 futures.append(future)
         for future in concurrent.futures.as_completed(futures):
             if len(future.result()) != 0:
-                print(future.result())
+                # print(future.result())
                 result.append(future.result())
     return result
 
