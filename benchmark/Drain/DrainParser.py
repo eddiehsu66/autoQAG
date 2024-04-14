@@ -6,7 +6,7 @@ from src.config.configLoad import load_config,find_nearest_dir
 from src.evaluation.accuracy import evaluate_test
 
 def logParse(fileName:str):
-    base = find_nearest_dir('data')
+    base = find_nearest_dir('ipre_data')
     dirName = os.path.join(base,rf'loghub-master\{fileName}')
     outName = os.path.join(base,rf'loghub-master\{fileName}\{fileName}_DrainParsed')
     settings = load_config("PARSE_SETTING")

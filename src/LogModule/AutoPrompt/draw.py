@@ -131,11 +131,11 @@ if __name__ == '__main__':
         0.8511904761904762, 0.8762886597938144, 0.20833333333333334], 'The process involves identifying key patterns '
                                                                       'and placeholders in log messages, '
                                                                       'creating templates using those patterns and '
-                                                                      'placeholders, and mapping the log message data '
+                                                                      'placeholders, and mapping the log message ipre_data '
                                                                       'to the placeholders in the templates for '
                                                                       'accurate parsing. This helps in extracting '
                                                                       'structured information from unstructured log '
-                                                                      'data.': [0.8035714285714286, 0.81,
+                                                                      'ipre_data.': [0.8035714285714286, 0.81,
                                                                                 0.20833333333333334], 'The process of '
                                                                                                       'log template '
                                                                                                       'parsing '
@@ -165,7 +165,7 @@ if __name__ == '__main__':
                                                                                                       'messages and '
                                                                                                       'generating '
                                                                                                       'templates for '
-                                                                                                      'future data '
+                                                                                                      'future ipre_data '
                                                                                                       'processing '
                                                                                                       'tasks.': [
         0.8095238095238095, 0.8469387755102041, 0.16071428571428573], 'The process of parsing log templates involves '
@@ -221,7 +221,7 @@ if __name__ == '__main__':
                 'The process of log template parsing involves analyzing log messages to identify patterns and placeholders '
                 'that can be generalized into a template format. By comparing log messages to existing templates and '
                 'extracting common elements, language model assistants can improve the accuracy of parsing log messages and '
-                'generating templates for future data processing tasks.': [0.8333333333333334, 0.8762886597938144,
+                'generating templates for future ipre_data processing tasks.': [0.8333333333333334, 0.8762886597938144,
                                                                            0.16071428571428573], 'The process involves '
                                                                                                  'identifying key patterns '
                                                                                                  'and placeholders in log '
@@ -229,13 +229,13 @@ if __name__ == '__main__':
                                                                                                  'creating templates using '
                                                                                                  'those patterns and '
                                                                                                  'placeholders, and mapping '
-                                                                                                 'the log message data to the '
+                                                                                                 'the log message ipre_data to the '
                                                                                                  'placeholders in the '
                                                                                                  'templates for accurate '
                                                                                                  'parsing. This helps in '
                                                                                                  'extracting structured '
                                                                                                  'information from '
-                                                                                                 'unstructured log data.': [
+                                                                                                 'unstructured log ipre_data.': [
             0.8035714285714286, 0.81, 0.20833333333333334]}, {'The process involves identifying key patterns in log '
                                                               'messages, such as specific keywords or variables, '
                                                               'and creating templates with placeholders for these '
@@ -272,7 +272,7 @@ if __name__ == '__main__':
                 'The process of log template parsing involves analyzing log messages to identify patterns and placeholders '
                 'that can be generalized into a template format. By comparing log messages to existing templates and '
                 'extracting common elements, language model assistants can improve the accuracy of parsing log messages and '
-                'generating templates for future data processing tasks.': [0.8333333333333334, 0.8762886597938144,
+                'generating templates for future ipre_data processing tasks.': [0.8333333333333334, 0.8762886597938144,
                                                                            0.16071428571428573], 'The process involves '
                                                                                                  'identifying key patterns '
                                                                                                  'and placeholders in log '
@@ -280,13 +280,13 @@ if __name__ == '__main__':
                                                                                                  'creating templates using '
                                                                                                  'those patterns and '
                                                                                                  'placeholders, and mapping '
-                                                                                                 'the log message data to the '
+                                                                                                 'the log message ipre_data to the '
                                                                                                  'placeholders in the '
                                                                                                  'templates for accurate '
                                                                                                  'parsing. This helps in '
                                                                                                  'extracting structured '
                                                                                                  'information from '
-                                                                                                 'unstructured log data.': [
+                                                                                                 'unstructured log ipre_data.': [
             0.8035714285714286, 0.81, 0.20833333333333334]}, {'The process involves identifying key patterns in log '
                                                               'messages, such as specific keywords or variables, '
                                                               'and creating templates with placeholders for these '
@@ -323,7 +323,7 @@ if __name__ == '__main__':
                 'The process of log template parsing involves analyzing log messages to identify patterns and placeholders '
                 'that can be generalized into a template format. By comparing log messages to existing templates and '
                 'extracting common elements, language model assistants can improve the accuracy of parsing log messages and '
-                'generating templates for future data processing tasks.': [0.8333333333333334, 0.8762886597938144,
+                'generating templates for future ipre_data processing tasks.': [0.8333333333333334, 0.8762886597938144,
                                                                            0.16071428571428573], 'The process involves '
                                                                                                  'identifying key patterns '
                                                                                                  'and placeholders in log '
@@ -331,13 +331,13 @@ if __name__ == '__main__':
                                                                                                  'creating templates using '
                                                                                                  'those patterns and '
                                                                                                  'placeholders, and mapping '
-                                                                                                 'the log message data to the '
+                                                                                                 'the log message ipre_data to the '
                                                                                                  'placeholders in the '
                                                                                                  'templates for accurate '
                                                                                                  'parsing. This helps in '
                                                                                                  'extracting structured '
                                                                                                  'information from '
-                                                                                                 'unstructured log data.': [
+                                                                                                 'unstructured log ipre_data.': [
             0.8035714285714286, 0.81, 0.20833333333333334]}, {'The process involves identifying key patterns in log '
                                                               'messages, such as specific keywords or variables, '
                                                               'and creating templates with placeholders for these '
@@ -374,7 +374,7 @@ if __name__ == '__main__':
                 'The process of log template parsing involves analyzing log messages to identify patterns and placeholders '
                 'that can be generalized into a template format. By comparing log messages to existing templates and '
                 'extracting common elements, language model assistants can improve the accuracy of parsing log messages and '
-                'generating templates for future data processing tasks.': [0.8333333333333334, 0.8762886597938144,
+                'generating templates for future ipre_data processing tasks.': [0.8333333333333334, 0.8762886597938144,
                                                                            0.16071428571428573],
                 'The process of log template '
                 'parsing involves analyzing '
@@ -389,7 +389,7 @@ if __name__ == '__main__':
                 'can enhance the precision '
                 'of parsing log messages and '
                 'creating templates for '
-                'future data processing '
+                'future ipre_data processing '
                 'tasks.': [
                     0.8333333333333334, 0.8585858585858586, 0.16666666666666666]},
             {'The process involves identifying key '
@@ -425,7 +425,7 @@ if __name__ == '__main__':
                 'to existing templates and extracting common '
                 'elements, language model assistants can '
                 'enhance the precision of parsing log messages '
-                'and creating templates for future data '
+                'and creating templates for future ipre_data '
                 'processing tasks.': [0.8809523809523809,
                                       0.9072164948453607,
                                       0.16071428571428573],
@@ -438,7 +438,7 @@ if __name__ == '__main__':
                 'The process of log template parsing involves analyzing log messages to identify patterns and placeholders '
                 'that can be generalized into a template format. By comparing log messages to existing templates and '
                 'extracting common elements, language model assistants can improve the accuracy of parsing log messages and '
-                'generating templates for future data processing tasks.': [0.8333333333333334, 0.8762886597938144,
+                'generating templates for future ipre_data processing tasks.': [0.8333333333333334, 0.8762886597938144,
                                                                            0.16071428571428573]}]
 
     draw_plotBox(data)

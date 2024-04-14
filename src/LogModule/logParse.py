@@ -5,7 +5,7 @@ from src.config.configLoad import load_config,find_nearest_dir
 
 
 def logParse(fileName:str):
-    base = find_nearest_dir('data')
+    base = find_nearest_dir('ipre_data')
     dirName = os.path.join(base,rf'loghub-master\{fileName}')
     settings = load_config("PARSE_SETTING")
     log_file = settings[fileName]["log_file"]
