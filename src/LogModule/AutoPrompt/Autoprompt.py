@@ -30,7 +30,7 @@ def auto_prompt():
     test_accuracy_asset = []
 
     start_time = time.time()
-    overall_number_of_cycles = 1  # 整体循环次数
+    overall_number_of_cycles = 5  # 整体循环次数
 
     train_contents, train_templates = get_train_log(BaseFile)
     test_contents, test_templates = get_test_log(BaseFile)

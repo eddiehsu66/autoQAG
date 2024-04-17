@@ -1,0 +1,33 @@
+LineId,Date,Day,Time,Component,Pid,Content,EventId,EventTemplate
+1934,Dec,10,11:04:18,LabSZ,25499,Failed password for uucp from 103.99.0.122 port 65454 ssh2,E9,Failed password for <*> from <*> port <*> ssh2
+161,Dec,10,07:51:20,LabSZ,24326,Failed password for uucp from 195.154.37.122 port 59266 ssh2,E9,Failed password for <*> from <*> port <*> ssh2
+762,Dec,10,09:17:33,LabSZ,24614,Failed password for invalid user nagios from 187.141.143.180 port 55761 ssh2,E10,Failed password for invalid user <*> from <*> port <*> ssh2
+395,Dec,10,09:11:47,LabSZ,24456,Failed password for invalid user ubnt from 103.99.0.122 port 60608 ssh2,E10,Failed password for invalid user <*> from <*> port <*> ssh2
+964,Dec,10,09:45:06,LabSZ,24761,Received disconnect from 119.137.62.142: 11: disconnected by user,E26,Received disconnect from <*>: <*>: disconnected by user
+964,Dec,10,09:45:06,LabSZ,24761,Received disconnect from 119.137.62.142: 11: disconnected by user,E26,Received disconnect from <*>: <*>: disconnected by user
+453,Dec,10,09:12:16,LabSZ,24479,Invalid user admin from 103.99.0.122,E13,Invalid user <*> from <*>
+453,Dec,10,09:12:16,LabSZ,24479,Invalid user admin from 103.99.0.122,E13,Invalid user <*> from <*>
+821,Dec,10,09:18:27,LabSZ,24636,Did not receive identification string from 103.207.39.16,E3,Did not receive identification string from <*>
+551,Dec,10,09:13:22,LabSZ,24511,Did not receive identification string from 185.190.58.151,E3,Did not receive identification string from <*>
+851,Dec,10,09:18:40,LabSZ,24645,reverse mapping checking getaddrinfo for customer-187-141-143-180-sta.uninet-ide.com.mx [187.141.143.180] failed - POSSIBLE BREAK-IN ATTEMPT!,E27,reverse mapping checking getaddrinfo for <*> [<*>] failed - POSSIBLE BREAK-IN ATTEMPT!
+147,Dec,10,07:48:00,LabSZ,24321,reverse mapping checking getaddrinfo for 191-210-223-172.user.vivozap.com.br [191.210.223.172] failed - POSSIBLE BREAK-IN ATTEMPT!,E27,reverse mapping checking getaddrinfo for <*> [<*>] failed - POSSIBLE BREAK-IN ATTEMPT!
+718,Dec,10,09:16:59,LabSZ,24599,pam_unix(sshd:auth): check pass; user unknown,E21,pam_unix(sshd:auth): check pass; user unknown
+718,Dec,10,09:16:59,LabSZ,24599,pam_unix(sshd:auth): check pass; user unknown,E21,pam_unix(sshd:auth): check pass; user unknown
+476,Dec,10,09:12:27,LabSZ,24455,PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=185.190.58.151,E15,PAM <*> more authentication failure; logname= uid=<*> euid=<*> tty=ssh ruser= rhost=<*>
+254,Dec,10,08:26:04,LabSZ,24375,PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=5.188.10.180,E15,PAM <*> more authentication failure; logname= uid=<*> euid=<*> tty=ssh ruser= rhost=<*>
+545,Dec,10,09:13:15,LabSZ,24514,Failed password for root from 187.141.143.180 port 39319 ssh2,E9,Failed password for <*> from <*> port <*> ssh2
+1869,Dec,10,11:03:53,LabSZ,25457,fatal: Write failed: Connection reset by peer [preauth],E11,fatal: Write failed: Connection reset by peer [preauth]
+956,Dec,10,09:32:20,LabSZ,24680,Accepted password for fztu from 119.137.62.142 port 49116 ssh2,E1,Accepted password for <*> from <*> port <*> ssh2
+438,Dec,10,09:12:08,LabSZ,24455,input_userauth_request: invalid user admin [preauth],E12,input_userauth_request: invalid user <*> [preauth]
+452,Dec,10,09:12:15,LabSZ,24477,error: Received disconnect from 103.99.0.122: 14: No more user authentication methods available. [preauth],E7,error: Received disconnect from <*>: <*>: No more user authentication methods available. [preauth]
+1001,Dec,10,10:14:13,LabSZ,24833,Disconnecting: Too many authentication failures for admin [preauth],E4,Disconnecting: Too many authentication failures for admin [preauth]
+1873,Dec,10,11:03:54,LabSZ,25465,Invalid user 1234 from 103.99.0.122,E13,Invalid user <*> from <*>
+473,Dec,10,09:12:24,LabSZ,24485,pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=103.99.0.122  user=ftp,E20,pam_unix(sshd:auth): authentication failure; logname= uid=<*> euid=<*> tty=ssh ruser= rhost=<*> user=<*>
+288,Dec,10,08:39:59,LabSZ,24408,PAM service(sshd) ignoring max retries; 6 > 3,E18,PAM service(sshd) ignoring max retries; <*> > <*>
+1943,Dec,10,11:04:23,LabSZ,25505,Failed password for sshd from 103.99.0.122 port 49598 ssh2,E9,Failed password for <*> from <*> port <*> ssh2
+287,Dec,10,08:39:59,LabSZ,24408,PAM 5 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=106.5.5.195  user=root,E17,PAM <*> more authentication failures; logname= uid=<*> euid=<*> tty=ssh ruser= rhost=<*>  user=root
+162,Dec,10,07:51:20,LabSZ,24326,error: Received disconnect from 195.154.37.122: 3: com.jcraft.jsch.JSchException: Auth fail [preauth],E6,error: Received disconnect from <*>: <*>: com.jcraft.jsch.JSchException: Auth fail [preauth]
+237,Dec,10,08:25:41,LabSZ,24371,Connection closed by 5.188.10.180 [preauth],E2,Connection closed by <*> [preauth]
+965,Dec,10,09:45:06,LabSZ,24680,pam_unix(sshd:session): session closed for user fztu,E22,pam_unix(sshd:session): session closed for user <*>
+12,Dec,10,07:07:38,LabSZ,24206,pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=ec2-52-80-34-196.cn-north-1.compute.amazonaws.com.cn,E19,pam_unix(sshd:auth): authentication failure; logname= uid=<*> euid=<*> tty=ssh ruser= rhost=<*>
+724,Dec,10,09:17:05,LabSZ,24604,input_userauth_request: invalid user redhat [preauth],E12,input_userauth_request: invalid user <*> [preauth]
