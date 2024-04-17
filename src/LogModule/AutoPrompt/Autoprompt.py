@@ -11,6 +11,8 @@ from src.config.configLoad import load_config
 from src.evaluation.accuracy import get_topK_prompt, calculate_accuracy_test
 
 BaseFile = load_config("BaseFile")
+
+
 def save_csv(data):
     path = "C:/code/src/python/autoQAG/result/accuracy.csv"
     rows = []
@@ -28,7 +30,7 @@ def auto_prompt():
     test_accuracy_asset = []
 
     start_time = time.time()
-    overall_number_of_cycles = 5  # 整体循环次数
+    overall_number_of_cycles = 1  # 整体循环次数
 
     train_contents, train_templates = get_train_log(BaseFile)
     test_contents, test_templates = get_test_log(BaseFile)
@@ -40,11 +42,11 @@ def auto_prompt():
     topK_prompt = get_topK_prompt(results, 5)
     topK_prompt_list = list(topK_prompt.keys())
     train_accuracy_asset.append(topK_prompt)
-    test_accuracy_asset.append(calculate_accuracy_test(test_contents, test_templates, topK_prompt_list))
+    # test_accuracy_asset.append(calculate_accuracy_test(test_contents, test_templates, topK_prompt_list))
     print("第1轮挑选的提示词以及其精度:", topK_prompt)
     samantic_prompts = generate_samantic_prompts(topK_prompt_list, results)
     print("第1轮生成的同语义的提示词:", samantic_prompts)
-
+    print("z第一轮结束zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz")
     # 在n-1论测试集合
     for i in range(overall_number_of_cycles):
         # 由gpt生成的提示词去抽取日志模版
@@ -53,22 +55,25 @@ def auto_prompt():
         topK_prompt = get_topK_prompt(results, 5)
         topK_prompt_list = list(topK_prompt.keys())
         train_accuracy_asset.append(topK_prompt)
-        test_accuracy_asset.append(calculate_accuracy_test(test_contents, test_templates, topK_prompt_list))
+        # test_accuracy_asset.append(calculate_accuracy_test(test_contents, test_templates, topK_prompt_list))
         print(f"第{i + 2}轮挑选的提示词以及其精度:", topK_prompt)
         samantic_prompts = generate_samantic_prompts(topK_prompt_list, results)
         print(f"第{i + 2}轮生成的同语义的提示词:", samantic_prompts)
 
-        draw_plot_with_keys(test_accuracy_asset)
-        draw_plotBox(test_accuracy_asset)
-        save_csv(test_accuracy_asset)
-        print(test_accuracy_asset)
+        draw_plot_with_keys(train_accuracy_asset)
+        draw_plotBox(train_accuracy_asset)
+        save_csv(train_accuracy_asset)
+        print(f"zz第{i+2}轮结束zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz")
 
+    test_accuracy = calculate_accuracy_test(test_contents, test_templates, topK_prompt_list)
+    print("最后的结果所测试精度:", test_accuracy)
+    print("zz")
+    print("总的训练集合精度:", train_accuracy_asset)
     end_time = time.time()
     elapsed_time = end_time - start_time
     minutes = int(elapsed_time // 60)
     seconds = int(elapsed_time % 60)
     print(f"程序运行时间为: {minutes} 分钟 {seconds} 秒")
-    print("train_accuracy_asset:")
 
 
 if __name__ == '__main__':

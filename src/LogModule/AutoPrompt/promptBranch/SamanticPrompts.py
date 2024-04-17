@@ -19,12 +19,13 @@ def TaskSamanticPrompts(prompt, wrong_reason):
                f"It may be due to the following reasons: <START>{wrong_reason}<END>"
                f"Please update the prompts and modify with out any superfluous output")
 
-    prompt3 = (f"This is a log parse Task, and our task is Ineffective"
-               f"These are some possible reasons for poor performance: <START>{wrong_reason}<END>"
-               f"Based on the prompt word <START>{prompt}<END>, generate a new prompt word with the same semantics")
-    prompts = [prompt1, prompt2, prompt3]
+    prompt3 = (f"According to the following prompt, one prompts are generated while maintaining the same semantics"
+               f"The prompt is {prompt}"
+               f"This is the reason for the error that occurred during the previous parsing of the log :{wrong_reason}"
+               f"The generated prompts without any superfluous output"
+               f"For example:1.Prompt1\n2.Prompt2")
     list_temp = []
-    response = infer_llm(prompt[0], None, None)
+    response = infer_llm(prompt1, None, None)
     if response != "404ERROR":
         list_temp.append(response)
     return list_temp
@@ -37,6 +38,7 @@ def generate_samantic_prompts(prompts, result):
         # 对于每个提示，使用submit方法提交处理任务
         for prompt in prompts:
             wrongReason = warp_wrongReason(result, prompt)
+            print("错误愿原因：", wrongReason)
             future = executor.submit(TaskSamanticPrompts, prompt, wrongReason)
             futures.append(future)
         concurrent.futures.wait(futures)

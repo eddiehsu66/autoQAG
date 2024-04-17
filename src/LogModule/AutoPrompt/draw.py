@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
 import matplotlib
 import numpy as np
 
@@ -33,10 +34,10 @@ def draw_plotBox(data):
     # 绘制箱体图
     box = plt.boxplot(data_to_plot, patch_artist=True, labels=['GA', 'FGA', 'PA'], showmeans=False,
                       showfliers=False,
-                      whiskerprops={'linewidth':0.5,'color': 'black'},  # 将线条变细
-                      capprops={'linewidth':0.5,'color': 'black'},  # 将线条变细
-                      medianprops={'linewidth':0.5,'color': 'black'},  # 将线条变细
-                      boxprops={'linewidth':0.5, 'edgecolor': 'black'})  # 将线条变细且边缘为黑色
+                      whiskerprops={'linewidth': 0.5, 'color': 'black'},  # 将线条变细
+                      capprops={'linewidth': 0.5, 'color': 'black'},  # 将线条变细
+                      medianprops={'linewidth': 0.5, 'color': 'black'},  # 将线条变细
+                      boxprops={'linewidth': 0.5, 'edgecolor': 'black'})  # 将线条变细且边缘为黑色
 
     # 设置颜色
     for patch, color in zip(box['boxes'], colors):
@@ -111,334 +112,94 @@ def draw_plot_with_keys(data):
     plt.savefig(path, dpi=300)
 
 
-if __name__ == '__main__':
-    data = [{'The process involves identifying key patterns in log messages, such as specific keywords or variables, '
-             'and creating templates with placeholders for these elements. By matching log messages to these '
-             'templates, language model assistants can accurately parse and interpret the information provided in the '
-             'logs.': [0.8869047619047619, 0.883248730964467, 0.22023809523809523], 'The process of parsing log '
-                                                                                    'messages into templates involves '
-                                                                                    'identifying common patterns and '
-                                                                                    'placeholders within the logs. By '
-                                                                                    'analyzing the logs, '
-                                                                                    'language model assistants can '
-                                                                                    'create templates that capture '
-                                                                                    'the essential information while '
-                                                                                    'abstracting out specific values. '
-                                                                                    'This approach helps improve the '
-                                                                                    'accuracy of log template parsing '
-                                                                                    'by generalizing the structure of '
-                                                                                    'similar log messages.': [
-        0.8511904761904762, 0.8762886597938144, 0.20833333333333334], 'The process involves identifying key patterns '
-                                                                      'and placeholders in log messages, '
-                                                                      'creating templates using those patterns and '
-                                                                      'placeholders, and mapping the log message ipre_data '
-                                                                      'to the placeholders in the templates for '
-                                                                      'accurate parsing. This helps in extracting '
-                                                                      'structured information from unstructured log '
-                                                                      'ipre_data.': [0.8035714285714286, 0.81,
-                                                                                0.20833333333333334], 'The process of '
-                                                                                                      'log template '
-                                                                                                      'parsing '
-                                                                                                      'involves '
-                                                                                                      'analyzing log '
-                                                                                                      'messages to '
-                                                                                                      'identify '
-                                                                                                      'patterns and '
-                                                                                                      'placeholders '
-                                                                                                      'that can be '
-                                                                                                      'generalized '
-                                                                                                      'into a '
-                                                                                                      'template '
-                                                                                                      'format. By '
-                                                                                                      'comparing log '
-                                                                                                      'messages to '
-                                                                                                      'existing '
-                                                                                                      'templates and '
-                                                                                                      'extracting '
-                                                                                                      'common '
-                                                                                                      'elements, '
-                                                                                                      'language model '
-                                                                                                      'assistants can '
-                                                                                                      'improve the '
-                                                                                                      'accuracy of '
-                                                                                                      'parsing log '
-                                                                                                      'messages and '
-                                                                                                      'generating '
-                                                                                                      'templates for '
-                                                                                                      'future ipre_data '
-                                                                                                      'processing '
-                                                                                                      'tasks.': [
-        0.8095238095238095, 0.8469387755102041, 0.16071428571428573], 'The process of parsing log templates involves '
-                                                                      'identifying key patterns and placeholders in '
-                                                                      'log messages to create a generalized template '
-                                                                      'for easier parsing and analysis. By comparing '
-                                                                      'log messages to existing templates, '
-                                                                      'language model assistants can improve accuracy '
-                                                                      'in extracting relevant information from logs. '
-                                                                      'For example, in the given logs, patterns like '
-                                                                      '"<START>registerCallback not in UI.<START>" '
-                                                                      'and "<START>visible is system.message.count gt '
-                                                                      '0<START>" can be transformed into templates '
-                                                                      'like "<START>registerCallback not in '
-                                                                      'UI.<START>" and "<START>visible is <*> gt '
-                                                                      '<*><START>" respectively, allowing for '
-                                                                      'consistent and efficient log parsing.': [
-        0.7857142857142857, 0.8140703517587939, 0.21428571428571427]}, {'The process involves identifying key '
-                                                                        'patterns in log messages, such as specific '
-                                                                        'keywords or variables, and creating '
-                                                                        'templates with placeholders for these '
-                                                                        'elements. By matching log messages to these '
-                                                                        'templates, language model assistants can '
-                                                                        'accurately parse and interpret the '
-                                                                        'information provided in the logs.': [
-        0.9166666666666666, 0.9222797927461139, 0.22023809523809523], 'The process of parsing log templates involves '
-                                                                      'identifying key patterns and placeholders in '
-                                                                      'log messages to create a generalized template '
-                                                                      'for easier parsing and analysis. By comparing '
-                                                                      'log messages to existing templates, '
-                                                                      'language model assistants can improve accuracy '
-                                                                      'in extracting relevant information from logs. '
-                                                                      'For example, in the given logs, patterns like '
-                                                                      '"<START>registerCallback not in UI.<START>" '
-                                                                      'and "<START>visible is system.message.count gt '
-                                                                      '0<START>" can be transformed into templates '
-                                                                      'like "<START>registerCallback not in '
-                                                                      'UI.<START>" and "<START>visible is <*> gt '
-                                                                      '<*><START>" respectively, allowing for '
-                                                                      'consistent and efficient log parsing.': [
-        0.8630952380952381, 0.8865979381443299, 0.20833333333333334], 'The process of parsing log messages into '
-                                                                      'templates involves identifying common patterns '
-                                                                      'and placeholders within the logs. By analyzing '
-                                                                      'the logs, language model assistants can create '
-                                                                      'templates that capture the essential '
-                                                                      'information while abstracting out specific '
-                                                                      'values. This approach helps improve the '
-                                                                      'accuracy of log template parsing by '
-                                                                      'generalizing the structure of similar log '
-                                                                      'messages.': [0.8511904761904762,
-                                                                                    0.8762886597938144,
-                                                                                    0.20833333333333334],
-                'The process of log template parsing involves analyzing log messages to identify patterns and placeholders '
-                'that can be generalized into a template format. By comparing log messages to existing templates and '
-                'extracting common elements, language model assistants can improve the accuracy of parsing log messages and '
-                'generating templates for future ipre_data processing tasks.': [0.8333333333333334, 0.8762886597938144,
-                                                                           0.16071428571428573], 'The process involves '
-                                                                                                 'identifying key patterns '
-                                                                                                 'and placeholders in log '
-                                                                                                 'messages, '
-                                                                                                 'creating templates using '
-                                                                                                 'those patterns and '
-                                                                                                 'placeholders, and mapping '
-                                                                                                 'the log message ipre_data to the '
-                                                                                                 'placeholders in the '
-                                                                                                 'templates for accurate '
-                                                                                                 'parsing. This helps in '
-                                                                                                 'extracting structured '
-                                                                                                 'information from '
-                                                                                                 'unstructured log ipre_data.': [
-            0.8035714285714286, 0.81, 0.20833333333333334]}, {'The process involves identifying key patterns in log '
-                                                              'messages, such as specific keywords or variables, '
-                                                              'and creating templates with placeholders for these '
-                                                              'elements. By matching log messages to these templates, '
-                                                              'language model assistants can accurately parse and '
-                                                              'interpret the information provided in the logs.': [
-        0.9166666666666666, 0.9222797927461139, 0.22023809523809523], 'The process of parsing log templates involves '
-                                                                      'identifying key patterns and placeholders in '
-                                                                      'log messages to create a generalized template '
-                                                                      'for easier parsing and analysis. By comparing '
-                                                                      'log messages to existing templates, '
-                                                                      'language model assistants can improve accuracy '
-                                                                      'in extracting relevant information from logs. '
-                                                                      'For example, in the given logs, patterns like '
-                                                                      '"<START>registerCallback not in UI.<START>" '
-                                                                      'and "<START>visible is system.message.count gt '
-                                                                      '0<START>" can be transformed into templates '
-                                                                      'like "<START>registerCallback not in '
-                                                                      'UI.<START>" and "<START>visible is <*> gt '
-                                                                      '<*><START>" respectively, allowing for '
-                                                                      'consistent and efficient log parsing.': [
-        0.8630952380952381, 0.8865979381443299, 0.20833333333333334], 'The process of parsing log messages into '
-                                                                      'templates involves identifying common patterns '
-                                                                      'and placeholders within the logs. By analyzing '
-                                                                      'the logs, language model assistants can create '
-                                                                      'templates that capture the essential '
-                                                                      'information while abstracting out specific '
-                                                                      'values. This approach helps improve the '
-                                                                      'accuracy of log template parsing by '
-                                                                      'generalizing the structure of similar log '
-                                                                      'messages.': [0.8511904761904762,
-                                                                                    0.8762886597938144,
-                                                                                    0.20833333333333334],
-                'The process of log template parsing involves analyzing log messages to identify patterns and placeholders '
-                'that can be generalized into a template format. By comparing log messages to existing templates and '
-                'extracting common elements, language model assistants can improve the accuracy of parsing log messages and '
-                'generating templates for future ipre_data processing tasks.': [0.8333333333333334, 0.8762886597938144,
-                                                                           0.16071428571428573], 'The process involves '
-                                                                                                 'identifying key patterns '
-                                                                                                 'and placeholders in log '
-                                                                                                 'messages, '
-                                                                                                 'creating templates using '
-                                                                                                 'those patterns and '
-                                                                                                 'placeholders, and mapping '
-                                                                                                 'the log message ipre_data to the '
-                                                                                                 'placeholders in the '
-                                                                                                 'templates for accurate '
-                                                                                                 'parsing. This helps in '
-                                                                                                 'extracting structured '
-                                                                                                 'information from '
-                                                                                                 'unstructured log ipre_data.': [
-            0.8035714285714286, 0.81, 0.20833333333333334]}, {'The process involves identifying key patterns in log '
-                                                              'messages, such as specific keywords or variables, '
-                                                              'and creating templates with placeholders for these '
-                                                              'elements. By matching log messages to these templates, '
-                                                              'language model assistants can accurately parse and '
-                                                              'interpret the information provided in the logs.': [
-        0.9166666666666666, 0.9222797927461139, 0.22023809523809523], 'The process of parsing log templates involves '
-                                                                      'identifying key patterns and placeholders in '
-                                                                      'log messages to create a generalized template '
-                                                                      'for easier parsing and analysis. By comparing '
-                                                                      'log messages to existing templates, '
-                                                                      'language model assistants can improve accuracy '
-                                                                      'in extracting relevant information from logs. '
-                                                                      'For example, in the given logs, patterns like '
-                                                                      '"<START>registerCallback not in UI.<START>" '
-                                                                      'and "<START>visible is system.message.count gt '
-                                                                      '0<START>" can be transformed into templates '
-                                                                      'like "<START>registerCallback not in '
-                                                                      'UI.<START>" and "<START>visible is <*> gt '
-                                                                      '<*><START>" respectively, allowing for '
-                                                                      'consistent and efficient log parsing.': [
-        0.8630952380952381, 0.8865979381443299, 0.20833333333333334], 'The process of parsing log messages into '
-                                                                      'templates involves identifying common patterns '
-                                                                      'and placeholders within the logs. By analyzing '
-                                                                      'the logs, language model assistants can create '
-                                                                      'templates that capture the essential '
-                                                                      'information while abstracting out specific '
-                                                                      'values. This approach helps improve the '
-                                                                      'accuracy of log template parsing by '
-                                                                      'generalizing the structure of similar log '
-                                                                      'messages.': [0.8511904761904762,
-                                                                                    0.8762886597938144,
-                                                                                    0.20833333333333334],
-                'The process of log template parsing involves analyzing log messages to identify patterns and placeholders '
-                'that can be generalized into a template format. By comparing log messages to existing templates and '
-                'extracting common elements, language model assistants can improve the accuracy of parsing log messages and '
-                'generating templates for future ipre_data processing tasks.': [0.8333333333333334, 0.8762886597938144,
-                                                                           0.16071428571428573], 'The process involves '
-                                                                                                 'identifying key patterns '
-                                                                                                 'and placeholders in log '
-                                                                                                 'messages, '
-                                                                                                 'creating templates using '
-                                                                                                 'those patterns and '
-                                                                                                 'placeholders, and mapping '
-                                                                                                 'the log message ipre_data to the '
-                                                                                                 'placeholders in the '
-                                                                                                 'templates for accurate '
-                                                                                                 'parsing. This helps in '
-                                                                                                 'extracting structured '
-                                                                                                 'information from '
-                                                                                                 'unstructured log ipre_data.': [
-            0.8035714285714286, 0.81, 0.20833333333333334]}, {'The process involves identifying key patterns in log '
-                                                              'messages, such as specific keywords or variables, '
-                                                              'and creating templates with placeholders for these '
-                                                              'elements. By matching log messages to these templates, '
-                                                              'language model assistants can accurately parse and '
-                                                              'interpret the information provided in the logs.': [
-        0.9166666666666666, 0.9222797927461139, 0.22023809523809523], 'The process of parsing log templates involves '
-                                                                      'identifying key patterns and placeholders in '
-                                                                      'log messages to create a generalized template '
-                                                                      'for easier parsing and analysis. By comparing '
-                                                                      'log messages to existing templates, '
-                                                                      'language model assistants can improve accuracy '
-                                                                      'in extracting relevant information from logs. '
-                                                                      'For example, in the given logs, patterns like '
-                                                                      '"<START>registerCallback not in UI.<START>" '
-                                                                      'and "<START>visible is system.message.count gt '
-                                                                      '0<START>" can be transformed into templates '
-                                                                      'like "<START>registerCallback not in '
-                                                                      'UI.<START>" and "<START>visible is <*> gt '
-                                                                      '<*><START>" respectively, allowing for '
-                                                                      'consistent and efficient log parsing.': [
-        0.8630952380952381, 0.8865979381443299, 0.20833333333333334], 'The process of parsing log messages into '
-                                                                      'templates involves identifying common patterns '
-                                                                      'and placeholders within the logs. By analyzing '
-                                                                      'the logs, language model assistants can create '
-                                                                      'templates that capture the essential '
-                                                                      'information while abstracting out specific '
-                                                                      'values. This approach helps improve the '
-                                                                      'accuracy of log template parsing by '
-                                                                      'generalizing the structure of similar log '
-                                                                      'messages.': [0.8511904761904762,
-                                                                                    0.8762886597938144,
-                                                                                    0.20833333333333334],
-                'The process of log template parsing involves analyzing log messages to identify patterns and placeholders '
-                'that can be generalized into a template format. By comparing log messages to existing templates and '
-                'extracting common elements, language model assistants can improve the accuracy of parsing log messages and '
-                'generating templates for future ipre_data processing tasks.': [0.8333333333333334, 0.8762886597938144,
-                                                                           0.16071428571428573],
-                'The process of log template '
-                'parsing involves analyzing '
-                'log messages to identify '
-                'patterns and placeholders '
-                'that can be generalized '
-                'into a template format. By '
-                'comparing log messages to '
-                'existing templates and '
-                'extracting common elements, '
-                'language model assistants '
-                'can enhance the precision '
-                'of parsing log messages and '
-                'creating templates for '
-                'future ipre_data processing '
-                'tasks.': [
-                    0.8333333333333334, 0.8585858585858586, 0.16666666666666666]},
-            {'The process involves identifying key '
-             'patterns in log messages, '
-             'such as specific keywords or variables, '
-             'and creating templates with placeholders '
-             'for these elements. By matching log '
-             'messages to these templates, '
-             'language model assistants can accurately '
-             'parse and interpret the information '
-             'provided in the logs.': [
-                0.9166666666666666, 0.9222797927461139, 0.22023809523809523],
-                'The process of parsing log templates involves '
-                'identifying key patterns and placeholders in '
-                'log messages to create a generalized template '
-                'for easier parsing and analysis. By comparing '
-                'log messages to existing templates, '
-                'language model assistants can improve accuracy '
-                'in extracting relevant information from logs. '
-                'For example, in the given logs, patterns like '
-                '"<START>registerCallback not in UI.<START>" '
-                'and "<START>visible is system.message.count gt '
-                '0<START>" can be transformed into templates '
-                'like "<START>registerCallback not in '
-                'UI.<START>" and "<START>visible is <*> gt '
-                '<*><START>" respectively, allowing for '
-                'consistent and efficient log parsing.': [
-                    0.8630952380952381, 0.8865979381443299, 0.20833333333333334],
-                'The process of log template parsing involves '
-                'analyzing log messages to identify patterns '
-                'and placeholders that can be generalized into '
-                'a template format. By comparing log messages '
-                'to existing templates and extracting common '
-                'elements, language model assistants can '
-                'enhance the precision of parsing log messages '
-                'and creating templates for future ipre_data '
-                'processing tasks.': [0.8809523809523809,
-                                      0.9072164948453607,
-                                      0.16071428571428573],
-                'The process of parsing log messages into templates involves identifying common patterns and placeholders '
-                'within the logs. By analyzing the logs, language model assistants can create templates that capture the '
-                'essential information while abstracting out specific values. This approach helps improve the accuracy of log '
-                'template parsing by generalizing the structure of similar log messages.': [0.8511904761904762,
-                                                                                            0.8762886597938144,
-                                                                                            0.20833333333333334],
-                'The process of log template parsing involves analyzing log messages to identify patterns and placeholders '
-                'that can be generalized into a template format. By comparing log messages to existing templates and '
-                'extracting common elements, language model assistants can improve the accuracy of parsing log messages and '
-                'generating templates for future ipre_data processing tasks.': [0.8333333333333334, 0.8762886597938144,
-                                                                           0.16071428571428573]}]
+def show_train_boxplot(data):
 
-    draw_plotBox(data)
+    categories = ['NLGLAP', 'NLGLAP(w/o)梯度生成', 'k=3', 'NLGLAP(w/o)梯度更新']
+    indicators = ['GA', 'FGA', 'PA']
+
+    # 创建一个图形实例
+    fig, ax = plt.subplots(figsize=(10, 6))
+
+    # 位置和宽度设置
+    pos = np.array(range(len(categories)))  # 每个类别的基础位置
+    width = 0.2  # 箱体图的宽度
+    colors = ['#90EE90', '#FFFFE0', '#ADD8E6']
+
+    # 绘制箱体图
+    for i, category in enumerate(data):
+        ga_values = []
+        fga_values = []
+        pa_values = []
+        for j, indicator_values in enumerate(category):
+            ga_values.append(indicator_values[0])
+            fga_values.append(indicator_values[1])
+            pa_values.append(indicator_values[2])
+        for j, values in enumerate([ga_values, fga_values, pa_values]):
+            if values:  # 确保指标值列表不为空
+                box = plt.boxplot(values, positions=[pos[i] + j * width], widths=width, patch_artist=True,
+                                  showmeans=False, showfliers=False,
+                                  whiskerprops={'linewidth': 0.5, 'color': 'black'},
+                                  capprops={'linewidth': 0.5, 'color': 'black'},
+                                  medianprops={'linewidth': 0.5, 'color': 'black'},
+                                  boxprops={'linewidth': 0.5, 'edgecolor': 'black',
+                                            'facecolor': colors[j % len(colors)]})
+                plt.setp(box['medians'], color='black')
+
+    # 设置图例和x轴标签
+    legend_patches = [mpatches.Patch(color=color, label=indicator) for indicator, color in zip(indicators, colors)]
+    plt.legend(handles=legend_patches, loc='upper right')
+    ax.set_xticks(pos + width)
+    ax.set_xticklabels(categories)
+
+    # plt.title('参数分析')
+    # plt.xlabel('实验组')
+    label = '评价指标'
+    vertical_label = '\n'.join(label)  # 将每个字符分开并加入换行符
+    plt.ylabel(vertical_label,rotation=0)
+
+    # plt.show()
+    plt.grid(True, linestyle='--', alpha=0.6)
+    path = 'C:/code/src/python/autoQAG/result/trainPlotBox.png'
+    plt.savefig(path, dpi=300)
+
+
+if __name__ == '__main__':
+
+    data = [
+        [
+            [0.857734806629834,0.782222222222222,0.734806629834254],
+            [0.87292817679558,0.784140969162995,0.722375690607734],
+            [0.888121546961326,0.8,0.708563535911602],
+            [0.837016574585635,0.773333333333333,0.722375690607734],
+            [0.888121546961326,0.820276497695852,0.703038674033149]
+        ],
+        [
+         [0.6546961325966851, 0.5234375, 0.6726519337016574],
+         [0.6464088397790055, 0.5333333333333333, 0.6850828729281768],
+         [0.68646408839779, 0.5853658536585367, 0.6823204419889503],
+         [0.6795580110497238, 0.5853658536585367, 0.7085635359116023],
+         [0.6408839779005525, 0.532258064516129, 0.7306629834254144]
+        ],
+        [
+         [0.5089903181189488, 0.47805555555555564, 0.6196403872752421],
+         [0.4903314917127072, 0.46426116838487976, 0.5994475138121547],
+         [0.47513812154696133, 0.4416370106761566, 0.6049723756906077],
+         [0.40331491712707185, 0.41851851851851853, 0.6298342541436464],
+         [0.5041436464088398, 0.4870967741935484, 0.6243093922651933]
+        ],
+        [
+            [0.5704419889502762, 0.5, 0.6519337016574586],
+            [0.6823204419889503, 0.5680000000000001, 0.7113259668508287],
+            [0.6878453038674033, 0.5568627450980392, 0.6560773480662984],
+            [0.6201657458563536, 0.5138339920948617, 0.7223756906077348],
+            [0.7044198895027625, 0.584, 0.7058011049723757]
+        ]
+
+    ]
+    # temp = {'Based on the given examples, the process of log template parsing involves identifying key elements within a log message, such as specific strings or variable values, and converting them into a standardized template format. This can help increase the accuracy of log parsing by allowing language model assistants to recognize common patterns and structures in log messages, making it easier to extract relevant information for analysis or troubleshooting.': [0.5089903181189488, 0.36805555555555564, 0.6196403872752421], 'The process of log template parsing involves identifying common patterns in log messages and creating a template based on those patterns. For example, in the given logs, a template was created to match the error recovery message which includes block ID, pipeline information, and datanode details. Another template was created for a message regarding maximum task failures per node. By using these templates, other language model assistants can accurately parse and categorize similar log messages.': [0.4903314917127072, 0.36426116838487976, 0.5994475138121547], 'Reason for wrongResult: The model incorrectly generated additional irrelevant log entries and did not accurately parse the log content provided.\nReason for wrongResult: The model failed to properly parse and identify the specific class and event being registered in the logContent.\nReason for wrongResult: The model is attempting to parse specific fields and values from the log message without considering the overall context or structure of the log message.\nReason for wrongResult: The model repeated the same log message multiple times and included irrelevant information about starting socket readers.\nReason for wrongResult: WrongResult occurs because the model incorrectly inserted placeholders and repeated sentences throughout the logContent.\nReason for wrongResult: The model mistakenly included irrelevant information from other log messages in the output.\nReason for wrongResult: The model failed to properly parse the log content and instead generated unrelated log messages and file paths.\nReason for wrongResult: The model mistakenly tried to parse specific thread names, job IDs, and task IDs as placeholders instead of recognizing the general log message pattern.\nReason for wrongResult: The model failed to correctly parse the values for memory (8192) and vCores (32) in the logContent, resulting in placeholder characters <*> being displayed.': [0.47513812154696133, 0.3416370106761566, 0.6049723756906077], 'Log parsing involves identifying patterns within log messages and creating templates that can be used to classify and organize future log entries. By examining the structure and content of logs, language model assistants can create templates to accurately capture key information such as errors, events, or application identifiers. For example, in the given log messages, the template <START>Created MRAppMaster for application appattempt_<*> can be used to match similar log entries containing information about the creation of MRAppMasters for different application attempts. By using templates derived from example log messages, language model assistants can improve the accuracy of log parsing and provide more precise and relevant assistance to users.': [0.40331491712707185, 0.31851851851851853, 0.6298342541436464], 'Extract one log template, substitute variable tokens in the log as <*> between <START> and <END> tags.': [0.5041436464088398, 0.3870967741935484, 0.6243093922651933]}
+    #
+    # res = []
+    # for value in temp.values():
+    #     res.append(value)
+    # print(res)
+    show_train_boxplot(data)

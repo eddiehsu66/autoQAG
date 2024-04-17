@@ -15,7 +15,7 @@ def TaskExtractLog(log_content, prompt, log_template):
                   f"{prompt}" \
                   f"Output according to the above requirement, without any superfluous output" \
                   f"Please follow the example below to extract the log template: \n"
-    similiar_log = prompt_select(log_content, 3, BaseFile)
+    similiar_log = prompt_select(log_content, 5, BaseFile)
     for item in similiar_log:
         prompt_temp += f"Log message: <START>{item['Content']}<END>" \
                        f"Log template: <START>{item['answer']}<END> \n"
@@ -38,7 +38,7 @@ def extract_log_template(log_contents, log_templates, prompts):
                 futures.append(future)
         for future in concurrent.futures.as_completed(futures):
             if len(future.result()) != 0:
-                print(future.result())
+                # print(future.result())
                 result.append(future.result())
     return result
 
