@@ -3,7 +3,6 @@ import re
 from src.LogModule.CasePrompt.promptSelect import prompt_select
 from src.LogModule.AutoPrompt.promptApi import infer_llm
 from src.config.redisKit import redisInit
-from src.evaluation.accuracy import correct_lstm
 import concurrent.futures
 from src.config.configLoad import load_config
 
@@ -26,6 +25,7 @@ def TaskExtractLog(log_content, prompt, log_template):
     if response is None:
         response = infer_llm(prompt_temp, None, None, cached=False)
     parsedLog = parse_log(response)
+    from src.evaluation.accuracy import correct_lstm
     if correct_lstm(parsedLog,log_template):
         client.set(prompt_temp,response)
     if response != "404ERROR":
