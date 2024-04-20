@@ -1,32 +1,32 @@
-{"query": "Linkerror event interval expired", "answer": "Linkerror event interval expired"}
-{"query": "Fan speeds ( 3552 3534 3375 11637 3515 3479 )", "answer": "Fan speeds ( <*> <*> <*> <*> <*> <*> )"}
-{"query": "Temperature (41C) exceeds warning threshold", "answer": "Temperature (<*>C) exceeds warning threshold"}
-{"query": "Command has completed successfully", "answer": "Command has completed successfully"}
-{"query": "power/control problem", "answer": "power/control problem"}
-{"query": "ClusterFileSystem: ServerFileSystem domain root30_domain is no longer served by node node-0", "answer": "ClusterFileSystem: ServerFileSystem domain <*> is no longer served by node node-<*>"}
-{"query": "NIFF: node node-69 detected a failed network connection on network 5.5.224.0 via interface alt0", "answer": "NIFF: node node-<*> detected a failed network connection on network <*> via interface alt0"}
-{"query": "psu failure\\ ambient=28", "answer": "psu failure\\ ambient=<*>"}
-{"query": "link errors remain current", "answer": "link errors remain current"}
-{"query": "configured out", "answer": "configured out"}
-{"query": "wait  (command 4116)", "answer": "wait  (command <*>)"}
-{"query": "Failed subcommands 3406", "answer": "Failed subcommands <*>"}
-{"query": "bootGenvmunix  (command 4185)", "answer": "bootGenvmunix  (command <*>)"}
-{"query": "Component State Change: Component \\042SCSI-WWID:01000010:6005-08b4-0001-00c6-0006-3000-003d-0000\\042 is in the unavailable state (HWID=1973)", "answer": "Component State Change: Component <*> is in the unavailable state (HWID=<*>)"}
-{"query": "ClusterFileSystem: There is no server for ServerFileSystem domain storage1031", "answer": "ClusterFileSystem: There is no server for ServerFileSystem domain storage<*>"}
-{"query": "halt  (command 2992)", "answer": "halt  (command <*>)"}
-{"query": "Link error", "answer": "Link error"}
-{"query": "clusterAddMember  (command 1900)", "answer": "clusterAddMember  (command <*>)"}
-{"query": "Targeting domains:node-D7 and nodes:node-[224\\ 228\\ 232]", "answer": "Targeting domains:node-D<*>and nodes:node-<*>"}
-{"query": "Targeting domains:node-D4 and nodes:node-[128-135] child of command 2401", "answer": "Targeting domains:node-D<*> and nodes:node-[<*>-<*>] child of command <*>"}
-{"query": "risBoot (command 1903) Error: Timed out while waiting for SRM prompt: <ABORT code completed>", "answer": "risBoot (command <*>) Error: Timed out while waiting for SRM prompt: <ABORT code completed>"}
-{"query": "ServerFileSystem: ServerFileSystem domain root26_local is full", "answer": "ServerFileSystem: ServerFileSystem domain <*> is full"}
-{"query": "ServerFileSystem: An ServerFileSystem domain panic has occurred on storage442", "answer": "ServerFileSystem: An ServerFileSystem domain panic has occurred on <*>"}
-{"query": "risBoot  (command 1903)", "answer": "risBoot  (command <*>)"}
-{"query": "Link ok", "answer": "Link ok"}
-{"query": "Link error on broadcast tree Interconnect-1T00:00:2:0", "answer": "Link error on broadcast tree Interconnect-<*>:<*>:<*>:<*>"}
-{"query": "not responding", "answer": "not responding"}
-{"query": "Fan speeds ( 3552 3534 3375 **** 3515 3479 )", "answer": "Fan speeds ( <*> <*> <*> **** <*> <*> )"}
-{"query": "NIFF: node node-152 has detected an available network connection on network 10.128.0.0 via interface ee0", "answer": "NIFF: node node-<*> has detected an available network connection on network <*> via interface ee0"}
-{"query": "Link in reset", "answer": "Link in reset"}
-{"query": "boot (command 2092) Error: HALT asserted\\  cannot continue", "answer": "boot (command <*>) Error: HALT asserted\\  cannot continue"}
-{"query": "boot  (command 4024)", "answer": "boot  (command <*>)"}
+{"query": "MegaRAID Model: LD 0 RAID1 139G Rev: 516A", "answer": "MegaRAID Model: LD <*> RAID1 <*> Rev: <*>"}
+{"query": "syslog-ng startup succeeded", "answer": "syslog-ng startup succeeded"}
+{"query": "Registered protocol family 2", "answer": "Registered protocol family <*>"}
+{"query": "rpc.statd startup succeeded", "answer": "rpc.statd startup succeeded"}
+{"query": "[ib_sm_sweep.c:1455]: No topology change", "answer": "[ib_sm_sweep.c:1455]: No topology change"}
+{"query": "removing eklogin", "answer": "removing <*>"}
+{"query": "gmetad startup succeeded", "answer": "gmetad startup succeeded"}
+{"query": "removing daytime", "answer": "removing <*>"}
+{"query": "RSDP (v000 DELL ) @ 0x00000000000fd650", "answer": "RSDP (<*> DELL ) @ <*>"}
+{"query": "Disabled at runtime.", "answer": "Disabled at runtime."}
+{"query": "Server listening on :: port 22.", "answer": "Server listening on :: port <*>."}
+{"query": "Direct-Access ANSI SCSI revision: 02", "answer": "Direct-Access ANSI SCSI revision: <*>"}
+{"query": "jA9JBXVI027337: to=root, ctladdr=root (0/0), delay=00:00:02, xdelay=00:00:00, mailer=relay, pri=1627080, relay=[127.0.0.1] [127.0.0.1], dsn=4.0.0, stat=Deferred: Connection refused by [127.0.0.1]", "answer": "<*>: to=root, ctladdr=root (0/0), delay=<*>:<*>:<*>, xdelay=<*>:<*>:<*>, mailer=relay, pri=<*>, relay=[<*>] [<*>], dsn=<*>.<*>.<*>, stat=Deferred: Connection refused by [<*>]"}
+{"query": "PE/PV Model: 1x2 SCSI BP Rev: 1.0", "answer": "PE/PV Model: <*> SCSI BP Rev: <*>.<*>"}
+{"query": "session closed for user root", "answer": "session closed for user root"}
+{"query": "Autodetecting RAID arrays.", "answer": "Autodetecting RAID arrays."}
+{"query": "removing chargen", "answer": "removing <*>"}
+{"query": "Received SNMP packet(s) from #34#", "answer": "Received SNMP packet(s) from #<*>#"}
+{"query": "Reading included configuration file: /etc/xinetd.d/cups-lpd [file=/etc/xinetd.d/cups-lpd] [line=17]", "answer": "Reading included configuration file: <*> [file=<*>] [line=<*>]"}
+{"query": "error: Bind to port 22 on 0.0.0.0 failed: Address already in use.", "answer": "error: Bind to port <*> on <*> failed: Address already in use."}
+{"query": "MCFG (v001 DELL PE BKC 0x00000001 MSFT 0x0100000a) @ 0x00000000000fd854", "answer": "<*> (v001 DELL PE BKC <*> MSFT <*>) @ <*>"}
+{"query": "fw version:[516A] bios version:[H418]", "answer": "fw version:[<*>] bios version:[<*>]"}
+{"query": "HPET id: 0xffffffff base: 0xfed00000", "answer": "HPET id: <*> base: <*>"}
+{"query": "routing cache hash table of 65536 buckets, 1024Kbytes", "answer": "routing cache hash table of <*> buckets, <*>Kbytes"}
+{"query": "Using ACPI for IRQ routing", "answer": "Using ACPI for IRQ routing"}
+{"query": "Using HPET based timekeeping.", "answer": "Using HPET based timekeeping."}
+{"query": "(root) CMD (run-parts /etc/cron.hourly)", "answer": "(root) CMD (run-parts /etc/cron.hourly)"}
+{"query": "Interpreter enabled", "answer": "Interpreter enabled"}
+{"query": "Warning: we failed to resolve trusted host name dadmin3 dadmin4", "answer": "Warning: we failed to resolve trusted host name <*>"}
+{"query": "xinetd Version 2.3.13 started with libwrap loadavg options compiled in.", "answer": "xinetd Version <*>.<*>.<*> started with libwrap loadavg options compiled in."}
+{"query": "Compressed image found at block 0", "answer": "Compressed image found at block <*>"}
+{"query": "Processor [CPU3] (supports C1)", "answer": "Processor [CPU<*>] (supports C1)"}

@@ -1,0 +1,33 @@
+LineId,Label,Timestamp,Date,User,Month,Day,Time,Location,Component,PID,Content,EventId,EventTemplate
+1296,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Vendor,,MegaRAID Model: LD 0 RAID1 139G Rev: 516A,E70,MegaRAID Model: LD <*> RAID1 <*> Rev: <*>
+1350,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,syslog-ng,,syslog-ng startup succeeded,E126,syslog-ng startup succeeded
+1278,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,NET,,Registered protocol family 2,E103,Registered protocol family <*>
+1337,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,nfslock,,rpc.statd startup succeeded,E110,rpc.statd startup succeeded
+1118,-,1131567006,2005.11.09,tbird-sm1,Nov,9,12:10:06,src@tbird-sm1,ib_sm.x,24904.0,[ib_sm_sweep.c:1455]: No topology change,E6,[ib_sm_sweep.c:1455]: No topology change
+1510,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing eklogin,E106,removing <*>
+1455,-,1131567054,2005.11.09,tbird-admin1,Nov,9,12:10:54,local@tbird-admin1,gmetad,,gmetad startup succeeded,E48,gmetad startup succeeded
+1506,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing daytime,E106,removing <*>
+1243,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,RSDP (v000 DELL ) @ 0x00000000000fd650,E112,RSDP (<*> DELL ) @ <*>
+1286,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,SELinux,,Disabled at runtime.,E42,Disabled at runtime.
+1465,-,1131567055,2005.11.09,tbird-admin1,Nov,9,12:10:55,local@tbird-admin1,sshd,1761.0,Server listening on :: port 22.,E116,Server listening on :: port <*>.
+1292,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Type,,Direct-Access ANSI SCSI revision: 02,E41,Direct-Access ANSI SCSI revision: <*>
+1594,-,1131567095,2005.11.09,dadmin1,Nov,9,12:11:35,src@dadmin1,sendmail,27337.0,"jA9JBXVI027337: to=root, ctladdr=root (0/0), delay=00:00:02, xdelay=00:00:00, mailer=relay, pri=1627080, relay=[127.0.0.1] [127.0.0.1], dsn=4.0.0, stat=Deferred: Connection refused by [127.0.0.1]",E16,"<*>: to=root, ctladdr=root (0/0), delay=<*>:<*>:<*>, xdelay=<*>:<*>:<*>, mailer=relay, pri=<*>, relay=[<*>] [<*>], dsn=<*>.<*>.<*>, stat=Deferred: Connection refused by [<*>]"
+1297,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Vendor,,PE/PV Model: 1x2 SCSI BP Rev: 1.0,E87,PE/PV Model: <*> SCSI BP Rev: <*>.<*>
+113,-,1131566495,2005.11.09,badmin1,Nov,9,12:01:35,src@badmin1,crond(pam_unix),8099.0,session closed for user root,E117,session closed for user root
+1326,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,md,,Autodetecting RAID arrays.,E22,Autodetecting RAID arrays.
+1505,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing chargen,E106,removing <*>
+566,-,1131566712,2005.11.09,#32#,Nov,9,12:05:12,#32#/#32#,snmpd,1964.0,Received SNMP packet(s) from #34#,E98,Received SNMP packet(s) from #<*>#
+1488,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,Reading included configuration file: /etc/xinetd.d/cups-lpd [file=/etc/xinetd.d/cups-lpd] [line=17],E97,Reading included configuration file: <*> [file=<*>] [line=<*>]
+1466,-,1131567055,2005.11.09,tbird-admin1,Nov,9,12:10:55,local@tbird-admin1,sshd,1761.0,error: Bind to port 22 on 0.0.0.0 failed: Address already in use.,E44,error: Bind to port <*> on <*> failed: Address already in use.
+1207,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,MCFG (v001 DELL PE BKC 0x00000001 MSFT 0x0100000a) @ 0x00000000000fd854,E10,<*> (v001 DELL PE BKC <*> MSFT <*>) @ <*>
+1333,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid,,fw version:[516A] bios version:[H418],E47,fw version:[<*>] bios version:[<*>]
+1187,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,HPET id: 0xffffffff base: 0xfed00000,E50,HPET id: <*> base: <*>
+1272,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,IP,,"routing cache hash table of 65536 buckets, 1024Kbytes",E109,"routing cache hash table of <*> buckets, <*>Kbytes"
+1282,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Using ACPI for IRQ routing,E136,Using ACPI for IRQ routing
+1354,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,time.c,,Using HPET based timekeeping.,E138,Using HPET based timekeeping.
+6,-,1131566461,2005.11.09,dn261,Nov,9,12:01:01,dn261/dn261,crond,2908.0,(root) CMD (run-parts /etc/cron.hourly),E3,(root) CMD (run-parts /etc/cron.hourly)
+1196,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Interpreter enabled,E58,Interpreter enabled
+1454,-,1131567054,2005.11.09,tbird-admin1,Nov,9,12:10:54,local@tbird-admin1,gmetad,,Warning: we failed to resolve trusted host name dadmin3 dadmin4,E147,Warning: we failed to resolve trusted host name <*>
+1520,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,xinetd Version 2.3.13 started with libwrap loadavg options compiled in.,E149,xinetd Version <*>.<*>.<*> started with libwrap loadavg options compiled in.
+1285,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,RAMDISK,,Compressed image found at block 0,E28,Compressed image found at block <*>
+1242,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Processor [CPU3] (supports C1),E94,Processor [CPU<*>] (supports C1)

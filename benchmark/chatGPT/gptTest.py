@@ -25,28 +25,28 @@ def makeExample(input, output):
     return text
 
 
-def get_test_results():
+def get_test_results(fileName:str):
     input = ['Created MRAppMaster for application appattempt_1445144423722_0020_000001',
              'Default file system [hdfs://msra-sa-41:9000]']
     output = ['Created MRAppMaster for application appattempt_<*>', 'Default file system [hdfs://<*>:<*>']
     gpt_prompts = []
     prompts = generation_prompt(input,output,1,gpt_prompts)
-    path = r"C:\code\src\python\autoQAG\data\loghub-master\Mac\Mac_2k.log_testData.csv"
+
+    path = rf"C:\code\src\python\autoQAG\data\loghub-master\{fileName}\{fileName}_2k.log_testData.csv"
     with open(path, 'r') as file:
         # 创建CSV阅读器对象
         csv_reader = csv.reader(file)
         data_list = list(csv_reader)
         # 遍历每一行，并将第7列数据存储在一个列表中
-        column_7_data = [row[8] for row in data_list]
-        column_9_data = [row[10] for row in data_list]
+        column_7_data = [row[11] for row in data_list]
+        column_9_data = [row[13] for row in data_list]
         dict_output = {}
         for prompt in gpt_prompts:
             list_output = []
             for index, content in enumerate(column_7_data):
                 data = [content, column_9_data[index], prompt]
                 prompt_temp = prompt + content
-                response = infer_llm(prompt_temp, None, None,cached=True)
-                print(response)
+                response = infer_llm(prompt_temp, None, None)
                 data.append(response)
                 list_output.append(data)
             dict_output[prompt] = evaluate_test(list_output)
@@ -54,4 +54,4 @@ def get_test_results():
 
 
 if __name__ == '__main__':
-    print(get_test_results())
+    print(get_test_results("Thunderbird"))

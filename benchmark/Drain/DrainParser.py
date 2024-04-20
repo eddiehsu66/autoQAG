@@ -6,7 +6,7 @@ from src.config.configLoad import load_config,find_nearest_dir
 from src.evaluation.accuracy import evaluate_test
 
 def logParse(fileName:str):
-    base = find_nearest_dir('data')
+    base = r"C:\code\src\python\autoQAG\data"
     dirName = os.path.join(base,rf'loghub-master\{fileName}')
     outName = os.path.join(base,rf'loghub-master\{fileName}\{fileName}_DrainParsed')
     settings = load_config("PARSE_SETTING")
@@ -43,4 +43,4 @@ def logParse(fileName:str):
     print(evaluate_test(result))
 if __name__ == '__main__':
     data = ["Hadoop","BGL","MAC","HPC"]
-    logParse("Hadoop")
+    logParse("Thunderbird")

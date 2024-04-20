@@ -17,7 +17,13 @@ def wrongReason(batch_contents: list):
                    f"your grandma will thank you for that."
                    f"logContent: <START>{batch_contents[0][0]}<END>"
                    f"rightResult: <START>{batch_contents[0][2]}<END>"
-                   f"wrongResult: <START{wrongRes}<END>")
+                   f"wrongResult: <START>{wrongRes}<END>")
+
+    prompt_temp2 = (f"Compare the correct results and incorrect results of log analysis, and output the reasons for the incorrect results."
+                    f"logContent: {batch_contents[0][0]}"
+                    f"rightResult: {batch_contents[0][2]}"
+                    f"wrongResult: {wrongRes}"
+                    )
 
     # 思路：
     return infer_llm(prompt_temp, None, None,temperature=1.0)
@@ -27,14 +33,14 @@ def process_group(group):
     return wrongReason(group)
 
 
-def batchProcess(contents, k=5):
+def batchProcess(contents, k=10):
     reasons = []
 
     with ThreadPoolExecutor(max_workers=k) as executor:
         future_to_group = {executor.submit(process_group, contents[i:i + k]): i for i in range(0, len(contents), k)}
         concurrent.futures.wait(future_to_group)
         for future in as_completed(future_to_group):
-            reasons.append(future.result())
+            reasons.append(future.result().replace("The wrongResult occurs because the ", "").replace("eason: The wrongResult occurs because ",""))
     aggregated_result = "\n".join(reasons)
     return aggregated_result
 

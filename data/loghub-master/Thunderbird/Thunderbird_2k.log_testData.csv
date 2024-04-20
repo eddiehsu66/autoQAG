@@ -1,0 +1,725 @@
+LineId,Label,Timestamp,Date,User,Month,Day,Time,Location,Component,PID,Content,EventId,EventTemplate
+1512,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing klogin,E106,removing <*>
+1512,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing klogin,E106,removing <*>
+1512,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing klogin,E106,removing <*>
+1512,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing klogin,E106,removing <*>
+1512,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing klogin,E106,removing <*>
+1294,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,VFS,,Disk quotas dquot_6.5.1,E43,Disk quotas dquot_<*>.<*>.<*>
+1294,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,VFS,,Disk quotas dquot_6.5.1,E43,Disk quotas dquot_<*>.<*>.<*>
+1294,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,VFS,,Disk quotas dquot_6.5.1,E43,Disk quotas dquot_<*>.<*>.<*>
+1294,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,VFS,,Disk quotas dquot_6.5.1,E43,Disk quotas dquot_<*>.<*>.<*>
+1294,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,VFS,,Disk quotas dquot_6.5.1,E43,Disk quotas dquot_<*>.<*>.<*>
+1294,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,VFS,,Disk quotas dquot_6.5.1,E43,Disk quotas dquot_<*>.<*>.<*>
+1243,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,RSDP (v000 DELL ) @ 0x00000000000fd650,E112,RSDP (<*> DELL ) @ <*>
+1243,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,RSDP (v000 DELL ) @ 0x00000000000fd650,E112,RSDP (<*> DELL ) @ <*>
+1243,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,RSDP (v000 DELL ) @ 0x00000000000fd650,E112,RSDP (<*> DELL ) @ <*>
+1243,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,RSDP (v000 DELL ) @ 0x00000000000fd650,E112,RSDP (<*> DELL ) @ <*>
+1243,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,RSDP (v000 DELL ) @ 0x00000000000fd650,E112,RSDP (<*> DELL ) @ <*>
+1243,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,RSDP (v000 DELL ) @ 0x00000000000fd650,E112,RSDP (<*> DELL ) @ <*>
+1243,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,RSDP (v000 DELL ) @ 0x00000000000fd650,E112,RSDP (<*> DELL ) @ <*>
+1105,-,1131567001,2005.11.09,cadmin1,Nov,9,12:10:01,src@cadmin1,crond,19395.0,(root) CMD (/projects/tbird/temps/get_temps c),E2,(root) CMD (/projects/tbird/temps/get_temps <*>)
+1109,-,1131567001,2005.11.09,eadmin1,Nov,9,12:10:01,src@eadmin1,crond,4310.0,(root) CMD (/projects/tbird/temps/get_temps e),E2,(root) CMD (/projects/tbird/temps/get_temps <*>)
+1105,-,1131567001,2005.11.09,cadmin1,Nov,9,12:10:01,src@cadmin1,crond,19395.0,(root) CMD (/projects/tbird/temps/get_temps c),E2,(root) CMD (/projects/tbird/temps/get_temps <*>)
+1101,-,1131567001,2005.11.09,aadmin1,Nov,9,12:10:01,src@aadmin1,crond,16571.0,(root) CMD (/projects/tbird/temps/get_temps a),E2,(root) CMD (/projects/tbird/temps/get_temps <*>)
+1109,-,1131567001,2005.11.09,eadmin1,Nov,9,12:10:01,src@eadmin1,crond,4310.0,(root) CMD (/projects/tbird/temps/get_temps e),E2,(root) CMD (/projects/tbird/temps/get_temps <*>)
+1324,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,md,,... autorun DONE.,E5,... autorun DONE.
+1324,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,md,,... autorun DONE.,E5,... autorun DONE.
+1325,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,md,,... autorun DONE.,E5,... autorun DONE.
+1325,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,md,,... autorun DONE.,E5,... autorun DONE.
+1325,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,md,,... autorun DONE.,E5,... autorun DONE.
+1455,-,1131567054,2005.11.09,tbird-admin1,Nov,9,12:10:54,local@tbird-admin1,gmetad,,gmetad startup succeeded,E48,gmetad startup succeeded
+1455,-,1131567054,2005.11.09,tbird-admin1,Nov,9,12:10:54,local@tbird-admin1,gmetad,,gmetad startup succeeded,E48,gmetad startup succeeded
+1455,-,1131567054,2005.11.09,tbird-admin1,Nov,9,12:10:54,local@tbird-admin1,gmetad,,gmetad startup succeeded,E48,gmetad startup succeeded
+1455,-,1131567054,2005.11.09,tbird-admin1,Nov,9,12:10:54,local@tbird-admin1,gmetad,,gmetad startup succeeded,E48,gmetad startup succeeded
+1304,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,divert,,not allocating divert_blk for non-ethernet device lo,E77,not allocating divert_blk for non-ethernet device <*>
+1304,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,divert,,not allocating divert_blk for non-ethernet device lo,E77,not allocating divert_blk for non-ethernet device <*>
+1463,-,1131567055,2005.11.09,tbird-admin1,Nov,9,12:10:55,local@tbird-admin1,divert,,not allocating divert_blk for non-ethernet device sit0,E77,not allocating divert_blk for non-ethernet device <*>
+1304,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,divert,,not allocating divert_blk for non-ethernet device lo,E77,not allocating divert_blk for non-ethernet device <*>
+1463,-,1131567055,2005.11.09,tbird-admin1,Nov,9,12:10:55,local@tbird-admin1,divert,,not allocating divert_blk for non-ethernet device sit0,E77,not allocating divert_blk for non-ethernet device <*>
+1304,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,divert,,not allocating divert_blk for non-ethernet device lo,E77,not allocating divert_blk for non-ethernet device <*>
+1340,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,rpc.statd,1637.0,Version 1.0.6 Starting,E144,Version <*>.<*>.<*> Starting
+1340,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,rpc.statd,1637.0,Version 1.0.6 Starting,E144,Version <*>.<*>.<*> Starting
+1340,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,rpc.statd,1637.0,Version 1.0.6 Starting,E144,Version <*>.<*>.<*> Starting
+1340,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,rpc.statd,1637.0,Version 1.0.6 Starting,E144,Version <*>.<*>.<*> Starting
+1340,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,rpc.statd,1637.0,Version 1.0.6 Starting,E144,Version <*>.<*>.<*> Starting
+1340,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,rpc.statd,1637.0,Version 1.0.6 Starting,E144,Version <*>.<*>.<*> Starting
+1201,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,LAPIC_NMI (acpi_id[0x01] high edge lint[0x1]),E65,LAPIC_NMI (acpi_id[<*>] high edge lint[<*>])
+1204,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,LAPIC_NMI (acpi_id[0x04] high edge lint[0x1]),E65,LAPIC_NMI (acpi_id[<*>] high edge lint[<*>])
+1201,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,LAPIC_NMI (acpi_id[0x01] high edge lint[0x1]),E65,LAPIC_NMI (acpi_id[<*>] high edge lint[<*>])
+1204,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,LAPIC_NMI (acpi_id[0x04] high edge lint[0x1]),E65,LAPIC_NMI (acpi_id[<*>] high edge lint[<*>])
+1202,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,LAPIC_NMI (acpi_id[0x02] high edge lint[0x1]),E65,LAPIC_NMI (acpi_id[<*>] high edge lint[<*>])
+1201,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,LAPIC_NMI (acpi_id[0x01] high edge lint[0x1]),E65,LAPIC_NMI (acpi_id[<*>] high edge lint[<*>])
+1202,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,LAPIC_NMI (acpi_id[0x02] high edge lint[0x1]),E65,LAPIC_NMI (acpi_id[<*>] high edge lint[<*>])
+1203,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,LAPIC_NMI (acpi_id[0x03] high edge lint[0x1]),E65,LAPIC_NMI (acpi_id[<*>] high edge lint[<*>])
+1333,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid,,fw version:[516A] bios version:[H418],E47,fw version:[<*>] bios version:[<*>]
+1333,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid,,fw version:[516A] bios version:[H418],E47,fw version:[<*>] bios version:[<*>]
+1333,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid,,fw version:[516A] bios version:[H418],E47,fw version:[<*>] bios version:[<*>]
+1333,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid,,fw version:[516A] bios version:[H418],E47,fw version:[<*>] bios version:[<*>]
+1333,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid,,fw version:[516A] bios version:[H418],E47,fw version:[<*>] bios version:[<*>]
+1333,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid,,fw version:[516A] bios version:[H418],E47,fw version:[<*>] bios version:[<*>]
+1333,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid,,fw version:[516A] bios version:[H418],E47,fw version:[<*>] bios version:[<*>]
+1288,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,SELinux,,Registering netfilter hooks,E104,Registering netfilter hooks
+1288,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,SELinux,,Registering netfilter hooks,E104,Registering netfilter hooks
+1288,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,SELinux,,Registering netfilter hooks,E104,Registering netfilter hooks
+1288,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,SELinux,,Registering netfilter hooks,E104,Registering netfilter hooks
+1288,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,SELinux,,Registering netfilter hooks,E104,Registering netfilter hooks
+1288,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,SELinux,,Registering netfilter hooks,E104,Registering netfilter hooks
+1255,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,CPU,,Physical Processor ID: 0,E88,Physical Processor ID: <*>
+1258,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,CPU,,Physical Processor ID: 3,E88,Physical Processor ID: <*>
+1254,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,CPU,,Physical Processor ID: 0,E88,Physical Processor ID: <*>
+1256,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,CPU,,Physical Processor ID: 0,E88,Physical Processor ID: <*>
+1257,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,CPU,,Physical Processor ID: 3,E88,Physical Processor ID: <*>
+1256,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,CPU,,Physical Processor ID: 0,E88,Physical Processor ID: <*>
+459,-,1131566665,2005.11.09,tbird-admin1,Nov,9,12:04:25,local@tbird-admin1,ntpd,1815.0,kernel time sync disabled 0041,E61,kernel time sync disabled <*>
+459,-,1131566665,2005.11.09,tbird-admin1,Nov,9,12:04:25,local@tbird-admin1,ntpd,1815.0,kernel time sync disabled 0041,E61,kernel time sync disabled <*>
+459,-,1131566665,2005.11.09,tbird-admin1,Nov,9,12:04:25,local@tbird-admin1,ntpd,1815.0,kernel time sync disabled 0041,E61,kernel time sync disabled <*>
+459,-,1131566665,2005.11.09,tbird-admin1,Nov,9,12:04:25,local@tbird-admin1,ntpd,1815.0,kernel time sync disabled 0041,E61,kernel time sync disabled <*>
+459,-,1131566665,2005.11.09,tbird-admin1,Nov,9,12:04:25,local@tbird-admin1,ntpd,1815.0,kernel time sync disabled 0041,E61,kernel time sync disabled <*>
+1285,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,RAMDISK,,Compressed image found at block 0,E28,Compressed image found at block <*>
+1285,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,RAMDISK,,Compressed image found at block 0,E28,Compressed image found at block <*>
+1285,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,RAMDISK,,Compressed image found at block 0,E28,Compressed image found at block <*>
+1285,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,RAMDISK,,Compressed image found at block 0,E28,Compressed image found at block <*>
+1285,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,RAMDISK,,Compressed image found at block 0,E28,Compressed image found at block <*>
+1454,-,1131567054,2005.11.09,tbird-admin1,Nov,9,12:10:54,local@tbird-admin1,gmetad,,Warning: we failed to resolve trusted host name dadmin3 dadmin4,E147,Warning: we failed to resolve trusted host name <*>
+1454,-,1131567054,2005.11.09,tbird-admin1,Nov,9,12:10:54,local@tbird-admin1,gmetad,,Warning: we failed to resolve trusted host name dadmin3 dadmin4,E147,Warning: we failed to resolve trusted host name <*>
+1454,-,1131567054,2005.11.09,tbird-admin1,Nov,9,12:10:54,local@tbird-admin1,gmetad,,Warning: we failed to resolve trusted host name dadmin3 dadmin4,E147,Warning: we failed to resolve trusted host name <*>
+1454,-,1131567054,2005.11.09,tbird-admin1,Nov,9,12:10:54,local@tbird-admin1,gmetad,,Warning: we failed to resolve trusted host name dadmin3 dadmin4,E147,Warning: we failed to resolve trusted host name <*>
+1454,-,1131567054,2005.11.09,tbird-admin1,Nov,9,12:10:54,local@tbird-admin1,gmetad,,Warning: we failed to resolve trusted host name dadmin3 dadmin4,E147,Warning: we failed to resolve trusted host name <*>
+1454,-,1131567054,2005.11.09,tbird-admin1,Nov,9,12:10:54,local@tbird-admin1,gmetad,,Warning: we failed to resolve trusted host name dadmin3 dadmin4,E147,Warning: we failed to resolve trusted host name <*>
+1454,-,1131567054,2005.11.09,tbird-admin1,Nov,9,12:10:54,local@tbird-admin1,gmetad,,Warning: we failed to resolve trusted host name dadmin3 dadmin4,E147,Warning: we failed to resolve trusted host name <*>
+3,-,1131566461,2005.11.09,dn228,Nov,9,12:01:01,dn228/dn228,crond,2916.0,(root) CMD (run-parts /etc/cron.hourly),E3,(root) CMD (run-parts /etc/cron.hourly)
+12,-,1131566461,2005.11.09,dn596,Nov,9,12:01:01,dn596/dn596,crond,2728.0,(root) CMD (run-parts /etc/cron.hourly),E3,(root) CMD (run-parts /etc/cron.hourly)
+39,-,1131566461,2005.11.09,en74,Nov,9,12:01:01,en74/en74,crond,3081.0,(root) CMD (run-parts /etc/cron.hourly),E3,(root) CMD (run-parts /etc/cron.hourly)
+12,-,1131566461,2005.11.09,dn596,Nov,9,12:01:01,dn596/dn596,crond,2728.0,(root) CMD (run-parts /etc/cron.hourly),E3,(root) CMD (run-parts /etc/cron.hourly)
+1266,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,EXT3-fs,,mounted filesystem with ordered data mode.,E71,mounted filesystem with ordered data mode.
+1265,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,EXT3-fs,,mounted filesystem with ordered data mode.,E71,mounted filesystem with ordered data mode.
+1265,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,EXT3-fs,,mounted filesystem with ordered data mode.,E71,mounted filesystem with ordered data mode.
+1266,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,EXT3-fs,,mounted filesystem with ordered data mode.,E71,mounted filesystem with ordered data mode.
+1267,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,EXT3-fs,,mounted filesystem with ordered data mode.,E71,mounted filesystem with ordered data mode.
+1457,-,1131567055,2005.11.09,#8#,Nov,9,12:10:55,#8#/#8#,sshd,4893.0,"User #29#, coming from #30#, authenticated.",E134,"User #<*>#, coming from #<*>#, authenticated."
+1457,-,1131567055,2005.11.09,#8#,Nov,9,12:10:55,#8#/#8#,sshd,4893.0,"User #29#, coming from #30#, authenticated.",E134,"User #<*>#, coming from #<*>#, authenticated."
+1457,-,1131567055,2005.11.09,#8#,Nov,9,12:10:55,#8#/#8#,sshd,4893.0,"User #29#, coming from #30#, authenticated.",E134,"User #<*>#, coming from #<*>#, authenticated."
+1376,-,1131567051,2005.11.09,#8#,Nov,9,12:10:51,#8#/#8#,sshd,4718.0,"User #29#, coming from #30#, authenticated.",E134,"User #<*>#, coming from #<*>#, authenticated."
+1457,-,1131567055,2005.11.09,#8#,Nov,9,12:10:55,#8#/#8#,sshd,4893.0,"User #29#, coming from #30#, authenticated.",E134,"User #<*>#, coming from #<*>#, authenticated."
+1376,-,1131567051,2005.11.09,#8#,Nov,9,12:10:51,#8#/#8#,sshd,4718.0,"User #29#, coming from #30#, authenticated.",E134,"User #<*>#, coming from #<*>#, authenticated."
+1376,-,1131567051,2005.11.09,#8#,Nov,9,12:10:51,#8#/#8#,sshd,4718.0,"User #29#, coming from #30#, authenticated.",E134,"User #<*>#, coming from #<*>#, authenticated."
+141,-,1131566503,2005.11.09,aadmin1,Nov,9,12:01:43,src@aadmin1,xinetd,18274.0,START: tftp pid=16563 from=10.100.4.251,E119,START: tftp pid=<*> from=<*>
+141,-,1131566503,2005.11.09,aadmin1,Nov,9,12:01:43,src@aadmin1,xinetd,18274.0,START: tftp pid=16563 from=10.100.4.251,E119,START: tftp pid=<*> from=<*>
+141,-,1131566503,2005.11.09,aadmin1,Nov,9,12:01:43,src@aadmin1,xinetd,18274.0,START: tftp pid=16563 from=10.100.4.251,E119,START: tftp pid=<*> from=<*>
+141,-,1131566503,2005.11.09,aadmin1,Nov,9,12:01:43,src@aadmin1,xinetd,18274.0,START: tftp pid=16563 from=10.100.4.251,E119,START: tftp pid=<*> from=<*>
+957,-,1131566925,2005.11.09,tbird-admin1,Nov,9,12:08:45,local@tbird-admin1,ntpd,1815.0,kernel time sync enabled 0001,E62,kernel time sync enabled <*>
+1509,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing echo,E106,removing <*>
+1509,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing echo,E106,removing <*>
+1508,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing echo,E106,removing <*>
+1309,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,floppy0,,no floppy controllers found,E76,no floppy controllers found
+1309,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,floppy0,,no floppy controllers found,E76,no floppy controllers found
+1309,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,floppy0,,no floppy controllers found,E76,no floppy controllers found
+1309,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,floppy0,,no floppy controllers found,E76,no floppy controllers found
+1309,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,floppy0,,no floppy controllers found,E76,no floppy controllers found
+1309,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,floppy0,,no floppy controllers found,E76,no floppy controllers found
+1337,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,nfslock,,rpc.statd startup succeeded,E110,rpc.statd startup succeeded
+1337,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,nfslock,,rpc.statd startup succeeded,E110,rpc.statd startup succeeded
+1337,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,nfslock,,rpc.statd startup succeeded,E110,rpc.statd startup succeeded
+1260,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,CPU,,"Trace cache: 12K uops, L1 D cache: 16K",E129,"Trace cache: <*> uops, L1 D cache: <*>"
+1263,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,CPU,,"Trace cache: 12K uops, L1 D cache: 16K",E129,"Trace cache: <*> uops, L1 D cache: <*>"
+1261,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,CPU,,"Trace cache: 12K uops, L1 D cache: 16K",E129,"Trace cache: <*> uops, L1 D cache: <*>"
+1327,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,md,,Autodetecting RAID arrays.,E22,Autodetecting RAID arrays.
+1327,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,md,,Autodetecting RAID arrays.,E22,Autodetecting RAID arrays.
+1326,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,md,,Autodetecting RAID arrays.,E22,Autodetecting RAID arrays.
+1326,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,md,,Autodetecting RAID arrays.,E22,Autodetecting RAID arrays.
+1327,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,md,,Autodetecting RAID arrays.,E22,Autodetecting RAID arrays.
+1326,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,md,,Autodetecting RAID arrays.,E22,Autodetecting RAID arrays.
+1247,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Using IOAPIC for interrupt routing,E139,Using IOAPIC for interrupt routing
+1247,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Using IOAPIC for interrupt routing,E139,Using IOAPIC for interrupt routing
+1247,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Using IOAPIC for interrupt routing,E139,Using IOAPIC for interrupt routing
+1247,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Using IOAPIC for interrupt routing,E139,Using IOAPIC for interrupt routing
+1247,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Using IOAPIC for interrupt routing,E139,Using IOAPIC for interrupt routing
+1248,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,CPU0,,Intel(R) Xeon(TM) CPU 3.60GHz stepping 03,E57,Intel(R) Xeon(TM) CPU <*> stepping <*>
+1248,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,CPU0,,Intel(R) Xeon(TM) CPU 3.60GHz stepping 03,E57,Intel(R) Xeon(TM) CPU <*> stepping <*>
+1248,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,CPU0,,Intel(R) Xeon(TM) CPU 3.60GHz stepping 03,E57,Intel(R) Xeon(TM) CPU <*> stepping <*>
+1248,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,CPU0,,Intel(R) Xeon(TM) CPU 3.60GHz stepping 03,E57,Intel(R) Xeon(TM) CPU <*> stepping <*>
+1248,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,CPU0,,Intel(R) Xeon(TM) CPU 3.60GHz stepping 03,E57,Intel(R) Xeon(TM) CPU <*> stepping <*>
+1291,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,TCP,,Hash tables configured (established 262144 bind 65536),E49,Hash tables configured (established <*> bind <*>)
+1291,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,TCP,,Hash tables configured (established 262144 bind 65536),E49,Hash tables configured (established <*> bind <*>)
+1291,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,TCP,,Hash tables configured (established 262144 bind 65536),E49,Hash tables configured (established <*> bind <*>)
+1291,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,TCP,,Hash tables configured (established 262144 bind 65536),E49,Hash tables configured (established <*> bind <*>)
+1291,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,TCP,,Hash tables configured (established 262144 bind 65536),E49,Hash tables configured (established <*> bind <*>)
+210,-,1131566527,2005.11.09,aadmin1,Nov,9,12:02:07,src@aadmin1,dhcpd,,DHCPOFFER on 10.100.4.251 to 00:11:43:e3:ba:c3 via eth1,E38,DHCPOFFER on <*> to <*> via eth1
+192,-,1131566525,2005.11.09,aadmin1,Nov,9,12:02:05,src@aadmin1,dhcpd,,DHCPOFFER on 10.100.4.251 to 00:11:43:e3:ba:c3 via eth1,E38,DHCPOFFER on <*> to <*> via eth1
+129,-,1131566501,2005.11.09,aadmin1,Nov,9,12:01:41,src@aadmin1,dhcpd,,DHCPOFFER on 10.100.4.251 to 00:11:43:e3:ba:c3 via eth1,E38,DHCPOFFER on <*> to <*> via eth1
+129,-,1131566501,2005.11.09,aadmin1,Nov,9,12:01:41,src@aadmin1,dhcpd,,DHCPOFFER on 10.100.4.251 to 00:11:43:e3:ba:c3 via eth1,E38,DHCPOFFER on <*> to <*> via eth1
+129,-,1131566501,2005.11.09,aadmin1,Nov,9,12:01:41,src@aadmin1,dhcpd,,DHCPOFFER on 10.100.4.251 to 00:11:43:e3:ba:c3 via eth1,E38,DHCPOFFER on <*> to <*> via eth1
+191,-,1131566525,2005.11.09,aadmin1,Nov,9,12:02:05,src@aadmin1,dhcpd,,DHCPOFFER on 10.100.4.251 to 00:11:43:e3:ba:c3 via eth1,E38,DHCPOFFER on <*> to <*> via eth1
+191,-,1131566525,2005.11.09,aadmin1,Nov,9,12:02:05,src@aadmin1,dhcpd,,DHCPOFFER on 10.100.4.251 to 00:11:43:e3:ba:c3 via eth1,E38,DHCPOFFER on <*> to <*> via eth1
+134,-,1131566501,2005.11.09,aadmin4,Nov,9,12:01:41,src@aadmin4,dhcpd,,DHCPDISCOVER from 00:11:43:e3:ba:c3 via eth1: network A_net: no free leases,E37,DHCPDISCOVER from <*> via eth1: network A_net: no free leases
+212,-,1131566527,2005.11.09,aadmin2,Nov,9,12:02:07,src@aadmin2,dhcpd,,DHCPDISCOVER from 00:11:43:e3:ba:c3 via eth1: network A_net: no free leases,E37,DHCPDISCOVER from <*> via eth1: network A_net: no free leases
+212,-,1131566527,2005.11.09,aadmin2,Nov,9,12:02:07,src@aadmin2,dhcpd,,DHCPDISCOVER from 00:11:43:e3:ba:c3 via eth1: network A_net: no free leases,E37,DHCPDISCOVER from <*> via eth1: network A_net: no free leases
+189,-,1131566525,2005.11.09,aadmin1,Nov,9,12:02:05,src@aadmin1,dhcpd,,DHCPDISCOVER from 00:11:43:e3:ba:c3 via eth1,E36,DHCPDISCOVER from <*> via eth1
+189,-,1131566525,2005.11.09,aadmin1,Nov,9,12:02:05,src@aadmin1,dhcpd,,DHCPDISCOVER from 00:11:43:e3:ba:c3 via eth1,E36,DHCPDISCOVER from <*> via eth1
+1354,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,time.c,,Using HPET based timekeeping.,E138,Using HPET based timekeeping.
+1354,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,time.c,,Using HPET based timekeeping.,E138,Using HPET based timekeeping.
+1354,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,time.c,,Using HPET based timekeeping.,E138,Using HPET based timekeeping.
+1354,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,time.c,,Using HPET based timekeeping.,E138,Using HPET based timekeeping.
+1354,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,time.c,,Using HPET based timekeeping.,E138,Using HPET based timekeeping.
+1354,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,time.c,,Using HPET based timekeeping.,E138,Using HPET based timekeeping.
+1384,-,1131567052,2005.11.09,tbird-admin1,Nov,9,12:10:52,local@tbird-admin1,netfs,,Mounting other filesystems: failed,E74,Mounting other filesystems: failed
+1384,-,1131567052,2005.11.09,tbird-admin1,Nov,9,12:10:52,local@tbird-admin1,netfs,,Mounting other filesystems: failed,E74,Mounting other filesystems: failed
+1384,-,1131567052,2005.11.09,tbird-admin1,Nov,9,12:10:52,local@tbird-admin1,netfs,,Mounting other filesystems: failed,E74,Mounting other filesystems: failed
+1384,-,1131567052,2005.11.09,tbird-admin1,Nov,9,12:10:52,local@tbird-admin1,netfs,,Mounting other filesystems: failed,E74,Mounting other filesystems: failed
+1317,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ide,,Assuming 33MHz system bus speed for PIO modes; override with idebus=xx,E20,Assuming <*>MHz system bus speed for PIO modes; override with idebus=xx
+1317,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ide,,Assuming 33MHz system bus speed for PIO modes; override with idebus=xx,E20,Assuming <*>MHz system bus speed for PIO modes; override with idebus=xx
+1317,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ide,,Assuming 33MHz system bus speed for PIO modes; override with idebus=xx,E20,Assuming <*>MHz system bus speed for PIO modes; override with idebus=xx
+1317,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ide,,Assuming 33MHz system bus speed for PIO modes; override with idebus=xx,E20,Assuming <*>MHz system bus speed for PIO modes; override with idebus=xx
+1317,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ide,,Assuming 33MHz system bus speed for PIO modes; override with idebus=xx,E20,Assuming <*>MHz system bus speed for PIO modes; override with idebus=xx
+1317,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ide,,Assuming 33MHz system bus speed for PIO modes; override with idebus=xx,E20,Assuming <*>MHz system bus speed for PIO modes; override with idebus=xx
+1317,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ide,,Assuming 33MHz system bus speed for PIO modes; override with idebus=xx,E20,Assuming <*>MHz system bus speed for PIO modes; override with idebus=xx
+1273,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Intel E7520/7320/7525 detected.<6>pci_hotplug,,PCI Hot Plug PCI Core version: 0.5,E80,PCI Hot Plug PCI Core version: <*>.<*>
+1273,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Intel E7520/7320/7525 detected.<6>pci_hotplug,,PCI Hot Plug PCI Core version: 0.5,E80,PCI Hot Plug PCI Core version: <*>.<*>
+1273,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Intel E7520/7320/7525 detected.<6>pci_hotplug,,PCI Hot Plug PCI Core version: 0.5,E80,PCI Hot Plug PCI Core version: <*>.<*>
+1273,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Intel E7520/7320/7525 detected.<6>pci_hotplug,,PCI Hot Plug PCI Core version: 0.5,E80,PCI Hot Plug PCI Core version: <*>.<*>
+1273,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Intel E7520/7320/7525 detected.<6>pci_hotplug,,PCI Hot Plug PCI Core version: 0.5,E80,PCI Hot Plug PCI Core version: <*>.<*>
+1273,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Intel E7520/7320/7525 detected.<6>pci_hotplug,,PCI Hot Plug PCI Core version: 0.5,E80,PCI Hot Plug PCI Core version: <*>.<*>
+1269,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,IOAPIC,0.0,"apic_id 8, version 32, address 0xfec00000, GSI 0-23",E18,"apic_id <*>, version <*>, address <*>, GSI <*>"
+1269,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,IOAPIC,0.0,"apic_id 8, version 32, address 0xfec00000, GSI 0-23",E18,"apic_id <*>, version <*>, address <*>, GSI <*>"
+1269,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,IOAPIC,0.0,"apic_id 8, version 32, address 0xfec00000, GSI 0-23",E18,"apic_id <*>, version <*>, address <*>, GSI <*>"
+1269,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,IOAPIC,0.0,"apic_id 8, version 32, address 0xfec00000, GSI 0-23",E18,"apic_id <*>, version <*>, address <*>, GSI <*>"
+1270,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,IOAPIC,1.0,"apic_id 9, version 32, address 0xfec80000, GSI 32-55",E18,"apic_id <*>, version <*>, address <*>, GSI <*>"
+1270,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,IOAPIC,1.0,"apic_id 9, version 32, address 0xfec80000, GSI 32-55",E18,"apic_id <*>, version <*>, address <*>, GSI <*>"
+460,-,1131566665,2005.11.09,tbird-admin1,Nov,9,12:04:25,local@tbird-admin1,ntpd,1815.0,time reset +0.182379 s,E128,time reset +<*>.<*> s
+460,-,1131566665,2005.11.09,tbird-admin1,Nov,9,12:04:25,local@tbird-admin1,ntpd,1815.0,time reset +0.182379 s,E128,time reset +<*>.<*> s
+460,-,1131566665,2005.11.09,tbird-admin1,Nov,9,12:04:25,local@tbird-admin1,ntpd,1815.0,time reset +0.182379 s,E128,time reset +<*>.<*> s
+460,-,1131566665,2005.11.09,tbird-admin1,Nov,9,12:04:25,local@tbird-admin1,ntpd,1815.0,time reset +0.182379 s,E128,time reset +<*>.<*> s
+460,-,1131566665,2005.11.09,tbird-admin1,Nov,9,12:04:25,local@tbird-admin1,ntpd,1815.0,time reset +0.182379 s,E128,time reset +<*>.<*> s
+460,-,1131566665,2005.11.09,tbird-admin1,Nov,9,12:04:25,local@tbird-admin1,ntpd,1815.0,time reset +0.182379 s,E128,time reset +<*>.<*> s
+1953,-,1131567306,2005.11.09,en14,Nov,9,12:15:06,en14/en14,smartd,1971.0,"Device: /dev/sda, Temperature changed -2 Celsius to 26 Celsius since last report",E34,"Device: /dev/sda, Temperature changed <*> Celsius to <*> Celsius since last report"
+1953,-,1131567306,2005.11.09,en14,Nov,9,12:15:06,en14/en14,smartd,1971.0,"Device: /dev/sda, Temperature changed -2 Celsius to 26 Celsius since last report",E34,"Device: /dev/sda, Temperature changed <*> Celsius to <*> Celsius since last report"
+1953,-,1131567306,2005.11.09,en14,Nov,9,12:15:06,en14/en14,smartd,1971.0,"Device: /dev/sda, Temperature changed -2 Celsius to 26 Celsius since last report",E34,"Device: /dev/sda, Temperature changed <*> Celsius to <*> Celsius since last report"
+1953,-,1131567306,2005.11.09,en14,Nov,9,12:15:06,en14/en14,smartd,1971.0,"Device: /dev/sda, Temperature changed -2 Celsius to 26 Celsius since last report",E34,"Device: /dev/sda, Temperature changed <*> Celsius to <*> Celsius since last report"
+1226,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,PCI Root Bridge [PCI0] (00:00),E86,PCI Root Bridge [PCI0] (<*>:<*>)
+1226,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,PCI Root Bridge [PCI0] (00:00),E86,PCI Root Bridge [PCI0] (<*>:<*>)
+1226,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,PCI Root Bridge [PCI0] (00:00),E86,PCI Root Bridge [PCI0] (<*>:<*>)
+1226,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,PCI Root Bridge [PCI0] (00:00),E86,PCI Root Bridge [PCI0] (<*>:<*>)
+1226,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,PCI Root Bridge [PCI0] (00:00),E86,PCI Root Bridge [PCI0] (<*>:<*>)
+1358,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,usbcore,,registered new driver usbfs,E101,registered new driver usbfs
+1359,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,usbcore,,registered new driver usbhid,E102,registered new driver usbhid
+1357,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,usbcore,,registered new driver hub,E100,registered new driver hub
+1355,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ts_fixup,,Creating Topspin /dev entries:,E31,Creating Topspin /dev entries:
+1355,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ts_fixup,,Creating Topspin /dev entries:,E31,Creating Topspin /dev entries:
+1355,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ts_fixup,,Creating Topspin /dev entries:,E31,Creating Topspin /dev entries:
+1355,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ts_fixup,,Creating Topspin /dev entries:,E31,Creating Topspin /dev entries:
+1182,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,- User ID,,CentOS-4 (Kernel Module GPG key),E25,CentOS-<*> (Kernel Module GPG key)
+1182,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,- User ID,,CentOS-4 (Kernel Module GPG key),E25,CentOS-<*> (Kernel Module GPG key)
+1182,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,- User ID,,CentOS-4 (Kernel Module GPG key),E25,CentOS-<*> (Kernel Module GPG key)
+1182,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,- User ID,,CentOS-4 (Kernel Module GPG key),E25,CentOS-<*> (Kernel Module GPG key)
+1182,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,- User ID,,CentOS-4 (Kernel Module GPG key),E25,CentOS-<*> (Kernel Module GPG key)
+1182,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,- User ID,,CentOS-4 (Kernel Module GPG key),E25,CentOS-<*> (Kernel Module GPG key)
+1781,-,1131567202,2005.11.09,tbird-sm1,Nov,9,12:13:22,src@tbird-sm1,ib_sm.x,24904.0,[ib_sm_sweep.c:1482]: No configuration change required,E7,[ib_sm_sweep.c:1482]: No configuration change required
+1730,-,1131567174,2005.11.09,tbird-sm1,Nov,9,12:12:54,src@tbird-sm1,ib_sm.x,24904.0,[ib_sm_sweep.c:1482]: No configuration change required,E7,[ib_sm_sweep.c:1482]: No configuration change required
+1523,-,1131567062,2005.11.09,tbird-sm1,Nov,9,12:11:02,src@tbird-sm1,ib_sm.x,24904.0,[ib_sm_sweep.c:1482]: No configuration change required,E7,[ib_sm_sweep.c:1482]: No configuration change required
+364,-,1131566614,2005.11.09,tbird-sm1,Nov,9,12:03:34,src@tbird-sm1,ib_sm.x,24904.0,[ib_sm_sweep.c:1482]: No configuration change required,E7,[ib_sm_sweep.c:1482]: No configuration change required
+1568,-,1131567090,2005.11.09,tbird-sm1,Nov,9,12:11:30,src@tbird-sm1,ib_sm.x,24904.0,[ib_sm_sweep.c:1482]: No configuration change required,E7,[ib_sm_sweep.c:1482]: No configuration change required
+1816,-,1131567216,2005.11.09,tbird-sm1,Nov,9,12:13:36,src@tbird-sm1,ib_sm.x,24904.0,[ib_sm_sweep.c:1482]: No configuration change required,E7,[ib_sm_sweep.c:1482]: No configuration change required
+1533,-,1131567073,2005.11.09,tbird-admin1,Nov,9,12:11:13,local@tbird-admin1,/apps/x86_64/system/ganglia-3.0.1/sbin/gmetad,1682.0,RRD_update (/var/lib/ganglia/rrds/D Nodes/dn731/pkts_out.rrd): illegal attempt to update using time 1131563473 when last update time is 1131563473 (minimum one second step),E111,RRD_update (/var/lib/ganglia/rrds/<*>.rrd): illegal attempt to update using time <*> when last update time is <*> (minimum one second step)
+404,-,1131566637,2005.11.09,tbird-admin1,Nov,9,12:03:57,local@tbird-admin1,/apps/x86_64/system/ganglia-3.0.1/sbin/gmetad,1682.0,RRD_update (/var/lib/ganglia/rrds/C Nodes/cn304/pkts_out.rrd): illegal attempt to update using time 1131563037 when last update time is 1131563037 (minimum one second step),E111,RRD_update (/var/lib/ganglia/rrds/<*>.rrd): illegal attempt to update using time <*> when last update time is <*> (minimum one second step)
+1005,-,1131566949,2005.11.09,tbird-admin1,Nov,9,12:09:09,local@tbird-admin1,/apps/x86_64/system/ganglia-3.0.1/sbin/gmetad,1682.0,RRD_update (/var/lib/ganglia/rrds/D Nodes/dn731/pkts_out.rrd): illegal attempt to update using time 1131563349 when last update time is 1131563349 (minimum one second step),E111,RRD_update (/var/lib/ganglia/rrds/<*>.rrd): illegal attempt to update using time <*> when last update time is <*> (minimum one second step)
+1005,-,1131566949,2005.11.09,tbird-admin1,Nov,9,12:09:09,local@tbird-admin1,/apps/x86_64/system/ganglia-3.0.1/sbin/gmetad,1682.0,RRD_update (/var/lib/ganglia/rrds/D Nodes/dn731/pkts_out.rrd): illegal attempt to update using time 1131563349 when last update time is 1131563349 (minimum one second step),E111,RRD_update (/var/lib/ganglia/rrds/<*>.rrd): illegal attempt to update using time <*> when last update time is <*> (minimum one second step)
+519,-,1131566689,2005.11.09,tbird-admin1,Nov,9,12:04:49,local@tbird-admin1,/apps/x86_64/system/ganglia-3.0.1/sbin/gmetad,1682.0,RRD_update (/var/lib/ganglia/rrds/D Nodes/dn731/pkts_out.rrd): illegal attempt to update using time 1131563089 when last update time is 1131563089 (minimum one second step),E111,RRD_update (/var/lib/ganglia/rrds/<*>.rrd): illegal attempt to update using time <*> when last update time is <*> (minimum one second step)
+943,-,1131566919,2005.11.09,tbird-admin1,Nov,9,12:08:39,local@tbird-admin1,/apps/x86_64/system/ganglia-3.0.1/sbin/gmetad,1682.0,RRD_update (/var/lib/ganglia/rrds/D Nodes/dn731/pkts_out.rrd): illegal attempt to update using time 1131563319 when last update time is 1131563319 (minimum one second step),E111,RRD_update (/var/lib/ganglia/rrds/<*>.rrd): illegal attempt to update using time <*> when last update time is <*> (minimum one second step)
+943,-,1131566919,2005.11.09,tbird-admin1,Nov,9,12:08:39,local@tbird-admin1,/apps/x86_64/system/ganglia-3.0.1/sbin/gmetad,1682.0,RRD_update (/var/lib/ganglia/rrds/D Nodes/dn731/pkts_out.rrd): illegal attempt to update using time 1131563319 when last update time is 1131563319 (minimum one second step),E111,RRD_update (/var/lib/ganglia/rrds/<*>.rrd): illegal attempt to update using time <*> when last update time is <*> (minimum one second step)
+1383,-,1131567052,2005.11.09,tbird-admin1,Nov,9,12:10:52,local@tbird-admin1,netfs,,Mounting NFS filesystems: succeeded,E73,Mounting NFS filesystems: succeeded
+1383,-,1131567052,2005.11.09,tbird-admin1,Nov,9,12:10:52,local@tbird-admin1,netfs,,Mounting NFS filesystems: succeeded,E73,Mounting NFS filesystems: succeeded
+1383,-,1131567052,2005.11.09,tbird-admin1,Nov,9,12:10:52,local@tbird-admin1,netfs,,Mounting NFS filesystems: succeeded,E73,Mounting NFS filesystems: succeeded
+1383,-,1131567052,2005.11.09,tbird-admin1,Nov,9,12:10:52,local@tbird-admin1,netfs,,Mounting NFS filesystems: succeeded,E73,Mounting NFS filesystems: succeeded
+1383,-,1131567052,2005.11.09,tbird-admin1,Nov,9,12:10:52,local@tbird-admin1,netfs,,Mounting NFS filesystems: succeeded,E73,Mounting NFS filesystems: succeeded
+1383,-,1131567052,2005.11.09,tbird-admin1,Nov,9,12:10:52,local@tbird-admin1,netfs,,Mounting NFS filesystems: succeeded,E73,Mounting NFS filesystems: succeeded
+1289,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,SELinux,,Starting in permissive mode,E121,Starting in permissive mode
+1289,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,SELinux,,Starting in permissive mode,E121,Starting in permissive mode
+1289,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,SELinux,,Starting in permissive mode,E121,Starting in permissive mode
+1289,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,SELinux,,Starting in permissive mode,E121,Starting in permissive mode
+1289,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,SELinux,,Starting in permissive mode,E121,Starting in permissive mode
+1214,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,"PCI Interrupt Link [LNKG] (IRQs 3 4 5 6 7 10 11 12) *0, disabled.",E84,"PCI Interrupt Link [<*>] (IRQs <*> <*> <*> <*> <*> <*> <*> <*>) *<*>, disabled."
+1211,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,"PCI Interrupt Link [LNKD] (IRQs 3 4 5 6 7 10 11 12) *0, disabled.",E84,"PCI Interrupt Link [<*>] (IRQs <*> <*> <*> <*> <*> <*> <*> <*>) *<*>, disabled."
+1211,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,"PCI Interrupt Link [LNKD] (IRQs 3 4 5 6 7 10 11 12) *0, disabled.",E84,"PCI Interrupt Link [<*>] (IRQs <*> <*> <*> <*> <*> <*> <*> <*>) *<*>, disabled."
+1209,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,PCI Interrupt Link [LNKB] (IRQs 3 4 5 6 7 10 *11 12),E83,PCI Interrupt Link [<*>] (IRQs <*> <*> <*> <*> <*> <*> *<*> <*>)
+1208,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,PCI Interrupt Link [LNKA] (IRQs 3 4 5 6 7 10 11 12) *14,E82,PCI Interrupt Link [<*>] (IRQs <*> <*> <*> <*> <*> <*> <*> <*>) *<*>
+1196,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Interpreter enabled,E58,Interpreter enabled
+1196,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Interpreter enabled,E58,Interpreter enabled
+1196,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Interpreter enabled,E58,Interpreter enabled
+1196,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Interpreter enabled,E58,Interpreter enabled
+1795,-,1131567209,2005.11.09,cn634,Nov,9,12:13:29,cn634/cn634,ntpd,19733.0,"synchronized to 10.100.18.250, stratum 3",E125,"synchronized to <*>, stratum <*>"
+643,-,1131566755,2005.11.09,bn154,Nov,9,12:05:55,bn154/bn154,ntpd,22847.0,"synchronized to 10.100.20.250, stratum 3",E125,"synchronized to <*>, stratum <*>"
+1839,-,1131567237,2005.11.09,cn25,Nov,9,12:13:57,cn25/cn25,ntpd,15539.0,"synchronized to 10.100.20.250, stratum 3",E125,"synchronized to <*>, stratum <*>"
+958,-,1131566925,2005.11.09,tbird-admin1,Nov,9,12:08:45,local@tbird-admin1,ntpd,1815.0,"synchronized to #3#, stratum 1",E125,"synchronized to <*>, stratum <*>"
+1293,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Type,,Processor ANSI SCSI revision: 02,E95,Processor ANSI SCSI revision: <*>
+1293,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Type,,Processor ANSI SCSI revision: 02,E95,Processor ANSI SCSI revision: <*>
+1293,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Type,,Processor ANSI SCSI revision: 02,E95,Processor ANSI SCSI revision: <*>
+1293,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Type,,Processor ANSI SCSI revision: 02,E95,Processor ANSI SCSI revision: <*>
+1264,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Console,,colour VGA+ 80x25,E27,colour VGA+ <*>
+1264,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Console,,colour VGA+ 80x25,E27,colour VGA+ <*>
+1264,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Console,,colour VGA+ 80x25,E27,colour VGA+ <*>
+1264,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Console,,colour VGA+ 80x25,E27,colour VGA+ <*>
+1264,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Console,,colour VGA+ 80x25,E27,colour VGA+ <*>
+1328,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,md,,autorun ...,E23,autorun ...
+1328,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,md,,autorun ...,E23,autorun ...
+1328,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,md,,autorun ...,E23,autorun ...
+1329,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,md,,autorun ...,E23,autorun ...
+1328,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,md,,autorun ...,E23,autorun ...
+1318,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ioctl32(fdisk:515),,Unknown cmd fd(5) cmd(80081272){00} arg(ffffda44) on /dev/sda,E132,Unknown cmd fd(<*>) cmd(<*>){<*>} arg(<*>) on /dev/sda
+1318,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ioctl32(fdisk:515),,Unknown cmd fd(5) cmd(80081272){00} arg(ffffda44) on /dev/sda,E132,Unknown cmd fd(<*>) cmd(<*>){<*>} arg(<*>) on /dev/sda
+1318,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ioctl32(fdisk:515),,Unknown cmd fd(5) cmd(80081272){00} arg(ffffda44) on /dev/sda,E132,Unknown cmd fd(<*>) cmd(<*>){<*>} arg(<*>) on /dev/sda
+1318,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ioctl32(fdisk:515),,Unknown cmd fd(5) cmd(80081272){00} arg(ffffda44) on /dev/sda,E132,Unknown cmd fd(<*>) cmd(<*>){<*>} arg(<*>) on /dev/sda
+1318,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ioctl32(fdisk:515),,Unknown cmd fd(5) cmd(80081272){00} arg(ffffda44) on /dev/sda,E132,Unknown cmd fd(<*>) cmd(<*>){<*>} arg(<*>) on /dev/sda
+1318,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ioctl32(fdisk:515),,Unknown cmd fd(5) cmd(80081272){00} arg(ffffda44) on /dev/sda,E132,Unknown cmd fd(<*>) cmd(<*>){<*>} arg(<*>) on /dev/sda
+1332,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid,,#39# (Release Date: Mon Sep 27 22:15:07 EDT 2004),E9,<*> (Release Date: <*> <*>)
+1332,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid,,#39# (Release Date: Mon Sep 27 22:15:07 EDT 2004),E9,<*> (Release Date: <*> <*>)
+1332,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid,,#39# (Release Date: Mon Sep 27 22:15:07 EDT 2004),E9,<*> (Release Date: <*> <*>)
+1332,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid,,#39# (Release Date: Mon Sep 27 22:15:07 EDT 2004),E9,<*> (Release Date: <*> <*>)
+1332,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid,,#39# (Release Date: Mon Sep 27 22:15:07 EDT 2004),E9,<*> (Release Date: <*> <*>)
+1332,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid,,#39# (Release Date: Mon Sep 27 22:15:07 EDT 2004),E9,<*> (Release Date: <*> <*>)
+1272,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,IP,,"routing cache hash table of 65536 buckets, 1024Kbytes",E109,"routing cache hash table of <*> buckets, <*>Kbytes"
+1272,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,IP,,"routing cache hash table of 65536 buckets, 1024Kbytes",E109,"routing cache hash table of <*> buckets, <*>Kbytes"
+1272,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,IP,,"routing cache hash table of 65536 buckets, 1024Kbytes",E109,"routing cache hash table of <*> buckets, <*>Kbytes"
+1272,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,IP,,"routing cache hash table of 65536 buckets, 1024Kbytes",E109,"routing cache hash table of <*> buckets, <*>Kbytes"
+1381,-,1131567052,2005.11.09,#8#,Nov,9,12:10:52,#8#/#8#,sshd,4718.0,Local disconnected: Connection closed.,E67,Local disconnected: Connection closed.
+1843,-,1131567240,2005.11.09,#8#,Nov,9,12:14:00,#8#/#8#,sshd,4893.0,Local disconnected: Connection closed.,E67,Local disconnected: Connection closed.
+74,-,1131566479,2005.11.09,#8#,Nov,9,12:01:19,#8#/#8#,sshd,19023.0,Local disconnected: Connection closed.,E67,Local disconnected: Connection closed.
+74,-,1131566479,2005.11.09,#8#,Nov,9,12:01:19,#8#/#8#,sshd,19023.0,Local disconnected: Connection closed.,E67,Local disconnected: Connection closed.
+1589,-,1131567095,2005.11.09,cadmin1,Nov,9,12:11:35,src@cadmin1,sendmail,22479.0,"jA9JBXgf022479: to=root, ctladdr=root (0/0), delay=00:00:02, xdelay=00:00:00, mailer=relay, pri=1624553, relay=[127.0.0.1] [127.0.0.1], dsn=4.0.0, stat=Deferred: Connection refused by [127.0.0.1]",E16,"<*>: to=root, ctladdr=root (0/0), delay=<*>:<*>:<*>, xdelay=<*>:<*>:<*>, mailer=relay, pri=<*>, relay=[<*>] [<*>], dsn=<*>.<*>.<*>, stat=Deferred: Connection refused by [<*>]"
+115,-,1131566495,2005.11.09,badmin1,Nov,9,12:01:35,src@badmin1,sendmail,11176.0,"jA9J1WSU011176: to=root, ctladdr=root (0/0), delay=00:00:03, xdelay=00:00:00, mailer=relay, pri=1623894, relay=[127.0.0.1] [127.0.0.1], dsn=4.0.0, stat=Deferred: Connection refused by [127.0.0.1]",E16,"<*>: to=root, ctladdr=root (0/0), delay=<*>:<*>:<*>, xdelay=<*>:<*>:<*>, mailer=relay, pri=<*>, relay=[<*>] [<*>], dsn=<*>.<*>.<*>, stat=Deferred: Connection refused by [<*>]"
+110,-,1131566494,2005.11.09,cadmin1,Nov,9,12:01:34,src@cadmin1,sendmail,19391.0,"jA9J1Wd7019391: to=root, ctladdr=root (0/0), delay=00:00:02, xdelay=00:00:00, mailer=relay, pri=1624553, relay=[127.0.0.1] [127.0.0.1], dsn=4.0.0, stat=Deferred: Connection refused by [127.0.0.1]",E16,"<*>: to=root, ctladdr=root (0/0), delay=<*>:<*>:<*>, xdelay=<*>:<*>:<*>, mailer=relay, pri=<*>, relay=[<*>] [<*>], dsn=<*>.<*>.<*>, stat=Deferred: Connection refused by [<*>]"
+131,-,1131566501,2005.11.09,aadmin1,Nov,9,12:01:41,src@aadmin1,sendmail,16560.0,"jA9J1dQ7016560: to=root, ctladdr=root (0/0), delay=00:00:02, xdelay=00:00:00, mailer=relay, pri=1625423, relay=[127.0.0.1] [127.0.0.1], dsn=4.0.0, stat=Deferred: Connection refused by [127.0.0.1]",E16,"<*>: to=root, ctladdr=root (0/0), delay=<*>:<*>:<*>, xdelay=<*>:<*>:<*>, mailer=relay, pri=<*>, relay=[<*>] [<*>], dsn=<*>.<*>.<*>, stat=Deferred: Connection refused by [<*>]"
+110,-,1131566494,2005.11.09,cadmin1,Nov,9,12:01:34,src@cadmin1,sendmail,19391.0,"jA9J1Wd7019391: to=root, ctladdr=root (0/0), delay=00:00:02, xdelay=00:00:00, mailer=relay, pri=1624553, relay=[127.0.0.1] [127.0.0.1], dsn=4.0.0, stat=Deferred: Connection refused by [127.0.0.1]",E16,"<*>: to=root, ctladdr=root (0/0), delay=<*>:<*>:<*>, xdelay=<*>:<*>:<*>, mailer=relay, pri=<*>, relay=[<*>] [<*>], dsn=<*>.<*>.<*>, stat=Deferred: Connection refused by [<*>]"
+1594,-,1131567095,2005.11.09,dadmin1,Nov,9,12:11:35,src@dadmin1,sendmail,27337.0,"jA9JBXVI027337: to=root, ctladdr=root (0/0), delay=00:00:02, xdelay=00:00:00, mailer=relay, pri=1627080, relay=[127.0.0.1] [127.0.0.1], dsn=4.0.0, stat=Deferred: Connection refused by [127.0.0.1]",E16,"<*>: to=root, ctladdr=root (0/0), delay=<*>:<*>:<*>, xdelay=<*>:<*>:<*>, mailer=relay, pri=<*>, relay=[<*>] [<*>], dsn=<*>.<*>.<*>, stat=Deferred: Connection refused by [<*>]"
+1284,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Using configuration type 1,E137,Using configuration type <*>
+1284,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Using configuration type 1,E137,Using configuration type <*>
+1284,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Using configuration type 1,E137,Using configuration type <*>
+1284,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Using configuration type 1,E137,Using configuration type <*>
+1284,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Using configuration type 1,E137,Using configuration type <*>
+1284,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Using configuration type 1,E137,Using configuration type <*>
+1471,-,1131567057,2005.11.09,tbird-admin1,Nov,9,12:10:57,local@tbird-admin1,syslog-ng,1605.0,Changing permissions on special file /dev/logsurfer,E26,Changing permissions on special file /dev/logsurfer
+1471,-,1131567057,2005.11.09,tbird-admin1,Nov,9,12:10:57,local@tbird-admin1,syslog-ng,1605.0,Changing permissions on special file /dev/logsurfer,E26,Changing permissions on special file /dev/logsurfer
+1471,-,1131567057,2005.11.09,tbird-admin1,Nov,9,12:10:57,local@tbird-admin1,syslog-ng,1605.0,Changing permissions on special file /dev/logsurfer,E26,Changing permissions on special file /dev/logsurfer
+1471,-,1131567057,2005.11.09,tbird-admin1,Nov,9,12:10:57,local@tbird-admin1,syslog-ng,1605.0,Changing permissions on special file /dev/logsurfer,E26,Changing permissions on special file /dev/logsurfer
+1471,-,1131567057,2005.11.09,tbird-admin1,Nov,9,12:10:57,local@tbird-admin1,syslog-ng,1605.0,Changing permissions on special file /dev/logsurfer,E26,Changing permissions on special file /dev/logsurfer
+1511,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing ftp,E106,removing <*>
+1511,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing ftp,E106,removing <*>
+1511,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing ftp,E106,removing <*>
+1511,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing ftp,E106,removing <*>
+1511,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing ftp,E106,removing <*>
+1511,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing ftp,E106,removing <*>
+1511,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing ftp,E106,removing <*>
+1485,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,,xinetd startup succeeded,E148,xinetd startup succeeded
+1485,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,,xinetd startup succeeded,E148,xinetd startup succeeded
+1485,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,,xinetd startup succeeded,E148,xinetd startup succeeded
+1485,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,,xinetd startup succeeded,E148,xinetd startup succeeded
+1485,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,,xinetd startup succeeded,E148,xinetd startup succeeded
+86,-,1131566485,2005.11.09,tbird-admin1,Nov,9,12:01:25,local@tbird-admin1,/apps/x86_64/system/ganglia-3.0.1/sbin/gmetad,1682.0,data_thread() got not answer from any [Thunderbird_D6] datasource,E32,data_thread() got not answer from any [Thunderbird_<*>] datasource
+798,-,1131566836,2005.11.09,tbird-admin1,Nov,9,12:07:16,local@tbird-admin1,/apps/x86_64/system/ganglia-3.0.1/sbin/gmetad,1682.0,data_thread() got not answer from any [Thunderbird_B1] datasource,E32,data_thread() got not answer from any [Thunderbird_<*>] datasource
+1941,-,1131567298,2005.11.09,tbird-admin1,Nov,9,12:14:58,local@tbird-admin1,/apps/x86_64/system/ganglia-3.0.1/sbin/gmetad,1682.0,data_thread() got not answer from any [Thunderbird_A2] datasource,E32,data_thread() got not answer from any [Thunderbird_<*>] datasource
+392,-,1131566631,2005.11.09,tbird-admin1,Nov,9,12:03:51,local@tbird-admin1,/apps/x86_64/system/ganglia-3.0.1/sbin/gmetad,1682.0,data_thread() got not answer from any [Thunderbird_B1] datasource,E32,data_thread() got not answer from any [Thunderbird_<*>] datasource
+146,-,1131566503,2005.11.09,tbird-admin1,Nov,9,12:01:43,local@tbird-admin1,/apps/x86_64/system/ganglia-3.0.1/sbin/gmetad,1682.0,data_thread() got not answer from any [Thunderbird_C2] datasource,E32,data_thread() got not answer from any [Thunderbird_<*>] datasource
+1466,-,1131567055,2005.11.09,tbird-admin1,Nov,9,12:10:55,local@tbird-admin1,sshd,1761.0,error: Bind to port 22 on 0.0.0.0 failed: Address already in use.,E44,error: Bind to port <*> on <*> failed: Address already in use.
+1466,-,1131567055,2005.11.09,tbird-admin1,Nov,9,12:10:55,local@tbird-admin1,sshd,1761.0,error: Bind to port 22 on 0.0.0.0 failed: Address already in use.,E44,error: Bind to port <*> on <*> failed: Address already in use.
+1466,-,1131567055,2005.11.09,tbird-admin1,Nov,9,12:10:55,local@tbird-admin1,sshd,1761.0,error: Bind to port 22 on 0.0.0.0 failed: Address already in use.,E44,error: Bind to port <*> on <*> failed: Address already in use.
+1466,-,1131567055,2005.11.09,tbird-admin1,Nov,9,12:10:55,local@tbird-admin1,sshd,1761.0,error: Bind to port 22 on 0.0.0.0 failed: Address already in use.,E44,error: Bind to port <*> on <*> failed: Address already in use.
+1466,-,1131567055,2005.11.09,tbird-admin1,Nov,9,12:10:55,local@tbird-admin1,sshd,1761.0,error: Bind to port 22 on 0.0.0.0 failed: Address already in use.,E44,error: Bind to port <*> on <*> failed: Address already in use.
+1466,-,1131567055,2005.11.09,tbird-admin1,Nov,9,12:10:55,local@tbird-admin1,sshd,1761.0,error: Bind to port 22 on 0.0.0.0 failed: Address already in use.,E44,error: Bind to port <*> on <*> failed: Address already in use.
+1281,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Transparent bridge - 0000:00:1e.0,E130,Transparent bridge - <*>
+1281,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Transparent bridge - 0000:00:1e.0,E130,Transparent bridge - <*>
+1281,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Transparent bridge - 0000:00:1e.0,E130,Transparent bridge - <*>
+1281,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Transparent bridge - 0000:00:1e.0,E130,Transparent bridge - <*>
+1281,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Transparent bridge - 0000:00:1e.0,E130,Transparent bridge - <*>
+1281,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Transparent bridge - 0000:00:1e.0,E130,Transparent bridge - <*>
+1281,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Transparent bridge - 0000:00:1e.0,E130,Transparent bridge - <*>
+1503,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,Started working: 1 available service,E120,Started working: <*> available service
+1503,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,Started working: 1 available service,E120,Started working: <*> available service
+1503,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,Started working: 1 available service,E120,Started working: <*> available service
+1503,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,Started working: 1 available service,E120,Started working: <*> available service
+1503,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,Started working: 1 available service,E120,Started working: <*> available service
+1353,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,time.c,,Using 14.318180 MHz HPET timer.,E135,Using <*>.<*> MHz HPET timer.
+1353,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,time.c,,Using 14.318180 MHz HPET timer.,E135,Using <*>.<*> MHz HPET timer.
+1246,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Subsystem revision 20040816,E123,Subsystem revision <*>
+1246,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Subsystem revision 20040816,E123,Subsystem revision <*>
+1246,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Subsystem revision 20040816,E123,Subsystem revision <*>
+1246,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Subsystem revision 20040816,E123,Subsystem revision <*>
+1335,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,mice,,PS/2 mouse device common for all mice,E96,PS/<*> mouse device common for all mice
+1335,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,mice,,PS/2 mouse device common for all mice,E96,PS/<*> mouse device common for all mice
+1335,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,mice,,PS/2 mouse device common for all mice,E96,PS/<*> mouse device common for all mice
+1335,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,mice,,PS/2 mouse device common for all mice,E96,PS/<*> mouse device common for all mice
+1517,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing telnet,E106,removing <*>
+1517,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing telnet,E106,removing <*>
+1517,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing telnet,E106,removing <*>
+1517,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing telnet,E106,removing <*>
+1517,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing telnet,E106,removing <*>
+1517,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing telnet,E106,removing <*>
+1517,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing telnet,E106,removing <*>
+1347,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,selinux_register_security,,Registering secondary module capability,E105,Registering secondary module capability
+1347,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,selinux_register_security,,Registering secondary module capability,E105,Registering secondary module capability
+1347,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,selinux_register_security,,Registering secondary module capability,E105,Registering secondary module capability
+1347,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,selinux_register_security,,Registering secondary module capability,E105,Registering secondary module capability
+1279,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI-DMA,,Using software bounce buffering for IO (SWIOTLB),E141,Using software bounce buffering for IO (SWIOTLB)
+1279,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI-DMA,,Using software bounce buffering for IO (SWIOTLB),E141,Using software bounce buffering for IO (SWIOTLB)
+1279,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI-DMA,,Using software bounce buffering for IO (SWIOTLB),E141,Using software bounce buffering for IO (SWIOTLB)
+1279,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI-DMA,,Using software bounce buffering for IO (SWIOTLB),E141,Using software bounce buffering for IO (SWIOTLB)
+1279,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI-DMA,,Using software bounce buffering for IO (SWIOTLB),E141,Using software bounce buffering for IO (SWIOTLB)
+1297,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Vendor,,PE/PV Model: 1x2 SCSI BP Rev: 1.0,E87,PE/PV Model: <*> SCSI BP Rev: <*>.<*>
+1297,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Vendor,,PE/PV Model: 1x2 SCSI BP Rev: 1.0,E87,PE/PV Model: <*> SCSI BP Rev: <*>.<*>
+1297,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Vendor,,PE/PV Model: 1x2 SCSI BP Rev: 1.0,E87,PE/PV Model: <*> SCSI BP Rev: <*>.<*>
+1323,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ksign,,Installing public key data,E54,Installing public key data
+1323,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ksign,,Installing public key data,E54,Installing public key data
+1323,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ksign,,Installing public key data,E54,Installing public key data
+1323,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ksign,,Installing public key data,E54,Installing public key data
+1323,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ksign,,Installing public key data,E54,Installing public key data
+1323,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ksign,,Installing public key data,E54,Installing public key data
+1323,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ksign,,Installing public key data,E54,Installing public key data
+1510,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing eklogin,E106,removing <*>
+1510,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing eklogin,E106,removing <*>
+1510,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing eklogin,E106,removing <*>
+1510,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing eklogin,E106,removing <*>
+1223,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,PCI Interrupt Routing Table [\_SB_.PCI0.PICH._PRT],E85,PCI Interrupt Routing Table [<*>]
+1225,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,PCI Interrupt Routing Table [\_SB_.PCI0._PRT],E85,PCI Interrupt Routing Table [<*>]
+1223,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,PCI Interrupt Routing Table [\_SB_.PCI0.PICH._PRT],E85,PCI Interrupt Routing Table [<*>]
+1217,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,PCI Interrupt Routing Table [\_SB_.PCI0.PALO.DOBB._PRT],E85,PCI Interrupt Routing Table [<*>]
+1217,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,PCI Interrupt Routing Table [\_SB_.PCI0.PALO.DOBB._PRT],E85,PCI Interrupt Routing Table [<*>]
+1219,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,PCI Interrupt Routing Table [\_SB_.PCI0.PBHI.PXB1._PRT],E85,PCI Interrupt Routing Table [<*>]
+866,-,1131566876,2005.11.09,tbird-sm1,Nov,9,12:07:56,src@tbird-sm1,ib_sm.x,24904.0,[ib_sm_sweep.c:1831]: ********************** NEW SWEEP ********************,E8,[ib_sm_sweep.c:1831]: ********************** NEW SWEEP ********************
+436,-,1131566652,2005.11.09,tbird-sm1,Nov,9,12:04:12,src@tbird-sm1,ib_sm.x,24904.0,[ib_sm_sweep.c:1831]: ********************** NEW SWEEP ********************,E8,[ib_sm_sweep.c:1831]: ********************** NEW SWEEP ********************
+1056,-,1131566974,2005.11.09,tbird-sm1,Nov,9,12:09:34,src@tbird-sm1,ib_sm.x,24904.0,[ib_sm_sweep.c:1831]: ********************** NEW SWEEP ********************,E8,[ib_sm_sweep.c:1831]: ********************** NEW SWEEP ********************
+769,-,1131566820,2005.11.09,tbird-sm1,Nov,9,12:07:00,src@tbird-sm1,ib_sm.x,24904.0,[ib_sm_sweep.c:1831]: ********************** NEW SWEEP ********************,E8,[ib_sm_sweep.c:1831]: ********************** NEW SWEEP ********************
+1477,-,1131567058,2005.11.09,tbird-sm1,Nov,9,12:10:58,src@tbird-sm1,ib_sm.x,24904.0,[ib_sm_sweep.c:1831]: ********************** NEW SWEEP ********************,E8,[ib_sm_sweep.c:1831]: ********************** NEW SWEEP ********************
+1274,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Kernel command line,,"root=LABEL=/ initrd=/x86_64/initrd-2.6.9-5.0.5.EL-lustre-1.4.2-perfctr-admin console=tty0 console=ttyS0,19200 fastboot BOOT_IMAGE=/x86_64/vmlinuz-2.6.9-5.0.5.EL-lustre-1.4.2-perfctr",E108,"root=LABEL=/ initrd=/<*> console=<*> console=<*>,<*> fastboot BOOT_IMAGE=<*>"
+1274,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Kernel command line,,"root=LABEL=/ initrd=/x86_64/initrd-2.6.9-5.0.5.EL-lustre-1.4.2-perfctr-admin console=tty0 console=ttyS0,19200 fastboot BOOT_IMAGE=/x86_64/vmlinuz-2.6.9-5.0.5.EL-lustre-1.4.2-perfctr",E108,"root=LABEL=/ initrd=/<*> console=<*> console=<*>,<*> fastboot BOOT_IMAGE=<*>"
+1274,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Kernel command line,,"root=LABEL=/ initrd=/x86_64/initrd-2.6.9-5.0.5.EL-lustre-1.4.2-perfctr-admin console=tty0 console=ttyS0,19200 fastboot BOOT_IMAGE=/x86_64/vmlinuz-2.6.9-5.0.5.EL-lustre-1.4.2-perfctr",E108,"root=LABEL=/ initrd=/<*> console=<*> console=<*>,<*> fastboot BOOT_IMAGE=<*>"
+1274,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Kernel command line,,"root=LABEL=/ initrd=/x86_64/initrd-2.6.9-5.0.5.EL-lustre-1.4.2-perfctr-admin console=tty0 console=ttyS0,19200 fastboot BOOT_IMAGE=/x86_64/vmlinuz-2.6.9-5.0.5.EL-lustre-1.4.2-perfctr",E108,"root=LABEL=/ initrd=/<*> console=<*> console=<*>,<*> fastboot BOOT_IMAGE=<*>"
+1274,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Kernel command line,,"root=LABEL=/ initrd=/x86_64/initrd-2.6.9-5.0.5.EL-lustre-1.4.2-perfctr-admin console=tty0 console=ttyS0,19200 fastboot BOOT_IMAGE=/x86_64/vmlinuz-2.6.9-5.0.5.EL-lustre-1.4.2-perfctr",E108,"root=LABEL=/ initrd=/<*> console=<*> console=<*>,<*> fastboot BOOT_IMAGE=<*>"
+1274,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Kernel command line,,"root=LABEL=/ initrd=/x86_64/initrd-2.6.9-5.0.5.EL-lustre-1.4.2-perfctr-admin console=tty0 console=ttyS0,19200 fastboot BOOT_IMAGE=/x86_64/vmlinuz-2.6.9-5.0.5.EL-lustre-1.4.2-perfctr",E108,"root=LABEL=/ initrd=/<*> console=<*> console=<*>,<*> fastboot BOOT_IMAGE=<*>"
+566,-,1131566712,2005.11.09,#32#,Nov,9,12:05:12,#32#/#32#,snmpd,1964.0,Received SNMP packet(s) from #34#,E98,Received SNMP packet(s) from #<*>#
+566,-,1131566712,2005.11.09,#32#,Nov,9,12:05:12,#32#/#32#,snmpd,1964.0,Received SNMP packet(s) from #34#,E98,Received SNMP packet(s) from #<*>#
+566,-,1131566712,2005.11.09,#32#,Nov,9,12:05:12,#32#/#32#,snmpd,1964.0,Received SNMP packet(s) from #34#,E98,Received SNMP packet(s) from #<*>#
+566,-,1131566712,2005.11.09,#32#,Nov,9,12:05:12,#32#/#32#,snmpd,1964.0,Received SNMP packet(s) from #34#,E98,Received SNMP packet(s) from #<*>#
+566,-,1131566712,2005.11.09,#32#,Nov,9,12:05:12,#32#/#32#,snmpd,1964.0,Received SNMP packet(s) from #34#,E98,Received SNMP packet(s) from #<*>#
+566,-,1131566712,2005.11.09,#32#,Nov,9,12:05:12,#32#/#32#,snmpd,1964.0,Received SNMP packet(s) from #34#,E98,Received SNMP packet(s) from #<*>#
+1290,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,SELinux,,Unregistering netfilter hooks,E133,Unregistering netfilter hooks
+1290,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,SELinux,,Unregistering netfilter hooks,E133,Unregistering netfilter hooks
+1290,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,SELinux,,Unregistering netfilter hooks,E133,Unregistering netfilter hooks
+1290,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,SELinux,,Unregistering netfilter hooks,E133,Unregistering netfilter hooks
+1290,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,SELinux,,Unregistering netfilter hooks,E133,Unregistering netfilter hooks
+1290,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,SELinux,,Unregistering netfilter hooks,E133,Unregistering netfilter hooks
+1299,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,audit,,initializing netlink socket (disabled),E52,initializing netlink socket (disabled)
+1299,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,audit,,initializing netlink socket (disabled),E52,initializing netlink socket (disabled)
+1299,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,audit,,initializing netlink socket (disabled),E52,initializing netlink socket (disabled)
+1299,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,audit,,initializing netlink socket (disabled),E52,initializing netlink socket (disabled)
+1307,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,e1000,,eth0: e1000_watchdog: NIC Link is Up 1000 Mbps Full Duplex,E46,eth0: <*>: NIC Link is Up <*> Mbps Full Duplex
+1307,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,e1000,,eth0: e1000_watchdog: NIC Link is Up 1000 Mbps Full Duplex,E46,eth0: <*>: NIC Link is Up <*> Mbps Full Duplex
+1307,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,e1000,,eth0: e1000_watchdog: NIC Link is Up 1000 Mbps Full Duplex,E46,eth0: <*>: NIC Link is Up <*> Mbps Full Duplex
+1307,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,e1000,,eth0: e1000_watchdog: NIC Link is Up 1000 Mbps Full Duplex,E46,eth0: <*>: NIC Link is Up <*> Mbps Full Duplex
+1307,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,e1000,,eth0: e1000_watchdog: NIC Link is Up 1000 Mbps Full Duplex,E46,eth0: <*>: NIC Link is Up <*> Mbps Full Duplex
+1341,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,scsi0 ,,LSI Logic MegaRAID driver,E68,LSI Logic MegaRAID driver
+1341,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,scsi0 ,,LSI Logic MegaRAID driver,E68,LSI Logic MegaRAID driver
+1341,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,scsi0 ,,LSI Logic MegaRAID driver,E68,LSI Logic MegaRAID driver
+1341,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,scsi0 ,,LSI Logic MegaRAID driver,E68,LSI Logic MegaRAID driver
+1341,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,scsi0 ,,LSI Logic MegaRAID driver,E68,LSI Logic MegaRAID driver
+1341,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,scsi0 ,,LSI Logic MegaRAID driver,E68,LSI Logic MegaRAID driver
+1341,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,scsi0 ,,LSI Logic MegaRAID driver,E68,LSI Logic MegaRAID driver
+1163,-,1131567032,2005.11.09,aadmin1,Nov,9,12:10:32,src@aadmin1,sendmail,19649.0,My unqualified host name (aadmin1) unknown; sleeping for retry,E75,My unqualified host name (<*>) unknown; sleeping for retry
+1170,-,1131567033,2005.11.09,dadmin1,Nov,9,12:10:33,src@dadmin1,sendmail,27337.0,My unqualified host name (dadmin1) unknown; sleeping for retry,E75,My unqualified host name (<*>) unknown; sleeping for retry
+1162,-,1131567031,2005.11.09,eadmin1,Nov,9,12:10:31,src@eadmin1,sendmail,7417.0,My unqualified host name (eadmin1) unknown; sleeping for retry,E75,My unqualified host name (<*>) unknown; sleeping for retry
+1170,-,1131567033,2005.11.09,dadmin1,Nov,9,12:10:33,src@dadmin1,sendmail,27337.0,My unqualified host name (dadmin1) unknown; sleeping for retry,E75,My unqualified host name (<*>) unknown; sleeping for retry
+1170,-,1131567033,2005.11.09,dadmin1,Nov,9,12:10:33,src@dadmin1,sendmail,27337.0,My unqualified host name (dadmin1) unknown; sleeping for retry,E75,My unqualified host name (<*>) unknown; sleeping for retry
+1168,-,1131567033,2005.11.09,cadmin1,Nov,9,12:10:33,src@cadmin1,sendmail,22479.0,My unqualified host name (cadmin1) unknown; sleeping for retry,E75,My unqualified host name (<*>) unknown; sleeping for retry
+1162,-,1131567031,2005.11.09,eadmin1,Nov,9,12:10:31,src@eadmin1,sendmail,7417.0,My unqualified host name (eadmin1) unknown; sleeping for retry,E75,My unqualified host name (<*>) unknown; sleeping for retry
+1505,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing chargen,E106,removing <*>
+1505,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing chargen,E106,removing <*>
+1505,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing chargen,E106,removing <*>
+1505,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing chargen,E106,removing <*>
+1322,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ip_tables,,(C) 2000-2002 Netfilter core team,E1,(C) <*>-<*> Netfilter core team
+1319,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ip_tables,,(C) 2000-2002 Netfilter core team,E1,(C) <*>-<*> Netfilter core team
+1322,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ip_tables,,(C) 2000-2002 Netfilter core team,E1,(C) <*>-<*> Netfilter core team
+1322,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ip_tables,,(C) 2000-2002 Netfilter core team,E1,(C) <*>-<*> Netfilter core team
+1322,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ip_tables,,(C) 2000-2002 Netfilter core team,E1,(C) <*>-<*> Netfilter core team
+1295,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,VFS,,Mounted root (ext2 filesystem).,E72,Mounted root (ext2 filesystem).
+1295,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,VFS,,Mounted root (ext2 filesystem).,E72,Mounted root (ext2 filesystem).
+1295,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,VFS,,Mounted root (ext2 filesystem).,E72,Mounted root (ext2 filesystem).
+1295,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,VFS,,Mounted root (ext2 filesystem).,E72,Mounted root (ext2 filesystem).
+1295,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,VFS,,Mounted root (ext2 filesystem).,E72,Mounted root (ext2 filesystem).
+1308,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,e1000,,eth1: e1000_probe: Intel(R) PRO/1000 Network Connection,E45,eth<*>: <*>: Intel(R) PRO/<*> Network Connection
+1306,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,e1000,,eth0: e1000_probe: Intel(R) PRO/1000 Network Connection,E45,eth<*>: <*>: Intel(R) PRO/<*> Network Connection
+1306,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,e1000,,eth0: e1000_probe: Intel(R) PRO/1000 Network Connection,E45,eth<*>: <*>: Intel(R) PRO/<*> Network Connection
+1308,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,e1000,,eth1: e1000_probe: Intel(R) PRO/1000 Network Connection,E45,eth<*>: <*>: Intel(R) PRO/<*> Network Connection
+1308,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,e1000,,eth1: e1000_probe: Intel(R) PRO/1000 Network Connection,E45,eth<*>: <*>: Intel(R) PRO/<*> Network Connection
+1306,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,e1000,,eth0: e1000_probe: Intel(R) PRO/1000 Network Connection,E45,eth<*>: <*>: Intel(R) PRO/<*> Network Connection
+1348,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,serio,,"i8042 AUX port at 0x60,0x64 irq 12",E12,"<*> AUX port at <*>,<*> irq <*>"
+1348,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,serio,,"i8042 AUX port at 0x60,0x64 irq 12",E12,"<*> AUX port at <*>,<*> irq <*>"
+1348,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,serio,,"i8042 AUX port at 0x60,0x64 irq 12",E12,"<*> AUX port at <*>,<*> irq <*>"
+1348,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,serio,,"i8042 AUX port at 0x60,0x64 irq 12",E12,"<*> AUX port at <*>,<*> irq <*>"
+1348,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,serio,,"i8042 AUX port at 0x60,0x64 irq 12",E12,"<*> AUX port at <*>,<*> irq <*>"
+1348,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,serio,,"i8042 AUX port at 0x60,0x64 irq 12",E12,"<*> AUX port at <*>,<*> irq <*>"
+1348,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,serio,,"i8042 AUX port at 0x60,0x64 irq 12",E12,"<*> AUX port at <*>,<*> irq <*>"
+196,-,1131566525,2005.11.09,aadmin2,Nov,9,12:02:05,src@aadmin2,dhcpd,,DHCPREQUEST for 10.100.4.251 (10.100.0.250) from 00:11:43:e3:ba:c3 via eth1: unknown lease 10.100.4.251.,E40,DHCPREQUEST for <*> (<*>) from <*> via eth1: unknown lease <*>.
+199,-,1131566525,2005.11.09,aadmin3,Nov,9,12:02:05,src@aadmin3,dhcpd,,DHCPREQUEST for 10.100.4.251 (10.100.0.250) from 00:11:43:e3:ba:c3 via eth1: unknown lease 10.100.4.251.,E40,DHCPREQUEST for <*> (<*>) from <*> via eth1: unknown lease <*>.
+143,-,1131566503,2005.11.09,aadmin3,Nov,9,12:01:43,src@aadmin3,dhcpd,,DHCPREQUEST for 10.100.4.251 (10.100.0.250) from 00:11:43:e3:ba:c3 via eth1: unknown lease 10.100.4.251.,E40,DHCPREQUEST for <*> (<*>) from <*> via eth1: unknown lease <*>.
+202,-,1131566525,2005.11.09,aadmin4,Nov,9,12:02:05,src@aadmin4,dhcpd,,DHCPREQUEST for 10.100.4.251 (10.100.0.250) from 00:11:43:e3:ba:c3 via eth1: unknown lease 10.100.4.251.,E40,DHCPREQUEST for <*> (<*>) from <*> via eth1: unknown lease <*>.
+214,-,1131566527,2005.11.09,aadmin2,Nov,9,12:02:07,src@aadmin2,dhcpd,,DHCPREQUEST for 10.100.4.251 (10.100.0.250) from 00:11:43:e3:ba:c3 via eth1: unknown lease 10.100.4.251.,E40,DHCPREQUEST for <*> (<*>) from <*> via eth1: unknown lease <*>.
+1192,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,IOAPIC (id[0x0a] address[0xfec83000] gsi_base[64]),E59,IOAPIC (id[<*>] address[<*>] gsi_base[<*>])
+1191,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,IOAPIC (id[0x09] address[0xfec80000] gsi_base[32]),E59,IOAPIC (id[<*>] address[<*>] gsi_base[<*>])
+1190,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,IOAPIC (id[0x08] address[0xfec00000] gsi_base[0]),E59,IOAPIC (id[<*>] address[<*>] gsi_base[<*>])
+1192,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,IOAPIC (id[0x0a] address[0xfec83000] gsi_base[64]),E59,IOAPIC (id[<*>] address[<*>] gsi_base[<*>])
+1194,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,IRQ2 used by override.,E60,IRQ<*> used by override.
+1194,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,IRQ2 used by override.,E60,IRQ<*> used by override.
+1195,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,IRQ9 used by override.,E60,IRQ<*> used by override.
+1193,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,IRQ0 used by override.,E60,IRQ<*> used by override.
+1280,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Probing PCI hardware (bus 00),E93,Probing PCI hardware (bus <*>)
+1280,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Probing PCI hardware (bus 00),E93,Probing PCI hardware (bus <*>)
+11,-,1131566461,2005.11.09,dn596,Nov,9,12:01:01,dn596/dn596,crond(pam_unix),2727.0,session opened for user root by (uid=0),E118,session opened for user root by (uid=0)
+23,-,1131566461,2005.11.09,dn754,Nov,9,12:01:01,dn754/dn754,crond(pam_unix),2913.0,session opened for user root by (uid=0),E118,session opened for user root by (uid=0)
+1303,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,divert,,allocating divert_blk for eth1,E17,allocating divert_blk for eth<*>
+1302,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,divert,,allocating divert_blk for eth0,E17,allocating divert_blk for eth<*>
+1302,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,divert,,allocating divert_blk for eth0,E17,allocating divert_blk for eth<*>
+1303,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,divert,,allocating divert_blk for eth1,E17,allocating divert_blk for eth<*>
+1303,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,divert,,allocating divert_blk for eth1,E17,allocating divert_blk for eth<*>
+1302,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,divert,,allocating divert_blk for eth0,E17,allocating divert_blk for eth<*>
+1303,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,divert,,allocating divert_blk for eth1,E17,allocating divert_blk for eth<*>
+1345,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,sda,,assuming drive cache: write through,E21,assuming drive cache: write through
+1345,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,sda,,assuming drive cache: write through,E21,assuming drive cache: write through
+1345,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,sda,,assuming drive cache: write through,E21,assuming drive cache: write through
+1345,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,sda,,assuming drive cache: write through,E21,assuming drive cache: write through
+1345,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,sda,,assuming drive cache: write through,E21,assuming drive cache: write through
+1345,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,sda,,assuming drive cache: write through,E21,assuming drive cache: write through
+1276,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,NET,,Registered protocol family 16,E103,Registered protocol family <*>
+1275,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,NET,,Registered protocol family 1,E103,Registered protocol family <*>
+1276,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,NET,,Registered protocol family 16,E103,Registered protocol family <*>
+1277,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,NET,,Registered protocol family 17,E103,Registered protocol family <*>
+1360,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,vesafb,,probe of vesafb0 failed with error -6,E92,probe of vesafb0 failed with error <*>
+1360,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,vesafb,,probe of vesafb0 failed with error -6,E92,probe of vesafb0 failed with error <*>
+1360,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,vesafb,,probe of vesafb0 failed with error -6,E92,probe of vesafb0 failed with error <*>
+1360,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,vesafb,,probe of vesafb0 failed with error -6,E92,probe of vesafb0 failed with error <*>
+1030,-,1131566964,2005.11.09,tbird-sm1,Nov,9,12:09:24,src@tbird-sm1,ib_sm.x,24904.0,[ib_sm_sweep.c:1455]: No topology change,E6,[ib_sm_sweep.c:1455]: No topology change
+1082,-,1131566992,2005.11.09,tbird-sm1,Nov,9,12:09:52,src@tbird-sm1,ib_sm.x,24904.0,[ib_sm_sweep.c:1455]: No topology change,E6,[ib_sm_sweep.c:1455]: No topology change
+1877,-,1131567258,2005.11.09,tbird-sm1,Nov,9,12:14:18,src@tbird-sm1,ib_sm.x,24904.0,[ib_sm_sweep.c:1455]: No topology change,E6,[ib_sm_sweep.c:1455]: No topology change
+1756,-,1131567188,2005.11.09,tbird-sm1,Nov,9,12:13:08,src@tbird-sm1,ib_sm.x,24904.0,[ib_sm_sweep.c:1455]: No topology change,E6,[ib_sm_sweep.c:1455]: No topology change
+1082,-,1131566992,2005.11.09,tbird-sm1,Nov,9,12:09:52,src@tbird-sm1,ib_sm.x,24904.0,[ib_sm_sweep.c:1455]: No topology change,E6,[ib_sm_sweep.c:1455]: No topology change
+1330,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,md,,"md driver 0.90.0 MAX_MD_DEVS=256, MD_SB_DISKS=27",E69,"md driver <*>.<*>.<*> MAX_MD_DEVS=<*>, MD_SB_DISKS=<*>"
+1330,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,md,,"md driver 0.90.0 MAX_MD_DEVS=256, MD_SB_DISKS=27",E69,"md driver <*>.<*>.<*> MAX_MD_DEVS=<*>, MD_SB_DISKS=<*>"
+1330,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,md,,"md driver 0.90.0 MAX_MD_DEVS=256, MD_SB_DISKS=27",E69,"md driver <*>.<*>.<*> MAX_MD_DEVS=<*>, MD_SB_DISKS=<*>"
+1330,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,md,,"md driver 0.90.0 MAX_MD_DEVS=256, MD_SB_DISKS=27",E69,"md driver <*>.<*>.<*> MAX_MD_DEVS=<*>, MD_SB_DISKS=<*>"
+1330,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,md,,"md driver 0.90.0 MAX_MD_DEVS=256, MD_SB_DISKS=27",E69,"md driver <*>.<*>.<*> MAX_MD_DEVS=<*>, MD_SB_DISKS=<*>"
+1330,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,md,,"md driver 0.90.0 MAX_MD_DEVS=256, MD_SB_DISKS=27",E69,"md driver <*>.<*>.<*> MAX_MD_DEVS=<*>, MD_SB_DISKS=<*>"
+1188,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl),E55,INT_SRC_OVR (bus <*> bus_irq <*> global_irq <*> dfl dfl)
+1188,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl),E55,INT_SRC_OVR (bus <*> bus_irq <*> global_irq <*> dfl dfl)
+1188,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl),E55,INT_SRC_OVR (bus <*> bus_irq <*> global_irq <*> dfl dfl)
+1342,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,scsi,0.0,scanning scsi channel 0 [Phy 0] for non-raid devices,E113,scanning scsi channel <*> [Phy <*>] for non-raid devices
+1342,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,scsi,0.0,scanning scsi channel 0 [Phy 0] for non-raid devices,E113,scanning scsi channel <*> [Phy <*>] for non-raid devices
+1342,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,scsi,0.0,scanning scsi channel 0 [Phy 0] for non-raid devices,E113,scanning scsi channel <*> [Phy <*>] for non-raid devices
+1343,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,scsi,0.0,scanning scsi channel 1 [virtual] for logical drives,E114,scanning scsi channel <*> [virtual] for logical drives
+1520,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,xinetd Version 2.3.13 started with libwrap loadavg options compiled in.,E149,xinetd Version <*>.<*>.<*> started with libwrap loadavg options compiled in.
+1520,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,xinetd Version 2.3.13 started with libwrap loadavg options compiled in.,E149,xinetd Version <*>.<*>.<*> started with libwrap loadavg options compiled in.
+1520,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,xinetd Version 2.3.13 started with libwrap loadavg options compiled in.,E149,xinetd Version <*>.<*>.<*> started with libwrap loadavg options compiled in.
+1520,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,xinetd Version 2.3.13 started with libwrap loadavg options compiled in.,E149,xinetd Version <*>.<*>.<*> started with libwrap loadavg options compiled in.
+1520,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,xinetd Version 2.3.13 started with libwrap loadavg options compiled in.,E149,xinetd Version <*>.<*>.<*> started with libwrap loadavg options compiled in.
+1305,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,drivers/usb/input/hid-core.c,,v2.0:USB HID core driver,E143,v<*>.<*>:USB HID core driver
+1305,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,drivers/usb/input/hid-core.c,,v2.0:USB HID core driver,E143,v<*>.<*>:USB HID core driver
+1305,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,drivers/usb/input/hid-core.c,,v2.0:USB HID core driver,E143,v<*>.<*>:USB HID core driver
+1305,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,drivers/usb/input/hid-core.c,,v2.0:USB HID core driver,E143,v<*>.<*>:USB HID core driver
+1310,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,hw_random,,RNG not detected,E107,RNG not detected
+1310,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,hw_random,,RNG not detected,E107,RNG not detected
+1310,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,hw_random,,RNG not detected,E107,RNG not detected
+1310,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,hw_random,,RNG not detected,E107,RNG not detected
+1310,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,hw_random,,RNG not detected,E107,RNG not detected
+1282,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Using ACPI for IRQ routing,E136,Using ACPI for IRQ routing
+1282,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Using ACPI for IRQ routing,E136,Using ACPI for IRQ routing
+1282,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Using ACPI for IRQ routing,E136,Using ACPI for IRQ routing
+1282,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Using ACPI for IRQ routing,E136,Using ACPI for IRQ routing
+1205,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Local APIC address 0xfee00000,E66,Local APIC address <*>
+1205,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Local APIC address 0xfee00000,E66,Local APIC address <*>
+1205,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Local APIC address 0xfee00000,E66,Local APIC address <*>
+1352,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,time.c,,Detected 3591.360 MHz processor.,E33,Detected <*>.<*> MHz processor.
+1352,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,time.c,,Detected 3591.360 MHz processor.,E33,Detected <*>.<*> MHz processor.
+1352,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,time.c,,Detected 3591.360 MHz processor.,E33,Detected <*>.<*> MHz processor.
+1352,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,time.c,,Detected 3591.360 MHz processor.,E33,Detected <*>.<*> MHz processor.
+1352,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,time.c,,Detected 3591.360 MHz processor.,E33,Detected <*>.<*> MHz processor.
+1352,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,time.c,,Detected 3591.360 MHz processor.,E33,Detected <*>.<*> MHz processor.
+1352,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,time.c,,Detected 3591.360 MHz processor.,E33,Detected <*>.<*> MHz processor.
+1312,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ide1,,Wait for ready failed before probe !,E145,Wait for ready failed before probe !
+1311,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ide0,,Wait for ready failed before probe !,E145,Wait for ready failed before probe !
+1311,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ide0,,Wait for ready failed before probe !,E145,Wait for ready failed before probe !
+1313,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ide2,,Wait for ready failed before probe !,E145,Wait for ready failed before probe !
+1313,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ide2,,Wait for ready failed before probe !,E145,Wait for ready failed before probe !
+1514,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing ntalk,E106,removing <*>
+1514,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing ntalk,E106,removing <*>
+1514,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing ntalk,E106,removing <*>
+1514,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing ntalk,E106,removing <*>
+1268,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,IA32 emulation $Id,,"sys_ia32.c,v 1.32 2002/03/24 13:02:28 ak Exp $",E11,<*> <*>.<*> <*>/<*>/<*> <*>:<*>:<*> ak Exp $
+1268,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,IA32 emulation $Id,,"sys_ia32.c,v 1.32 2002/03/24 13:02:28 ak Exp $",E11,<*> <*>.<*> <*>/<*>/<*> <*>:<*>:<*> ak Exp $
+1268,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,IA32 emulation $Id,,"sys_ia32.c,v 1.32 2002/03/24 13:02:28 ak Exp $",E11,<*> <*>.<*> <*>/<*>/<*> <*>:<*>:<*> ak Exp $
+1268,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,IA32 emulation $Id,,"sys_ia32.c,v 1.32 2002/03/24 13:02:28 ak Exp $",E11,<*> <*>.<*> <*>/<*>/<*> <*>:<*>:<*> ak Exp $
+1268,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,IA32 emulation $Id,,"sys_ia32.c,v 1.32 2002/03/24 13:02:28 ak Exp $",E11,<*> <*>.<*> <*>/<*>/<*> <*>:<*>:<*> ak Exp $
+1497,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,Reading included configuration file: /etc/xinetd.d/kshell [file=/etc/xinetd.d/kshell] [line=13],E97,Reading included configuration file: <*> [file=<*>] [line=<*>]
+1491,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,Reading included configuration file: /etc/xinetd.d/echo [file=/etc/xinetd.d/echo] [line=15],E97,Reading included configuration file: <*> [file=<*>] [line=<*>]
+1489,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,Reading included configuration file: /etc/xinetd.d/daytime [file=/etc/xinetd.d/daytime] [line=11],E97,Reading included configuration file: <*> [file=<*>] [line=<*>]
+1490,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,Reading included configuration file: /etc/xinetd.d/daytime-udp [file=/etc/xinetd.d/daytime-udp] [line=15],E97,Reading included configuration file: <*> [file=<*>] [line=<*>]
+1507,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing daytime,E106,removing <*>
+1506,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing daytime,E106,removing <*>
+1380,-,1131567052,2005.11.09,#8#,Nov,9,12:10:52,#8#/#8#,sshd2,4769.0,Now running on #29#'s privileges.,E78,Now running on #<*>#'s privileges.
+1456,-,1131567055,2005.11.09,#8#,Nov,9,12:10:55,#8#/#8#,sshd2,4895.0,Now running on #29#'s privileges.,E78,Now running on #<*>#'s privileges.
+1380,-,1131567052,2005.11.09,#8#,Nov,9,12:10:52,#8#/#8#,sshd2,4769.0,Now running on #29#'s privileges.,E78,Now running on #<*>#'s privileges.
+1456,-,1131567055,2005.11.09,#8#,Nov,9,12:10:55,#8#/#8#,sshd2,4895.0,Now running on #29#'s privileges.,E78,Now running on #<*>#'s privileges.
+1380,-,1131567052,2005.11.09,#8#,Nov,9,12:10:52,#8#/#8#,sshd2,4769.0,Now running on #29#'s privileges.,E78,Now running on #<*>#'s privileges.
+1331,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid cmm,,#38#-rh1 (Release Date: Fri Dec 10 19:02:14 EST 2004),E9,<*> (Release Date: <*> <*>)
+1331,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid cmm,,#38#-rh1 (Release Date: Fri Dec 10 19:02:14 EST 2004),E9,<*> (Release Date: <*> <*>)
+1331,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid cmm,,#38#-rh1 (Release Date: Fri Dec 10 19:02:14 EST 2004),E9,<*> (Release Date: <*> <*>)
+1331,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid cmm,,#38#-rh1 (Release Date: Fri Dec 10 19:02:14 EST 2004),E9,<*> (Release Date: <*> <*>)
+1331,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid cmm,,#38#-rh1 (Release Date: Fri Dec 10 19:02:14 EST 2004),E9,<*> (Release Date: <*> <*>)
+1331,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid cmm,,#38#-rh1 (Release Date: Fri Dec 10 19:02:14 EST 2004),E9,<*> (Release Date: <*> <*>)
+1331,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid cmm,,#38#-rh1 (Release Date: Fri Dec 10 19:02:14 EST 2004),E9,<*> (Release Date: <*> <*>)
+1238,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Power Button (FF) [PWRF],E90,Power Button (FF) [PWRF]
+1238,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Power Button (FF) [PWRF],E90,Power Button (FF) [PWRF]
+1238,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Power Button (FF) [PWRF],E90,Power Button (FF) [PWRF]
+1238,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Power Button (FF) [PWRF],E90,Power Button (FF) [PWRF]
+1189,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level),E56,INT_SRC_OVR (bus <*> bus_irq <*> global_irq <*> high level)
+1189,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level),E56,INT_SRC_OVR (bus <*> bus_irq <*> global_irq <*> high level)
+1189,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level),E56,INT_SRC_OVR (bus <*> bus_irq <*> global_irq <*> high level)
+1189,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level),E56,INT_SRC_OVR (bus <*> bus_irq <*> global_irq <*> high level)
+1189,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level),E56,INT_SRC_OVR (bus <*> bus_irq <*> global_irq <*> high level)
+1197,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,LAPIC (acpi_id[0x01] lapic_id[0x00] enabled),E64,LAPIC (acpi_id[<*>] lapic_id[<*>] enabled)
+1199,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,LAPIC (acpi_id[0x03] lapic_id[0x01] enabled),E64,LAPIC (acpi_id[<*>] lapic_id[<*>] enabled)
+1200,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,LAPIC (acpi_id[0x04] lapic_id[0x07] enabled),E64,LAPIC (acpi_id[<*>] lapic_id[<*>] enabled)
+1198,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,LAPIC (acpi_id[0x02] lapic_id[0x06] enabled),E64,LAPIC (acpi_id[<*>] lapic_id[<*>] enabled)
+1197,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,LAPIC (acpi_id[0x01] lapic_id[0x00] enabled),E64,LAPIC (acpi_id[<*>] lapic_id[<*>] enabled)
+1200,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,LAPIC (acpi_id[0x04] lapic_id[0x07] enabled),E64,LAPIC (acpi_id[<*>] lapic_id[<*>] enabled)
+1199,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,LAPIC (acpi_id[0x03] lapic_id[0x01] enabled),E64,LAPIC (acpi_id[<*>] lapic_id[<*>] enabled)
+1292,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Type,,Direct-Access ANSI SCSI revision: 02,E41,Direct-Access ANSI SCSI revision: <*>
+1292,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Type,,Direct-Access ANSI SCSI revision: 02,E41,Direct-Access ANSI SCSI revision: <*>
+1292,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Type,,Direct-Access ANSI SCSI revision: 02,E41,Direct-Access ANSI SCSI revision: <*>
+1292,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Type,,Direct-Access ANSI SCSI revision: 02,E41,Direct-Access ANSI SCSI revision: <*>
+1292,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Type,,Direct-Access ANSI SCSI revision: 02,E41,Direct-Access ANSI SCSI revision: <*>
+1292,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Type,,Direct-Access ANSI SCSI revision: 02,E41,Direct-Access ANSI SCSI revision: <*>
+1351,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,syslog-ng,1605.0,syslog-ng version 1.6.7 starting,E127,syslog-ng version <*>.<*>.<*> starting
+1351,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,syslog-ng,1605.0,syslog-ng version 1.6.7 starting,E127,syslog-ng version <*>.<*>.<*> starting
+1351,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,syslog-ng,1605.0,syslog-ng version 1.6.7 starting,E127,syslog-ng version <*>.<*>.<*> starting
+1351,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,syslog-ng,1605.0,syslog-ng version 1.6.7 starting,E127,syslog-ng version <*>.<*>.<*> starting
+1351,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,syslog-ng,1605.0,syslog-ng version 1.6.7 starting,E127,syslog-ng version <*>.<*>.<*> starting
+1206,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,MADT (v001 DELL PE BKC 0x00000001 MSFT 0x0100000a) @ 0x00000000000fd724,E10,<*> (v001 DELL PE BKC <*> MSFT <*>) @ <*>
+1206,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,MADT (v001 DELL PE BKC 0x00000001 MSFT 0x0100000a) @ 0x00000000000fd724,E10,<*> (v001 DELL PE BKC <*> MSFT <*>) @ <*>
+1185,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,FADT (v001 DELL PE BKC 0x00000001 MSFT 0x0100000a) @ 0x00000000000fd6b0,E10,<*> (v001 DELL PE BKC <*> MSFT <*>) @ <*>
+1207,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,MCFG (v001 DELL PE BKC 0x00000001 MSFT 0x0100000a) @ 0x00000000000fd854,E10,<*> (v001 DELL PE BKC <*> MSFT <*>) @ <*>
+1184,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,DSDT (v001 DELL PE BKC 0x00000001 MSFT 0x0100000e) @ 0x0000000000000000,E10,<*> (v001 DELL PE BKC <*> MSFT <*>) @ <*>
+1186,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,HPET (v001 DELL PE BKC 0x00000001 MSFT 0x0100000a) @ 0x00000000000fd81c,E10,<*> (v001 DELL PE BKC <*> MSFT <*>) @ <*>
+98,-,1131566491,2005.11.09,eadmin1,Nov,9,12:01:31,src@eadmin1,sendmail,4306.0,"jA9J1UvC004306: from=root, size=629060, class=0, nrcpts=1, msgid=<200511091901.jA9J1UvC004306@eadmin1>, relay=#7#@localhost",E15,"<*>: from=root, size=<*>, class=<*>, nrcpts=<*>, msgid=<<*>>, relay=#<*>#@localhost"
+130,-,1131566501,2005.11.09,aadmin1,Nov,9,12:01:41,src@aadmin1,sendmail,16560.0,"jA9J1dQ7016560: from=root, size=1595423, class=0, nrcpts=1, msgid=<200511091901.jA9J1dQ7016560@aadmin1>, relay=#7#@localhost",E15,"<*>: from=root, size=<*>, class=<*>, nrcpts=<*>, msgid=<<*>>, relay=#<*>#@localhost"
+109,-,1131566494,2005.11.09,cadmin1,Nov,9,12:01:34,src@cadmin1,sendmail,19391.0,"jA9J1Wd7019391: from=root, size=1594553, class=0, nrcpts=1, msgid=<200511091901.jA9J1Wd7019391@cadmin1>, relay=#7#@localhost",E15,"<*>: from=root, size=<*>, class=<*>, nrcpts=<*>, msgid=<<*>>, relay=#<*>#@localhost"
+98,-,1131566491,2005.11.09,eadmin1,Nov,9,12:01:31,src@eadmin1,sendmail,4306.0,"jA9J1UvC004306: from=root, size=629060, class=0, nrcpts=1, msgid=<200511091901.jA9J1UvC004306@eadmin1>, relay=#7#@localhost",E15,"<*>: from=root, size=<*>, class=<*>, nrcpts=<*>, msgid=<<*>>, relay=#<*>#@localhost"
+1513,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing kshell,E106,removing <*>
+1513,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing kshell,E106,removing <*>
+1513,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing kshell,E106,removing <*>
+1513,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing kshell,E106,removing <*>
+1513,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing kshell,E106,removing <*>
+1513,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing kshell,E106,removing <*>
+954,-,1131566924,2005.11.09,tbird-admin1,Nov,9,12:08:44,local@tbird-admin1,ntpd,1815.0,"synchronized to LOCAL(0), stratum 10",E125,"synchronized to <*>, stratum <*>"
+954,-,1131566924,2005.11.09,tbird-admin1,Nov,9,12:08:44,local@tbird-admin1,ntpd,1815.0,"synchronized to LOCAL(0), stratum 10",E125,"synchronized to <*>, stratum <*>"
+954,-,1131566924,2005.11.09,tbird-admin1,Nov,9,12:08:44,local@tbird-admin1,ntpd,1815.0,"synchronized to LOCAL(0), stratum 10",E125,"synchronized to <*>, stratum <*>"
+954,-,1131566924,2005.11.09,tbird-admin1,Nov,9,12:08:44,local@tbird-admin1,ntpd,1815.0,"synchronized to LOCAL(0), stratum 10",E125,"synchronized to <*>, stratum <*>"
+954,-,1131566924,2005.11.09,tbird-admin1,Nov,9,12:08:44,local@tbird-admin1,ntpd,1815.0,"synchronized to LOCAL(0), stratum 10",E125,"synchronized to <*>, stratum <*>"
+139,-,1131566503,2005.11.09,aadmin1,Nov,9,12:01:43,src@aadmin1,dhcpd,,DHCPACK on 10.100.4.251 to 00:11:43:e3:ba:c3 via eth1,E35,DHCPACK on <*> to <*> via eth1
+139,-,1131566503,2005.11.09,aadmin1,Nov,9,12:01:43,src@aadmin1,dhcpd,,DHCPACK on 10.100.4.251 to 00:11:43:e3:ba:c3 via eth1,E35,DHCPACK on <*> to <*> via eth1
+139,-,1131566503,2005.11.09,aadmin1,Nov,9,12:01:43,src@aadmin1,dhcpd,,DHCPACK on 10.100.4.251 to 00:11:43:e3:ba:c3 via eth1,E35,DHCPACK on <*> to <*> via eth1
+139,-,1131566503,2005.11.09,aadmin1,Nov,9,12:01:43,src@aadmin1,dhcpd,,DHCPACK on 10.100.4.251 to 00:11:43:e3:ba:c3 via eth1,E35,DHCPACK on <*> to <*> via eth1
+206,-,1131566527,2005.11.09,aadmin1,Nov,9,12:02:07,src@aadmin1,dhcpd,,DHCPACK on 10.100.4.251 to 00:11:43:e3:ba:c3 via eth1,E35,DHCPACK on <*> to <*> via eth1
+1349,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,serio,,"i8042 KBD port at 0x60,0x64 irq 1",E13,"<*> KBD port at <*>,<*> irq <*>"
+1349,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,serio,,"i8042 KBD port at 0x60,0x64 irq 1",E13,"<*> KBD port at <*>,<*> irq <*>"
+1349,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,serio,,"i8042 KBD port at 0x60,0x64 irq 1",E13,"<*> KBD port at <*>,<*> irq <*>"
+1349,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,serio,,"i8042 KBD port at 0x60,0x64 irq 1",E13,"<*> KBD port at <*>,<*> irq <*>"
+1349,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,serio,,"i8042 KBD port at 0x60,0x64 irq 1",E13,"<*> KBD port at <*>,<*> irq <*>"
+1349,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,serio,,"i8042 KBD port at 0x60,0x64 irq 1",E13,"<*> KBD port at <*>,<*> irq <*>"
+1283,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Using MMCONFIG at e0000000,E140,Using MMCONFIG at <*>
+1283,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Using MMCONFIG at e0000000,E140,Using MMCONFIG at <*>
+1283,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Using MMCONFIG at e0000000,E140,Using MMCONFIG at <*>
+1283,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Using MMCONFIG at e0000000,E140,Using MMCONFIG at <*>
+1283,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,PCI,,Using MMCONFIG at e0000000,E140,Using MMCONFIG at <*>
+1241,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Processor [CPU2] (supports C1),E94,Processor [CPU<*>] (supports C1)
+1239,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Processor [CPU0] (supports C1),E94,Processor [CPU<*>] (supports C1)
+1242,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Processor [CPU3] (supports C1),E94,Processor [CPU<*>] (supports C1)
+1239,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Processor [CPU0] (supports C1),E94,Processor [CPU<*>] (supports C1)
+1241,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,Processor [CPU2] (supports C1),E94,Processor [CPU<*>] (supports C1)
+1382,-,1131567052,2005.11.09,#8#,Nov,9,12:10:52,#8#/#8#,sshd,4718.0,connection lost: 'Connection closed.',E30,connection lost: 'Connection closed.'
+75,-,1131566479,2005.11.09,#8#,Nov,9,12:01:19,#8#/#8#,sshd,19023.0,connection lost: 'Connection closed.',E30,connection lost: 'Connection closed.'
+75,-,1131566479,2005.11.09,#8#,Nov,9,12:01:19,#8#/#8#,sshd,19023.0,connection lost: 'Connection closed.',E30,connection lost: 'Connection closed.'
+1844,-,1131567240,2005.11.09,#8#,Nov,9,12:14:00,#8#/#8#,sshd,4893.0,connection lost: 'Connection closed.',E30,connection lost: 'Connection closed.'
+1518,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing time,E106,removing <*>
+1519,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing time,E106,removing <*>
+1518,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing time,E106,removing <*>
+1518,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing time,E106,removing <*>
+1518,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing time,E106,removing <*>
+1227,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,"PCI interrupt 0000:00:02.0[A] -> GSI 16 (level, low) -> IRQ 169",E81,"PCI interrupt <*> -> GSI <*> (level, low) -> IRQ <*>"
+1231,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,"PCI interrupt 0000:02:0e.0[A] -> GSI 46 (level, low) -> IRQ 177",E81,"PCI interrupt <*> -> GSI <*> (level, low) -> IRQ <*>"
+1233,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,"PCI interrupt 0000:06:07.0[A] -> GSI 64 (level, low) -> IRQ 185",E81,"PCI interrupt <*> -> GSI <*> (level, low) -> IRQ <*>"
+1234,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,"PCI interrupt 0000:06:07.0[A] -> GSI 64 (level, low) -> IRQ 185",E81,"PCI interrupt <*> -> GSI <*> (level, low) -> IRQ <*>"
+1286,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,SELinux,,Disabled at runtime.,E42,Disabled at runtime.
+1286,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,SELinux,,Disabled at runtime.,E42,Disabled at runtime.
+1286,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,SELinux,,Disabled at runtime.,E42,Disabled at runtime.
+1286,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,SELinux,,Disabled at runtime.,E42,Disabled at runtime.
+1286,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,SELinux,,Disabled at runtime.,E42,Disabled at runtime.
+1286,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,SELinux,,Disabled at runtime.,E42,Disabled at runtime.
+1338,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,portmap,,portmap startup succeeded,E89,portmap startup succeeded
+1338,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,portmap,,portmap startup succeeded,E89,portmap startup succeeded
+1338,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,portmap,,portmap startup succeeded,E89,portmap startup succeeded
+1338,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,portmap,,portmap startup succeeded,E89,portmap startup succeeded
+1338,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,portmap,,portmap startup succeeded,E89,portmap startup succeeded
+1515,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing printer,E106,removing <*>
+1515,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing printer,E106,removing <*>
+1515,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing printer,E106,removing <*>
+1515,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing printer,E106,removing <*>
+1515,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing printer,E106,removing <*>
+1515,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing printer,E106,removing <*>
+1334,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid,,probe new device 0x1028:0x0013:0x1028:0x016c: bus 2:slot 14:func 0,E91,probe new device <*>:<*>:<*>:<*>: bus <*>:slot <*>:func <*>
+1334,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid,,probe new device 0x1028:0x0013:0x1028:0x016c: bus 2:slot 14:func 0,E91,probe new device <*>:<*>:<*>:<*>: bus <*>:slot <*>:func <*>
+1334,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid,,probe new device 0x1028:0x0013:0x1028:0x016c: bus 2:slot 14:func 0,E91,probe new device <*>:<*>:<*>:<*>: bus <*>:slot <*>:func <*>
+1334,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid,,probe new device 0x1028:0x0013:0x1028:0x016c: bus 2:slot 14:func 0,E91,probe new device <*>:<*>:<*>:<*>: bus <*>:slot <*>:func <*>
+1334,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid,,probe new device 0x1028:0x0013:0x1028:0x016c: bus 2:slot 14:func 0,E91,probe new device <*>:<*>:<*>:<*>: bus <*>:slot <*>:func <*>
+1334,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,megaraid,,probe new device 0x1028:0x0013:0x1028:0x016c: bus 2:slot 14:func 0,E91,probe new device <*>:<*>:<*>:<*>: bus <*>:slot <*>:func <*>
+1470,-,1131567057,2005.11.09,tbird-admin1,Nov,9,12:10:57,local@tbird-admin1,syslog-ng,1605.0,Cannot open file /dev/logsurfer for writing (No such file or directory),E24,Cannot open file /dev/logsurfer for writing (No such file or directory)
+1470,-,1131567057,2005.11.09,tbird-admin1,Nov,9,12:10:57,local@tbird-admin1,syslog-ng,1605.0,Cannot open file /dev/logsurfer for writing (No such file or directory),E24,Cannot open file /dev/logsurfer for writing (No such file or directory)
+1470,-,1131567057,2005.11.09,tbird-admin1,Nov,9,12:10:57,local@tbird-admin1,syslog-ng,1605.0,Cannot open file /dev/logsurfer for writing (No such file or directory),E24,Cannot open file /dev/logsurfer for writing (No such file or directory)
+1470,-,1131567057,2005.11.09,tbird-admin1,Nov,9,12:10:57,local@tbird-admin1,syslog-ng,1605.0,Cannot open file /dev/logsurfer for writing (No such file or directory),E24,Cannot open file /dev/logsurfer for writing (No such file or directory)
+1516,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing rsync,E106,removing <*>
+1516,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing rsync,E106,removing <*>
+1516,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing rsync,E106,removing <*>
+1516,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing rsync,E106,removing <*>
+1516,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing rsync,E106,removing <*>
+1516,-,1131567060,2005.11.09,tbird-admin1,Nov,9,12:11:00,local@tbird-admin1,xinetd,1798.0,removing rsync,E106,removing <*>
+1372,-,1131567050,2005.11.09,#8#,Nov,9,12:10:50,#8#/#8#,sshd,2223.0,"connection from ""#28#""",E29,"connection from ""#<*>#"""
+1372,-,1131567050,2005.11.09,#8#,Nov,9,12:10:50,#8#/#8#,sshd,2223.0,"connection from ""#28#""",E29,"connection from ""#<*>#"""
+1403,-,1131567054,2005.11.09,#8#,Nov,9,12:10:54,#8#/#8#,sshd,2223.0,"connection from ""#28#""",E29,"connection from ""#<*>#"""
+104,-,1131566492,2005.11.09,dadmin1,Nov,9,12:01:32,src@dadmin1,sendmail,24258.0,unable to qualify my own domain name (dadmin1) -- using short name,E131,unable to qualify my own domain name (<*>) -- using short name
+1577,-,1131567093,2005.11.09,cadmin1,Nov,9,12:11:33,src@cadmin1,sendmail,22479.0,unable to qualify my own domain name (cadmin1) -- using short name,E131,unable to qualify my own domain name (<*>) -- using short name
+1575,-,1131567092,2005.11.09,badmin1,Nov,9,12:11:32,src@badmin1,sendmail,14256.0,unable to qualify my own domain name (badmin1) -- using short name,E131,unable to qualify my own domain name (<*>) -- using short name
+1578,-,1131567093,2005.11.09,dadmin1,Nov,9,12:11:33,src@dadmin1,sendmail,27337.0,unable to qualify my own domain name (dadmin1) -- using short name,E131,unable to qualify my own domain name (<*>) -- using short name
+1296,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Vendor,,MegaRAID Model: LD 0 RAID1 139G Rev: 516A,E70,MegaRAID Model: LD <*> RAID1 <*> Rev: <*>
+1296,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Vendor,,MegaRAID Model: LD 0 RAID1 139G Rev: 516A,E70,MegaRAID Model: LD <*> RAID1 <*> Rev: <*>
+1296,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Vendor,,MegaRAID Model: LD 0 RAID1 139G Rev: 516A,E70,MegaRAID Model: LD <*> RAID1 <*> Rev: <*>
+1296,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Vendor,,MegaRAID Model: LD 0 RAID1 139G Rev: 516A,E70,MegaRAID Model: LD <*> RAID1 <*> Rev: <*>
+1296,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,Vendor,,MegaRAID Model: LD 0 RAID1 139G Rev: 516A,E70,MegaRAID Model: LD <*> RAID1 <*> Rev: <*>
+1350,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,syslog-ng,,syslog-ng startup succeeded,E126,syslog-ng startup succeeded
+1350,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,syslog-ng,,syslog-ng startup succeeded,E126,syslog-ng startup succeeded
+1350,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,syslog-ng,,syslog-ng startup succeeded,E126,syslog-ng startup succeeded
+1350,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,syslog-ng,,syslog-ng startup succeeded,E126,syslog-ng startup succeeded
+1350,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,syslog-ng,,syslog-ng startup succeeded,E126,syslog-ng startup succeeded
+1350,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,syslog-ng,,syslog-ng startup succeeded,E126,syslog-ng startup succeeded
+1391,-,1131567053,2005.11.09,tbird-admin1,Nov,9,12:10:53,local@tbird-admin1,gmetad,,Warning: we failed to resolve data source name an398 an399 an400 an401 an402 an403 an404 an405 an406 an407 an408 an409 an410 an411 an412 an413 an414 an415 an416 an417 an418 an419 an420 an421 an422 an423 an424 an425 an426 an427 an428 an429 an430 an431 an432 an433 an434 an435 an436 an437 an438 an439 an440 an441 an442 an443 an444 an445 an446 an447 an448 an449 an450 an451 an452 an453 an454 an455 an456 an457 an458 an459 an460 an461 an462 an463 an464 an465 an466 an467 an468 an469 an470 an471 an472 an473 an474 an475 an476 an477 an478 an479 an480 an481 an482 an483 an484 an485 an486 an487 an488 an489 an490 an491 an492 an493 an494 an495 an496 an497 an498 an499 an500 an501 an502 an503 an504 an505 an506 an507 an508 an509 an510 an511 an512,E146,Warning: we failed to resolve data source name <*>
+1401,-,1131567053,2005.11.09,tbird-admin1,Nov,9,12:10:53,local@tbird-admin1,gmetad,,Warning: we failed to resolve data source name bn654 bn655 bn656 bn657 bn658 bn659 bn660 bn661 bn662 bn663 bn664 bn665 bn666 bn667 bn668 bn669 bn670 bn671 bn672 bn673 bn674 bn675 bn676 bn677 bn678 bn679 bn680 bn681 bn682 bn683 bn684 bn685 bn686 bn687 bn688 bn689 bn690 bn691 bn692 bn693 bn694 bn695 bn696 bn697 bn698 bn699 bn700 bn701 bn702 bn703 bn704 bn705 bn706 bn707 bn708 bn709 bn710 bn711 bn712 bn713 bn714 bn715 bn716 bn717 bn718 bn719 bn720 bn721 bn722 bn723 bn724 bn725 bn726 bn727 bn728 bn729 bn730 bn731 bn732 bn733 bn734 bn735 bn736 bn737 bn738 bn739 bn740 bn741 bn742 bn743 bn744 bn745 bn746 bn747 bn748 bn749 bn750 bn751 bn752 bn753 bn754 bn755 bn756 bn757 bn758 bn759 bn760 bn761 bn762 bn763 bn764 bn765 bn766 bn767 bn768,E146,Warning: we failed to resolve data source name <*>
+1437,-,1131567054,2005.11.09,tbird-admin1,Nov,9,12:10:54,local@tbird-admin1,gmetad,,Warning: we failed to resolve data source name bn910 bn911 bn912 bn913 bn914 bn915 bn916 bn917 bn918 bn919 bn920 bn921 bn922 bn923 bn924 bn925 bn926 bn927 bn928 bn929 bn930 bn931 bn932 bn933 bn934 bn935 bn936 bn937 bn938 bn939 bn940 bn941 bn942 bn943 bn944 bn945 bn946 bn947 bn948 bn949 bn950 bn951 bn952 bn953 bn954 bn955 bn956 bn957 bn958 bn959 bn960 bn961 bn962 bn963 bn964 bn965 bn966 bn967 bn968 bn969 bn970 bn971 bn972 bn973 bn974 bn975 bn976 bn977 bn978 bn979 bn980 bn981 bn982 bn983 bn984 bn985 bn986 bn987 bn988 bn989 bn990 bn991 bn992 bn993 bn994 bn995 bn996 bn997 bn998 bn999 bn1000 bn1001 bn1002 bn1003 bn1004 bn1005 bn1006 bn1007 bn1008 bn1009 bn1010 bn1011 bn1012 bn1013 bn1014 bn1015 bn1016 bn1017 bn1018 bn1019 bn1020 bn1021 bn1022 bn1023 bn1024,E146,Warning: we failed to resolve data source name <*>
+1440,-,1131567054,2005.11.09,tbird-admin1,Nov,9,12:10:54,local@tbird-admin1,gmetad,,Warning: we failed to resolve data source name cn270 cn271 cn272 cn273 cn274 cn275 cn276 cn277 cn278 cn279 cn280 cn281 cn282 cn283 cn284 cn285 cn286 cn287 cn288 cn289 cn290 cn291 cn292 cn293 cn294 cn295 cn296 cn297 cn298 cn299 cn300 cn301 cn302 cn303 cn304 cn305 cn306 cn307 cn308 cn309 cn310 cn311 cn312 cn313 cn314 cn315 cn316 cn317 cn318 cn319 cn320 cn321 cn322 cn323 cn324 cn325 cn326 cn327 cn328 cn329 cn330 cn331 cn332 cn333 cn334 cn335 cn336 cn337 cn338 cn339 cn340 cn341 cn342 cn343 cn344 cn345 cn346 cn347 cn348 cn349 cn350 cn351 cn352 cn353 cn354 cn355 cn356 cn357 cn358 cn359 cn360 cn361 cn362 cn363 cn364 cn365 cn366 cn367 cn368 cn369 cn370 cn371 cn372 cn373 cn374 cn375 cn376 cn377 cn378 cn379 cn380 cn381 cn382 cn383 cn384,E146,Warning: we failed to resolve data source name <*>
+1453,-,1131567054,2005.11.09,tbird-admin1,Nov,9,12:10:54,local@tbird-admin1,gmetad,,Warning: we failed to resolve data source name dn910 dn911 dn912 dn913 dn914 dn915 dn916 dn917 dn918 dn919 dn920 dn921 dn922 dn923 dn924 dn925 dn926 dn927 dn928 dn929 dn930 dn931 dn932 dn933 dn934 dn935 dn936 dn937 dn938 dn939 dn940 dn941 dn942 dn943 dn944 dn945 dn946 dn947 dn948 dn949 dn950 dn951 dn952 dn953 dn954 dn955 dn956 dn957 dn958 dn959 dn960 dn961 dn962 dn963 dn964 dn965 dn966 dn967 dn968 dn969 dn970 dn971 dn972 dn973 dn974 dn975 dn976 dn977 dn978 dn979 dn980 dn981 dn982 dn983 dn984 dn985 dn986 dn987 dn988 dn989 dn990 dn991 dn992 dn993 dn994 dn995 dn996 dn997 dn998 dn999 dn1000 dn1001 dn1002 dn1003 dn1004 dn1005 dn1006 dn1007 dn1008 dn1009 dn1010 dn1011 dn1012 dn1013 dn1014 dn1015 dn1016 dn1017 dn1018 dn1019 dn1020 dn1021 dn1022 dn1023 dn1024,E146,Warning: we failed to resolve data source name <*>
+1399,-,1131567053,2005.11.09,tbird-admin1,Nov,9,12:10:53,local@tbird-admin1,gmetad,,Warning: we failed to resolve data source name bn398 bn399 bn400 bn401 bn402 bn403 bn404 bn405 bn406 bn407 bn408 bn409 bn410 bn411 bn412 bn413 bn414 bn415 bn416 bn417 bn418 bn419 bn420 bn421 bn422 bn423 bn424 bn425 bn426 bn427 bn428 bn429 bn430 bn431 bn432 bn433 bn434 bn435 bn436 bn437 bn438 bn439 bn440 bn441 bn442 bn443 bn444 bn445 bn446 bn447 bn448 bn449 bn450 bn451 bn452 bn453 bn454 bn455 bn456 bn457 bn458 bn459 bn460 bn461 bn462 bn463 bn464 bn465 bn466 bn467 bn468 bn469 bn470 bn471 bn472 bn473 bn474 bn475 bn476 bn477 bn478 bn479 bn480 bn481 bn482 bn483 bn484 bn485 bn486 bn487 bn488 bn489 bn490 bn491 bn492 bn493 bn494 bn495 bn496 bn497 bn498 bn499 bn500 bn501 bn502 bn503 bn504 bn505 bn506 bn507 bn508 bn509 bn510 bn511 bn512,E146,Warning: we failed to resolve data source name <*>
+1465,-,1131567055,2005.11.09,tbird-admin1,Nov,9,12:10:55,local@tbird-admin1,sshd,1761.0,Server listening on :: port 22.,E116,Server listening on :: port <*>.
+1465,-,1131567055,2005.11.09,tbird-admin1,Nov,9,12:10:55,local@tbird-admin1,sshd,1761.0,Server listening on :: port 22.,E116,Server listening on :: port <*>.
+1465,-,1131567055,2005.11.09,tbird-admin1,Nov,9,12:10:55,local@tbird-admin1,sshd,1761.0,Server listening on :: port 22.,E116,Server listening on :: port <*>.
+1465,-,1131567055,2005.11.09,tbird-admin1,Nov,9,12:10:55,local@tbird-admin1,sshd,1761.0,Server listening on :: port 22.,E116,Server listening on :: port <*>.
+1187,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,HPET id: 0xffffffff base: 0xfed00000,E50,HPET id: <*> base: <*>
+1187,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,HPET id: 0xffffffff base: 0xfed00000,E50,HPET id: <*> base: <*>
+1187,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,ACPI,,HPET id: 0xffffffff base: 0xfed00000,E50,HPET id: <*> base: <*>
+1344,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,sda,,asking for cache data failed,E19,asking for cache data failed
+1344,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,sda,,asking for cache data failed,E19,asking for cache data failed
+1339,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,rc,,Starting ts_fixup: succeeded,E122,Starting ts_fixup: succeeded
+1339,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,rc,,Starting ts_fixup: succeeded,E122,Starting ts_fixup: succeeded
+1339,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,rc,,Starting ts_fixup: succeeded,E122,Starting ts_fixup: succeeded
+1339,-,1131567043,2005.11.09,tbird-admin1,Nov,9,12:10:43,local@tbird-admin1,rc,,Starting ts_fixup: succeeded,E122,Starting ts_fixup: succeeded

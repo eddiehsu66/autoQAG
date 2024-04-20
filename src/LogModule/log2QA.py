@@ -23,7 +23,7 @@ def process_row(row, csv_writer, originFilePath: str):
 
 
 def log2QA(filename: str):
-    base = find_nearest_dir('data')
+    base = find_nearest_dir('ipre_data')
     input_file_path = os.path.join(base, rf'loghub-master\{filename}\{filename}_2k.process_add.csv')
     origin_file_path = os.path.join(base, rf'loghub-master\{filename}\{filename}_2k.log_structured.csv')
     output_file_path = os.path.join(base, rf'loghub-master\{filename}\{filename}_2k.qa_file.csv')
