@@ -14,4 +14,4 @@ def convert_csv_to_json(input_file, output_file):
 
 # 使用示例
 if __name__ == '__main__':
-    convert_csv_to_json(r'C:\code\src\python\autoQAG\data\loghub-master\HPC\HPC_2k.log_32sampled.csv', '32shot.json')
+    convert_csv_to_json(r'C:\code\src\python\autoQAG\data\loghub-master\Thunderbird\Thunderbird_2k.log_32sampled.csv', '32shot.json')

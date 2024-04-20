@@ -187,6 +187,10 @@ def calculate_accuracy_test(test_contents, test_templates, selected_k_prompt):
 
 
 if __name__ == '__main__':
-    print(evaluate_test(get_test_results()))
-    for i in evaluate_test(get_test_results()).items():
-        print(i)
+    # print(evaluate_test(get_test_results()))
+    # for i in evaluate_test(get_test_results()).items():
+    #     print(i)
+    origin = "Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000"
+    a = "Address change detected. Old: <*>/<*>:<*> New: <*>:<*>"
+    b = "Address change detected. Old: <*> New: <*>"
+    print(correct_lstm(a, b))
