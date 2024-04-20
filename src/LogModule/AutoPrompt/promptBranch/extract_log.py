@@ -4,6 +4,7 @@ from src.LogModule.CasePrompt.promptSelect import prompt_select
 from src.LogModule.AutoPrompt.promptApi import infer_llm
 import concurrent.futures
 from src.config.configLoad import load_config
+from src.config.redisKit import redisInit
 
 BaseFile = load_config("BaseFile")
 
@@ -19,12 +20,19 @@ def TaskExtractLog(log_content, prompt, log_template):
     # for item in similiar_log:
     #     prompt_temp += f"Log message: <START>{item['Content']}<END>" \
     #                    f"Log template: <START>{item['answer']}<END> \n"
-    response = infer_llm(prompt_temp, None, None, cached=True)
+    client = redisInit()
+    response = client.get(prompt_temp)
+    if response is None:
+        response = infer_llm(prompt_temp, None, None, cached=False)
+    parsedLog = parse_log(response)
+    from src.evaluation.accuracy import correct_lstm
+    if correct_lstm(parsedLog, log_template):
+        client.set(prompt_temp, response)
     if response != "404ERROR":
         result_item.append(log_content)
         result_item.append(log_template)
         result_item.append(prompt)
-        result_item.append(parse_log(response))
+        result_item.append(parsedLog)
     return result_item
 
 
