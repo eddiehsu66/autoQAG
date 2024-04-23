@@ -43,12 +43,8 @@ def infer_llm(instruction, exemplars, query, model='gpt-3.5-turbo-0125', tempera
                 client.set(instruction, res)
             return res
         except Exception as e:
-            if logger is not None:
-                logger.info("Exception : {}".format(e))
-            else:
-                print("Exception :", e)
-            if "list index out of range" in str(e):
-                break
+            print("Exception :", e)
+            print("prompt:", instruction)
             retry_times += 1
     return "404ERROR"
 
