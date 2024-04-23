@@ -9,15 +9,19 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 def wrongReason(batch_contents: list):
     wrongResults = []
     for content in batch_contents:
-        wrongResults.append(content[3])
+        wrongResults.append(content[5])
     wrongRes = " ".join(wrongResults)
-    prompt_temp = (f"You will be provided with a logContent and right parse result by person and wrong parse result by model,"
+    prompt_temp = (f"You will be provided with a logContent and right parse result by person and wrong parse result "
+                   f"by model,"
                    f"compare its rightResult and wrongResult,"
-                   f"output reason in one sentence why the wrongResult occurs,without any superfluous output and overprecise."
+                   f"output reason in one sentence why the wrongResult occurs,without any superfluous output and "
+                   f"overprecise."
                    f"your grandma will thank you for that."
-                   f"logContent: <START>{batch_contents[0][0]}<END>"
-                   f"rightResult: <START>{batch_contents[0][2]}<END>"
-                   f"wrongResult: <START{wrongRes}<END>")
+                   f"EntityA: <START>{batch_contents[0][0]}<END>\n"
+                   f"EntityB: <START>{batch_contents[0][1]}<END>\n"
+                   f"Context: <START>{batch_contents[0][2].replace(' ','')}<END>\n"
+                   f"RightRelation: <START>{batch_contents[0][4].split('/')[-1]}<END>\n"
+                   f"wrongRelation: <START{wrongRes}<END>")
 
     # 思路：
     return infer_llm(prompt_temp, None, None,temperature=1.0)
