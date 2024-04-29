@@ -8,17 +8,28 @@ import concurrent.futures
 from benchmark.IPRE.AutoPrompt.selectLog import get_train_dataSet
 from src.config.configLoad import load_config
 from src.config.redisKit import redisInit
-
+from src.config.configLoad import load_config
+name = load_config('BaseObject')
 
 def TaskExtractLog(entityA, entityB, context, prompt, real_relation):
+    listName = ''
     result_item = []
+    if name == 'teacher':
+        listName = '1、老师 2、学生 3、其他'
+    elif name == 'brother':
+        listName = '1、哥哥 2、弟弟 3、姐姐 4、妹妹 5、其他'
+    elif name == 'couple':
+        listName = '1、现夫 2、前夫 3、未婚夫 4、现妻 5、前妻 6、未婚妻 7、其他'
+    else:
+        exit(404)
+
     prompt_temp = ("You will be provided with two entities and context"
                    f"{prompt}"
                    f"EntityA:<START>{entityA}<END>"
                    f"EntityB:<START>{entityB}<END>"
                    f"Context:<START>{context}<END>"
-                   f"Output the relation between EntityA and EntityB "
-                   f"in <LIST> 1、兄弟姐妹 2、配偶 3、师生关系 4、其他 </LIST> base on Context\n"
+                   f"Output the relation EntityA relative to EntityB "
+                   f"in <LIST> {listName} </LIST> base on Context\n"
                    f"Please follow the example below to identify relation: \n" + select_log(3))
     # client = redisInit()
     # if client.get(prompt_temp) is not None:
@@ -37,14 +48,15 @@ def TaskExtractLog(entityA, entityB, context, prompt, real_relation):
         result_item.append(prompt)
         result_item.append(relationA)
         result_item.append(relationB)
+        # print(result_item)
     return result_item
 
 
 def extract_log_template(prompts,mode='train'):
     if mode == 'train':
-        path = f"C:/code/src/python/autoQAG/data/ipre_data/train/train.csv"
+        path = f"C:/code/src/python/autoQAG/data/ipre_data/train/train_{name}.csv"
     else:
-        path = f"C:/code/src/python/autoQAG/data/ipre_data/test/test.csv"
+        path = f"C:/code/src/python/autoQAG/data/ipre_data/test/test_{name}.csv"
     df = pd.read_csv(path, header=None)
     result = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=load_config("ThreadNum")) as executor:
@@ -84,7 +96,15 @@ def parse_response(log):
 
 
 def limit_word(text):
-    keywords = ['兄弟姐妹', '配偶', '师生关系']
+    keywords = []
+    if name == 'teacher':
+        keywords = ['老师','学生','其他']
+    elif name == 'brother':
+        keywords = ['哥哥','弟弟','姐姐','妹妹','其他']
+    elif name == 'couple':
+        keywords = ['现夫','前夫','未婚夫','现妻','前妻','未婚妻','其他']
+    else:
+        exit(404)
     for keyword in keywords:
         if keyword in text:
             return keyword
@@ -92,7 +112,13 @@ def limit_word(text):
 
 
 if __name__ == '__main__':
-    print(TaskExtractLog("丁芯", "赵宝刚",
-                         "3个人生活:结婚:丁芯丈夫赵宝刚。",
-                         "'The process of identifying the relationship between entities based on a given context involves extracting the names of the entities mentioned (EntityA and EntityB), analyzing the surrounding text to understand how they are related, and determining the type of relationship they have (such as family relation, professional relation, etc). This process helps language model assistants improve the accuracy of identifying relations between entities in various contexts.", "配偶"))
+    print(TaskExtractLog("韩小莹", "郭靖",
+                         "越女剑 法 — — 这 “ 越女剑 法 ” 乃 当年 江南七怪 中 的 韩小莹 传 与 郭靖 ， 其后 韩小莹 不幸 惨死 ， 郭靖感 念 师恩 ， 珍而重 之 的 传 了 给 两个 "
+                         "女儿 。",
+                         "'The process of identifying the relationship between entities based on a given context "
+                         "involves extracting the names of the entities mentioned (EntityA and EntityB), "
+                         "analyzing the surrounding text to understand how they are related, and determining the type "
+                         "of relationship they have (such as family relation, professional relation, etc). This "
+                         "process helps language model assistants improve the accuracy of identifying relations "
+                         "between entities in various contexts.", "学生"))
     # print(parse_log('Relation: <START>老师<END>\n xxxxxxx'))
