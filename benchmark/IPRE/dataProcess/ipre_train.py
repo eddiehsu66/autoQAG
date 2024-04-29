@@ -90,20 +90,27 @@ def not_in_list(temp: list, num: int):
 
 def make_train_dataSet(temp: list,num:int):
     directory_path = r"C:\code\src\python\autoQAG\data\ipre_data\train\category"
-
-    max_rows_per_file = num // len(temp)
     new_df = pd.DataFrame()
     for filename in temp:
         pf = pd.read_csv(os.path.join(directory_path, filename + '.txt'), sep='\t', header=None)
-        if len(pf) < max_rows_per_file:
+        if len(pf) < num:
             new_df = pd.concat([new_df, pf], ignore_index=True)
         else:
-            sampled_pf = pf.sample(n=int(max_rows_per_file))
+            sampled_pf = pf.sample(n=int(num))
             new_df = pd.concat([new_df, sampled_pf], ignore_index=True)
     return new_df
 
 
-def make_train(): # 300/4
+def make_train(temp:list,name:str):
+
+    num = 300//(len(temp)+1)
+    new_df = pd.DataFrame()
+    new_df = pd.concat([new_df, make_train_dataSet(temp, num)], ignore_index=True)
+    new_df = pd.concat([new_df, not_in_list(temp, num)], ignore_index=True)
+    new_df.to_csv(rf"C:\code\src\python\autoQAG\data\ipre_data\train\train_{name}.csv", sep=',', header=False, index=False)
+
+
+if __name__ == '__main__':
     # 其后为测试集的分布
     couple = ['1', '2', '3', '4', '5', '6']  # {'1': 536, '2': 12, '3': 13, '4': 296, '5': 3, '6': 10}
     # 训练集分布
@@ -113,18 +120,8 @@ def make_train(): # 300/4
     brother = ['16', '17', '18', '19']  # {'16': 43, '17': 39, '18': 9, '19': 23}
     # {'16': 1673, '17': 637, '18': 532, '19': 805}
 
-    num = 75
-    new_df = pd.DataFrame()
-    new_df = pd.concat([new_df, make_train_dataSet(couple, num)], ignore_index=True)
-    new_df = pd.concat([new_df, make_train_dataSet(teacher, num)], ignore_index=True)
-    new_df = pd.concat([new_df, make_train_dataSet(brother, num)], ignore_index=True)
-    new_df = pd.concat([new_df, not_in_list(couple + teacher + brother, num)], ignore_index=True)
-    new_df.to_csv(r"C:\code\src\python\autoQAG\data\ipre_data\train\train.csv", sep=',', header=False, index=False)
-
-
-if __name__ == '__main__':
     # pre_process()
     # distribute()
     # get_train_dataSet()
     # dataRate()
-    make_train()
+    make_train(brother,'brother')

@@ -7,5 +7,5 @@ tqdm==4.64.1
 openai==0.28.1
 textdistance==4.5.0
 scikit-learn==1.4.1.post1
-redis == 5.0.3
 clevercsv==0.8.2
+rocksdict==0.3.23
