@@ -1,5 +1,15 @@
 Flask==2.3.3
-langchain==0.0.283
+flask-cors==4.0.1
+flask-sock==0.7.0
+
+angle-emb==0.3.10
+scipy==1.12.0
+
+llama-index == 0.10.36
+llama-index-embeddings-huggingface==0.2.0
+llama-index-vector-stores-faiss==0.1.2
+faiss-cpu==1.7.4
+
 numpy==1.24.1
 logparser3==1.0.4
 pm4py==2.7.11.1
@@ -7,5 +17,4 @@ tqdm==4.64.1
 openai==0.28.1
 textdistance==4.5.0
 scikit-learn==1.4.1.post1
-clevercsv==0.8.2
 rocksdict==0.3.23

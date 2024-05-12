@@ -53,28 +53,55 @@ def infer_llm(instruction, exemplars, query, model='gpt-3.5-turbo-0125', tempera
     return "404ERROR"
 
 
+def infer_llm_stream(instruction, exemplars, query, model='gpt-3.5-turbo-0125', temperature=0.0, max_tokens=2048):
+    messages = [
+        # {"role": "system", "content": roleSystem},
+        {"role": "user", "content": instruction},
+        # {"role": "assistant", "content": roleAssistant},
+    ]
+    try:
+        answers = openai.ChatCompletion.create(
+            model=model,
+            messages=messages,
+            temperature=temperature,
+            max_tokens=max_tokens,
+            stream=True
+        )
+
+        # 处理流式响应
+        for message in answers:
+            if 'choices' in message and message['choices'][0]['finish_reason'] == 'stop':
+                break
+            if 'choices' in message and message.choices[0].delta.content:
+                yield message.choices[0].delta.content
+    except Exception as e:
+        print(f"LLM查询流发生错误: {e}")
+
+
 if __name__ == '__main__':
-    text = ""
-
-    # 由gpt生成日志解析模版，输出模版放在提示词的最后面
-    prompt1 = "I gave a friend an instruction and five inputs. " \
-              "The friend read the instruction and wrote an output for every one of the inputs. " \
-              f"Here are the input-outputpairs: \n{text}" \
-              f"Please output my instruction to the friend, only instruction, without any superfluous output"
-
-    # 由gpt生成日志解析模版，输出模版放在提示词的中间
-    prompt2 = "I instructed my friend to <>. " \
-              "The friend read the instruction and wrote an output for every one of the inputs. " \
-              f"Here are the input-outputpairs: \n{text}" \
-              f"Please output my instruction to the friend, only instruction, without any superfluous output"
-    # 由gpt生成日志解析模版，输出模版放在提示词的中间
-    prompt3 = "Professor Smith was given the following instruction:<>" \
-              f"Here are the Professor's responses: \n{text} " \
-              f"Please output the instruction, only instruction, without any superfluous output"
-
-    prompts = [prompt1, prompt2, prompt3]
-
-    for prompt in prompts:
-        response = infer_llm(prompt, None, None)
-        print(response)
-        print("gpt生成的提示词:", response)
+    # text = ""
+    #
+    # # 由gpt生成日志解析模版，输出模版放在提示词的最后面
+    # prompt1 = "I gave a friend an instruction and five inputs. " \
+    #           "The friend read the instruction and wrote an output for every one of the inputs. " \
+    #           f"Here are the input-outputpairs: \n{text}" \
+    #           f"Please output my instruction to the friend, only instruction, without any superfluous output"
+    #
+    # # 由gpt生成日志解析模版，输出模版放在提示词的中间
+    # prompt2 = "I instructed my friend to <>. " \
+    #           "The friend read the instruction and wrote an output for every one of the inputs. " \
+    #           f"Here are the input-outputpairs: \n{text}" \
+    #           f"Please output my instruction to the friend, only instruction, without any superfluous output"
+    # # 由gpt生成日志解析模版，输出模版放在提示词的中间
+    # prompt3 = "Professor Smith was given the following instruction:<>" \
+    #           f"Here are the Professor's responses: \n{text} " \
+    #           f"Please output the instruction, only instruction, without any superfluous output"
+    #
+    # prompts = [prompt1, prompt2, prompt3]
+    #
+    # for prompt in prompts:
+    #     response = infer_llm(prompt, None, None)
+    #     print(response)
+    #     print("gpt生成的提示词:", response)
+    for i in infer_llm_stream("什么是日志",None,None):
+        print(i)

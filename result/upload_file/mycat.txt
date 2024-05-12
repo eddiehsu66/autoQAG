@@ -1,0 +1,5 @@
+Prompt details
+Cat , simple manga style , white background , masterpiece, high quality
+
+Negative Prompt
+low quality, low-res, no person, out of frame, out of focus, mutated hands, poorly drawn hands, fused hands, abnormal hands, missing hands, mutated digits, poorly drawn digits, fused digits, abnormal digits, missing digits, more than 5 digits per hand, fused legs, missing legs, fused arms, missing arms, extra limbs, malformed limbs, poorly drawn face, spots on face, cloned face, multiple faces, poorly drawn eyes, long neck, multiple body, mutation, deformed, ugly, blurry, bad anatomy, bad proportions, disfigured, logo, text, artist name, username, signature, tattoo, character sheet, watermark, copyright name,

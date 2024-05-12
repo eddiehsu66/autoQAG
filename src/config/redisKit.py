@@ -9,6 +9,7 @@ def redisInit():
 
 if __name__ == '__main__':
     client = redisInit()
-    print(client.set('test', 'test'))
-    # client.flushall()
+    # print(client.set('test', 'test'))
+    # # client.flushall()
     print(client.get('test'))
+    # client.flushall()
