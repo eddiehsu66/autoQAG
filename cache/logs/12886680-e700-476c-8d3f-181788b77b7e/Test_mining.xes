@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext" />
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext" />
+	<string key="origin" value="csv" />
+	<trace>
+		<string key="concept:name" value="ActivityManager" />
+		<event>
+			<int key="LineId" value="4" />
+			<string key="Date" value="03-17" />
+			<date key="Time" value="1900-01-01T16:13:46.654000+00:00" />
+			<int key="Pid" value="1702" />
+			<int key="Tid" value="10454" />
+			<string key="Level" value="W" />
+			<string key="Component" value="ActivityManager" />
+			<string key="Content" value="Sending non-protected broadcast com.android.systemui.statusbar.visible.change from system 2227:com.android.systemui/u0a37 pkg com.android.systemui" />
+			<string key="EventTemplate" value="Sending non-protected broadcast &lt;*&gt;" />
+			<string key="concept:name" value="Sending non-protected broadcast &lt;*&gt;" />
+			<date key="time:timestamp" value="1900-01-01T16:13:46.654000+00:00" />
+			<int key="@@index" value="0" />
+			<int key="@@case_index" value="0" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="KeyguardUpdateMonitor" />
+		<event>
+			<int key="LineId" value="8" />
+			<string key="Date" value="03-17" />
+			<date key="Time" value="1900-01-01T16:13:46.764000+00:00" />
+			<int key="Pid" value="2227" />
+			<int key="Tid" value="2794" />
+			<string key="Level" value="E" />
+			<string key="Component" value="KeyguardUpdateMonitor" />
+			<string key="Content" value="isSimPinSecure mSimDatas is null or empty" />
+			<string key="EventTemplate" value="isSimPinSecure mSimDatas is null or empty" />
+			<string key="concept:name" value="isSimPinSecure mSimDatas is null or empty" />
+			<date key="time:timestamp" value="1900-01-01T16:13:46.764000+00:00" />
+			<int key="@@index" value="1" />
+			<int key="@@case_index" value="1" />
+		</event>
+		<event>
+			<int key="LineId" value="11" />
+			<string key="Date" value="03-17" />
+			<date key="Time" value="1900-01-01T16:13:46.765000+00:00" />
+			<int key="Pid" value="2227" />
+			<int key="Tid" value="2794" />
+			<string key="Level" value="V" />
+			<string key="Component" value="KeyguardUpdateMonitor" />
+			<string key="Content" value="*** register callback for com.android.systemui.statusbar.policy.KeyguardMonitor@712d093" />
+			<string key="EventTemplate" value="*** register callback for com.android.systemui.statusbar.policy.KeyguardMonitor@{placeholder}," />
+			<string key="concept:name" value="*** register callback for com.android.systemui.statusbar.policy.KeyguardMonitor@{placeholder}," />
+			<date key="time:timestamp" value="1900-01-01T16:13:46.765000+00:00" />
+			<int key="@@index" value="2" />
+			<int key="@@case_index" value="1" />
+		</event>
+		<event>
+			<int key="LineId" value="12" />
+			<string key="Date" value="03-17" />
+			<date key="Time" value="1900-01-01T16:13:46.765000+00:00" />
+			<int key="Pid" value="2227" />
+			<int key="Tid" value="2794" />
+			<string key="Level" value="W" />
+			<string key="Component" value="KeyguardUpdateMonitor" />
+			<string key="Content" value="registerCallback not in UI." />
+			<string key="EventTemplate" value="Input log message: registerCallback not in UI. Output log template: registerCallback not in UI." />
+			<string key="concept:name" value="Input log message: registerCallback not in UI. Output log template: registerCallback not in UI." />
+			<date key="time:timestamp" value="1900-01-01T16:13:46.765000+00:00" />
+			<int key="@@index" value="3" />
+			<int key="@@case_index" value="1" />
+		</event>
+		<event>
+			<int key="LineId" value="13" />
+			<string key="Date" value="03-17" />
+			<date key="Time" value="1900-01-01T16:13:46.765000+00:00" />
+			<int key="Pid" value="2227" />
+			<int key="Tid" value="2794" />
+			<string key="Level" value="W" />
+			<string key="Component" value="KeyguardUpdateMonitor" />
+			<string key="Content" value="android.util.AndroidRuntimeException: Must execute in UI" />
+			<string key="EventTemplate" value="android.util.AndroidRuntimeException: Must execute in UI" />
+			<string key="concept:name" value="android.util.AndroidRuntimeException: Must execute in UI" />
+			<date key="time:timestamp" value="1900-01-01T16:13:46.765000+00:00" />
+			<int key="@@index" value="4" />
+			<int key="@@case_index" value="1" />
+		</event>
+		<event>
+			<int key="LineId" value="14" />
+			<string key="Date" value="03-17" />
+			<date key="Time" value="1900-01-01T16:13:46.765000+00:00" />
+			<int key="Pid" value="2227" />
+			<int key="Tid" value="2794" />
+			<string key="Level" value="V" />
+			<string key="Component" value="KeyguardUpdateMonitor" />
+			<string key="Content" value="*** unregister callback for null" />
+			<string key="EventTemplate" value="*** unregister callback for {placeholder}" />
+			<string key="concept:name" value="*** unregister callback for {placeholder}" />
+			<date key="time:timestamp" value="1900-01-01T16:13:46.765000+00:00" />
+			<int key="@@index" value="5" />
+			<int key="@@case_index" value="1" />
+		</event>
+		<event>
+			<int key="LineId" value="9" />
+			<string key="Date" value="03-17" />
+			<date key="Time" value="1900-01-01T16:13:46.765000+00:00" />
+			<int key="Pid" value="2227" />
+			<int key="Tid" value="2794" />
+			<string key="Level" value="W" />
+			<string key="Component" value="KeyguardUpdateMonitor" />
+			<string key="Content" value="registerCallback not in UI." />
+			<string key="EventTemplate" value="registerCallback not in UI." />
+			<string key="concept:name" value="registerCallback not in UI." />
+			<date key="time:timestamp" value="1900-01-01T16:13:46.765000+00:00" />
+			<int key="@@index" value="6" />
+			<int key="@@case_index" value="1" />
+		</event>
+		<event>
+			<int key="LineId" value="10" />
+			<string key="Date" value="03-17" />
+			<date key="Time" value="1900-01-01T16:13:46.765000+00:00" />
+			<int key="Pid" value="2227" />
+			<int key="Tid" value="2794" />
+			<string key="Level" value="W" />
+			<string key="Component" value="KeyguardUpdateMonitor" />
+			<string key="Content" value="android.util.AndroidRuntimeException: Must execute in UI" />
+			<string key="EventTemplate" value="android.util.AndroidRuntimeException: Must execute in UI" />
+			<string key="concept:name" value="android.util.AndroidRuntimeException: Must execute in UI" />
+			<date key="time:timestamp" value="1900-01-01T16:13:46.765000+00:00" />
+			<int key="@@index" value="7" />
+			<int key="@@case_index" value="1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="NotificationManager" />
+		<event>
+			<int key="LineId" value="6" />
+			<string key="Date" value="03-17" />
+			<date key="Time" value="1900-01-01T16:13:46.671000+00:00" />
+			<int key="Pid" value="1702" />
+			<int key="Tid" value="17633" />
+			<string key="Level" value="I" />
+			<string key="Component" value="NotificationManager" />
+			<string key="Content" value="onNotificationVisibilityChanged called" />
+			<string key="EventTemplate" value="Input log message: onNotificationVisibilityChanged called,Output log template: onNotificationVisibilityChanged called," />
+			<string key="concept:name" value="Input log message: onNotificationVisibilityChanged called,Output log template: onNotificationVisibilityChanged called," />
+			<date key="time:timestamp" value="1900-01-01T16:13:46.671000+00:00" />
+			<int key="@@index" value="8" />
+			<int key="@@case_index" value="2" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="PanelView" />
+		<event>
+			<int key="LineId" value="1" />
+			<string key="Date" value="03-17" />
+			<date key="Time" value="1900-01-01T16:13:46.652000+00:00" />
+			<int key="Pid" value="2227" />
+			<int key="Tid" value="2227" />
+			<string key="Level" value="I" />
+			<string key="Component" value="PanelView" />
+			<string key="Content" value="onExpandingFinished" />
+			<string key="EventTemplate" value="onExpandingFinished" />
+			<string key="concept:name" value="onExpandingFinished" />
+			<date key="time:timestamp" value="1900-01-01T16:13:46.652000+00:00" />
+			<int key="@@index" value="9" />
+			<int key="@@case_index" value="3" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="PhoneInterfaceManager" />
+		<event>
+			<int key="LineId" value="15" />
+			<string key="Date" value="03-17" />
+			<date key="Time" value="1900-01-01T16:13:46.778000+00:00" />
+			<int key="Pid" value="2626" />
+			<int key="Tid" value="2839" />
+			<string key="Level" value="D" />
+			<string key="Component" value="PhoneInterfaceManager" />
+			<string key="Content" value="[PhoneIntfMgr] getDataEnabled: subId=1 phoneId=1" />
+			<string key="EventTemplate" value="[PhoneIntfMgr] getDataEnabled: subId={*} phoneId={*}" />
+			<string key="concept:name" value="[PhoneIntfMgr] getDataEnabled: subId={*} phoneId={*}" />
+			<date key="time:timestamp" value="1900-01-01T16:13:46.778000+00:00" />
+			<int key="@@index" value="10" />
+			<int key="@@case_index" value="4" />
+		</event>
+		<event>
+			<int key="LineId" value="16" />
+			<string key="Date" value="03-17" />
+			<date key="Time" value="1900-01-01T16:13:46.778000+00:00" />
+			<int key="Pid" value="2626" />
+			<int key="Tid" value="2839" />
+			<string key="Level" value="D" />
+			<string key="Component" value="PhoneInterfaceManager" />
+			<string key="Content" value="[PhoneIntfMgr] getDataEnabled: subId=1 retVal=true" />
+			<string key="EventTemplate" value="Input log message: PhoneIntfMgr getDataEnabled: subId=1 retVal=trueOutput log template: PhoneIntfMgr getDataEnabled: subId=&lt;*&gt;, retVal=&lt;*&gt;" />
+			<string key="concept:name" value="Input log message: PhoneIntfMgr getDataEnabled: subId=1 retVal=trueOutput log template: PhoneIntfMgr getDataEnabled: subId=&lt;*&gt;, retVal=&lt;*&gt;" />
+			<date key="time:timestamp" value="1900-01-01T16:13:46.778000+00:00" />
+			<int key="@@index" value="11" />
+			<int key="@@case_index" value="4" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="PhoneStatusBar" />
+		<event>
+			<int key="LineId" value="5" />
+			<string key="Date" value="03-17" />
+			<date key="Time" value="1900-01-01T16:13:46.671000+00:00" />
+			<int key="Pid" value="2227" />
+			<int key="Tid" value="2318" />
+			<string key="Level" value="I" />
+			<string key="Component" value="PhoneStatusBar" />
+			<string key="Content" value="logNotificationVisibilityChanges runInThread start" />
+			<string key="EventTemplate" value="logNotificationVisibilityChanges runInThread start" />
+			<string key="concept:name" value="logNotificationVisibilityChanges runInThread start" />
+			<date key="time:timestamp" value="1900-01-01T16:13:46.671000+00:00" />
+			<int key="@@index" value="12" />
+			<int key="@@case_index" value="5" />
+		</event>
+		<event>
+			<int key="LineId" value="7" />
+			<string key="Date" value="03-17" />
+			<date key="Time" value="1900-01-01T16:13:46.672000+00:00" />
+			<int key="Pid" value="2227" />
+			<int key="Tid" value="2318" />
+			<string key="Level" value="I" />
+			<string key="Component" value="PhoneStatusBar" />
+			<string key="Content" value="logNotificationVisibilityChanges runInThread over" />
+			<string key="EventTemplate" value="logNotificationVisibilityChanges runInThread over" />
+			<string key="concept:name" value="logNotificationVisibilityChanges runInThread over" />
+			<date key="time:timestamp" value="1900-01-01T16:13:46.672000+00:00" />
+			<int key="@@index" value="13" />
+			<int key="@@case_index" value="5" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="PowerManagerService" />
+		<event>
+			<int key="LineId" value="17" />
+			<string key="Date" value="03-17" />
+			<date key="Time" value="1900-01-01T16:13:47.012000+00:00" />
+			<int key="Pid" value="1702" />
+			<int key="Tid" value="2105" />
+			<string key="Level" value="D" />
+			<string key="Component" value="PowerManagerService" />
+			<string key="Content" value="userActivityNoUpdateLocked: eventTime=261851646, event=2, flags=0x0, uid=1000" />
+			<string key="EventTemplate" value="userActivityNoUpdateLocked: eventTime={placeholder}, event={placeholder}, flags={placeholder}, uid={placeholder}" />
+			<string key="concept:name" value="userActivityNoUpdateLocked: eventTime={placeholder}, event={placeholder}, flags={placeholder}, uid={placeholder}" />
+			<date key="time:timestamp" value="1900-01-01T16:13:47.012000+00:00" />
+			<int key="@@index" value="14" />
+			<int key="@@case_index" value="6" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="StackScrollAlgorithm" />
+		<event>
+			<int key="LineId" value="2" />
+			<string key="Date" value="03-17" />
+			<date key="Time" value="1900-01-01T16:13:46.653000+00:00" />
+			<int key="Pid" value="2227" />
+			<int key="Tid" value="2227" />
+			<string key="Level" value="I" />
+			<string key="Component" value="StackScrollAlgorithm" />
+			<string key="Content" value="updateClipping isOverlap:false, getTopPadding=333.0, Translation=0.0" />
+			<string key="EventTemplate" value="updateClipping isOverlap:&lt;*&gt;, getTopPadding=&lt;*&gt;, Translation=&lt;*&gt;" />
+			<string key="concept:name" value="updateClipping isOverlap:&lt;*&gt;, getTopPadding=&lt;*&gt;, Translation=&lt;*&gt;" />
+			<date key="time:timestamp" value="1900-01-01T16:13:46.653000+00:00" />
+			<int key="@@index" value="15" />
+			<int key="@@case_index" value="7" />
+		</event>
+		<event>
+			<int key="LineId" value="3" />
+			<string key="Date" value="03-17" />
+			<date key="Time" value="1900-01-01T16:13:46.653000+00:00" />
+			<int key="Pid" value="2227" />
+			<int key="Tid" value="2227" />
+			<string key="Level" value="I" />
+			<string key="Component" value="StackScrollAlgorithm" />
+			<string key="Content" value="updateDimmedActivatedHideSensitive overlap:false" />
+			<string key="EventTemplate" value="Input log message: updateDimmedActivatedHideSensitive overlap:falseOutput log template: updateDimmedActivatedHideSensitive overlap:&lt;*&gt;" />
+			<string key="concept:name" value="Input log message: updateDimmedActivatedHideSensitive overlap:falseOutput log template: updateDimmedActivatedHideSensitive overlap:&lt;*&gt;" />
+			<date key="time:timestamp" value="1900-01-01T16:13:46.653000+00:00" />
+			<int key="@@index" value="16" />
+			<int key="@@case_index" value="7" />
+		</event>
+	</trace>
+</log>

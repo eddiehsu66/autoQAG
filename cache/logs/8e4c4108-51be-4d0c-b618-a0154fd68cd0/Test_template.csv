@@ -1,0 +1,18 @@
+LineId,Date,Time,Pid,Tid,Level,Component,Content,EventTemplate
+1,03-17,16:13:46.652,2227,2227,I,PanelView,onExpandingFinished,onExpandingFinished
+11,03-17,16:13:46.765,2227,2794,V,KeyguardUpdateMonitor,*** register callback for com.android.systemui.statusbar.policy.KeyguardMonitor@712d093,"*** register callback for com.android.systemui.statusbar.policy.KeyguardMonitor@{placeholder},"
+2,03-17,16:13:46.653,2227,2227,I,StackScrollAlgorithm,"updateClipping isOverlap:false, getTopPadding=333.0, Translation=0.0","Input log message: updateClipping isOverlap:false, getTopPadding=333.0, Translation=0.0Output log template: updateClipping isOverlap:{*}, getTopPadding={*}, Translation={*}"
+12,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,registerCallback not in UI.,registerCallback not in UI.
+3,03-17,16:13:46.653,2227,2227,I,StackScrollAlgorithm,updateDimmedActivatedHideSensitive overlap:false,Input log message: updateDimmedActivatedHideSensitive overlap:falseOutput log template: updateDimmedActivatedHideSensitive overlap:{placeholder}
+13,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,android.util.AndroidRuntimeException: Must execute in UI,android.util.AndroidRuntimeException: Must execute in UI
+4,03-17,16:13:46.654,1702,10454,W,ActivityManager,Sending non-protected broadcast com.android.systemui.statusbar.visible.change from system 2227:com.android.systemui/u0a37 pkg com.android.systemui,Sending non-protected broadcast <*> from system <*> pkg <*>
+14,03-17,16:13:46.765,2227,2794,V,KeyguardUpdateMonitor,*** unregister callback for null,*** unregister callback for {placeholder}
+5,03-17,16:13:46.671,2227,2318,I,PhoneStatusBar,logNotificationVisibilityChanges runInThread start,logNotificationVisibilityChanges runInThread start
+15,03-17,16:13:46.778,2626,2839,D,PhoneInterfaceManager,[PhoneIntfMgr] getDataEnabled: subId=1 phoneId=1,Input log message: [PhoneIntfMgr] getDataEnabled: subId=1 phoneId=1Output log template: [PhoneIntfMgr] getDataEnabled: subId=<*> phoneId=<*>
+6,03-17,16:13:46.671,1702,17633,I,NotificationManager,onNotificationVisibilityChanged called,onNotificationVisibilityChanged called
+16,03-17,16:13:46.778,2626,2839,D,PhoneInterfaceManager,[PhoneIntfMgr] getDataEnabled: subId=1 retVal=true,[PhoneIntfMgr] getDataEnabled: subId={subId} retVal={retVal}
+7,03-17,16:13:46.672,2227,2318,I,PhoneStatusBar,logNotificationVisibilityChanges runInThread over,logNotificationVisibilityChanges runInThread over
+17,03-17,16:13:47.012,1702,2105,D,PowerManagerService,"userActivityNoUpdateLocked: eventTime=261851646, event=2, flags=0x0, uid=1000","userActivityNoUpdateLocked: eventTime={eventTime}, event={event}, flags={flags}, uid={uid}"
+8,03-17,16:13:46.764,2227,2794,E,KeyguardUpdateMonitor,isSimPinSecure mSimDatas is null or empty,isSimPinSecure mSimDatas is {placeholder} or {placeholder}
+9,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,registerCallback not in UI.,{*} not in UI.
+10,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,android.util.AndroidRuntimeException: Must execute in UI,android.util.AndroidRuntimeException: Must execute in UI

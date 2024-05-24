@@ -2,9 +2,9 @@ import csv
 import openai
 import os
 import json
-from src.LogModule.AutoPrompt.promptApi import infer_llm
-from src.evaluation.accuracy import evaluate_test
-from src.LogModule.AutoPrompt.promptBranch.init_prompt import generation_prompt
+from src._LogModule.AutoPrompt.promptApi import infer_llm
+from src._evaluation.accuracy import evaluate_test
+from src._LogModule.AutoPrompt.promptBranch.init_prompt import generation_prompt
 prompt1 = "Replace all specific values with <*> in the given input:"
 prompt2 = "Anonymize the following input:"
 prompt3 = ("I want you to act like an expert of log parsing. "

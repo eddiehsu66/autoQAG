@@ -1,0 +1,108 @@
+2024/05/13-15:01:50.066434 ec90 RocksDB version: 9.0.0
+2024/05/13-15:01:50.066471 ec90 Compile date 2024-03-11 11:26:24
+2024/05/13-15:01:50.066487 ec90 DB SUMMARY
+2024/05/13-15:01:50.066501 ec90 Host name (Env):  EDDIE
+2024/05/13-15:01:50.066514 ec90 DB Session ID:  D66HNDL4U6HHIRTBAS58
+2024/05/13-15:01:50.067100 ec90 CURRENT file:  CURRENT
+2024/05/13-15:01:50.067116 ec90 IDENTITY file:  IDENTITY
+2024/05/13-15:01:50.067194 ec90 MANIFEST file:  MANIFEST-000025 size: 271 Bytes
+2024/05/13-15:01:50.067209 ec90 SST files in ../../cache/rocksdb dir, Total Num: 2, files: 000009.sst 000017.sst 
+2024/05/13-15:01:50.067223 ec90 Write Ahead Log file in ../../cache/rocksdb: 000024.log size: 33 ; 
+2024/05/13-15:01:50.067237 ec90                         Options.error_if_exists: 0
+2024/05/13-15:01:50.067344 ec90                       Options.create_if_missing: 1
+2024/05/13-15:01:50.067354 ec90                         Options.paranoid_checks: 1
+2024/05/13-15:01:50.067360 ec90             Options.flush_verify_memtable_count: 1
+2024/05/13-15:01:50.067366 ec90          Options.compaction_verify_record_count: 1
+2024/05/13-15:01:50.067372 ec90                               Options.track_and_verify_wals_in_manifest: 0
+2024/05/13-15:01:50.067379 ec90        Options.verify_sst_unique_id_in_manifest: 1
+2024/05/13-15:01:50.067385 ec90                                     Options.env: 0000022FF8492B40
+2024/05/13-15:01:50.067392 ec90                                      Options.fs: WinFS
+2024/05/13-15:01:50.067398 ec90                                Options.info_log: 0000022FF8D93120
+2024/05/13-15:01:50.067404 ec90                Options.max_file_opening_threads: 16
+2024/05/13-15:01:50.067411 ec90                              Options.statistics: 0000000000000000
+2024/05/13-15:01:50.067417 ec90                               Options.use_fsync: 0
+2024/05/13-15:01:50.067423 ec90                       Options.max_log_file_size: 0
+2024/05/13-15:01:50.067429 ec90                  Options.max_manifest_file_size: 1073741824
+2024/05/13-15:01:50.067436 ec90                   Options.log_file_time_to_roll: 0
+2024/05/13-15:01:50.067442 ec90                       Options.keep_log_file_num: 1000
+2024/05/13-15:01:50.067448 ec90                    Options.recycle_log_file_num: 0
+2024/05/13-15:01:50.067455 ec90                         Options.allow_fallocate: 1
+2024/05/13-15:01:50.067461 ec90                        Options.allow_mmap_reads: 0
+2024/05/13-15:01:50.067467 ec90                       Options.allow_mmap_writes: 0
+2024/05/13-15:01:50.067473 ec90                        Options.use_direct_reads: 0
+2024/05/13-15:01:50.067479 ec90                        Options.use_direct_io_for_flush_and_compaction: 0
+2024/05/13-15:01:50.067485 ec90          Options.create_missing_column_families: 0
+2024/05/13-15:01:50.067492 ec90                              Options.db_log_dir: 
+2024/05/13-15:01:50.067498 ec90                                 Options.wal_dir: 
+2024/05/13-15:01:50.067504 ec90                Options.table_cache_numshardbits: 6
+2024/05/13-15:01:50.067510 ec90                         Options.WAL_ttl_seconds: 0
+2024/05/13-15:01:50.067517 ec90                       Options.WAL_size_limit_MB: 0
+2024/05/13-15:01:50.067523 ec90                        Options.max_write_batch_group_size_bytes: 1048576
+2024/05/13-15:01:50.067529 ec90             Options.manifest_preallocation_size: 4194304
+2024/05/13-15:01:50.067535 ec90                     Options.is_fd_close_on_exec: 1
+2024/05/13-15:01:50.067541 ec90                   Options.advise_random_on_open: 1
+2024/05/13-15:01:50.067548 ec90                    Options.db_write_buffer_size: 0
+2024/05/13-15:01:50.067554 ec90                    Options.write_buffer_manager: 0000022FF8E04520
+2024/05/13-15:01:50.067560 ec90           Options.random_access_max_buffer_size: 1048576
+2024/05/13-15:01:50.067566 ec90                      Options.use_adaptive_mutex: 0
+2024/05/13-15:01:50.067572 ec90                            Options.rate_limiter: 0000000000000000
+2024/05/13-15:01:50.067579 ec90     Options.sst_file_manager.rate_bytes_per_sec: 0
+2024/05/13-15:01:50.067601 ec90                       Options.wal_recovery_mode: 2
+2024/05/13-15:01:50.067609 ec90                  Options.enable_thread_tracking: 0
+2024/05/13-15:01:50.067615 ec90                  Options.enable_pipelined_write: 0
+2024/05/13-15:01:50.067621 ec90                  Options.unordered_write: 0
+2024/05/13-15:01:50.067627 ec90         Options.allow_concurrent_memtable_write: 1
+2024/05/13-15:01:50.067633 ec90      Options.enable_write_thread_adaptive_yield: 1
+2024/05/13-15:01:50.067640 ec90             Options.write_thread_max_yield_usec: 100
+2024/05/13-15:01:50.067646 ec90            Options.write_thread_slow_yield_usec: 3
+2024/05/13-15:01:50.067652 ec90                               Options.row_cache: None
+2024/05/13-15:01:50.067659 ec90                              Options.wal_filter: None
+2024/05/13-15:01:50.067665 ec90             Options.avoid_flush_during_recovery: 0
+2024/05/13-15:01:50.067671 ec90             Options.allow_ingest_behind: 0
+2024/05/13-15:01:50.067677 ec90             Options.two_write_queues: 0
+2024/05/13-15:01:50.067683 ec90             Options.manual_wal_flush: 0
+2024/05/13-15:01:50.067689 ec90             Options.wal_compression: 0
+2024/05/13-15:01:50.067696 ec90             Options.atomic_flush: 0
+2024/05/13-15:01:50.067702 ec90             Options.avoid_unnecessary_blocking_io: 0
+2024/05/13-15:01:50.067708 ec90                 Options.persist_stats_to_disk: 0
+2024/05/13-15:01:50.067714 ec90                 Options.write_dbid_to_manifest: 0
+2024/05/13-15:01:50.067720 ec90                 Options.log_readahead_size: 0
+2024/05/13-15:01:50.067726 ec90                 Options.file_checksum_gen_factory: Unknown
+2024/05/13-15:01:50.067732 ec90                 Options.best_efforts_recovery: 0
+2024/05/13-15:01:50.067739 ec90                Options.max_bgerror_resume_count: 2147483647
+2024/05/13-15:01:50.067745 ec90            Options.bgerror_resume_retry_interval: 1000000
+2024/05/13-15:01:50.067751 ec90             Options.allow_data_in_errors: 0
+2024/05/13-15:01:50.067757 ec90             Options.db_host_id: __hostname__
+2024/05/13-15:01:50.067763 ec90             Options.enforce_single_del_contracts: true
+2024/05/13-15:01:50.067770 ec90             Options.max_background_jobs: 2
+2024/05/13-15:01:50.067776 ec90             Options.max_background_compactions: -1
+2024/05/13-15:01:50.067782 ec90             Options.max_subcompactions: 1
+2024/05/13-15:01:50.067788 ec90             Options.avoid_flush_during_shutdown: 0
+2024/05/13-15:01:50.067794 ec90           Options.writable_file_max_buffer_size: 1048576
+2024/05/13-15:01:50.067801 ec90             Options.delayed_write_rate : 16777216
+2024/05/13-15:01:50.067807 ec90             Options.max_total_wal_size: 0
+2024/05/13-15:01:50.067813 ec90             Options.delete_obsolete_files_period_micros: 21600000000
+2024/05/13-15:01:50.067820 ec90                   Options.stats_dump_period_sec: 600
+2024/05/13-15:01:50.067826 ec90                 Options.stats_persist_period_sec: 600
+2024/05/13-15:01:50.067832 ec90                 Options.stats_history_buffer_size: 1048576
+2024/05/13-15:01:50.067838 ec90                          Options.max_open_files: -1
+2024/05/13-15:01:50.067844 ec90                          Options.bytes_per_sync: 0
+2024/05/13-15:01:50.067851 ec90                      Options.wal_bytes_per_sync: 0
+2024/05/13-15:01:50.067857 ec90                   Options.strict_bytes_per_sync: 0
+2024/05/13-15:01:50.067863 ec90       Options.compaction_readahead_size: 2097152
+2024/05/13-15:01:50.067869 ec90                  Options.max_background_flushes: -1
+2024/05/13-15:01:50.067875 ec90 Options.daily_offpeak_time_utc: 
+2024/05/13-15:01:50.067881 ec90 Compression algorithms supported:
+2024/05/13-15:01:50.067888 ec90 	kZSTD supported: 1
+2024/05/13-15:01:50.067894 ec90 	kSnappyCompression supported: 1
+2024/05/13-15:01:50.067900 ec90 	kBZip2Compression supported: 1
+2024/05/13-15:01:50.067907 ec90 	kZlibCompression supported: 1
+2024/05/13-15:01:50.067913 ec90 	kLZ4Compression supported: 1
+2024/05/13-15:01:50.067919 ec90 	kXpressCompression supported: 0
+2024/05/13-15:01:50.067937 ec90 	kLZ4HCCompression supported: 1
+2024/05/13-15:01:50.067943 ec90 	kZSTDNotFinalCompression supported: 1
+2024/05/13-15:01:50.067951 ec90 Fast CRC32 supported: Not supported on x86
+2024/05/13-15:01:50.067957 ec90 DMutex implementation: std::mutex
+2024/05/13-15:01:50.068523 ec90 [WARN] [db/db_impl/db_impl_open.cc:2284] DB::Open() failed: IO error: Failed to create lock file: ../../cache/rocksdb/LOCK: 另一个程序正在使用此文件，进程无法访问。
+2024/05/13-15:01:50.068538 ec90 [db/db_impl/db_impl.cc:488] Shutdown: canceling all background work
+2024/05/13-15:01:50.068557 ec90 [db/db_impl/db_impl.cc:681] Shutdown complete

@@ -1,0 +1,108 @@
+2024/05/13-15:00:42.691451 ae48 RocksDB version: 9.0.0
+2024/05/13-15:00:42.691488 ae48 Compile date 2024-03-11 11:26:24
+2024/05/13-15:00:42.691503 ae48 DB SUMMARY
+2024/05/13-15:00:42.691514 ae48 Host name (Env):  EDDIE
+2024/05/13-15:00:42.691526 ae48 DB Session ID:  3VATQR0R50GFRE3DTUCM
+2024/05/13-15:00:42.692071 ae48 CURRENT file:  CURRENT
+2024/05/13-15:00:42.692090 ae48 IDENTITY file:  IDENTITY
+2024/05/13-15:00:42.692175 ae48 MANIFEST file:  MANIFEST-000005 size: 53 Bytes
+2024/05/13-15:00:42.692189 ae48 SST files in ../../cache/rocksdb dir, Total Num: 0, files: 
+2024/05/13-15:00:42.692201 ae48 Write Ahead Log file in ../../cache/rocksdb: 000004.log size: 33 ; 
+2024/05/13-15:00:42.692215 ae48                         Options.error_if_exists: 0
+2024/05/13-15:00:42.692349 ae48                       Options.create_if_missing: 1
+2024/05/13-15:00:42.692362 ae48                         Options.paranoid_checks: 1
+2024/05/13-15:00:42.692368 ae48             Options.flush_verify_memtable_count: 1
+2024/05/13-15:00:42.692374 ae48          Options.compaction_verify_record_count: 1
+2024/05/13-15:00:42.692379 ae48                               Options.track_and_verify_wals_in_manifest: 0
+2024/05/13-15:00:42.692385 ae48        Options.verify_sst_unique_id_in_manifest: 1
+2024/05/13-15:00:42.692390 ae48                                     Options.env: 00000295AE591080
+2024/05/13-15:00:42.692396 ae48                                      Options.fs: WinFS
+2024/05/13-15:00:42.692402 ae48                                Options.info_log: 00000295AE64B110
+2024/05/13-15:00:42.692407 ae48                Options.max_file_opening_threads: 16
+2024/05/13-15:00:42.692413 ae48                              Options.statistics: 0000000000000000
+2024/05/13-15:00:42.692418 ae48                               Options.use_fsync: 0
+2024/05/13-15:00:42.692424 ae48                       Options.max_log_file_size: 0
+2024/05/13-15:00:42.692429 ae48                  Options.max_manifest_file_size: 1073741824
+2024/05/13-15:00:42.692435 ae48                   Options.log_file_time_to_roll: 0
+2024/05/13-15:00:42.692441 ae48                       Options.keep_log_file_num: 1000
+2024/05/13-15:00:42.692446 ae48                    Options.recycle_log_file_num: 0
+2024/05/13-15:00:42.692452 ae48                         Options.allow_fallocate: 1
+2024/05/13-15:00:42.692457 ae48                        Options.allow_mmap_reads: 0
+2024/05/13-15:00:42.692463 ae48                       Options.allow_mmap_writes: 0
+2024/05/13-15:00:42.692468 ae48                        Options.use_direct_reads: 0
+2024/05/13-15:00:42.692473 ae48                        Options.use_direct_io_for_flush_and_compaction: 0
+2024/05/13-15:00:42.692479 ae48          Options.create_missing_column_families: 0
+2024/05/13-15:00:42.692484 ae48                              Options.db_log_dir: 
+2024/05/13-15:00:42.692490 ae48                                 Options.wal_dir: 
+2024/05/13-15:00:42.692495 ae48                Options.table_cache_numshardbits: 6
+2024/05/13-15:00:42.692500 ae48                         Options.WAL_ttl_seconds: 0
+2024/05/13-15:00:42.692506 ae48                       Options.WAL_size_limit_MB: 0
+2024/05/13-15:00:42.692512 ae48                        Options.max_write_batch_group_size_bytes: 1048576
+2024/05/13-15:00:42.692517 ae48             Options.manifest_preallocation_size: 4194304
+2024/05/13-15:00:42.692523 ae48                     Options.is_fd_close_on_exec: 1
+2024/05/13-15:00:42.692528 ae48                   Options.advise_random_on_open: 1
+2024/05/13-15:00:42.692533 ae48                    Options.db_write_buffer_size: 0
+2024/05/13-15:00:42.692539 ae48                    Options.write_buffer_manager: 00000295AEF1AB90
+2024/05/13-15:00:42.692544 ae48           Options.random_access_max_buffer_size: 1048576
+2024/05/13-15:00:42.692550 ae48                      Options.use_adaptive_mutex: 0
+2024/05/13-15:00:42.692555 ae48                            Options.rate_limiter: 0000000000000000
+2024/05/13-15:00:42.692561 ae48     Options.sst_file_manager.rate_bytes_per_sec: 0
+2024/05/13-15:00:42.692566 ae48                       Options.wal_recovery_mode: 2
+2024/05/13-15:00:42.692597 ae48                  Options.enable_thread_tracking: 0
+2024/05/13-15:00:42.692604 ae48                  Options.enable_pipelined_write: 0
+2024/05/13-15:00:42.692609 ae48                  Options.unordered_write: 0
+2024/05/13-15:00:42.692615 ae48         Options.allow_concurrent_memtable_write: 1
+2024/05/13-15:00:42.692620 ae48      Options.enable_write_thread_adaptive_yield: 1
+2024/05/13-15:00:42.692626 ae48             Options.write_thread_max_yield_usec: 100
+2024/05/13-15:00:42.692631 ae48            Options.write_thread_slow_yield_usec: 3
+2024/05/13-15:00:42.692637 ae48                               Options.row_cache: None
+2024/05/13-15:00:42.692642 ae48                              Options.wal_filter: None
+2024/05/13-15:00:42.692648 ae48             Options.avoid_flush_during_recovery: 0
+2024/05/13-15:00:42.692653 ae48             Options.allow_ingest_behind: 0
+2024/05/13-15:00:42.692659 ae48             Options.two_write_queues: 0
+2024/05/13-15:00:42.692664 ae48             Options.manual_wal_flush: 0
+2024/05/13-15:00:42.692670 ae48             Options.wal_compression: 0
+2024/05/13-15:00:42.692680 ae48             Options.atomic_flush: 0
+2024/05/13-15:00:42.692685 ae48             Options.avoid_unnecessary_blocking_io: 0
+2024/05/13-15:00:42.692691 ae48                 Options.persist_stats_to_disk: 0
+2024/05/13-15:00:42.692697 ae48                 Options.write_dbid_to_manifest: 0
+2024/05/13-15:00:42.692702 ae48                 Options.log_readahead_size: 0
+2024/05/13-15:00:42.692708 ae48                 Options.file_checksum_gen_factory: Unknown
+2024/05/13-15:00:42.692714 ae48                 Options.best_efforts_recovery: 0
+2024/05/13-15:00:42.692719 ae48                Options.max_bgerror_resume_count: 2147483647
+2024/05/13-15:00:42.692724 ae48            Options.bgerror_resume_retry_interval: 1000000
+2024/05/13-15:00:42.692729 ae48             Options.allow_data_in_errors: 0
+2024/05/13-15:00:42.692734 ae48             Options.db_host_id: __hostname__
+2024/05/13-15:00:42.692739 ae48             Options.enforce_single_del_contracts: true
+2024/05/13-15:00:42.692745 ae48             Options.max_background_jobs: 2
+2024/05/13-15:00:42.692750 ae48             Options.max_background_compactions: -1
+2024/05/13-15:00:42.692756 ae48             Options.max_subcompactions: 1
+2024/05/13-15:00:42.692761 ae48             Options.avoid_flush_during_shutdown: 0
+2024/05/13-15:00:42.692767 ae48           Options.writable_file_max_buffer_size: 1048576
+2024/05/13-15:00:42.692772 ae48             Options.delayed_write_rate : 16777216
+2024/05/13-15:00:42.692778 ae48             Options.max_total_wal_size: 0
+2024/05/13-15:00:42.692783 ae48             Options.delete_obsolete_files_period_micros: 21600000000
+2024/05/13-15:00:42.692789 ae48                   Options.stats_dump_period_sec: 600
+2024/05/13-15:00:42.692795 ae48                 Options.stats_persist_period_sec: 600
+2024/05/13-15:00:42.692800 ae48                 Options.stats_history_buffer_size: 1048576
+2024/05/13-15:00:42.692806 ae48                          Options.max_open_files: -1
+2024/05/13-15:00:42.692811 ae48                          Options.bytes_per_sync: 0
+2024/05/13-15:00:42.692817 ae48                      Options.wal_bytes_per_sync: 0
+2024/05/13-15:00:42.692822 ae48                   Options.strict_bytes_per_sync: 0
+2024/05/13-15:00:42.692828 ae48       Options.compaction_readahead_size: 2097152
+2024/05/13-15:00:42.692833 ae48                  Options.max_background_flushes: -1
+2024/05/13-15:00:42.692839 ae48 Options.daily_offpeak_time_utc: 
+2024/05/13-15:00:42.692844 ae48 Compression algorithms supported:
+2024/05/13-15:00:42.692850 ae48 	kZSTD supported: 1
+2024/05/13-15:00:42.692856 ae48 	kSnappyCompression supported: 1
+2024/05/13-15:00:42.692861 ae48 	kBZip2Compression supported: 1
+2024/05/13-15:00:42.692867 ae48 	kZlibCompression supported: 1
+2024/05/13-15:00:42.692872 ae48 	kLZ4Compression supported: 1
+2024/05/13-15:00:42.692878 ae48 	kXpressCompression supported: 0
+2024/05/13-15:00:42.692893 ae48 	kLZ4HCCompression supported: 1
+2024/05/13-15:00:42.692899 ae48 	kZSTDNotFinalCompression supported: 1
+2024/05/13-15:00:42.692906 ae48 Fast CRC32 supported: Not supported on x86
+2024/05/13-15:00:42.692911 ae48 DMutex implementation: std::mutex
+2024/05/13-15:00:42.693436 ae48 [WARN] [db/db_impl/db_impl_open.cc:2284] DB::Open() failed: IO error: Failed to create lock file: ../../cache/rocksdb/LOCK: 另一个程序正在使用此文件，进程无法访问。
+2024/05/13-15:00:42.693449 ae48 [db/db_impl/db_impl.cc:488] Shutdown: canceling all background work
+2024/05/13-15:00:42.693471 ae48 [db/db_impl/db_impl.cc:681] Shutdown complete

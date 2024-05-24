@@ -68,7 +68,12 @@ def calculate_multiclass_metrics_sklearn(results):
 
     return metrics
 
-
+def correct_lstm(groudtruth, parsedresult):
+    tokens1 = groudtruth.split(' ')
+    tokens2 = parsedresult.split(' ')
+    tokens1 = ["<*>" if "<*>" in token else token for token in tokens1]
+    tokens2 = ["<*>" if "<*>" in token else token for token in tokens2]
+    return tokens1 == tokens2
 
 
 if __name__ == '__main__':

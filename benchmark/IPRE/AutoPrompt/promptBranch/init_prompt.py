@@ -1,7 +1,7 @@
 import concurrent.futures
 
 from benchmark.IPRE.AutoPrompt.selectLog import get_train_dataSet
-from src.LogModule.AutoPrompt.promptApi import infer_llm
+from benchmark.IPRE.AutoPrompt.promptApi import infer_llm
 from src.config.configLoad import load_config
 
 

@@ -1,6 +1,6 @@
 import concurrent
 
-from src.LogModule.AutoPrompt.promptApi import infer_llm
+from benchmark.IPRE.AutoPrompt.promptApi import infer_llm
 from src.config.unitTest import get_test_results
 from concurrent.futures import ThreadPoolExecutor, as_completed
 

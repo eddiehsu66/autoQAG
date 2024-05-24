@@ -1,0 +1,129 @@
+LineId,Date,Time,Pid,Tid,Level,Component,Content,EventId,EventTemplate,ParameterList
+7,03-17,16:13:46.672,2227,2318,I,PhoneStatusBar,logNotificationVisibilityChanges runInThread over,eda14053,logNotificationVisibilityChanges runInThread over,[]
+7,03-17,16:13:46.672,2227,2318,I,PhoneStatusBar,logNotificationVisibilityChanges runInThread over,eda14053,logNotificationVisibilityChanges runInThread over,[]
+7,03-17,16:13:46.672,2227,2318,I,PhoneStatusBar,logNotificationVisibilityChanges runInThread over,eda14053,logNotificationVisibilityChanges runInThread over,[]
+7,03-17,16:13:46.672,2227,2318,I,PhoneStatusBar,logNotificationVisibilityChanges runInThread over,eda14053,logNotificationVisibilityChanges runInThread over,[]
+7,03-17,16:13:46.672,2227,2318,I,PhoneStatusBar,logNotificationVisibilityChanges runInThread over,eda14053,logNotificationVisibilityChanges runInThread over,[]
+7,03-17,16:13:46.672,2227,2318,I,PhoneStatusBar,logNotificationVisibilityChanges runInThread over,eda14053,logNotificationVisibilityChanges runInThread over,[]
+7,03-17,16:13:46.672,2227,2318,I,PhoneStatusBar,logNotificationVisibilityChanges runInThread over,eda14053,logNotificationVisibilityChanges runInThread over,[]
+7,03-17,16:13:46.672,2227,2318,I,PhoneStatusBar,logNotificationVisibilityChanges runInThread over,eda14053,logNotificationVisibilityChanges runInThread over,[]
+7,03-17,16:13:46.672,2227,2318,I,PhoneStatusBar,logNotificationVisibilityChanges runInThread over,eda14053,logNotificationVisibilityChanges runInThread over,[]
+7,03-17,16:13:46.672,2227,2318,I,PhoneStatusBar,logNotificationVisibilityChanges runInThread over,eda14053,logNotificationVisibilityChanges runInThread over,[]
+7,03-17,16:13:46.672,2227,2318,I,PhoneStatusBar,logNotificationVisibilityChanges runInThread over,eda14053,logNotificationVisibilityChanges runInThread over,[]
+8,03-17,16:13:46.764,2227,2794,E,KeyguardUpdateMonitor,isSimPinSecure mSimDatas is null or empty,6ed37c98,isSimPinSecure mSimDatas is null or empty,[]
+8,03-17,16:13:46.764,2227,2794,E,KeyguardUpdateMonitor,isSimPinSecure mSimDatas is null or empty,6ed37c98,isSimPinSecure mSimDatas is null or empty,[]
+8,03-17,16:13:46.764,2227,2794,E,KeyguardUpdateMonitor,isSimPinSecure mSimDatas is null or empty,6ed37c98,isSimPinSecure mSimDatas is null or empty,[]
+8,03-17,16:13:46.764,2227,2794,E,KeyguardUpdateMonitor,isSimPinSecure mSimDatas is null or empty,6ed37c98,isSimPinSecure mSimDatas is null or empty,[]
+8,03-17,16:13:46.764,2227,2794,E,KeyguardUpdateMonitor,isSimPinSecure mSimDatas is null or empty,6ed37c98,isSimPinSecure mSimDatas is null or empty,[]
+8,03-17,16:13:46.764,2227,2794,E,KeyguardUpdateMonitor,isSimPinSecure mSimDatas is null or empty,6ed37c98,isSimPinSecure mSimDatas is null or empty,[]
+8,03-17,16:13:46.764,2227,2794,E,KeyguardUpdateMonitor,isSimPinSecure mSimDatas is null or empty,6ed37c98,isSimPinSecure mSimDatas is null or empty,[]
+8,03-17,16:13:46.764,2227,2794,E,KeyguardUpdateMonitor,isSimPinSecure mSimDatas is null or empty,6ed37c98,isSimPinSecure mSimDatas is null or empty,[]
+8,03-17,16:13:46.764,2227,2794,E,KeyguardUpdateMonitor,isSimPinSecure mSimDatas is null or empty,6ed37c98,isSimPinSecure mSimDatas is null or empty,[]
+8,03-17,16:13:46.764,2227,2794,E,KeyguardUpdateMonitor,isSimPinSecure mSimDatas is null or empty,6ed37c98,isSimPinSecure mSimDatas is null or empty,[]
+8,03-17,16:13:46.764,2227,2794,E,KeyguardUpdateMonitor,isSimPinSecure mSimDatas is null or empty,6ed37c98,isSimPinSecure mSimDatas is null or empty,[]
+12,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,registerCallback not in UI.,2f983de0,registerCallback not in UI.,[]
+12,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,registerCallback not in UI.,2f983de0,registerCallback not in UI.,[]
+9,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,registerCallback not in UI.,2f983de0,registerCallback not in UI.,[]
+9,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,registerCallback not in UI.,2f983de0,registerCallback not in UI.,[]
+9,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,registerCallback not in UI.,2f983de0,registerCallback not in UI.,[]
+9,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,registerCallback not in UI.,2f983de0,registerCallback not in UI.,[]
+9,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,registerCallback not in UI.,2f983de0,registerCallback not in UI.,[]
+9,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,registerCallback not in UI.,2f983de0,registerCallback not in UI.,[]
+12,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,registerCallback not in UI.,2f983de0,registerCallback not in UI.,[]
+12,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,registerCallback not in UI.,2f983de0,registerCallback not in UI.,[]
+12,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,registerCallback not in UI.,2f983de0,registerCallback not in UI.,[]
+10,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,android.util.AndroidRuntimeException: Must execute in UI,f2db1c93,<*>: Must execute in UI,['android.util.AndroidRuntimeException']
+10,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,android.util.AndroidRuntimeException: Must execute in UI,f2db1c93,<*>: Must execute in UI,['android.util.AndroidRuntimeException']
+10,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,android.util.AndroidRuntimeException: Must execute in UI,f2db1c93,<*>: Must execute in UI,['android.util.AndroidRuntimeException']
+13,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,android.util.AndroidRuntimeException: Must execute in UI,f2db1c93,<*>: Must execute in UI,['android.util.AndroidRuntimeException']
+13,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,android.util.AndroidRuntimeException: Must execute in UI,f2db1c93,<*>: Must execute in UI,['android.util.AndroidRuntimeException']
+10,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,android.util.AndroidRuntimeException: Must execute in UI,f2db1c93,<*>: Must execute in UI,['android.util.AndroidRuntimeException']
+10,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,android.util.AndroidRuntimeException: Must execute in UI,f2db1c93,<*>: Must execute in UI,['android.util.AndroidRuntimeException']
+10,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,android.util.AndroidRuntimeException: Must execute in UI,f2db1c93,<*>: Must execute in UI,['android.util.AndroidRuntimeException']
+10,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,android.util.AndroidRuntimeException: Must execute in UI,f2db1c93,<*>: Must execute in UI,['android.util.AndroidRuntimeException']
+10,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,android.util.AndroidRuntimeException: Must execute in UI,f2db1c93,<*>: Must execute in UI,['android.util.AndroidRuntimeException']
+13,03-17,16:13:46.765,2227,2794,W,KeyguardUpdateMonitor,android.util.AndroidRuntimeException: Must execute in UI,f2db1c93,<*>: Must execute in UI,['android.util.AndroidRuntimeException']
+16,03-17,16:13:46.778,2626,2839,D,PhoneInterfaceManager,[PhoneIntfMgr] getDataEnabled: subId=1 retVal=true,23051d9f,[PhoneIntfMgr] getDataEnabled: subId=<*> <*>,['1 retVal=true']
+16,03-17,16:13:46.778,2626,2839,D,PhoneInterfaceManager,[PhoneIntfMgr] getDataEnabled: subId=1 retVal=true,23051d9f,[PhoneIntfMgr] getDataEnabled: subId=<*> <*>,['1 retVal=true']
+16,03-17,16:13:46.778,2626,2839,D,PhoneInterfaceManager,[PhoneIntfMgr] getDataEnabled: subId=1 retVal=true,23051d9f,[PhoneIntfMgr] getDataEnabled: subId=<*> <*>,['1 retVal=true']
+15,03-17,16:13:46.778,2626,2839,D,PhoneInterfaceManager,[PhoneIntfMgr] getDataEnabled: subId=1 phoneId=1,23051d9f,[PhoneIntfMgr] getDataEnabled: subId=<*> <*>,['1 phoneId=1']
+15,03-17,16:13:46.778,2626,2839,D,PhoneInterfaceManager,[PhoneIntfMgr] getDataEnabled: subId=1 phoneId=1,23051d9f,[PhoneIntfMgr] getDataEnabled: subId=<*> <*>,['1 phoneId=1']
+16,03-17,16:13:46.778,2626,2839,D,PhoneInterfaceManager,[PhoneIntfMgr] getDataEnabled: subId=1 retVal=true,23051d9f,[PhoneIntfMgr] getDataEnabled: subId=<*> <*>,['1 retVal=true']
+16,03-17,16:13:46.778,2626,2839,D,PhoneInterfaceManager,[PhoneIntfMgr] getDataEnabled: subId=1 retVal=true,23051d9f,[PhoneIntfMgr] getDataEnabled: subId=<*> <*>,['1 retVal=true']
+15,03-17,16:13:46.778,2626,2839,D,PhoneInterfaceManager,[PhoneIntfMgr] getDataEnabled: subId=1 phoneId=1,23051d9f,[PhoneIntfMgr] getDataEnabled: subId=<*> <*>,['1 phoneId=1']
+15,03-17,16:13:46.778,2626,2839,D,PhoneInterfaceManager,[PhoneIntfMgr] getDataEnabled: subId=1 phoneId=1,23051d9f,[PhoneIntfMgr] getDataEnabled: subId=<*> <*>,['1 phoneId=1']
+15,03-17,16:13:46.778,2626,2839,D,PhoneInterfaceManager,[PhoneIntfMgr] getDataEnabled: subId=1 phoneId=1,23051d9f,[PhoneIntfMgr] getDataEnabled: subId=<*> <*>,['1 phoneId=1']
+16,03-17,16:13:46.778,2626,2839,D,PhoneInterfaceManager,[PhoneIntfMgr] getDataEnabled: subId=1 retVal=true,23051d9f,[PhoneIntfMgr] getDataEnabled: subId=<*> <*>,['1 retVal=true']
+6,03-17,16:13:46.671,1702,17633,I,NotificationManager,onNotificationVisibilityChanged called,fbd5de68,onNotificationVisibilityChanged called,[]
+6,03-17,16:13:46.671,1702,17633,I,NotificationManager,onNotificationVisibilityChanged called,fbd5de68,onNotificationVisibilityChanged called,[]
+6,03-17,16:13:46.671,1702,17633,I,NotificationManager,onNotificationVisibilityChanged called,fbd5de68,onNotificationVisibilityChanged called,[]
+6,03-17,16:13:46.671,1702,17633,I,NotificationManager,onNotificationVisibilityChanged called,fbd5de68,onNotificationVisibilityChanged called,[]
+6,03-17,16:13:46.671,1702,17633,I,NotificationManager,onNotificationVisibilityChanged called,fbd5de68,onNotificationVisibilityChanged called,[]
+6,03-17,16:13:46.671,1702,17633,I,NotificationManager,onNotificationVisibilityChanged called,fbd5de68,onNotificationVisibilityChanged called,[]
+6,03-17,16:13:46.671,1702,17633,I,NotificationManager,onNotificationVisibilityChanged called,fbd5de68,onNotificationVisibilityChanged called,[]
+6,03-17,16:13:46.671,1702,17633,I,NotificationManager,onNotificationVisibilityChanged called,fbd5de68,onNotificationVisibilityChanged called,[]
+6,03-17,16:13:46.671,1702,17633,I,NotificationManager,onNotificationVisibilityChanged called,fbd5de68,onNotificationVisibilityChanged called,[]
+6,03-17,16:13:46.671,1702,17633,I,NotificationManager,onNotificationVisibilityChanged called,fbd5de68,onNotificationVisibilityChanged called,[]
+6,03-17,16:13:46.671,1702,17633,I,NotificationManager,onNotificationVisibilityChanged called,fbd5de68,onNotificationVisibilityChanged called,[]
+5,03-17,16:13:46.671,2227,2318,I,PhoneStatusBar,logNotificationVisibilityChanges runInThread start,dac08128,logNotificationVisibilityChanges runInThread start,[]
+5,03-17,16:13:46.671,2227,2318,I,PhoneStatusBar,logNotificationVisibilityChanges runInThread start,dac08128,logNotificationVisibilityChanges runInThread start,[]
+5,03-17,16:13:46.671,2227,2318,I,PhoneStatusBar,logNotificationVisibilityChanges runInThread start,dac08128,logNotificationVisibilityChanges runInThread start,[]
+5,03-17,16:13:46.671,2227,2318,I,PhoneStatusBar,logNotificationVisibilityChanges runInThread start,dac08128,logNotificationVisibilityChanges runInThread start,[]
+5,03-17,16:13:46.671,2227,2318,I,PhoneStatusBar,logNotificationVisibilityChanges runInThread start,dac08128,logNotificationVisibilityChanges runInThread start,[]
+5,03-17,16:13:46.671,2227,2318,I,PhoneStatusBar,logNotificationVisibilityChanges runInThread start,dac08128,logNotificationVisibilityChanges runInThread start,[]
+5,03-17,16:13:46.671,2227,2318,I,PhoneStatusBar,logNotificationVisibilityChanges runInThread start,dac08128,logNotificationVisibilityChanges runInThread start,[]
+5,03-17,16:13:46.671,2227,2318,I,PhoneStatusBar,logNotificationVisibilityChanges runInThread start,dac08128,logNotificationVisibilityChanges runInThread start,[]
+5,03-17,16:13:46.671,2227,2318,I,PhoneStatusBar,logNotificationVisibilityChanges runInThread start,dac08128,logNotificationVisibilityChanges runInThread start,[]
+5,03-17,16:13:46.671,2227,2318,I,PhoneStatusBar,logNotificationVisibilityChanges runInThread start,dac08128,logNotificationVisibilityChanges runInThread start,[]
+5,03-17,16:13:46.671,2227,2318,I,PhoneStatusBar,logNotificationVisibilityChanges runInThread start,dac08128,logNotificationVisibilityChanges runInThread start,[]
+3,03-17,16:13:46.653,2227,2227,I,StackScrollAlgorithm,updateDimmedActivatedHideSensitive overlap:false,b794132a,updateDimmedActivatedHideSensitive overlap:false,[]
+3,03-17,16:13:46.653,2227,2227,I,StackScrollAlgorithm,updateDimmedActivatedHideSensitive overlap:false,b794132a,updateDimmedActivatedHideSensitive overlap:false,[]
+3,03-17,16:13:46.653,2227,2227,I,StackScrollAlgorithm,updateDimmedActivatedHideSensitive overlap:false,b794132a,updateDimmedActivatedHideSensitive overlap:false,[]
+3,03-17,16:13:46.653,2227,2227,I,StackScrollAlgorithm,updateDimmedActivatedHideSensitive overlap:false,b794132a,updateDimmedActivatedHideSensitive overlap:false,[]
+3,03-17,16:13:46.653,2227,2227,I,StackScrollAlgorithm,updateDimmedActivatedHideSensitive overlap:false,b794132a,updateDimmedActivatedHideSensitive overlap:false,[]
+3,03-17,16:13:46.653,2227,2227,I,StackScrollAlgorithm,updateDimmedActivatedHideSensitive overlap:false,b794132a,updateDimmedActivatedHideSensitive overlap:false,[]
+3,03-17,16:13:46.653,2227,2227,I,StackScrollAlgorithm,updateDimmedActivatedHideSensitive overlap:false,b794132a,updateDimmedActivatedHideSensitive overlap:false,[]
+3,03-17,16:13:46.653,2227,2227,I,StackScrollAlgorithm,updateDimmedActivatedHideSensitive overlap:false,b794132a,updateDimmedActivatedHideSensitive overlap:false,[]
+3,03-17,16:13:46.653,2227,2227,I,StackScrollAlgorithm,updateDimmedActivatedHideSensitive overlap:false,b794132a,updateDimmedActivatedHideSensitive overlap:false,[]
+3,03-17,16:13:46.653,2227,2227,I,StackScrollAlgorithm,updateDimmedActivatedHideSensitive overlap:false,b794132a,updateDimmedActivatedHideSensitive overlap:false,[]
+3,03-17,16:13:46.653,2227,2227,I,StackScrollAlgorithm,updateDimmedActivatedHideSensitive overlap:false,b794132a,updateDimmedActivatedHideSensitive overlap:false,[]
+17,03-17,16:13:47.012,1702,2105,D,PowerManagerService,"userActivityNoUpdateLocked: eventTime=261851646, event=2, flags=0x0, uid=1000",e9aa76e5,"userActivityNoUpdateLocked: eventTime=<*>, event=<*>, flags=<*>, uid=<*>","['261851646', '2', '0x0', '1000']"
+17,03-17,16:13:47.012,1702,2105,D,PowerManagerService,"userActivityNoUpdateLocked: eventTime=261851646, event=2, flags=0x0, uid=1000",e9aa76e5,"userActivityNoUpdateLocked: eventTime=<*>, event=<*>, flags=<*>, uid=<*>","['261851646', '2', '0x0', '1000']"
+17,03-17,16:13:47.012,1702,2105,D,PowerManagerService,"userActivityNoUpdateLocked: eventTime=261851646, event=2, flags=0x0, uid=1000",e9aa76e5,"userActivityNoUpdateLocked: eventTime=<*>, event=<*>, flags=<*>, uid=<*>","['261851646', '2', '0x0', '1000']"
+17,03-17,16:13:47.012,1702,2105,D,PowerManagerService,"userActivityNoUpdateLocked: eventTime=261851646, event=2, flags=0x0, uid=1000",e9aa76e5,"userActivityNoUpdateLocked: eventTime=<*>, event=<*>, flags=<*>, uid=<*>","['261851646', '2', '0x0', '1000']"
+17,03-17,16:13:47.012,1702,2105,D,PowerManagerService,"userActivityNoUpdateLocked: eventTime=261851646, event=2, flags=0x0, uid=1000",e9aa76e5,"userActivityNoUpdateLocked: eventTime=<*>, event=<*>, flags=<*>, uid=<*>","['261851646', '2', '0x0', '1000']"
+17,03-17,16:13:47.012,1702,2105,D,PowerManagerService,"userActivityNoUpdateLocked: eventTime=261851646, event=2, flags=0x0, uid=1000",e9aa76e5,"userActivityNoUpdateLocked: eventTime=<*>, event=<*>, flags=<*>, uid=<*>","['261851646', '2', '0x0', '1000']"
+17,03-17,16:13:47.012,1702,2105,D,PowerManagerService,"userActivityNoUpdateLocked: eventTime=261851646, event=2, flags=0x0, uid=1000",e9aa76e5,"userActivityNoUpdateLocked: eventTime=<*>, event=<*>, flags=<*>, uid=<*>","['261851646', '2', '0x0', '1000']"
+17,03-17,16:13:47.012,1702,2105,D,PowerManagerService,"userActivityNoUpdateLocked: eventTime=261851646, event=2, flags=0x0, uid=1000",e9aa76e5,"userActivityNoUpdateLocked: eventTime=<*>, event=<*>, flags=<*>, uid=<*>","['261851646', '2', '0x0', '1000']"
+17,03-17,16:13:47.012,1702,2105,D,PowerManagerService,"userActivityNoUpdateLocked: eventTime=261851646, event=2, flags=0x0, uid=1000",e9aa76e5,"userActivityNoUpdateLocked: eventTime=<*>, event=<*>, flags=<*>, uid=<*>","['261851646', '2', '0x0', '1000']"
+17,03-17,16:13:47.012,1702,2105,D,PowerManagerService,"userActivityNoUpdateLocked: eventTime=261851646, event=2, flags=0x0, uid=1000",e9aa76e5,"userActivityNoUpdateLocked: eventTime=<*>, event=<*>, flags=<*>, uid=<*>","['261851646', '2', '0x0', '1000']"
+4,03-17,16:13:46.654,1702,10454,W,ActivityManager,Sending non-protected broadcast com.android.systemui.statusbar.visible.change from system 2227:com.android.systemui/u0a37 pkg com.android.systemui,f69486aa,Sending non-protected broadcast <*> from system <*>:<*><*> pkg <*>,"['com.android.systemui.statusbar.visible.change', '', '2227:com.android.systemui/u0a37', 'com.android.systemui']"
+4,03-17,16:13:46.654,1702,10454,W,ActivityManager,Sending non-protected broadcast com.android.systemui.statusbar.visible.change from system 2227:com.android.systemui/u0a37 pkg com.android.systemui,f69486aa,Sending non-protected broadcast <*> from system <*>:<*><*> pkg <*>,"['com.android.systemui.statusbar.visible.change', '', '2227:com.android.systemui/u0a37', 'com.android.systemui']"
+4,03-17,16:13:46.654,1702,10454,W,ActivityManager,Sending non-protected broadcast com.android.systemui.statusbar.visible.change from system 2227:com.android.systemui/u0a37 pkg com.android.systemui,f69486aa,Sending non-protected broadcast <*> from system <*>:<*><*> pkg <*>,"['com.android.systemui.statusbar.visible.change', '', '2227:com.android.systemui/u0a37', 'com.android.systemui']"
+4,03-17,16:13:46.654,1702,10454,W,ActivityManager,Sending non-protected broadcast com.android.systemui.statusbar.visible.change from system 2227:com.android.systemui/u0a37 pkg com.android.systemui,f69486aa,Sending non-protected broadcast <*> from system <*>:<*><*> pkg <*>,"['com.android.systemui.statusbar.visible.change', '', '2227:com.android.systemui/u0a37', 'com.android.systemui']"
+4,03-17,16:13:46.654,1702,10454,W,ActivityManager,Sending non-protected broadcast com.android.systemui.statusbar.visible.change from system 2227:com.android.systemui/u0a37 pkg com.android.systemui,f69486aa,Sending non-protected broadcast <*> from system <*>:<*><*> pkg <*>,"['com.android.systemui.statusbar.visible.change', '', '2227:com.android.systemui/u0a37', 'com.android.systemui']"
+4,03-17,16:13:46.654,1702,10454,W,ActivityManager,Sending non-protected broadcast com.android.systemui.statusbar.visible.change from system 2227:com.android.systemui/u0a37 pkg com.android.systemui,f69486aa,Sending non-protected broadcast <*> from system <*>:<*><*> pkg <*>,"['com.android.systemui.statusbar.visible.change', '', '2227:com.android.systemui/u0a37', 'com.android.systemui']"
+4,03-17,16:13:46.654,1702,10454,W,ActivityManager,Sending non-protected broadcast com.android.systemui.statusbar.visible.change from system 2227:com.android.systemui/u0a37 pkg com.android.systemui,f69486aa,Sending non-protected broadcast <*> from system <*>:<*><*> pkg <*>,"['com.android.systemui.statusbar.visible.change', '', '2227:com.android.systemui/u0a37', 'com.android.systemui']"
+4,03-17,16:13:46.654,1702,10454,W,ActivityManager,Sending non-protected broadcast com.android.systemui.statusbar.visible.change from system 2227:com.android.systemui/u0a37 pkg com.android.systemui,f69486aa,Sending non-protected broadcast <*> from system <*>:<*><*> pkg <*>,"['com.android.systemui.statusbar.visible.change', '', '2227:com.android.systemui/u0a37', 'com.android.systemui']"
+4,03-17,16:13:46.654,1702,10454,W,ActivityManager,Sending non-protected broadcast com.android.systemui.statusbar.visible.change from system 2227:com.android.systemui/u0a37 pkg com.android.systemui,f69486aa,Sending non-protected broadcast <*> from system <*>:<*><*> pkg <*>,"['com.android.systemui.statusbar.visible.change', '', '2227:com.android.systemui/u0a37', 'com.android.systemui']"
+4,03-17,16:13:46.654,1702,10454,W,ActivityManager,Sending non-protected broadcast com.android.systemui.statusbar.visible.change from system 2227:com.android.systemui/u0a37 pkg com.android.systemui,f69486aa,Sending non-protected broadcast <*> from system <*>:<*><*> pkg <*>,"['com.android.systemui.statusbar.visible.change', '', '2227:com.android.systemui/u0a37', 'com.android.systemui']"
+11,03-17,16:13:46.765,2227,2794,V,KeyguardUpdateMonitor,*** register callback for com.android.systemui.statusbar.policy.KeyguardMonitor@712d093,171261c2,*** register callback for <*>@<*>,['com.android.systemui.statusbar.policy.KeyguardMonitor@712d093']
+11,03-17,16:13:46.765,2227,2794,V,KeyguardUpdateMonitor,*** register callback for com.android.systemui.statusbar.policy.KeyguardMonitor@712d093,171261c2,*** register callback for <*>@<*>,['com.android.systemui.statusbar.policy.KeyguardMonitor@712d093']
+11,03-17,16:13:46.765,2227,2794,V,KeyguardUpdateMonitor,*** register callback for com.android.systemui.statusbar.policy.KeyguardMonitor@712d093,171261c2,*** register callback for <*>@<*>,['com.android.systemui.statusbar.policy.KeyguardMonitor@712d093']
+11,03-17,16:13:46.765,2227,2794,V,KeyguardUpdateMonitor,*** register callback for com.android.systemui.statusbar.policy.KeyguardMonitor@712d093,171261c2,*** register callback for <*>@<*>,['com.android.systemui.statusbar.policy.KeyguardMonitor@712d093']
+11,03-17,16:13:46.765,2227,2794,V,KeyguardUpdateMonitor,*** register callback for com.android.systemui.statusbar.policy.KeyguardMonitor@712d093,171261c2,*** register callback for <*>@<*>,['com.android.systemui.statusbar.policy.KeyguardMonitor@712d093']
+14,03-17,16:13:46.765,2227,2794,V,KeyguardUpdateMonitor,*** unregister callback for null,3ad5a38d,*** unregister callback for null,[]
+14,03-17,16:13:46.765,2227,2794,V,KeyguardUpdateMonitor,*** unregister callback for null,3ad5a38d,*** unregister callback for null,[]
+14,03-17,16:13:46.765,2227,2794,V,KeyguardUpdateMonitor,*** unregister callback for null,3ad5a38d,*** unregister callback for null,[]
+14,03-17,16:13:46.765,2227,2794,V,KeyguardUpdateMonitor,*** unregister callback for null,3ad5a38d,*** unregister callback for null,[]
+14,03-17,16:13:46.765,2227,2794,V,KeyguardUpdateMonitor,*** unregister callback for null,3ad5a38d,*** unregister callback for null,[]
+2,03-17,16:13:46.653,2227,2227,I,StackScrollAlgorithm,"updateClipping isOverlap:false, getTopPadding=333.0, Translation=0.0",5b50b29e,"updateClipping isOverlap:false, getTopPadding=<*>.<*>, Translation=<*>.<*>","['333.0', '0.0']"
+2,03-17,16:13:46.653,2227,2227,I,StackScrollAlgorithm,"updateClipping isOverlap:false, getTopPadding=333.0, Translation=0.0",5b50b29e,"updateClipping isOverlap:false, getTopPadding=<*>.<*>, Translation=<*>.<*>","['333.0', '0.0']"
+2,03-17,16:13:46.653,2227,2227,I,StackScrollAlgorithm,"updateClipping isOverlap:false, getTopPadding=333.0, Translation=0.0",5b50b29e,"updateClipping isOverlap:false, getTopPadding=<*>.<*>, Translation=<*>.<*>","['333.0', '0.0']"
+2,03-17,16:13:46.653,2227,2227,I,StackScrollAlgorithm,"updateClipping isOverlap:false, getTopPadding=333.0, Translation=0.0",5b50b29e,"updateClipping isOverlap:false, getTopPadding=<*>.<*>, Translation=<*>.<*>","['333.0', '0.0']"
+2,03-17,16:13:46.653,2227,2227,I,StackScrollAlgorithm,"updateClipping isOverlap:false, getTopPadding=333.0, Translation=0.0",5b50b29e,"updateClipping isOverlap:false, getTopPadding=<*>.<*>, Translation=<*>.<*>","['333.0', '0.0']"
+2,03-17,16:13:46.653,2227,2227,I,StackScrollAlgorithm,"updateClipping isOverlap:false, getTopPadding=333.0, Translation=0.0",5b50b29e,"updateClipping isOverlap:false, getTopPadding=<*>.<*>, Translation=<*>.<*>","['333.0', '0.0']"
+2,03-17,16:13:46.653,2227,2227,I,StackScrollAlgorithm,"updateClipping isOverlap:false, getTopPadding=333.0, Translation=0.0",5b50b29e,"updateClipping isOverlap:false, getTopPadding=<*>.<*>, Translation=<*>.<*>","['333.0', '0.0']"
+2,03-17,16:13:46.653,2227,2227,I,StackScrollAlgorithm,"updateClipping isOverlap:false, getTopPadding=333.0, Translation=0.0",5b50b29e,"updateClipping isOverlap:false, getTopPadding=<*>.<*>, Translation=<*>.<*>","['333.0', '0.0']"
+2,03-17,16:13:46.653,2227,2227,I,StackScrollAlgorithm,"updateClipping isOverlap:false, getTopPadding=333.0, Translation=0.0",5b50b29e,"updateClipping isOverlap:false, getTopPadding=<*>.<*>, Translation=<*>.<*>","['333.0', '0.0']"
+2,03-17,16:13:46.653,2227,2227,I,StackScrollAlgorithm,"updateClipping isOverlap:false, getTopPadding=333.0, Translation=0.0",5b50b29e,"updateClipping isOverlap:false, getTopPadding=<*>.<*>, Translation=<*>.<*>","['333.0', '0.0']"

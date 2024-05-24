@@ -4,7 +4,7 @@ import timeit
 
 from rocksdict import Rdict
 
-path = r'C:\code\src\python\autoQAG\cache'
+path = r'../../cache/rocksdb'
 
 
 class RocksDB:
@@ -29,16 +29,7 @@ class RocksDB:
 if __name__ == '__main__':
     db = RocksDB()
 
-    def generate_random_string(length):
-        characters = string.ascii_letters + string.digits  # 使用字母和数字生成随机字符串
-        return ''.join(secrets.choice(characters) for _ in range(length))
-
-
-    def test_code():
-        db.set(generate_random_string(5), generate_random_string(10))
-        print(generate_random_string(5))
-
-
-    n = 10000
-    total_time = timeit.timeit("test_code()", setup="from __main__ import test_code", number=n)
-    print(f"Total time to run the code {n} times: {total_time} seconds")
+    db.set("test","item1")
+    db.__exit__()
+    b = RocksDB()
+    print(b.get("test"))

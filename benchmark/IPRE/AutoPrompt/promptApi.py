@@ -1,8 +1,12 @@
-import openai
+from openai import OpenAI
+
 from src.config.redisKit import redisInit
 from src.config.configLoad import load_config
 
-openai.api_base, openai.api_key = load_config('OPENAI_API_BASE'), load_config('OPENAI_API_KEY')
+openai_client = OpenAI(
+    api_key=load_config('OPENAI_API_KEY'),
+    base_url=load_config('OPENAI_API_BASE')
+)
 
 
 def infer_llm(instruction, exemplars, query, model='gpt-3.5-turbo-0125', temperature=0.0, max_tokens=2048, logger=None,
@@ -31,14 +35,13 @@ def infer_llm(instruction, exemplars, query, model='gpt-3.5-turbo-0125', tempera
     retry_times = 0
     while retry_times < 3:
         try:
-            answers = openai.ChatCompletion.create(
+            answers = openai_client.chat.completions.create(
                 model=model,
                 messages=messages,
                 temperature=temperature,
                 stream=False,
             )
-            res = [response["message"]["content"] for response in answers["choices"] if
-                   response['finish_reason'] != 'length'][0]
+            res = answers.choices[0].message.content
             if cached:
                 client.set(instruction, res)
             return res

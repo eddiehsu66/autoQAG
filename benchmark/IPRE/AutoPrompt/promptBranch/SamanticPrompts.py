@@ -1,10 +1,10 @@
 import random
 
-from src.LogModule.AutoPrompt.promptApi import infer_llm
+from benchmark.IPRE.AutoPrompt.promptApi import infer_llm
 import concurrent.futures
 from src.config.configLoad import load_config
-from src.LogModule.AutoPrompt.promptBranch.wrongReason import batchProcess
-from src.evaluation.accuracy import correct_lstm
+from benchmark.IPRE.AutoPrompt.promptBranch.wrongReason import batchProcess
+from benchmark.IPRE.evaluation.accuracy import correct_lstm
 
 
 def TaskSamanticPrompts(prompt, wrong_reason):

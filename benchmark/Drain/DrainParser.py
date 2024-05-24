@@ -3,7 +3,7 @@ import os
 import pandas as pd
 from logparser.Drain import LogParser
 from src.config.configLoad import load_config,find_nearest_dir
-from src.evaluation.accuracy import evaluate_test
+from src._evaluation.accuracy import evaluate_test
 
 def logParse(fileName:str):
     base = r"C:\code\src\python\autoQAG\data"
